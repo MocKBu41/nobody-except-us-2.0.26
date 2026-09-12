@@ -1,18 +1,17 @@
 -- NEU BOT v1.2
--- Updated from user HTML scheme.
+-- Updated from the user's new HTML action scheme.
 -- Tank role = random unit with duel_tanks70 / duel_tanks80 / duel_tanks90.
--- Verified BotApi used: Spawn, CaptureFlag, Scene.Flags, IsSquadExists, timers/events.
--- No verified SplitSquad/Disembark command exists in the inspected bot API, so those are not invented.
+-- Uses only verified BotApi calls. SplitSquad/Disembark are not invented.
 
 require([[/script/multiplayer/bot.data]])
 
-local C = {
-    Units={}, Candidates={}, SpawnIntents={}, SpawnTickets={}, AwaitingArrival=nil,
-    SquadRole={}, DeadSquads={}, DeferredOrders={},
-    Time=0, Timer=nil, TimerGeneration=0,
-    State="OPENING", CurrentAttackFlag=nil, AttackCheckAt=nil, NextAttackAt=nil,
-    FlagCursor=0, PatrolCursor=0, NextPatrolAt=0, NextTankReinforcementAt=0,
-    ReconSquad=nil, ReconVisited={}, WarningPrinted=false,
+local C={
+    Units={},Candidates={},SpawnIntents={},SpawnTickets={},AwaitingArrival=nil,
+    SquadRole={},DeadSquads={},DeferredOrders={},
+    Time=0,Timer=nil,TimerGeneration=0,
+    State="OPENING",CurrentAttackFlag=nil,AttackCheckAt=nil,NextAttackAt=nil,
+    FlagCursor=0,PatrolCursor=0,NextPatrolAt=0,NextTankReinforcementAt=0,
+    ReconSquad=nil,ReconTarget=nil,ReconVisited={},WarningPrinted=false,
     EnemySignals={aatSeenAt=nil,aatDestroyedAt=nil,aatStage=0,aircraftSeenAt=nil,aircraftDestroyedAt=nil,aircraftResponseAt=nil}
 }
 
@@ -109,9 +108,7 @@ local function buildCandidates()
     for _,r in ipairs(roles) do C.Candidates[r]={} end
     for _,rec in ipairs(C.Units) do
         if type(rec)=="table" then
-            for _,r in ipairs(roles) do
-                if roleMatches(rec,r) then C.Candidates[r][#C.Candidates[r]+1]=rec end
-            end
+            for _,r in ipairs(roles) do if roleMatches(rec,r) then C.Candidates[r][#C.Candidates[r]+1]=rec end end
         end
     end
     for _,r in ipairs(roles) do log("ROLE "..r.." candidates="..#C.Candidates[r]) end
@@ -232,8 +229,6 @@ local function processDeferredOrders()
 end
 
 local function requestDisembark(id)
-    -- New HTML scheme requires infantry dismounting halfway to the next point.
-    -- No verified BotApi disembark/unload command was found, so do not call an invented API.
     log("DISEMBARK PENDING squad="..tostring(id).." reason=no verified BotApi command")
 end
 
@@ -262,9 +257,7 @@ end
 local function orderDefense()
     C.DeferredOrders={}
     for id,role in pairs(C.SquadRole) do
-        if squadAlive(id) then
-            if role=="infantry" or role=="antiair" or role=="aat" then capture(id,chooseOwnFlag()) end
-        end
+        if squadAlive(id) and (role=="infantry" or role=="antiair" or role=="aat") then capture(id,chooseOwnFlag()) end
     end
 end
 
@@ -317,10 +310,10 @@ end
 
 local function processRecon()
     if not C.ReconSquad or not squadAlive(C.ReconSquad) then return end
-    local currentTarget=nil
-    for _,x in ipairs(C.DeferredOrders) do if x.squad==C.ReconSquad then currentTarget=x.flag break end end
-    if currentTarget then return end
+    if C.ReconTarget and flagOccupant(C.ReconTarget)~=BotApi.Instance.team then return end
+    if C.ReconTarget then log("RECON CAPTURED flag="..C.ReconTarget) end
     local target=chooseReconFlag()
+    C.ReconTarget=target
     if target then
         log("RECON NEXT flag="..target)
         capture(C.ReconSquad,target)
@@ -357,7 +350,7 @@ local function detectOwnLosses()
                 enqueueSpawn("tank","replace destroyed tank",0,C.CurrentAttackFlag)
                 enqueueSpawn("infantry","tank loss infantry support",0,C.CurrentAttackFlag)
             elseif role=="recon" and C.ReconSquad==id then
-                C.ReconSquad=nil
+                C.ReconSquad=nil C.ReconTarget=nil
             end
         end
     end
@@ -425,11 +418,8 @@ function NEU_BOT_EnemyTagSeen(tag)
     elseif tag=="aircraft" then
         C.EnemySignals.aircraftSeenAt=C.Time C.EnemySignals.aircraftDestroyedAt=nil
         C.EnemySignals.aircraftResponseAt=C.Time+NEU_BOT.EnemyResponseCheckSec
-        if math.random(2)==1 then
-            enqueueSpawn("duel_fighter","enemy aircraft 50/50 response",0,C.CurrentAttackFlag)
-        else
-            enqueueSpawn("aat","enemy aircraft 50/50 response",0,chooseOwnFlag())
-        end
+        if math.random(2)==1 then enqueueSpawn("duel_fighter","enemy aircraft 50/50 response",0,C.CurrentAttackFlag)
+        else enqueueSpawn("aat","enemy aircraft 50/50 response",0,chooseOwnFlag()) end
         log("ENEMY TAG aircraft seen")
     end
 end
@@ -454,7 +444,7 @@ local function onSecond()
         log("NOTE SplitSquad/Disembark not verified in BotApi; no invented command is used")
         C.WarningPrinted=true
     end
-    if C.Time%30==0 then log("TIME="..C.Time.." STATE="..C.State.." TARGET="..tostring(C.CurrentAttackFlag)) end
+    if C.Time%30==0 then log("TIME="..C.Time.." STATE="..C.State.." TARGET="..tostring(C.CurrentAttackFlag).." RECON="..tostring(C.ReconTarget)) end
 end
 
 local function stopClock()
@@ -483,10 +473,9 @@ function onGameStart()
     C.SpawnIntents={} C.SpawnTickets={} C.AwaitingArrival=nil C.SquadRole={} C.DeadSquads={} C.DeferredOrders={}
     C.Time=0 C.State="OPENING" C.CurrentAttackFlag=nil C.AttackCheckAt=nil C.NextAttackAt=nil
     C.FlagCursor=0 C.PatrolCursor=0 C.NextPatrolAt=0 C.NextTankReinforcementAt=NEU_BOT.TankReinforcementSec
-    C.ReconSquad=nil C.ReconVisited={} C.WarningPrinted=false
+    C.ReconSquad=nil C.ReconTarget=nil C.ReconVisited={} C.WarningPrinted=false
     C.EnemySignals={aatSeenAt=nil,aatDestroyedAt=nil,aatStage=0,aircraftSeenAt=nil,aircraftDestroyedAt=nil,aircraftResponseAt=nil}
 
-    -- New opening scheme: 1 recon, 2 infantry squads, 1 AA, then random duel tank after 5 sec.
     enqueueSpawn("recon","opening recon",0,nil)
     enqueueSpawn("infantry","opening infantry 1",0,nil)
     enqueueSpawn("infantry","opening infantry 2",0,nil)
@@ -512,8 +501,8 @@ function onGameSpawn(args)
 
     if ticket.role=="recon" and not C.ReconSquad then
         C.ReconSquad=args.squadId
-        local rf=chooseReconFlag()
-        if rf then capture(args.squadId,rf) end
+        C.ReconTarget=chooseReconFlag()
+        if C.ReconTarget then capture(args.squadId,C.ReconTarget) end
     end
 
     local target=ticket.target or C.CurrentAttackFlag
