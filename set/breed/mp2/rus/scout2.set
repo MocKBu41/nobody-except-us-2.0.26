@@ -1,0 +1,31 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/scout"}
+	{icon "scout2"}
+	{icon_priority 2}
+	{nationality rus}
+
+	{armors
+		{head "lshz1plus_sso"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_scout")
+	{inventory
+		{item "6b45_sniper"}
+		{item "vintorez" filling "vin_ammo ammo" 10}
+		{item "c4_bomb"}
+		{item "rpg26 weapon" 1 filling "rpg26 ammo" 1}
+		{item "aks74" filling "545 ammo" 30}
+		{item "545 ammo" 120}
+		{item "smoke rdg2b grenade" 1}
+		{item "smoke rdg2b grenade"}
+		{item "vin_ammo ammo" 100}
+		{item "rgn grenade" 2}
+		{item "bandage" 5}
+		{item "rgo grenade" 1}
+		
+		{item "rpg26 weapon" 1 filling "rpg26 ammo" 1}
+		{in_hands 1}
+	}
+}

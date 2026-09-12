@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/marine"}
+	{icon "snipers"}
+	{icon_priority 3}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "6b47che1"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_elite_sniper")
+	{inventory
+		{item "6b45-1_sniper"}
+		{item "vintorez" filling "vin_ammo ammo" 10}
+		{item "vin_ammo ammo" 180}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "rgn grenade" 3}
+		{item "smoke rdg2b grenade"}
+		{in_hands 1}
+	}
+}

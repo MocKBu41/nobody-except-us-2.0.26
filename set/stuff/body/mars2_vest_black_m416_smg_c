@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+        	{entity "mars2_vest_black_m416_smg_c"}
+        	{mass 8.4}
+        	;1.4 основа + 2,5*2 ESAPI + 1*2 кг боковые ESAPI
+        }

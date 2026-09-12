@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "gpb_vest"}
+	{mass 10.5}
+}

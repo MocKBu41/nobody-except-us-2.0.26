@@ -1,0 +1,48 @@
+﻿{from "pattern proj_impactor"
+	{tag "ammo"}
+	{tag "itemin2hands"}
+	{tag "no_ricochet" "fg" "fragmentary" "big" "size5" "fx_upto1000kg"}
+	{inventory
+		{size 5 2}
+		{weight 1500}
+		{noView}
+		{fsm "stuff"}
+	}	
+	{mass 1500}
+	{entity "fab1500"}
+	{view "fab1500"
+		{tail ""}
+	}
+	;428 êã ÂÂ ïåðâàÿ âîëíà óìåíüøåíà íà 0-5ì, ÷òîáû ñàì ñàìîëåò íå ïîäðûâàëñÿ
+	{tag "he_over30"}
+	{damage blastwave	 ; fragmentary
+		{energy 1.4}
+		{area 80 84}
+	}
+	{damage add blastwave	 ; HE antipersonnel
+		{energy 2.4}
+		{area 62 65}
+	}
+	{damage add blastwave	 ; HE, FG anti-APC
+		{energy 5}
+		{area 46 48}
+	}
+	{damage add blastwave	 ; HE, FG anti-IFV
+		{energy 12}
+		{area 24 28}
+	}
+	;Íå ìåíÿëîñü
+	{damage add blastwave	 ; HE, FG antitank
+		{energy 22}
+		{area 11 15}
+	}
+	{damage add blastwave	 ; HE, kinetic, direct hit
+		{energy 50}
+		{area 8 9}
+	}
+	{damage add fire
+			{radius 20}
+			{heating 5.2}
+			{time 6}
+	}
+}

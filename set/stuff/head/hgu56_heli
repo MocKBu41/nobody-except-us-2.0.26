@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "hgu56_heli"}
+	{mass 1.32}
+}

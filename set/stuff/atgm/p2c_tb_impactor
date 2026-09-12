@@ -1,0 +1,37 @@
+{from "pattern proj_impactor"
+	{entity "p2c_tb_impactor"}
+              {inventory
+	      {weight 100}
+	      {size 6 1}
+	}
+	{tag "no_ricochet" "fg" "big" "size4" "88to105" "-ap" "fx_shmel"} 
+ 
+	{tag "he_4_5to8"}
+	{damage fire
+		{radius 11}
+		{heating 15}
+		{time 2}
+	}
+	{damage add fire
+		{radius 0.7}
+		{heating 50}
+		{time 1}
+	}
+	{damage add blastwave	 ; HE antipersonnel
+		{energy 1.2}
+		{area 13 14}
+	}
+	{damage add blastwave	 ; HE, FG anti-APC
+		{energy 2.5}
+		{area 11 12}
+	}
+	{damage add blastwave	 ; HE, FG anti-IFV
+		{energy 6.5}
+		{area 3.5 4.5}
+	}
+	{damage add blastwave	 ; HE, FG antitank
+		{energy 11}
+		{area 2 2.3}
+	}
+
+}

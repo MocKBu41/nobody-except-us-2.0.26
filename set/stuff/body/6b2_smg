@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "6b2_smg"}
+	{mass 4.5}
+}

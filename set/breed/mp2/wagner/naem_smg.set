@@ -1,0 +1,71 @@
+{breed
+	{skin "neu_wagner_6"}
+	{portrait "rus/wagner"}
+	{icon smgs}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"pistol" lvl_3
+		}
+		{"gra_launch" lvl_4
+		}
+		{"melee" lvl_4
+		}
+		{"avoidance" lvl_3
+		}
+		{"health" "250%"
+		}
+		{"stamina" "180%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.9
+		}
+		{"skill_tankgun" lev_3
+		}
+		{"skill_atgm_launcher" lev_4
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"specnaz_lvl_1" 4
+		}
+		{"specnaz_lvl_2" 16
+		}
+		{"specnaz_lvl_3" 48
+		}
+		{"specnaz_lvl_4" 96
+		}
+		{"specnaz_lvl_5" 160
+		}
+	}
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "bandage" 10}
+		{item "rshg-1 weapon" filling "rshg-1 ammo" 1}
+		{item "545 ammo" 240}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{item "rpg22 weapon" filling "rpg22 ammo" 1}
+		{item "ak74spec_1" filling "545 ammo" 30}
+		{in_hands 9}
+	}
+}

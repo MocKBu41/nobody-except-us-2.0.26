@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "korsar3m_rpg"}
+	{mass 9.8}
+	;2.8 основа + 2,5*2 ESAPI + 1*2 кг боковые ESAPI
+}

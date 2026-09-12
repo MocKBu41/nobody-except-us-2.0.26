@@ -1,0 +1,182 @@
+;SDL
+;CtA only
+{panel_control
+	{heal
+		{position 0 0}
+		{condition "disabled"}
+		{condition "human"}
+	}
+	{drop
+		{position 1 0}
+		{condition "disabled"}
+		{condition "human"}
+	}
+	{collect
+		{position 0 2}
+		{condition "disabled"}
+		{condition "human"}
+	}
+	{mine
+;		{position 0 1}
+	}
+	{mine_detection
+;		{position 1 1}
+	}
+	{put_dynamite
+;		{position 2 1}
+	}
+	{put_c4_bomb
+;		{position 2 3}
+	}
+	{mine_directional_mon50
+		{condition "human"}
+	}
+	{mine_directional_claymore
+		{condition "human"}
+	}
+	{mine_antitank_tm83
+		{condition "human"}
+	}
+	{mine_frogmine
+		{condition "human"}
+	}
+	{mine_flashmine
+		{condition "human"}
+	}
+	{dig_trench_medium_spade
+		{condition "human"}
+	}
+	{dig_trench_small_spade
+		{condition "human"}
+	}
+	{dig_trench_small_sandbag
+		{condition "human"}
+	}
+	{dig_trench_tank
+		{condition "vehicle"}
+	}
+	{set_grenademine_f1
+		{condition "human"}
+	}
+	{set_grenademine_rgd
+		{condition "human"}
+	}
+	{set_grenademine_rgn
+		{condition "human"}
+	}
+	{set_grenademine_rgo
+		{condition "human"}
+	}
+	{set_grenademine_m61
+		{condition "human"}
+	}
+	{set_grenademine_m67
+		{condition "human"}
+	}
+	{set_grenademine_dm51gr
+		{condition "human"}
+	}
+	{set_grenademine_of37
+		{condition "human"}
+	}
+	{set_grenademine_l109a1
+		{condition "human"}
+	}
+	{set_grenademine_shgr56
+		{condition "human"}
+	}
+	{scud_dummy
+		{condition "human"}
+	}
+	{march
+		{condition "vehicle"}
+	}
+	{injection
+;		{position 3 1}
+	}
+	{plant
+;		{position 0 2}
+	}
+	{hedgehog
+;		{position 1 2}
+	}
+	{burn
+;		{position 2 2}
+	}
+	{gc_cp_state_reload
+;		{position 0 2}
+;		{condition "human"}
+	}	
+	{gc_cp_state_weapon
+;		{position 1 2}
+	}
+	{gc_cp_state_speed
+		{position 0 0}
+		{condition "single vehicle"}
+	}
+	{leave_unit1
+		{position 1 2}
+		{condition "single vehicle"}
+	}	
+	{barricade
+		{condition "human"}
+	}
+	{barbwire
+		{condition "human"}
+	}
+	{gc_cp_state_supply
+        {position 0 2}
+        {condition "vehicle"}
+    }
+	{diagnostics
+		{position 2 2}
+		{condition "vehicle"}
+	}
+	{gc_cp_browse_back
+		{position 3 2}
+	}
+	{air_1
+		{condition "vehicle"}	
+	}
+	{air_2
+		{condition "vehicle"}	
+	}
+	{air_3
+		{condition "vehicle"}	
+	}
+	{air_4
+		{condition "vehicle"}	
+	}
+	{air_5
+		{condition "vehicle"}	
+	}
+	{air_6
+		{condition "vehicle"}	
+	}
+	{air_7
+		{condition "vehicle"}	
+	}
+	{air2_1
+		{condition "vehicle"}	
+	}
+	{air2_2
+		{condition "vehicle"}	
+	}
+	{air2_3
+		{condition "vehicle"}	
+	}
+	{air2_4
+		{condition "vehicle"}	
+	}
+	{air2_5
+		{condition "vehicle"}	
+	}
+	{air2_6
+		{condition "vehicle"}	
+	}
+	{air2_7
+		{condition "vehicle"}	
+	}
+
+
+}

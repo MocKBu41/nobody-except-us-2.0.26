@@ -1,0 +1,19 @@
+{breed
+	{skin "cw_rus_vkpo"}
+	{portrait "_new/rus/inf"}
+	{icon pzrk}
+	{icon_priority 4}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+	(include "perks_generic.inc")
+	("traits_army_bazooker")
+	{inventory
+		{item "6b45_strelok"}
+		{item "verba weapon" filling "9m336 ammo" 1}
+		{item "9m336 ammo" 2}
+		{item "bandage" 10}
+		{in_hands 1}
+	}
+}

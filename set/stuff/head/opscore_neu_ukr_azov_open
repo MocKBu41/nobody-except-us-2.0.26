@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "opscore_neu_ukr_azov_open"}
+	{mass 1.08}
+}

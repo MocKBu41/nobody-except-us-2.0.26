@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_rus_fsb_alpha_10x"}
+	{portrait "MVD/fsb_alfa_10e"}
+	{icon "soldier"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head "mvd_opscore_fsb"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_vehicle_supporter")
+	{inventory
+		{item "mars2_vest_black_ak_smg_belt"}
+		{item "bandage" 5}
+		{item "standart ammo" 120}
+		{item "ak74m_gp25_1p78" filling "545 ammo" 30}
+		{item "545 ammo" 240}
+		{item "gp25_ak74m_1p78" filling "mortar pd a ammo" 1}
+		{item "rgo grenade" 2}
+		{in_hands 4}
+	}
+}

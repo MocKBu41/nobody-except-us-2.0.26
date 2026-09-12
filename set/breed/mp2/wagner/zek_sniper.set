@@ -1,0 +1,75 @@
+{breed
+	{skin "neu_wagner_1"}
+	{portrait "rus/wagner"}
+	{icon snipers}
+	{icon_priority 1}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "sh-68"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_1
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_1
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_1
+		}
+		{"health" "130%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "130%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.8
+		}
+		{"telescope"}
+		{"aimedshot"}
+		{"field_glass"}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "6b2_smg"}
+		{item "bandage" 15}
+		{item "rgd grenade" 2}
+		{item "svd_ammo ammo" 160}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{item "svd_no_skope" filling "svd_ammo ammo" 10}
+		{in_hands 7}
+	}
+}

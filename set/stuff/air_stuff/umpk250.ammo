@@ -1,0 +1,32 @@
+{from "pattern proj_impactor"
+	;Это ОФАБ-250-270
+	{tag "ammo"}
+	{tag "itemin2hands"}
+	{tag "no_ricochet" "fg" "fragmentary" "antiinf" "big" "size4" "fx_upto250kg"}
+	{tag "bomb"} ; только для ammo.set
+	{inventory
+		{size 5 2}
+		{weight 1000}
+		{noView}
+		{fsm "stuff"}
+	}	
+	{mass 266}           
+	{entity "umpk250"}
+	{view "umpk250"
+		{tail ""}
+	}
+	;Просчет на ОФАБ. 97x0.95=92.15кг к оск-фугас.просчету.
+	{tag "he_over30"}
+{damage blastwave {energy 0.7} {area 25 32}}	;уменьшено дя исключения самоподрыва
+{damage add blastwave {energy 1.2} {area 19.7 22.7}}
+{damage add blastwave {energy 2.5} {area 14.7 16.9}}
+{damage add blastwave {energy 6.5} {area 11 12.6}}
+{damage add blastwave {energy 11} {area 4.8 5.6}}
+	{damage add blastwave	 ; HE, FG antitank
+		{energy 22}
+		{area 3 5}
+	}
+}
+;ФАБ-250М62 масса 227кг. ВВ - 99кг смесь МС.
+;ОФАБ 250-270 масса 266кг. ВВ - 97кг смесь МС.
+;

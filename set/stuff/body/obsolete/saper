@@ -1,0 +1,12 @@
+{from "pattern armor"
+	{entity "saper"}
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+	                        
+}
+
+
+
+

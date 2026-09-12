@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "idf_marom_dolphin"}
+	{mass 9.5}
+	;3 основа + 3 передняя + 3,5 задняя
+}

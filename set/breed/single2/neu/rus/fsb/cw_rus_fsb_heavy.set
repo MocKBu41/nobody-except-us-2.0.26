@@ -1,0 +1,22 @@
+{breed
+	{skin "cw_rus_fsb_alpha_10x"}
+	{portrait "MVD/fsb_alfa_10e"}
+	{icon "defend"}
+	{icon_priority 1}
+	{nationality rus}
+	{armors
+		{head "mvd_opscore_fsb"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_advanced_mgun")
+	{inventory
+		{item "mars2_vest_black_ak_mgun_b"}
+		{item "bandage" 15}
+		{item "f1 grenade" 4}
+		{item "smoke grenade"}
+		{item "pkm_ammo ammo" 600}
+		{item "pkp" filling "pkm_ammo ammo" 200}
+		{in_hands 5}
+	}
+}

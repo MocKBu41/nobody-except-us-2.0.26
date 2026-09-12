@@ -1,0 +1,27 @@
+;SDL
+;CtA only
+{panel_control
+	{heal
+		{position 0 0}
+		{condition "disabled"}
+		{condition "human"}
+	}
+	{drop
+		{position 1 0}
+		{condition "disabled"}
+		{condition "human"}
+	}
+	{collect
+		{position 0 2}
+		{condition "disabled"}
+		{condition "human"}
+	}
+	{air_1
+		{condition "vehicle"}
+		
+	}
+	
+	{gc_cp_browse_back
+		{position 3 2}
+	}
+}

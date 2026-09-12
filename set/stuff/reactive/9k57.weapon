@@ -1,0 +1,46 @@
+{weapon_bullet
+	{tag "gun" "weapon" "skill_tankgun" "bullet"}	;"bullet" is needed for work of levelling and skills
+	("heavy_artillery")
+	{filling "ammo 9M27" 16}
+	{fireSound "reactive/9k57"}
+	{burst {min 2} {short 2} {long 2} {noaiming}} ;noaiming мешает стрельбе по триггеру в СтА
+;	{burst {min 20} {short 20} {long 20}} ;нужно для стрельбы по триггеру
+	{Automatic} ;нужно для стрельбы по триггеру
+	{recoveryTime 2.5}
+	{rechargeTime 210}
+	(mod "mp"
+	{recoveryTime 2.5}
+	{burst {min 0} {short 1} {long 1} {noaiming}}
+	)
+	("relaxationtime" rt(1))
+
+
+		{range 380 380}
+		{aimRange 380}
+		{maxRange 380}
+		{rechargeTime 210}
+		("CW_acc_artillery" mils(8))	;удвоено из баланса
+		{Spreading	
+        {SpreadPower	1.2}
+		{SpreadXYRatio	1.3}
+	    }
+		{speed 40}
+		{gravity 0.41}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	{parameters "k"
+        {gravity 0.41}	
+		{range 380 380}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_cl_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	}
+	{parameters "oa"
+        {gravity 0.51}	
+		{range 380 380}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_fg_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	}
+}	

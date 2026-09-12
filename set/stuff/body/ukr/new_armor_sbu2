@@ -1,0 +1,5 @@
+{from "pattern overcoat"
+{tag "armor"}
+
+	{entity "new_armor_SBU2"}
+}

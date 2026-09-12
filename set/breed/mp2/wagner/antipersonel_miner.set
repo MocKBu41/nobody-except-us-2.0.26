@@ -1,0 +1,68 @@
+{breed
+	{skin "cw_pmc1"}
+	{portrait "rus/wagner"}
+	{icon ap_miners}
+	{icon_priority 1}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_2
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.9
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "6b45_rpg"}
+		{item "mine antipersonnel_mon50" 5}
+		{item "aksu74" filling "545 ammo" 30}
+		{item "545 ammo" 90}
+		{item "bandage" 5}
+		{in_hands 2}
+	}
+}

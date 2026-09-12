@@ -1,0 +1,21 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "hydra_dagr ammo" 8}
+	{fillingVisible "Rocket"}
+	{fireSound "reactive/konkurs_launch"}
+	{foresight "foresight5"}
+	{mass 47}
+	{recoveryTime 0.2}
+	{rechargeTime 90}
+	{inventory {noView}}
+    {maxRange 190}
+	{aimRange 190}
+	
+	("damage" a(1) b(1) c(1) d(1) e(1))
+	{projectileDamage 0}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_heat_2"}	
+	{cursorReloading "cannon_reload_heat"}
+	;{cursorReloading "cannon_reload_heat_timer_90"}
+}

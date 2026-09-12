@@ -1,0 +1,14 @@
+{weapon_bullet
+	{tag "gun"}
+	{fireSound "reactive/kamokadze"}	
+	{filling "ammo magura" 1}
+	{inventory
+		{size 1 1}
+	}
+	{foresight "foresight1"}
+	
+	
+	{aimRange 1}				; m
+	{cursor "cannon_on"}
+;	{speed 40}
+}

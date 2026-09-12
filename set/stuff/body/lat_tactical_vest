@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "lat_tactical_vest"}
+	{mass 1.5}
+}

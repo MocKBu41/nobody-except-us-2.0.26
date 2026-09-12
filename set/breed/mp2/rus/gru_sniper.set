@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_sso_atacs"}
+	{portrait "_new/rus/sso"}
+	{icon snipers}
+	{icon_priority 3}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "lshz1plus_sso"}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_sniper")
+	{inventory
+		{item "lbt6094_rus_marksman"}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "rgn grenade" 3}
+		{item "smoke rdg2b grenade"}
+		{item "sv98" filling "svd_ammo ammo" 10}
+		{item "svd_ammo ammo" 160}
+		{in_hands 6}
+	}
+}

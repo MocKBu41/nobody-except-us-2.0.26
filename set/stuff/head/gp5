@@ -1,0 +1,4 @@
+{from "pattern mask"
+	{entity "gp5"}
+	{mass 0.2}
+}

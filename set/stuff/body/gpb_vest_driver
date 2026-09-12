@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "gpb_vest_driver"}
+	{mass 9.0}
+}

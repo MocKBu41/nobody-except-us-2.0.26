@@ -1,0 +1,28 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/specnaz"}
+	{icon "officer"}
+	{icon_priority 2}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_specnaz_com")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "545 ammo" 240}
+		{item "9mm ammo" 30}
+		{item "binocular"}
+		{item "gsh18" filling "9mm ammo" 15}
+		{item "bandage" 10}
+		{item "rgo grenade" 2}
+		{item "ak74m_1p78" filling "545 ammo" 30}
+		{item "rgn grenade" 2}
+		{item "smoke rdg2b grenade" 2}
+		{item "sandbag_kit"}
+		{in_hands 7}
+	}
+}

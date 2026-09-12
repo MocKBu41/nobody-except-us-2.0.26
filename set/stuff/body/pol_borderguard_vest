@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "pol_borderguard_vest"}
+	{mass 1.5}
+}

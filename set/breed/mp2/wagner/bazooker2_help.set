@@ -1,0 +1,69 @@
+{breed
+	{skin "neu_wagner_6"}
+	{portrait "rus/wagner"}
+	{icon bazookers}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_2
+		}
+		{"melee" lvl_3
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.8
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_4
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "poyas_a_var1_rpg"}
+		{item "545 ammo" 60}
+		{item "bandage" 10}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "pg-7vl rpg7 ammo" 4}
+		{item "tbg-7v rpg7 ammo"}
+		{in_hands 4}
+	}
+}

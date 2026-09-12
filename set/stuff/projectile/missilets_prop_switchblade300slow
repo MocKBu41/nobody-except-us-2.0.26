@@ -1,0 +1,5 @@
+;SDL
+{from "missilets"
+	{speed 21}
+	{maxRange 5}
+}

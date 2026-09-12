@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "6b45-1_medic"}
+	{mass 12.0}
+}

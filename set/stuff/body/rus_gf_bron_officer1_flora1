@@ -1,0 +1,9 @@
+{from "pattern overcoat"
+	{tag "armor"}
+                 
+	{inventory
+		{size 2 2}
+		{weight 100}
+	}
+	{entity "rus_gf_bron_officer1_flora1"}
+}

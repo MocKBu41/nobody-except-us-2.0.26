@@ -1,0 +1,79 @@
+{from "pattern gun"     ; "paladin" 39 калибров.
+       
+       {filling "155ammo"}
+       {fireSound "gun/as90_shot"}
+       {reloadSound "as90_reload"}
+       {rechargeTime 7}
+       {range 262 262} ;M107 - 18km.
+;      {gravity 18}
+;      ("speed" s(1200)) 
+       {gravity 2.0}
+       ("speed_artillery") 
+       ("100-128caliber")
+       {ZeroingAccuracy 1 1}
+       ("CW_acc_artillery" mils(2.75))    ;no data, cannon is contemporary to Msta-S
+       {calibre 155}
+       {cursor "cannon_on_fg_5"}
+       {cursorReloading "cannon_reload_fg"}
+       {parameters "bullet155_USA satt"
+              {range 330 330}      ;http://bastion-karpenko.ru/excalibur/  - 40 у Паладинов, 50 с более дальнобойных
+              ("CW_acc_guided" kvo_meters(2))    ;примерно
+              ;http://vpk.name/news/102035_ekskalibur_kvo_1_m_na_dalnosti_48_km.html
+              ;{cursor "gps"}
+              ;{cursorReloading "gps_reload"}    
+              {cursor "cannon_on_fg_6"}   
+              ;{cursor "cannon_on_fg_7"}
+              {cursorReloading "cannon_reload_fg"}      
+       }
+       {parameters "bullet155_USA spbe"
+              {range 295 295}      ; 22.5km
+              ("CW_acc_artillery" mils(2.75))
+              {cursor "cannon_on_heat_5"}
+              {cursorReloading "cannon_reload_heat"}
+       }
+       {parameters "bullet155_USA cl"
+              {range 258 258}      ;M483A1 - 17.7km
+              ("CW_acc_artillery" mils(2.75))
+              {cursor "cannon_on_heat_3"}
+              {cursorReloading "cannon_reload_heat"}
+       }
+       {parameters "bullet155_USA_h fg"
+              {range 295 295}      ;M795 - 22.5km
+              ("CW_acc_artillery" mils(2.75))
+              {cursor "cannon_on_fg_5"}
+              ;{cursor "cannon_on_fg_4"}
+              {cursorReloading "cannon_reload_fg"}
+       }
+       {parameters "bullet155_USA_ar fg"
+              {range 310 310}      ;M549A1 - 30km
+              ("CW_acc_artillery" mils(5.5))     
+              {cursor "cannon_on_fg_5"}
+              ;{cursor "cannon_on_fg_4"}
+              {cursorReloading "cannon_reload_fg"}
+       }
+       {parameters "bullet155_GER fg"
+              {range 295 295}      ;DM-121 - 22.5km
+              ("CW_acc_artillery" mils(2.75))
+              {cursor "cannon_on_fg_5"}
+              ;{cursor "cannon_on_fg_4"}
+              {cursorReloading "cannon_reload_fg"}
+       }
+       {parameters "bullet155_GER_ar fg"
+              {range 310 310}      ;DM-131 - 30km
+              ("CW_acc_artillery" mils(5.5))     
+              {cursor "cannon_on_fg_5"}
+              ;{cursor "cannon_on_fg_4"}
+              {cursorReloading "cannon_reload_fg"}
+       }
+       {parameters "bullet155_NATO fg"
+              {range 295 295}      ;L15A2 - 22.5km
+              ("CW_acc_artillery" mils(2.75))
+              {cursor "cannon_on_fg_5"}
+              ;{cursor "cannon_on_fg_4"}
+              {cursorReloading "cannon_reload_fg"}
+       }
+       {parameters "bullet155_USA nc 155"
+              {cursor "cannon_on_nc"}
+              {cursorReloading "cannon_reload_nc"}
+       }             
+}

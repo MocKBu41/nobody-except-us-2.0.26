@@ -1,0 +1,30 @@
+{breed
+	{skin "neu_wagner_3"}
+	{portrait "rus/wagner"}
+	{icon officer}
+	{icon_priority 2}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_specnaz_com")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "ak12_1p87_tactical" filling "545 ammo" 30}
+		{item "545 ammo" 210}
+		
+		{item "smoke rdg2b grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "binocular"}
+		{item "smoke rdg2b grenade"}
+		{item "bandage" 5}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "rpg26 weapon" filling "rpg26 ammo" 1}
+		{item "sandbag_kit"}
+		{in_hands 1}
+	}
+}

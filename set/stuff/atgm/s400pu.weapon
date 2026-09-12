@@ -1,0 +1,19 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "ammo 48n6e2 s-300" 4}
+	{fillingVisible "Missile"}
+	{fireSound "reactive/s300"}	
+	{mass 400}
+	{recoveryTime 5}	
+	{rechargeTime 120}
+	{AimingTolerance 5}	;òîëüêî äëÿ ïàññèâíîãî íàâåäåíèÿ
+	{inventory {noView}}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+	{maxRange 550}
+	{aimRange 580}
+
+}

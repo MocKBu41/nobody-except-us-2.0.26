@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_rus_vkpo_vdv"}
+	{portrait "_new/rus/vdv"}
+	{icon snipers}
+	{icon_priority 2}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_specnaz_sniper")
+	{inventory
+		{item "6b45-1_sniper"}
+		{item "bandage" 10}
+		
+		{item "svds" filling "svd_ammo ammo" 10}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "svd_ammo ammo" 160}
+		{in_hands 2}
+	}
+}

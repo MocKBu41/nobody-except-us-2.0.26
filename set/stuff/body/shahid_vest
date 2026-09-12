@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "shahid_vest"}
+	{mass 7.5}
+}

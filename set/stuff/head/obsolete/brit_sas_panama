@@ -1,0 +1,4 @@
+{from "helmet1_ger"
+	{desc "Britain SAS hat"}
+	{entity "brit_sas_panama"}
+}

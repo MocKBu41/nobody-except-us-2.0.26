@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "6b5-16_rpg"}
+	{mass 7.0}
+}

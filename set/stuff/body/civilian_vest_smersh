@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "civilian_vest_smersh"}
+	{mass 3.0}
+}

@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "poyas_a_var4gp"}
+	{mass 1.0}
+	;no info
+}

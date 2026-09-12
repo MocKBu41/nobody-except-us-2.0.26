@@ -1,0 +1,11 @@
+{bullet
+	{entity "switchblade600_loaded"}
+	{tag "smallitemin1hand keepentity dropboxed"}
+    {inventory
+		{weight 100}
+		{size 3 3}
+		{fsm "belt"}
+	}
+	{mass 24}
+	{tag "no_ricochet"} 
+}

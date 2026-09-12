@@ -1,0 +1,4 @@
+{from "pattern cw_hat"
+	{entity "beret_lat"}
+	{mass 0.2}
+}

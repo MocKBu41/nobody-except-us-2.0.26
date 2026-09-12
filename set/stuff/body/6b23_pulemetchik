@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{desc "6b23"}
+	{entity "6b23_pulemetchik"}
+	{mass 8.4}
+}

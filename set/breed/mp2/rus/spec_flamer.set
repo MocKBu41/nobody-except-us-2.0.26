@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/specnaz"}
+	{icon "mgs"}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_specnaz_bazooker")
+	{inventory
+		{item "6b45-1_rpg"}
+		{item "rgo grenade" 2}
+		{item "bandage" 10}
+		{item "545 ammo" 240}
+		{item "ak74m_1p78" filling "545 ammo" 30}
+		{item "rgn grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "rshg-1 weapon" 2 filling "rshg-1 ammo" 1}
+		{item "sandbag_kit"}
+		{in_hands 4}
+	}
+}

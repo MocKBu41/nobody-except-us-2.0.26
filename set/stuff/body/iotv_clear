@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "iotv_clear"}
+	{mass 11.5}
+	;13 с 4 ESAPI
+}

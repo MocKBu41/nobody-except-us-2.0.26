@@ -1,0 +1,15 @@
+﻿;Created by Pheonix 
+{from "80mm_b8_x2"     ; "Ka50"
+   	{range 180 180} 
+	{filling "bullet80_DM" 80}
+	{recoveryTime 0.05}
+	("CW_acc_heli" mils(8))
+;https://rutlib.com/book/12760/p/61
+;https://defendingrussia.ru/enc/neupravljajemyje_rakety/neupravljajemaja_raketa_s8-1755/
+;http://forums.airbase.ru/2010/11/t73525,3--vopros-letchikam-primenenie-nursov.html
+;Рассеяние составляет 0,3% или 3 тысячных
+;http://forums.airbase.ru/2010/11/t73525--vopros-letchikam-primenenie-nursov.html
+;http://vmz.bg/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F/%D0%B0%D0%B2%D0%B8%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B8-%D0%BD%D0%B5%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC%D0%B8-%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B8/%D0%BD%D0%B5%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC%D0%B0-%D0%B0%D0%B2%D0%B8%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0-%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0-%D1%81-8%D0%BA%D0%BE%D0%BC/
+;Точность НУРС с вертолета намного меньше самолетной. 
+;Timosh - Zeef выяснил, что в 3-4 раза, см 2хУБ-32 и тут, или С-5 на сайте http://vmz.bg
+}			

@@ -1,0 +1,18 @@
+{breed
+	{skin "cw_rus_ruhih_atacs"}
+	{portrait "rus/rusih"}
+	{icon smgs}
+	{icon_priority 3}
+	{nationality rus}
+	(include "perks_generic.inc")
+	("traits_elite_smg")
+	{inventory
+		{item "bandage" 10}
+		{item "rpg26 weapon" 2 filling "rpg26 ammo" 1}
+		{item "lbt6094_rus_mg_rpg_help_belt"}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "545 ammo" 300}
+		{item "rshg-2 weapon" filling "rshg-2 ammo" 1}
+		{in_hands 2}
+	}
+}

@@ -1,0 +1,73 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_neu_ukr_ngu"}
+	{portrait "ua/smg"}
+	{icon bazookers}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{body otv_ukr_smg}
+		{head "kaska_1m_chehol_ngu"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"pistol" lvl_3
+		}
+		{"gra_launch" lvl_4
+		}
+		{"melee" lvl_4
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "200%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "200%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.9
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_4
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "545 ammo" 180}
+		{item "bandage" 10}
+		{item "rgd grenade" 2}
+		{item "ak74u" filling "545 ammo" 30}
+		{item "rus_gf_rpg1"}
+		{item "pg-7vl rpg7 ammo" 3}
+		{item "smoke grenade rdg2b" 2}
+		{item "sandbag_kit"}
+		{in_hands 3}
+	}
+}

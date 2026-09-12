@@ -1,0 +1,10 @@
+{from "pattern proj_pointer"
+	
+	{entity "p2c_h"}
+	                {mass 24.5}
+               {inventory
+		{weight 15}
+		{size 6 1}
+	}
+	{tag "no_ricochet" "cm" "big" "size3" "88to105" "pierce" "ptrk" "laser_using_missile"} 
+}

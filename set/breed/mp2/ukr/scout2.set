@@ -1,0 +1,76 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_neu_ukr_meh"}
+	{portrait "ua/scout"}
+	{icon scouts}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{body otv_ukr_smg}
+		{head "kaska_1m_chehol"}
+	}
+	{perks
+		{"vision" mp_specnaz
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"pistol" lvl_4
+		}
+		{"gra_launch" lvl_2
+		}
+		{"melee" lvl_5
+		}
+		{"avoidance" lvl_5
+		}
+		{"health" "180%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "300%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 1.1
+		}
+		{"telescope"}
+		{"aimedshot"}
+		{"stealth"}
+		{"field_glass"}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_6
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"specnaz_lvl_1" 4
+		}
+		{"specnaz_lvl_2" 16
+		}
+		{"specnaz_lvl_3" 48
+		}
+		{"specnaz_lvl_4" 96
+		}
+		{"specnaz_lvl_5" 160
+		}
+	}
+	{inventory
+		{item "nlaw weapon" 2 filled}
+		{item "f1 grenade" 3}
+		{item "bandage" 10}
+		{item "smoke grenade rdg2b" 2}
+		{item "binocular"}
+		{item "m4a1_sd_aimpoint" filling "556nato ammo" 30}
+		{item "556nato ammo" 300}
+		{in_hands 6}
+	}
+}

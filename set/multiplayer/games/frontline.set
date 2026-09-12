@@ -1,0 +1,88 @@
+{game
+	{teammatch}
+	{parameters "freezeTime=2:240,4:240,6:240;bonusTime=1;flag_time=24;flag_time_small=8;score_time=0;score_flag=500;score_phase=2000;score_defBonus=0.25"}
+	{settings
+		{options 			gameDuration enableSpectators}
+		{optionsAdvanced 	friendlyFire fogOfWar showPiercing showDamageReports useUnitLevelRestrictions}
+		{optionsRanked 		}
+		{fogOfWar 			fog_realistic}
+		{difficulty 		multiplayer}
+		{gameDuration 		"40 min"} ; min
+		{impregnableTimeout	5}	; sec
+		{floraRespawn		0}
+		{friendlyFire}
+		{showPiercing}
+		{showDamageReports}
+		{useUnitLevelRestrictions 0}
+		{enableBots}
+	}
+	{teamSettings
+		{teamsMode normal}
+		{teams
+			{"a"}
+			{"b"}
+		}
+	}
+	{presets
+		{"vehicles_f"
+			{unitMode "all"}
+			{teams
+				{a
+					{unitset
+						{value "all^ob"}
+					}	
+					{commandPoints "*=200"}
+					{unitLimits "zubr=1;lcac=5;lcac_nato=2;arley_burke=1;pr956=1;il76=1"}
+					{balancingFactorBonus {cp 1.0} {mp 1.0} }
+					{budgets
+						{vehicle
+							{mode "with_update"}
+							{resource
+								{start 		1000}
+								{finish 	1000}
+								{speed 		300}
+								{period 	180}
+							} 
+							{buttons "ruscommon1 ruscommon2 ruscommon3 ruscommon4 ruscommon5 ruscommon6 usacommon1 usacommon2 usacommon3 usacommon4 usacommon5 usacommon6 natocommon1 natocommon2 natocommon3 natocommon4 natocommon5 natocommon6 ukrcommon1 ukrcommon2 ukrcommon3 ukrcommon4 ukrcommon5 ukrcommon6 "}
+						}    
+					}
+					{bots
+						(include "bots_generic.inc")
+					}
+				}
+				{b
+					{unitset 
+						{value "all^at"}
+					}
+					{commandPoints "*=125"}
+					{unitLimits "zubr=1;lcac=5;lcac_nato=2;arley_burke=1;pr956=1;il76=1"}
+					{balancingFactorBonus {cp 1} {mp 1} }
+				    {chargeFactors 
+					;{value "hero=1.00;engineers=0.50;*=0.2;"}
+				    }
+					{budgets
+						{vehicle
+							{mode "standard"}
+				{resource
+					{start		350}
+					{finish		6000}
+					{growTime	9000}		; in seconds
+					{growTable	"0.45"}
+					{payback
+						{cp			"0		50		100		150		200"}
+						{restore	"0.35	0.30	0.20	0.05	0.05"}
+					}
+				}
+							
+							{buttons "ruscommon1 ruscommon2 ruscommon3 ruscommon4 ruscommon5 ruscommon6 usacommon1 usacommon2 usacommon3 usacommon4 usacommon5 usacommon6 natocommon1 natocommon2 natocommon3 natocommon4 natocommon5 natocommon6 ukrcommon1 ukrcommon2 ukrcommon3 ukrcommon4 ukrcommon5 ukrcommon6"}
+						} 
+					}
+					{bots
+						(include "bots_generic.inc")
+					}
+				}
+			}
+			{ranked}
+		}
+	}
+}

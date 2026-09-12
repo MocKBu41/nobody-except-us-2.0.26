@@ -1,0 +1,609 @@
+;;; Select best weapon and ammo ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;{ready_for_shot}	- ammo charged (shell in the breech & gun ready for shot)
+;;Снаряд заряжен, орудие готово стрелять
+;;{charging} 		- ammo is charging (gun is`t ready for shot)
+;;Снаряд заряжается, орудие не готово стрелять
+;;{"gra_launch"} - подствольный гранатомёт
+;;{check_grenade} - unknown  
+(define "human"
+       {"grenade_ap"}
+		{"visor_binocular" {ready_for_shot}}
+        {"fg_shell"}
+		{"bomb"}
+        {"nar"}
+		{"fg_pod"}
+		{"rpg_he"}
+		{"hesh_shell"}
+		{"kamikaze"}
+		
+		{"hmgun"}
+		{"hrifle"}
+		{"bullet"}
+		
+		{"cm_shell" {ready_for_shot}}
+		{"cluster_shell" {ready_for_shot}}
+		{"cm_pod" {ready_for_shot}}
+		
+		{"ap_shell" {ready_for_shot}}
+		{"apcr_shell" {ready_for_shot}}
+        
+		{"flame"}
+		{"fuel"} 
+		{"knife"}
+)
+(define "heavy_shells"
+ {"fg_150_shell"}
+ {"spbe_shell"}
+ {"cluster_shell"}
+ {"bomb"}
+ {"atgm_bomb"}
+ {"antitank_bomb"}
+ {"nar"}
+ {"korr_shell" {ready_for_shot}}
+)
+(define "exceptions"
+{"atgm_cw_exception" {ready_for_shot}}
+)
+{select_ammo
+	{none}
+	{human in_bush
+	    ("human") 
+	}
+	{human in_cover
+	    {"grenade_ap"}
+		{"fg_pod"}
+		{"atgm_he" {ground} {ready_for_shot}}
+	    ("human")
+	}
+	{human
+	    ("human")   
+	}
+	{proj_ballistic_missile_rus
+	    {"anti_ballistic_missile_usa" {volume "targ_for_missile"}}
+	    {"zenite" {volume "target_hight"}}
+		{"zenite_ap" {volume "target_hight"}}
+		{"autocannon_small ap" 			}
+		{"autocannon_small fragmentary" }
+		{"autocannon_small" }
+	    {"usa_active cwps2"  }
+		{"usa_active_aj cwps2"  }
+		{"usa_active_asm_aj cwps2"  }
+		{"usa_radpassive cwps2"  }
+		{"usa_radpassive_missile"}
+		{"usa_radpassive_aj cwps2"  }
+		{"usa_radpassive_missile_aj"}
+		
+	}
+	{airborne
+	    {"RadAA_missile"}
+	    {"RadAA_missile_1gen"}
+		{"RadAA_missile_2gen"}
+		{"AA_proj usa_ir_FF_beam"}
+		{"AA_proj rus_ir_FF_beam"}
+		{"AA_proj"}
+		{"AA_missile"}
+		{"AA_missile_2gen"}
+	    {"rus_ir cwps2" {volume "body"}}
+		{"usa_ir cwps2" {volume "body"}}
+		{"rus_ir_aj cwps2" {volume "body"}}
+		{"usa_ir_aj cwps2" {volume "body"}}
+		{"rus_ir_asm_aj cwps2" {volume "body"}}
+		{"usa_ir_asm_aj cwps2" {volume "body"}}  
+	    {"short_sam" {volume "target_hight"}}
+		{"antiair" {volume "target_hight"}}
+		{"zenite" {volume "target_hight"}}
+		{"autocannon_small" {volume "target_hight"}}
+		{"kamikaze" {volume "target_hight"}}
+	}
+	{Helicopter
+	    {"RadAA_missile"}
+		{"RadAA_missile_1gen"}
+		{"RadAA_missile_2gen"}
+		{"AA_proj usa_ir_FF_beam"}
+		{"AA_proj rus_ir_FF_beam"}
+		{"AA_proj"}
+		{"AA_missile"}
+		{"AA_missile_2gen"}
+	    {"short_sam"}
+	    {"rus_ir cwps2" {volume "body"}}
+		{"usa_ir cwps2" {volume "body"}}
+		{"rus_ir_aj cwps2" {volume "body"}}
+		{"usa_ir_aj cwps2" {volume "body"}}
+		{"rus_ir_asm_aj cwps2" {volume "body"}}
+		{"usa_ir_asm_aj cwps2" {volume "body"}}
+	    
+		{"antiair"}
+		{"shell rok"}
+		{"for_heli"}
+		{"zenite"}
+		{"autocannon_small"}
+		{"kamikaze"}
+		{"hmgun"}
+		{"ptr"}
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		
+		
+	}
+	{small_UAV 
+	    {"short_sam"}
+        {"rus_ir cwps2" {volume "body"}}
+		{"usa_ir cwps2" {volume "body"}}
+		{"rus_ir_aj cwps2" {volume "body"}}
+		{"usa_ir_aj cwps2" {volume "body"}}
+		{"rus_ir_asm_aj cwps2" {volume "body"}}
+		{"usa_ir_asm_aj cwps2" {volume "body"}}	
+	    {"RadAA_missile"}
+	    {"RadAA_missile_1gen"}
+		{"RadAA_missile_2gen"}
+        {"AA_proj"}
+        {"AA_missile"}
+		{"AA_missile_2gen"}
+		{"anti_smallmissile"}
+		{"tv_seeker"}
+		{"autocannon_small"}
+		{"antiair"}
+		{"zenite"}
+		{"hmgun"}
+		{"hrifle"}
+		{"ptr"}
+		{"bullet"}		
+	}
+	{medium_UAV 		
+	    {"RadAA_missile"}
+	    {"RadAA_missile_1gen"}
+		{"RadAA_missile_2gen"}
+		{"AA_proj"}
+		{"antiair"}
+		{"zenite"}
+		{"autocannon_small"}
+		{"anti_smallmissile"}
+		
+	}
+	{small_UAV_kamikaze 	
+		{"tv_seeker"}
+		{"zenite"}
+		{"hmgun"}
+		{"hrifle"}
+		{"ptr"}
+		{"bullet"}	
+	}
+	{medium_UAV_kamikaze
+        {"RadAA_missile"}
+	    {"RadAA_missile_1gen"}
+		{"RadAA_missile_2gen"}
+		{"AA_missile_2gen"}
+		{"AA_missile"}
+		{"AA_proj"}
+		{"antiair"}
+		{"anti_smallmissile"} 	
+		{"tv_seeker"}
+		{"autocannon_small"}
+		{"zenite"}
+		{"hmgun"}
+		{"hrifle"}
+		{"ptr"}
+		{"bullet"}	
+	}
+	{car
+	    ("exceptions")
+	    {"fg_shell"}
+		{"bomb"}
+        {"nar"}
+		{"cm_shell"}
+		{"hmgun"}
+		{"hrifle"}
+		{"kamikaze"}
+		{"atgm_cw"}
+		{"atgm_he"}
+		{"rpg"}
+		{"rpg_he"}
+		{"hesh_shell"}
+		{"cm_pod"}
+		{"fg_pod"}
+		{"grenade_at"}
+		{"visor_binocular" {ready_for_shot}}
+		{"bullet"}
+		
+		{"ap_shell" {ready_for_shot}}
+		{"apcr_shell" {ready_for_shot}}
+		{"cluster_shell" {ready_for_shot}}
+        
+		{"flame"}
+		{"fuel"} 
+		{"grenade_ap"}
+		
+		{"blinding_laser" {volume "gun"}}	
+		{"blinding_laser" {volume "gun2"}}	
+        {"blinding_laser" {volume "gun3"}}			
+		
+		
+	}
+	{cannon
+	    {"fg_shell"}
+		{"bomb"}
+        {"nar"}
+		{"rpg_he"}
+		{"hesh_shell"}
+		{"fg_pod"}
+		{"atgm_ground"}
+		{"grenade_ap"}
+		{"visor_binocular" {ready_for_shot}}
+		{"bullet"}
+		{"hmgun"}
+		{"hrifle"}
+		{"kamikaze"}
+		
+		{"ap_shell" {ready_for_shot}}
+		{"apcr_shell" {ready_for_shot}}
+		{"cluster_shell" {ready_for_shot}}
+        {"cm_shell" {ready_for_shot}}
+		{"rpg" {ready_for_shot}}
+		{"cm_pod" {ready_for_shot}}
+		{"grenade_at" {ready_for_shot}}
+		
+		{"flame"}
+		{"fuel"} 
+		{"persmarker"{volume "body"}}
+		
+		
+	}
+	
+	{cannon_atgm
+	    {"fg_shell"}
+		{"bomb"}
+        {"nar"}
+		{"rpg_he"}
+		{"hesh_shell"}
+		{"fg_pod"}
+		{"atgm_ground"}
+		{"grenade_ap"}
+		{"visor_binocular" {ready_for_shot}}
+		{"bullet"}
+		{"hmgun"}
+		{"hrifle"}
+		{"kamikaze"}
+		
+		{"ap_shell" {ready_for_shot}}
+		{"apcr_shell" {ready_for_shot}}
+		{"cluster_shell" {ready_for_shot}}
+        {"cm_shell" {ready_for_shot}}
+		{"rpg" {ready_for_shot}}
+		{"cm_pod" {ready_for_shot}}
+		{"grenade_at" {ready_for_shot}}
+		
+		{"flame"}
+		{"fuel"} 
+		
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		{"blinding_laser" {volume "gun"}}	
+		{"blinding_laser" {volume "gun2"}}	
+        {"blinding_laser" {volume "gun3"}}			
+		{"persmarker"{volume "body"}}
+		
+	}
+	{armoredcar
+	    ("exceptions")
+		("heavy_shells")
+		{"fg_120_shell"}
+		{"atgm_cw"}
+		{"fg_100_shell"}
+		{"cm_shell"}
+		{"rpg"}
+		{"hesh_shell"}
+		{"cm_pod"}
+		{"grenade_at"}
+		{"atgm_he"}
+		{"rpg_he"}
+		{"ap_shell"}
+		{"apcr_shell"}
+		{"hmgun"}
+		{"hrifle"}
+	    {"apcr_h_shell" {ready_for_shot}}
+		{"visor_binocular" {ready_for_shot}}
+		{"flame"}
+		{"fuel"} 
+
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		{"rifle" {volume "additional_triplex"}}	
+        {"rifle" {volume "additional_triplex1"}}			
+		{"rifle" {volume "commander_triplex"}}	
+		{"rifle" {volume "driver_triplex"}}	
+		{"ptr" {volume "additional_triplex"}}	
+        {"ptr" {volume "additional_triplex1"}}			
+		{"ptr" {volume "commander_triplex"}}	
+		{"ptr" {volume "driver_triplex"}}
+        {"hrifle" {volume "additional_triplex"}}	
+        {"hrifle" {volume "additional_triplex1"}}			
+		{"hrifle" {volume "commander_triplex"}}	
+		{"hrifle" {volume "driver_triplex"}}
+		
+        		
+		
+		
+	}
+	{armoredcar_DUM
+	    ("exceptions")
+		("heavy_shells")
+		{"fg_120_shell"}
+		{"atgm_cw"}
+		{"fg_100_shell"}
+		{"cm_shell"}
+		{"rpg"}
+		{"hesh_shell"}
+		{"cm_pod"}
+		{"grenade_at"}
+		{"atgm_he"}
+		{"rpg_he"}
+		{"ap_shell"}
+		{"apcr_shell"}
+		{"hmgun"}
+		{"hrifle"}
+	    {"apcr_h_shell" {ready_for_shot}}
+		{"visor_binocular" {ready_for_shot}}
+		{"flame"}
+		{"fuel"} 
+        {"rifle" {volume "mgun"}} 
+		{"hrifle" {volume "mgun"}} 
+		{"mgun" {volume "mgun"}}
+        {"hmgun" {volume "mgun"}}
+        {"ptr" {volume "mgun"}}	
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		{"rifle" {volume "additional_triplex"}}	
+        {"rifle" {volume "additional_triplex1"}}			
+		{"rifle" {volume "commander_triplex"}}	
+		{"rifle" {volume "driver_triplex"}}	
+		{"ptr" {volume "additional_triplex"}}	
+        {"ptr" {volume "additional_triplex1"}}			
+		{"ptr" {volume "commander_triplex"}}	
+		{"ptr" {volume "driver_triplex"}}
+        {"hrifle" {volume "additional_triplex"}}	
+        {"hrifle" {volume "additional_triplex1"}}			
+		{"hrifle" {volume "commander_triplex"}}	
+		{"hrifle" {volume "driver_triplex"}}	
+		
+		
+	}
+	{light_tank
+	    ("exceptions")
+		("heavy_shells")
+		{"fg_120_shell"}
+		{"atgm_cw"}
+		{"fg_100_shell"}
+		{"cm_shell"}
+		{"rpg"}
+		{"hesh_shell"}
+		{"cm_pod"}
+		{"grenade_at"}
+		{"atgm_he"}
+		{"rpg_he"}
+		{"ap_shell"}
+		{"apcr_shell"}
+		{"hmgun"}
+		{"hrifle"}
+	    {"apcr_h_shell"}
+		{"visor_binocular" {ready_for_shot}}
+		{"flame"}
+		{"fuel"} 
+
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		{"rifle" {volume "additional_triplex"}}	
+        {"rifle" {volume "additional_triplex1"}}			
+		{"rifle" {volume "commander_triplex"}}	
+		{"rifle" {volume "driver_triplex"}}	
+		{"ptr" {volume "additional_triplex"}}	
+        {"ptr" {volume "additional_triplex1"}}			
+		{"ptr" {volume "commander_triplex"}}	
+		{"ptr" {volume "driver_triplex"}}
+        {"hrifle" {volume "additional_triplex"}}	
+        {"hrifle" {volume "additional_triplex1"}}			
+		{"hrifle" {volume "commander_triplex"}}	
+		{"hrifle" {volume "driver_triplex"}}
+		
+		
+		
+	}
+	
+	{tank
+	    ("exceptions")
+		("heavy_shells")
+		{"apcr_h_shell"}
+		{"apcr_shell"}
+		{"atgm_cw"}
+		{"heavy_atgm"}
+		{"heavy_agm"}		
+		{"ap_shell"}
+		{"fg_120_shell"  {ready_for_shot}}
+		{"cm_shell"}
+		{"hesh_shell"}
+		{"rpg"}
+		{"atgm_he" {ready_for_shot}}
+		{"fg_100_shell" {ready_for_shot}}
+		{"cm_pod"}
+		{"grenade_at"}
+		{"rpg_he" {ready_for_shot}}
+
+		{"visor_binocular" {ready_for_shot}}
+		{"flame"}
+		{"fuel"} 
+
+		{"ptr" {volume "mover"}}
+		{"hrifle" {volume "mover"}}
+		{"hmgun" {volume "mover"}}
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		{"rifle" {volume "additional_triplex"}}	
+        {"rifle" {volume "additional_triplex1"}}			
+		{"rifle" {volume "commander_triplex"}}	
+		{"rifle" {volume "driver_triplex"}}	
+		{"ptr" {volume "additional_triplex"}}	
+        {"ptr" {volume "additional_triplex1"}}			
+		{"ptr" {volume "commander_triplex"}}	
+		{"ptr" {volume "driver_triplex"}}
+        {"hrifle" {volume "additional_triplex"}}	
+        {"hrifle" {volume "additional_triplex1"}}			
+		{"hrifle" {volume "commander_triplex"}}	
+		{"hrifle" {volume "driver_triplex"}}
+		
+		
+	    
+
+	}
+	{tank_DUM
+	    ("exceptions")
+		("heavy_shells")
+		{"apcr_h_shell"}
+		{"apcr_shell"}
+		{"atgm_cw"}
+		{"heavy_atgm"}
+		{"heavy_agm"}		
+		{"ap_shell"}
+		{"fg_120_shell"  {ready_for_shot}}
+		{"cm_shell"}
+		{"hesh_shell"}
+		{"rpg"}
+		{"atgm_he" {ready_for_shot}}
+		{"fg_100_shell" {ready_for_shot}}
+		{"cm_pod"}
+		{"grenade_at"}
+		{"rpg_he" {ready_for_shot}}
+		{"visor_binocular" {ready_for_shot}}
+		{"rifle" {volume "mgun"}} 
+		{"hrifle" {volume "mgun"}} 
+		{"mgun" {volume "mgun"}}
+        {"hmgun" {volume "mgun"}}
+        {"ptr" {volume "mgun"}}			
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		{"rifle" {volume "additional_triplex"}}	
+        {"rifle" {volume "additional_triplex1"}}			
+		{"rifle" {volume "commander_triplex"}}	
+		{"rifle" {volume "driver_triplex"}}	
+		{"ptr" {volume "additional_triplex"}}	
+        {"ptr" {volume "additional_triplex1"}}			
+		{"ptr" {volume "commander_triplex"}}	
+		{"ptr" {volume "driver_triplex"}}
+        {"hrifle" {volume "additional_triplex"}}	
+        {"hrifle" {volume "additional_triplex1"}}			
+		{"hrifle" {volume "commander_triplex"}}	
+		{"hrifle" {volume "driver_triplex"}}
+		
+		
+		
+       
+	}
+	{heavy_tank	
+	    ("exceptions")
+		("heavy_shells")
+		{"apcr_h_shell"}
+		{"apcr_shell"}
+		{"atgm_cw"}
+		{"heavy_atgm"}
+		{"heavy_agm"}		
+		{"ap_shell"}
+		{"fg_120_shell"  {ready_for_shot}}
+		{"cm_shell"}
+		{"hesh_shell"}
+		{"rpg"}
+		{"atgm_he" {ready_for_shot}}
+		{"fg_100_shell" {ready_for_shot}}
+		{"cm_pod"}
+		{"grenade_at"}
+		{"rpg_he" {ready_for_shot}}
+		{"visor_binocular" {ready_for_shot}}
+		{"blinding_laser" {volume "additional_triplex"}}	
+        {"blinding_laser" {volume "additional_triplex1"}}			
+		{"blinding_laser" {volume "commander_triplex"}}	
+		{"blinding_laser" {volume "driver_triplex"}}
+		{"rifle" {volume "additional_triplex"}}	
+        {"rifle" {volume "additional_triplex1"}}			
+		{"rifle" {volume "commander_triplex"}}	
+		{"rifle" {volume "driver_triplex"}}	
+		{"ptr" {volume "additional_triplex"}}	
+        {"ptr" {volume "additional_triplex1"}}			
+		{"ptr" {volume "commander_triplex"}}	
+		{"ptr" {volume "driver_triplex"}}
+        {"hrifle" {volume "additional_triplex"}}	
+        {"hrifle" {volume "additional_triplex1"}}			
+		{"hrifle" {volume "commander_triplex"}}	
+		{"hrifle" {volume "driver_triplex"}}		
+		
+		
+	}
+	{marine_heavy
+		{"antiship"}
+		{"size5 fragmentary" {volume "hull_vis"}}
+		{"size4 fragmentary" {volume "hull_vis"}}
+		{"size3 fragmentary" {volume "hull_vis"}}
+		{"size3 fragmentary" {ready_for_shot}}
+		{"usa_antiship cwps2" {volume "hull_vis"}}
+		{"rus_antiship cwps2" {volume "hull_vis"}}
+		{"radiowave"}
+		{"light"}
+		
+		{"rus_antiship cwps2"  }
+		{"rus_antiship_aj cwps2"  }
+		{"usa_antiship cwps2"  }
+		{"usa_antiship_aj cwps2"  }
+
+	}
+	{submarine
+		{"antiship" {volume "hull_vis"}}
+		{"size5 fragmentary" {volume "hull_vis"}}
+		{"size4 fragmentary" {volume "hull_vis"}}
+		{"size3 fragmentary" {volume "hull_vis"}}
+		{"usa_antiship cwps2" {volume "hull_vis"}}
+		{"rus_antiship cwps2" {volume "hull_vis"}}
+		{"light" {volume "hull_vis"}}
+		{"antitorpedo" {volume "hull_vissub"}}
+		{"antisub" {volume "hull_vissub"}}
+		
+		{"rus_antiship cwps2"  {volume "hull_vis"}}
+		{"rus_antiship_aj cwps2"  {volume "hull_vis"}}
+		{"usa_antiship cwps2"  {volume "hull_vis"}}
+		{"usa_antiship_aj cwps2"  {volume "hull_vis"}}
+	}
+	{torpedo
+		{"antitorpedo" {volume "target"}}
+		{"antitorpedo" {volume "target_front"}}
+	}
+	{ndf_target
+		{"T62_ndf"}
+	}
+	{unknown
+
+	
+	
+		(mod not "mp"
+;			{"grenade fragmentary" {ground}}
+;			{"shell fragmentary" {ground}}
+;			{"bullet"}
+;			{"hmgun"}
+;			{"ptr" {enable_for_human_user 0}}
+;			{"zenite" {enable_for_human_user 0}}
+;			{"grenade ap"}
+;			{"ammo rocketlauncher" {enable_for_user 0}}
+			{"light"}
+		)
+	}
+	(include "missile_targets.inc")
+}

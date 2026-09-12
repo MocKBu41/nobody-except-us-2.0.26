@@ -1,0 +1,10 @@
+{item
+	
+	{entity "usa_protivogas"}
+	{inventory
+		{size 2 2}
+		{link_bone "head"}
+		{fsm "stuff"}
+	}
+	{mass 1}
+}

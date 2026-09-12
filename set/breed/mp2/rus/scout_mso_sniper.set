@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/scout"}
+	{icon scouts}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "lshz1plus_sso"}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_sniper")
+	{inventory
+		{item "lbt6094_rus_marksman"}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "rgn grenade" 3}
+		{item "smoke rdg2b grenade"}
+		{item "t5000" filling "8_6x70_x10 ammo" 5}
+		{item "8_6x70_x10 ammo" 180}
+		{in_hands 6}
+	}
+}

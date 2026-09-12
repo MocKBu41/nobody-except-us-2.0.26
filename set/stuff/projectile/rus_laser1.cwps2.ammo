@@ -1,0 +1,15 @@
+{bullet
+	
+	{tag "dropboxed cwps2 no_ricochet proj_pointer rus_laser_spot AT_proj proj_pointer"}
+	{tag "atgm_cw"}
+	{entity "rus_las_ammo"}
+	{inventory
+		{size 1 1}
+		{block 25}
+		{size 2 1}
+	}
+	{view "1"
+		{tail "1" "1"}
+	}
+	{mass 0.013}
+}

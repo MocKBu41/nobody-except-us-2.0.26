@@ -1,0 +1,7 @@
+{from "helmet1_ger"
+	{entity "rus_kapuhon_s"}
+	{inventory
+		{size 1 1}
+		{weight 100}
+	}                       
+}

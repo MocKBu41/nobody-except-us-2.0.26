@@ -1,0 +1,17 @@
+{from "pattern fg"
+	{tag "big" "size4" "122to128fg" "fx_111_145"}
+	{mass 18.0}
+	
+	{inventory
+		{size 6 1}
+	}	
+	{entity "120mm_gp120_pll05"}
+	{view "120mm_gp120_pll05"}
+	;Взята БЧ от обычной 120мм мины Китая
+	{tag "he_2to4_5"}
+{damage blastwave {energy 0.7} {area 10.1 11.6}}
+{damage add blastwave {energy 1.2} {area 8.5 9.8}}
+{damage add blastwave {energy 2.5} {area 4.9 5.6}}
+{damage add blastwave {energy 6.5} {area 2.1 2.4}}
+{damage add blastwave {energy 11} {area 0.3 0.3}}
+}

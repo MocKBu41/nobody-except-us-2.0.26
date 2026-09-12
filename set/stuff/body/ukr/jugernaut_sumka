@@ -1,0 +1,12 @@
+{item
+	{desc "левая сумка джигурнаута"}
+	{tag "itemin1hand keepEntity"}
+	{entity "jugernaut_sumka"}
+	{inventory
+		{size 3 2}
+		{weight 100}
+		{link_bone "foot1l"}
+		{fsm "stuff"}
+	}
+	{mass 1}
+}

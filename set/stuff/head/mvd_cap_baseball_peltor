@@ -1,0 +1,5 @@
+{from "pattern cw_hat"
+	{entity "mvd_cap_baseball_peltor"}
+	{desc "Бейсболка с наушниками"}
+	{mass 0.4}
+}

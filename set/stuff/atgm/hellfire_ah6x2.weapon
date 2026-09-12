@@ -1,0 +1,20 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "agm-114 ammo" 2}
+	{fillingVisible "Rocket"}
+	{fireSound "reactive/konkurs_launch"}
+	{foresight "foresight3"}
+	{mass 47}
+	{recoveryTime 3}
+	{rechargeTime 90}
+	{inventory {noView}}
+              {maxRange 180}
+	{aimRange 180}
+	("damage" a(1) b(1) c(1) d(1) e(1))
+	{projectileDamage 0}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_heat_2"}	
+	{cursorReloading "cannon_reload_heat"}
+	;{cursorReloading "cannon_reload_heat_timer_90"}
+}

@@ -1,0 +1,177 @@
+;SDL
+;COLD WAR
+
+;------------------------------------------------------------------------------
+;	Содержимое content поля:
+; 		content поле содержит список unitId (bread или entity). 
+;		Символ ':' после unitId указывает на количество юнитов данного типа.
+;		Символ '*' указывает на id текущего блока юнита. 
+;		Юниты в круглых скобках будут посажены(прилинкованы) к юниту указанному перед '(' скобкой.
+;		Спец символы '*','(',')' обязательно должны быть окружены пробелами!
+;		Первый в списке юнит становиться командиром. 
+;------------------------------------------------------------------------------
+;
+;	Пример:	{"t34m"	{content "mp/rus/oficer * ( mp/rus/tankman:4 ) m72 ( mp/rus/smg:3 ) mp/rus/sturmovik:2"}}
+;								
+;		mp/rus/oficer - будет командиром
+;		'*' заменяется на t34m
+;		mp/rus/tankman:4 - 4 танкиста, экипаж t34m
+;		mp/rus/smg:3 - 3 smg-ника, разъезжающие на m72
+;		mp/rus/sturmovik:2 - 2 штурмовика, чтоб офицеру не было скучно :)
+;
+;------------------------------------------------------------------------------
+
+(define "squad_with1types"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%side/%c1"}
+		{tags "all frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+
+(define "squad_with1types_cp"
+		{"%name(%side)"
+			{charge %c}
+			{content "mp2/%side/%c1"}
+			{tags "frontline_cp squad %side %t %brig"}
+			{group "%g"}
+			{button "%b"}
+			{cost %cost}
+			{cp %cp}
+			{fore %f}
+			{info "%info(%side)"}
+		}
+)
+
+(define "squad_with2types_cp"
+		{"%name(%side)"
+			{charge %c}
+			{content "mp2/%side/%c1 mp2/%side/%c2"}
+			{tags "frontline_cp squad %side %t %brig"}
+			{group "%g"}
+			{button "%b"}
+			{cost %cost}
+			{cp %cp}
+			{fore %f}
+			{info "%info(%side)"}
+		}
+)
+
+(define "squad_with2types"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%side/%c1 mp2/%side/%c2"}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+
+(define "squad_with3types"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%side/%c1 mp2/%side/%c2 mp2/%side/%c3"}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+(define "squad_with5types"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%side/%c1 mp2/%side/%c2 mp2/%side/%c3 mp2/%side/%c4 mp2/%side/%c5"}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+(define "squad_with7types"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%side/%c1 mp2/%side/%c2 mp2/%side/%c3 mp2/%side/%c4 mp2/%side/%c5 mp2/%side/%c6 mp2/%side/%c7"}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+(define "squad_with9types"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%side/%c1 mp2/%side/%c2 mp2/%side/%c3 mp2/%side/%c4 mp2/%side/%c5 mp2/%side/%c6 mp2/%side/%c7 mp2/%side/%c8 mp2/%side/%c9"}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+(define "squad_with11types"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%side/%c1 mp2/%side/%c2 mp2/%side/%c3 mp2/%side/%c4 mp2/%side/%c5 mp2/%side/%c6 mp2/%side/%c7 mp2/%side/%c8 mp2/%side/%c9 mp2/%side/%ca mp2/%side/%cb "}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+
+
+(define "squad_with1types_custom"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%crew_nation/%c1"}
+		{tags "all frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+
+(define "squad_with5types_custom"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%crew_nation/%c1 mp2/%crew_nation/%c2 mp2/%crew_nation/%c3 mp2/%crew_nation/%c4 mp2/%crew_nation/%c5"}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)
+
+(define "squad_with11types_custom"
+	{"%name(%side)"
+		{charge %c}
+		{content "mp2/%crew_nation/%c1 mp2/%crew_nation/%c2 mp2/%crew_nation/%c3 mp2/%crew_nation/%c4 mp2/%crew_nation/%c5 mp2/%crew_nation/%c6 mp2/%crew_nation/%c7 mp2/%crew_nation/%c8 mp2/%crew_nation/%c9 mp2/%crew_nation/%ca mp2/%crew_nation/%cb "}
+		{tags "frontline_cp squad infantry %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info "%info(%side)"}
+	}
+)

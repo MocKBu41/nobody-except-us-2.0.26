@@ -1,0 +1,26 @@
+{from "pattern proj_weapon"
+	
+	{tag "gun"}
+	
+	{filling "p800 ammo" 2}
+	{fillingVisible "rocket"}	
+	
+	{fireSound "reactive/basion_p_launch"}	
+	{mass 50}
+	{recoveryTime 20}
+	{rechargeTime 300}
+	
+	{inventory {noView}}
+;	{cursor "zenite_on"}
+
+;	{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	
+	{AimingTolerance 5}
+	
+		{maxRange 500}
+		{aimRange 500}
+		{cursor "cannon_on_fg_9"}
+		{cursorReloading "cannon_reload_fg"}
+}

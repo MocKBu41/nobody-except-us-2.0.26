@@ -1,0 +1,122 @@
+{weapon_bullet
+	{tag "gun" "weapon" "skill_tankgun" "bullet"}	;"bullet" is needed for work of levelling and skills
+	("heavy_artillery")
+	{filling "ammo grad" 40}
+	{fireSound "reactive/grad_burst"}
+	{burst {min 10} {short 10} {long 10} {noaiming}} ;noaiming мешает стрельбе по триггеру в СтА
+;	{burst {min 20} {short 20} {long 20}} ;нужно для стрельбы по триггеру
+	{Automatic} ;нужно для стрельбы по триггеру
+	{recoveryTime 0.5}
+	(mod "mp"
+	{recoveryTime 0.5}
+	{burst {min 0} {short 1} {long 1} {noaiming}}
+	)
+	("relaxationtime" rt(3))
+
+
+		{range 300 300}  ;9М22У - 20.4 км 
+		{aimRange 290}
+		{maxRange 290}
+		{rechargeTime 210}
+		("CW_acc_artillery" mils(10))	;удвоено из баланса
+		{Spreading	
+        {SpreadPower	1.70}
+		{SpreadXYRatio	2.0}
+	    }
+		
+;		{gravity 4}
+		{speed 40}
+		{gravity 0.41}
+		;("speed_mrls")
+		;{aimtype adaptive}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_fg_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	{parameters "fgh"
+;		{gravity 3}	
+		{range 370 370}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_fg_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	}
+	{parameters "rok"
+        {gravity 0.41}	
+		{range 400 400}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_fg_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	}
+	{parameters "spbe"
+	(mod "mp"
+	    {recoveryTime 0.5}
+		)
+		{range 370 370}
+		;{cursor "cannon_on_heat_5"}
+		{cursor "cannon_on_heat_10"}
+		;{cursorReloading "cannon_reload_heat"}
+		{cursorReloading "cannon_reload_heat_timer_210"}
+	    {Spreading {SpreadYadjust	3.0} }
+	}
+	{parameters "clcn"
+	    (mod "mp"
+	    {recoveryTime 0.5}
+		)	
+		{range 370 370}
+		;{cursor "cannon_on_heat_3"}
+		{cursor "cannon_on_heat_10"}
+		;{cursorReloading "cannon_reload_heat"}
+		{cursorReloading "cannon_reload_heat_timer_210"}
+	    {Spreading {SpreadYadjust	3.0} }
+	}
+	{parameters "cl"
+	    (mod "mp"
+	    {recoveryTime 0.5}
+		)	
+		{range 370 370}
+		;{cursor "cannon_on_heat_3"}
+		{cursor "cannon_on_heat_10"}
+		;{cursorReloading "cannon_reload_heat"}
+		{cursorReloading "cannon_reload_heat_timer_210"}
+	    {Spreading {SpreadYadjust	3.0} }
+	}
+	{parameters "oa"
+		{Spreading	
+        {SpreadXYRatio	2.0} ; чтобы не было взведения раньше времени из-за вертикального разброса
+	    }
+	    {recoveryTime 1.5}	
+		{range 290 290}
+		{gravity 0.55}
+		;{cursor "cannon_on_heat_3"}
+		{cursor "cannon_on_heat_10"}
+		;{cursorReloading "cannon_reload_heat"}
+		{cursorReloading "cannon_reload_heat_timer_210"}
+	    {Spreading {SpreadYadjust	3.0} }
+	}
+	{parameters "mine"
+	(mod "mp"
+	    {recoveryTime 0.5}
+		)
+		{gravity 0.65}
+		{range 240 240}
+		{Spreading	
+        {SpreadXYRatio	2.0} ; чтобы не было взведения раньше времени из-за вертикального разброса
+	    }
+		;{cursor "cannon_on_fg_3"}
+		;{cursorReloading "cannon_reload_fg"}
+		{cursor "mine"}
+		;{cursorReloading "cannon_reload_all"}
+		{cursorReloading "cannon_reload_all_timer_210"}
+	    {Spreading {SpreadYadjust	3.0} }
+	}
+
+}	
+;Для 9М22У - Рассеивание Дмакс: Вд – 1/200, Вб – 1/130.	
+;http://www.russianarms.ru/forum/index.php/topic,1016.0.html	
+;	
+;	
+;	
+;http://splav.org/v3/grad.asp	
+

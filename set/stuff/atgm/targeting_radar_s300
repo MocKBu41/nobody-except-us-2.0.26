@@ -1,0 +1,22 @@
+;SDL
+{from  "pattern proj_weapon"
+	{tag "visor" "gun"}
+	{Special
+		{Mode aim}
+		{PrepareTime 0}
+		{PrepareCursor "aimed_shot_aa"}
+	}
+	{filling "targeting_radar_usa ammo" 30000}
+	{foresight "Foresight_radar"}
+	{recoveryTime 0.6}
+	{rechargeTime 160}
+	{inventory {noView}}
+	{aimRange 510}				; m
+	{MaxRange 510}
+	{Automatic}
+	{preloaded}
+	{ammoLocked}
+	;{cursor "fg_on"}
+	{cursor "radar"}
+}
+

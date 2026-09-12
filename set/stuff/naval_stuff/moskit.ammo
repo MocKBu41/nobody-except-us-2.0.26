@@ -1,0 +1,11 @@
+{from "pattern proj_pointer"
+	
+	{entity "moskit"}
+    {inventory
+		{weight 1000}
+		{size 6 1}
+	}
+	{tag "no_ricochet" "fg" "big" "size5" "88to105" "antiship" "semiactive"} 
+	{tag "heavy_agm"} ; только для ammo.set
+        {mass 1000} 
+}

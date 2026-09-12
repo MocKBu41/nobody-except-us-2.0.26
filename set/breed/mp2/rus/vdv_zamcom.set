@@ -1,0 +1,27 @@
+{breed
+	{skin "cw_rus_vkpo_vdv"}
+	{portrait "_new/rus/vdv"}
+	{icon "officer"}
+	{icon_priority 2}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_specnaz_com")
+	{inventory
+		{item "6b45-1_medic"}
+		{item "545 ammo" 180}
+		
+		{item "smoke rdg2b grenade" 2}
+		{item "bandage" 25}
+		{item "mortar pd a ammo" 5}
+		{item "ak12_1p87_gp25" filling "545 ammo" 30}
+		{item "ak12_1p87_gp25_pod" filling "mortar pd a ammo" 1}
+		{item "mortar pd p ammo" 5}
+		{item "sandbag_kit"}
+		{in_hands 5}
+	}
+}

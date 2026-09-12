@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "otv_ukr_sniper"}
+	{mass 7.4}
+}

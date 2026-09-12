@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "bjo02_gp"}
+	{mass 12}
+}

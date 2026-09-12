@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "vest_razgruz"}
+	{mass 2}
+}

@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "opscore_sso"}
+	{mass 1.58}
+}

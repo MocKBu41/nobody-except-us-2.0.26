@@ -1,0 +1,4 @@
+{from "pattern mask"
+	{entity "frns"}
+	{mass 0.2}
+}

@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "opscore_ksk_open"}
+	{mass 1.08}
+}

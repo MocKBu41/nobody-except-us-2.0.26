@@ -1,0 +1,16 @@
+{from "pattern cl"
+	{tag "big" "size2" "122to128fg" "cluster" "fx_45_89"}
+
+	{mass 17.3}
+	   	 {damage blastwave
+			{energy 0.5}
+			{area 1 2}
+	}
+	{inventory
+		{size 6 1}
+	}	
+	{entity "shell_120mm_cn_cl"}
+	{view "shell_120mm_cn_cl"		{tail "shell_cl_tail" "tail"}}
+
+}
+;Вероятно, снаряжен type90 DPICM

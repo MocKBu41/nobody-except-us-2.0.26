@@ -1,0 +1,9 @@
+{from "pattern proj_pointer"	
+	{entity "x32"}
+   {inventory
+		{weight 100}
+		{size 6 2}
+	}
+	{tag "no_ricochet" "big" "fg" "fragmentary" "big" "size5" "fx_upto1000kg" "ptrk"}
+    {tag "heavy_agm"} ; только для ammo.set	
+}

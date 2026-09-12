@@ -1,0 +1,27 @@
+{breed
+	{skin "cw_rus_vkpo_vdv"}
+	{portrait "_new/rus/vdv"}
+	{icon "smgs"}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_specnaz_smg")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "bandage" 10}
+		{item "rpg26 weapon" filling "rpg26 ammo" 1}
+		{item "rshg-1 weapon" filling "rshg-1 ammo" 1}
+		
+		{item "545 ammo" 240}
+		{item "rgd grenade" 2}
+		{item "ak12_1p87_tactical" filling "545 ammo" 30}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 6}
+	}
+}

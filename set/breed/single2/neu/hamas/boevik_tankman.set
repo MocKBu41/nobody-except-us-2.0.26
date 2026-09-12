@@ -1,0 +1,19 @@
+{breed
+	{skin "cw_hamas3"}
+	{portrait "_new/arb/ssatankman"}
+	{icon "tankman"}
+	{icon_priority 0}
+	{nationality arb}
+	{armors
+		{head tsh3l}
+	}
+
+	(include "perks_generic.inc")
+	("traits_tankman")
+	{inventory
+		{item "bandage" 10}
+		{item "uzi"}
+		{item "9mm ammo" 128}
+		{in_hands 1}
+	}
+}

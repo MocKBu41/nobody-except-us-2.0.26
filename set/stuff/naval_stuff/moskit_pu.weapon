@@ -1,0 +1,18 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "ammo moskit" 8}
+	{preloaded}
+	{ammoLocked}
+	{fireSound "reactive/moskit_launch_delay"}	
+	{mass 40000}
+	{recoveryTime 4.3}	
+	{rechargeTime 600}
+	{inventory {noView}}
+;	{cursor "zenite_on"}
+;	{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_fg_8"}
+	{cursorReloading "cannon_reload_fg"}
+	{AimingTolerance 5}
+	{maxRange 390}
+	{aimRange 390}
+}

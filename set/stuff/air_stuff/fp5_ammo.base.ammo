@@ -1,0 +1,10 @@
+{from "pattern proj_pointer"
+	{mass 200}
+	{entity "fp5_base_ammo"}
+                {inventory
+		{weight 100}
+		{size 6 5}
+	}
+	{tag "no_ricochet" "cm" "big" "size4" "88to105" "pierce" "ptrk" "fx_upto1000kg" "fx_cm" "ground_other_rus"} 
+	{tag "kamikaze"} ; только для ammo.set   
+}

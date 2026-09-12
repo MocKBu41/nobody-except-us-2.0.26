@@ -1,0 +1,22 @@
+{breed
+	{skin "cw_rus_ruhih_atacs"}
+	{portrait "rus/rusih"}
+	{icon mgs}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head lshz1plus_sso}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_mgun")
+	{inventory
+		{item "rgd grenade" 3}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "pkm_ammo ammo" 600}
+		{item "smoke rdg2b grenade"}
+		{item "lbt6094_delta_mgun"}
+		{item "pkm" filling "pkm_ammo ammo" 100}
+		{in_hands 6}
+	}
+}

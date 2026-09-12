@@ -1,0 +1,26 @@
+{breed
+	{skin "cw_dnr"}
+	{portrait "_new/rus/inf"}
+	{icon "snipers"}
+	{icon_priority 1}
+	{tags "sniper2"}
+	{nationality arm}
+	{armors
+		{head "6b7_new_cf"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_sniper")
+	{inventory
+		{item "6b23_sniper"}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "svd" filling "svd_ammo ammo" 10}
+		{item "rgd grenade" 2}
+		{item "svd_ammo ammo" 160}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 3}
+	}
+}

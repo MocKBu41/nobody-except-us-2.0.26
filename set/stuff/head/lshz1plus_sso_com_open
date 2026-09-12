@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "lshz1plus_sso_open"}
+	{mass 1.30}
+}

@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "opscore_delta_com_open"}
+	{mass 1.58}
+}

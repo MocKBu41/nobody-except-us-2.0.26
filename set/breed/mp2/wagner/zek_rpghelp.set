@@ -1,0 +1,73 @@
+{breed
+	{skin "neu_wagner_1"}
+	{portrait "rus/wagner"}
+	{icon bazookers}
+	{icon_priority 1}
+	{nationality rus}
+	{armors
+		{head "sh-68"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_1
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_2
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_1
+		}
+		{"health" "130%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "130%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.8
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "6b2_rpghelp"}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "545 ammo" 180}
+		{item "rpg7_og-7v rpg7 ammo" 2}
+		{item "sandbag_kit"}
+		{item "bandage" 10}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "pg-7v rpg7 ammo" 3}
+		{in_hands 1}
+	}
+}

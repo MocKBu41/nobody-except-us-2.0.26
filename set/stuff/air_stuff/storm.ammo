@@ -1,0 +1,9 @@
+{from "pattern proj_pointer"	
+	{entity "storm"}
+                {inventory
+		{weight 100}
+		{size 5 2}
+	}
+	{tag "no_ricochet" "cm" "big" "size4" "88to105" "ptrk"}
+    {tag "heavy_agm"} ; только для ammo.set	
+}

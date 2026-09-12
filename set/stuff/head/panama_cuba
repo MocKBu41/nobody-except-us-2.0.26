@@ -1,0 +1,4 @@
+{from "pattern cw_hat"
+	{entity "panama_cuba"}
+	{mass 0.2}
+}

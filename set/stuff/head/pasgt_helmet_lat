@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "pasgt_helmet_lat"}
+	{mass 1.63}
+}

@@ -1,0 +1,10 @@
+{from "pattern proj_pointer"
+	
+	{entity "p2c_tb"}
+	                {mass 24.5}
+               {inventory
+		{weight 15}
+		{size 6 1}
+	}
+	{tag "no_ricochet" "cm" "big" "size4" "88to105" "agm114" "pierce" "ptrk" "semiactive"}  
+}

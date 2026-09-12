@@ -1,0 +1,9 @@
+{from "pattern overcoat"
+	{tag "armor"}
+	                   
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+	{entity "6B23new_2"}
+}

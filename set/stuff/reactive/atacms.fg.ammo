@@ -1,0 +1,28 @@
+{bullet
+	
+	{tag "big" "shell" "fg" "bomb" "no_ricochet" "fragmentary" "fx_upto250kg"}
+	{tag "fg_150_shell"} ; только для ammo.set
+	{inventory
+		{size 7 2}
+		{weight 100}
+	}	
+	{mass 1300}
+	{entity "mlrs_atacms_fg_ammo"}
+	{view "mlrs_atacms_fg_ammo"
+		{tail "rocket_smokebig_short_detwarh_atacms" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	;БЧ 227 кг WDU-18/B-как у AGM-84 Harpoon. 97.5 кг ВВ к ОФ расчету.
+	{tag "he_over30"}
+        {damage blastwave {energy 0.7} {area 24.3 28}}
+        {damage add blastwave {energy 1.2} {area 20.9 24}}
+        {damage add blastwave {energy 2.5} {area 15.5 17.8}}
+        {damage add blastwave {energy 6.5} {area 9.7 11.1}}
+        {damage add blastwave {energy 11} {area 4.5 5.1}}
+        {damage add blastwave {energy 22} {area 2.5 4}}
+	{damage add blastwave {energy 32} {area 0.5 1}}
+}
+;http://www.alternatewars.com/SAC/AGM-84A_Harpoon_SAC_-_August_1974.pdf	
+;6-7 волна бонус.Проникающая БЧ.
+;

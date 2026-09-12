@@ -1,0 +1,10 @@
+{from "pattern mask"
+	{inventory
+		{size 1 1}
+		{weight 10}
+}
+	{entity "baf_tank_radio1"}
+	                        
+}
+
+

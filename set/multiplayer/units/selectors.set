@@ -1,0 +1,73 @@
+(define "generic_hqcar"
+    {charge %c}
+    {score %sc}
+    {icon %i}
+    {tags "%t"}
+    {group "%g"}
+    {button "%b"}
+    {cw %cw}
+    {cp %cp}
+)
+(define "hqcar"
+    ("generic_hqcar" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+;    {content "* ( mp2/%s/vehicle_supporter:3  mp2/%s/oficer:%n )"}
+    {fore 1}
+)
+
+{"vvs_mp_flag"              ("hqcar" c(1800) brig(vvs) t(all hqcar low_brig_hqcar) s(rus) n(2) g(hqcar_support)   sc(1) b(hqcar) i(1) cw(0) cp(-200)) {cost 65}}
+{"pvo_mp_flag"              ("hqcar" c(1800) brig(pvo) t(all hqcar) s(rus) n(2) g(hqcar_add)   sc(1) b(hqcar) i(2) cw(0) cp(-150)) {cost 30}}
+{"artbr_mp_flag"            ("hqcar" c(1800) brig(artbr) t(all hqcar) s(rus) n(2) g(hqcar_support)   sc(1) b(hqcar) i(3) cw(0) cp(-200)) {cost 65}}
+{"vdv_mp_flag"              ("hqcar" c(120) brig(vdv) t(all hqcar) s(rus) n(2) g(hqcar)   sc(1) b(hqcar) i(4) cw(0) cp(-200)) {cost 100}}
+{"mot_mp_flag"              ("hqcar" c(120) brig(mot) t(all hqcar) s(rus) n(2) g(hqcar)   sc(1) b(hqcar) i(5) cw(0) cp(-200)) {cost 100}}
+;{"armbr_mp_flag"           ("hqcar" c(120) brig(armbr) t(all hqcar) s(rus) n(2) g(hqcar)   sc(1) b(hqcar) i(6) cw(0) cp(-200)) {cost 100}}
+{"specbr_mp_flag"           ("hqcar" c(120) brig(specbr) t(all hqcar) s(rus) n(2) g(hqcar)   sc(1) b(hqcar) i(7) cw(0) cp(-200)) {cost 100}}
+
+{"usaf_mp_flag"              ("hqcar" c(1800) brig(usaf) t(all hqcar) s(usa) n(2) g(hqcar_support)   sc(1) b(hqcar) i(1) cw(0) cp(-200)) {cost 65}}
+{"usa_aa_mp_flag"            ("hqcar" c(1800) brig(usa_aa) t(all hqcar) s(usa) n(2) g(hqcar_add)   sc(1) b(hqcar) i(2) cw(0) cp(-150)) {cost 30}}
+{"usart_mp_flag"             ("hqcar" c(1800) brig(usart) t(all hqcar) s(usa) n(2) g(hqcar_support)   sc(1) b(hqcar) i(3) cw(0) cp(-200)) {cost 65}}
+;{"ngrd_mp_flag"             ("hqcar" c(120) brig(ngrd) t(all hqcar) s(usa) n(2) g(hqcar)   sc(1) b(hqcar) i(4) cw(0) cp(-200)) {cost 100}}
+{"idf_mp_flag"               ("hqcar" c(120) brig(idf) t(all hqcar) s(usa) n(2) g(hqcar)   sc(1) b(hqcar) i(5) cw(0) cp(-200)) {cost 100}}
+{"usarmy_mp_flag"            ("hqcar" c(120) brig(usarmy) t(all hqcar) s(usa) n(2) g(hqcar)   sc(1) b(hqcar) i(6) cw(0) cp(-200)) {cost 100}}
+{"usmc_mp_flag"              ("hqcar" c(120) brig(usmc) t(all hqcar) s(usa) n(2) g(hqcar)   sc(1) b(hqcar) i(7) cw(0) cp(-200)) {cost 100}}
+
+{"nrf_mp_flag"               ("hqcar" c(1800) brig(nrf) t(all hqcar) s(nato) n(2) g(hqcar_support)   sc(1) b(hqcar) i(1) cw(0) cp(-200)) {cost 65}}
+{"nato_aa_mp_flag"           ("hqcar" c(1800) brig(nato_aa) t(all hqcar) s(nato) n(2) g(hqcar_add)   sc(1) b(hqcar) i(2) cw(0) cp(-150)) {cost 30}}
+{"abn_mp_flag"               ("hqcar" c(1800) brig(abn) t(all hqcar) s(nato) n(2) g(hqcar_support)   sc(1) b(hqcar) i(3) cw(0) cp(-200)) {cost 65}}
+{"bund_mp_flag"              ("hqcar" c(120) brig(bund) t(all hqcar) s(nato) n(2) g(hqcar)   sc(1) b(hqcar) i(4) cw(0) cp(-200)) {cost 100}}
+{"gb_mp_flag"                ("hqcar" c(120) brig(gb) t(all hqcar) s(nato) n(2) g(hqcar)   sc(1) b(hqcar) i(5) cw(0) cp(-200)) {cost 100}}
+{"fra_mp_flag"               ("hqcar" c(120) brig(fra) t(all hqcar) s(nato) n(2) g(hqcar)   sc(1) b(hqcar) i(6) cw(0) cp(-200)) {cost 100}}
+
+{"cnair_mp_flag"           ("hqcar" c(1800) brig(cnair) t(all hqcar) s(cn) n(2) g(hqcar_support)   sc(1) b(hqcar) i(1) cw(0) cp(-200)) {cost 70}}
+{"cnsam_mp_flag"           ("hqcar" c(1800) brig(cnsam) t(all hqcar) s(cn) n(2) g(hqcar_add)   sc(1) b(hqcar) i(2) cw(0) cp(-150)) {cost 37}}
+{"cnart_mp_flag"           ("hqcar" c(1800) brig(cnart) t(all hqcar) s(cn) n(2) g(hqcar_support)   sc(1) b(hqcar) i(3) cw(0) cp(-200)) {cost 70}}
+{"cnheavy_mp_flag"           ("hqcar" c(120) brig(cnheavy) t(all hqcar) s(cn) n(2) g(hqcar)   sc(1) b(hqcar) i(4) cw(0) cp(-200)) {cost 100}}
+{"cnmed_mp_flag"           ("hqcar" c(120) brig(cnmed) t(all hqcar) s(cn) n(2) g(hqcar)   sc(1) b(hqcar) i(5) cw(0) cp(-200)) {cost 100}}
+;{"cnsco_mp_flag"           ("hqcar" c(120) brig(cnsco) t(all hqcar) s(cn) n(2) g(hqcar)   sc(1) b(hqcar) i(6) cw(0) cp(-200)) {cost 100}}
+
+{"vvc_ukr_mp_flag"            ("hqcar" c(120) brig(vvc)      t(all hqcar) s(ukr) n(2) g(hqcar_support)   sc(1) b(hqcar) i(1) cw(0) cp(-200)) {cost 65}}
+{"arta_ukr_mp_flag"           ("hqcar" c(120) brig(arta)     t(all hqcar) s(ukr) n(2) g(hqcar_support)   sc(1) b(hqcar) i(2) cw(0) cp(-200)) {cost 65}}
+{"ukr_aa_aa_mp_flag"          ("hqcar" c(120) brig(ukr_aa)   t(all hqcar) s(ukr) n(2) g(hqcar_add)       sc(1) b(hqcar) i(3) cw(0) cp(-200)) {cost 30}}
+{"dhv_ukr_mp_flag"            ("hqcar" c(120) brig(dhv)      t(all hqcar) s(ukr) n(2) g(hqcar)           sc(1) b(hqcar) i(4) cw(0) cp(-200)) {cost 100}}
+{"meh_ukr_mp_flag"            ("hqcar" c(120) brig(meh)      t(all hqcar) s(ukr) n(2) g(hqcar)           sc(1) b(hqcar) i(5) cw(0) cp(-200)) {cost 100}}
+{"morh_ukr_mp_flag"           ("hqcar" c(120) brig(morh)     t(all hqcar) s(ukr) n(2) g(hqcar)           sc(1) b(hqcar) i(7) cw(0) cp(-200)) {cost 100}}
+
+{"vvsw_mp_flag"              ("hqcar" c(1800) brig(vvsw) t(all hqcar low_brig_hqcar) s(wagner) n(2) g(hqcar_support)   sc(1) b(hqcar) i(1) cw(0) cp(-200)) {cost 65}}
+{"pvow_mp_flag"              ("hqcar" c(1800) brig(pvow) t(all hqcar) s(wagner) n(2) g(hqcar_add)   sc(1) b(hqcar) i(2) cw(0) cp(-150)) {cost 30}}
+{"artbrw_mp_flag"            ("hqcar" c(1800) brig(artbrw) t(all hqcar) s(wagner) n(2) g(hqcar_support)   sc(1) b(hqcar) i(3) cw(0) cp(-200)) {cost 65}}
+{"naem_mp_flag"              ("hqcar" c(120) brig(naem) t(all hqcar) s(wagner) n(2) g(hqcar)   sc(1) b(hqcar) i(4) cw(0) cp(-200)) {cost 100}}
+{"wagner_mp_flag"            ("hqcar" c(120) brig(wagnera) t(all hqcar) s(wagner) n(2) g(hqcar)   sc(1) b(hqcar) i(5) cw(0) cp(-200)) {cost 100}}
+
+{"persistent_marker_rus"           ("hqcar" c(1) brig(none) t(all marker) s(rus) n(2) g(marker)   sc(1) b(hqcar) i(8) cw(0) cp(0)) {cost 0.1}}
+{"persistent_marker_rus"           ("hqcar" c(1) brig(none) t(all marker) s(ukr) n(2) g(marker)   sc(1) b(hqcar) i(8) cw(0) cp(0)) {cost 0.1}}
+{"persistent_marker_rus"           ("hqcar" c(1) brig(none) t(all marker) s(wagner) n(2) g(marker)   sc(1) b(hqcar) i(8) cw(0) cp(0)) {cost 0.1}}
+{"persistent_marker_usa"           ("hqcar" c(1) brig(none) t(all marker) s(usa) n(2) g(marker)   sc(1) b(hqcar) i(7) cw(0) cp(0)) {cost 0.1}}
+{"persistent_marker_nato"           ("hqcar" c(1) brig(none) t(all marker) s(nato) n(2) g(marker)   sc(1) b(hqcar) i(7) cw(0) cp(0)) {cost 0.1}}
+{"persistent_marker_cn"           ("hqcar" c(1) brig(none) t(all marker) s(cn) n(2) g(marker)   sc(1) b(hqcar) i(7) cw(0) cp(0)) {cost 0.1}}
+
+;------------------dummies for no-brigade mode to deal with button bug
+{"rus_dummy_flag"           ("hqcar" c(120) brig(mot) t(all hqcardummy) s(rus) n(2) g(hqcardummy)   sc(1) b(hqcardummy) i(8) cw(0) cp(-200)) {cost 100}}
+{"usa_dummy_flag"           ("hqcar" c(120) brig(usarmy) t(all hqcardummy) s(usa) n(2) g(hqcardummy)   sc(1) b(hqcardummy) i(8) cw(0) cp(-200)) {cost 100}}
+{"nato_dummy_flag"          ("hqcar" c(120) brig(abn) t(all hqcardummy) s(nato) n(2) g(hqcardummy)   sc(1) b(hqcardummy) i(8) cw(0) cp(-200)) {cost 100}}
+{"chi_dummy_flag"           ("hqcar" c(120) brig(abn) t(all hqcardummy) s(chi) n(2) g(hqcardummy)   sc(1) b(hqcardummy) i(8) cw(0) cp(-200)) {cost 100}}
+{"art_dummy_flag"          ("hqcar" c(120) brig(specbr) t(all hqcardummy) s(nov) n(2) g(qcardummy)   sc(1) b(hqcardummy) i(8) cw(0) cp(-200)) {cost 100}}
+{"rus_dummy_flag"           ("hqcar" c(120) brig(mot) t(all hqcardummy) s(wagner) n(2) g(hqcardummy)   sc(1) b(hqcardummy) i(8) cw(0) cp(-200)) {cost 100}}

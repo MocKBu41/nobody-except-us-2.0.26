@@ -1,0 +1,12 @@
+{item
+	{desc "левые наручни джигурнаута"}
+	{tag "itemin1hand keepEntity"}
+	{entity "jugernaut_haryjni_L"}
+	{inventory
+		{size 2 1}
+		{weight 100}
+		{link_bone "Hand2L"}
+		{fsm "stuff"}
+	}
+	{mass 1}
+}

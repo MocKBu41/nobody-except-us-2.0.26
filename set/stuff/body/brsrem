@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "brsrem"}
+	{desc "ремень МВД"}
+	{mass 3.0}
+}

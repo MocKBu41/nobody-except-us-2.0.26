@@ -1,0 +1,5 @@
+{from "pattern cw_helmet"
+	;QGF-02
+	{entity "pasgt_helmet_syr"}
+	{mass 1.63}
+}

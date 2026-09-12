@@ -1,0 +1,18 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "ammo pac3_mse" 8}	;Patriot PAC-3
+	{fillingVisible "Missilee"}	
+	{fireSound "bazooka/patriotLaunch"}	
+	{mass 50}
+	{recoveryTime 1.4}
+	{rechargeTime 160}
+	{AimingTolerance 10}	;только для пассивного наведения
+	{inventory {noView}}
+	{maxRange 500}	
+	{aimRange 600}	;дальность предварительного наведения
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+}

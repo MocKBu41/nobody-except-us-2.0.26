@@ -1,0 +1,8 @@
+{from "pattern armor"
+	{entity "leshii_body"}
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+	                        
+}

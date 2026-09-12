@@ -1,0 +1,9 @@
+{item
+	{entity "ochki_00"}
+	{inventory
+		{size 2 1}
+		{link_bone "head"}
+		{fsm "stuff"}
+	}
+	{mass 0.1}
+}

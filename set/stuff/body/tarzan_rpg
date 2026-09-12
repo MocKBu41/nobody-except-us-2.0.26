@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "tarzan_rpg"}
+	{mass 1.0}
+	;no info
+}

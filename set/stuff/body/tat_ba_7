@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "tat_ba_7"}
+	{mass 10}
+}

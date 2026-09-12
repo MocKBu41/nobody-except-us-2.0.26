@@ -1,0 +1,10 @@
+{item
+	{tag "smallitemin1hand mask armor"}
+	{mass 0.3}
+	{inventory
+		{link_bone "IK_UpDown"}
+		{size 2 3}
+		{fsm "belt"}
+		{weight 100}
+	}
+}

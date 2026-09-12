@@ -1,0 +1,30 @@
+{bullet
+	
+	{tag "big" "shell" "fg" "size2" "no_ricochet" "fragmentary" "antiinf" "fx_45_89"}
+	{tag "cluster_shell"} ; только для ammo.set
+	{inventory
+		{size 7 2}
+		{weight 100}
+	}	
+	{mass 1320}
+	{entity "mlrs_atacms_ammo"}
+	{view "mlrs_atacms_ammo"
+		{tail "rocket_smokebig_short_detwarh_atacms_cl" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	;300 суббоеприпасов.!!!http://www.designation-systems.net/dusrm/m-140.html
+	{damage blastwave	 ; fragmentary
+		{energy 0.7}
+		{area 4 5}
+	}
+	{damage add blastwave	 ; HE antipersonnel
+		{energy 1.2}
+		{area 2 3}
+	}
+	{damage add blastwave	 ; HE, FG anti-APC
+		{energy 2.5}
+		{area 0.1 0.1}
+	}
+}
+;MGA-140B ATACMS Block IA - 275 x M74.Уменьшение БЧ позволило поднять дальность до 300 км.

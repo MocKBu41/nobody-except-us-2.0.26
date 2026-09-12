@@ -1,0 +1,27 @@
+{from "pattern proj_weapon"
+	
+	{tag "gun"}
+	
+	{filling "3m14 caliber 533torpedo_rus ammo" 4}
+	{fillingVisible "rocket"}	
+	
+	{fireSound "reactive/club_m_launch"}	
+	{mass 50}
+	{recoveryTime 15}
+	{rechargeTime 360}
+	
+	{inventory {noView}}
+;	{cursor "zenite_on"}
+
+;	{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	
+	{AimingTolerance 5}
+	
+		{maxRange 700}
+		{aimRange 700}
+		
+		{cursor "cannon_on_fg_9"}
+		{cursorReloading "cannon_reload_fg"}
+}

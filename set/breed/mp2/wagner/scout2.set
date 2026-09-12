@@ -1,0 +1,81 @@
+{breed
+	{skin "neu_wagner_5"}
+	{portrait "rus/wagner_scout"}
+	{icon scout2}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head lshz1plus_sso}
+	}
+	{perks
+		{"vision" mp_specnaz
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"pistol" lvl_4
+		}
+		{"gra_launch" lvl_2
+		}
+		{"melee" lvl_5
+		}
+		{"avoidance" lvl_5
+		}
+		{"health" "180%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "300%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 1.1
+		}
+		{"telescope"}
+		{"aimedshot"}
+		{"stealth"}
+		{"field_glass"}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"specnaz_lvl_1" 4
+		}
+		{"specnaz_lvl_2" 16
+		}
+		{"specnaz_lvl_3" 48
+		}
+		{"specnaz_lvl_4" 96
+		}
+		{"specnaz_lvl_5" 160
+		}
+	}
+	{inventory
+		{item "6b45_sniper"}
+		{item "vintorez" filling "vin_ammo ammo" 10}
+		{item "c4_bomb"}
+		{item "rpg26 weapon" filling "rpg26 ammo" 1}
+		{item "aks74" filling "545 ammo" 30}
+		{item "545 ammo" 120}
+		{item "smoke rdg2b grenade"}
+		{item "smoke rdg2b grenade"}
+		{item "vin_ammo ammo" 100}
+		{item "rgn grenade" 2}
+		{item "bandage" 5}
+		{item "rgo grenade"}
+		{item "rpg26 weapon" filling "rpg26 ammo" 1}
+		{item "binocular"}
+		{in_hands 1}
+	}
+}

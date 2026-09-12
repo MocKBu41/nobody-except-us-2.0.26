@@ -1,0 +1,28 @@
+{breed
+	{skin "cw_lnr"}
+	{portrait "_new/rus/inf"}
+	{icon "smgs"}
+	{icon_priority 1}
+	{nationality arm}
+	{armors
+		{head "6b7_new1"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_smg")
+	{inventory
+		{item "6b23_ststrelok"}
+		{item "rpg26 weapon" 1 filling "rpg26 ammo" 1}
+		{item "ak74_p" filling "545 ammo" 30}
+		{item "pod_ak74" filling "mortar pd p ammo" 1}
+		{item "545 ammo" 240}
+		{item "mortar pd a ammo" 4}
+		{item "mortar pd p ammo" 4}
+		{item "bandage" 10}
+		{item "rgd grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 2}
+	}
+}

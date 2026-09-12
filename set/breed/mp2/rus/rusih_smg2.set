@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_rus_ruhih_atacs"}
+	{portrait "rus/rusih"}
+	{icon smgs}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head lshz1plus_sso}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_smg")
+	{inventory
+		{item "lbt6094_rus_gp_a"}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgn grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "ak74m_gp25_1p78" filling "545 ammo" 30}
+		{item "545 ammo" 300}
+		{item "gp25_ak74m_1p78" filling "mortar pd a ammo" 1}
+		{item "mortar pd a ammo" 10}
+		{item "rpg26 weapon" filling "rpg26 ammo" 1}
+		{in_hands 8}
+	}
+}

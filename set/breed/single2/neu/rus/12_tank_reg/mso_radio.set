@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_neu_rus_12reg"}
+	{portrait "_new/rus/inf"}
+	{icon smgs}
+	{icon_priority 1}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+	(include "perks_generic.inc")
+	("traits_army_smg")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "bandage" 10}
+		{item "rus_radio_station"}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "545 ammo" 180}
+		{item "ak74b" filling "545 ammo" 30}
+		
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 6}
+	}
+}

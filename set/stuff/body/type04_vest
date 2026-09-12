@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "type04_vest"}
+	{mass 4}
+}

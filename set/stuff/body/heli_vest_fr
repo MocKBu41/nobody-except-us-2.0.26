@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "heli_vest_fr"}
+	{mass 1.0}
+	;no info
+}

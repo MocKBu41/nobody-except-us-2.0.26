@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "virtus_vest_smg"}
+	{mass 9.8}
+	;3.8 основа + 3*2 плиты
+}

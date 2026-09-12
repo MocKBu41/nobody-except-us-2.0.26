@@ -1,0 +1,5 @@
+{from "pattern cw_hat"
+	{entity "mvd_cap"}
+	{desc "Кепи МВД"}
+	{mass 0.2}
+}

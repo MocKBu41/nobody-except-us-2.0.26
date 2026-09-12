@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "ech_helmet_geo"}
+	{mass 1.51}
+}

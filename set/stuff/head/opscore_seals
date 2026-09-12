@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "opscore_seals"}
+	{mass 1.08}
+}

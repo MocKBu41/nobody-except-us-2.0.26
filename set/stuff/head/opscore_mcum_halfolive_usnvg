@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+    {entity "opscore_mcum_halfolive_usnvg"}
+                { mass 2.3}
+            }

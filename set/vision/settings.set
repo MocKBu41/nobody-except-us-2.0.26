@@ -1,0 +1,113 @@
+{terms
+	{firing_silent_pb 		firing "pb"}
+	{firing_silent_pm_sil 		firing "pm_sil"}
+	{firing_silent_rus_las_designator 		firing "rus_las_designator"}
+	{firing_silent_rus_radar 		firing "rus_radar"}
+	{firing_silent_usa_las_designator 		firing "usa_las_designator"}
+	{firing_silent_usa_radar 		firing "usa_radar"}
+	{firing_silent_sr25 		firing "sr25"}
+	{firing_silent_svu 		firing "svu"}
+	{firing_silent_svu_2		firing "svu_2"}
+	{firing_silent_vintorez 		firing "vintorez"}
+	{firing_silent_abakan_1 		firing "abakan_1"}
+	{firing_silent_abakan_scope		firing "abakan_scope"}
+	{firing_silent_aek_973_2 		firing "aek_973_2"}
+	{firing_silent_aek_973_4 		firing "aek_973_4"}
+	{firing_silent_ak74spec_1 		firing "ak74spec_1"}
+	{firing_silent_ak74sps 		firing "ak74sps"}
+	{firing_silent_ak74us 		firing "ak74us"}
+	{firing_silent_ak107_2 		firing "ak107_2"}
+	{firing_silent_ak107_3 		firing "ak107_3"}
+	{firing_silent_aks74_4 		firing "aks74_4"}
+	{firing_silent_aks74u_1 		firing "aks74u_1"}
+	{firing_silent_aks74u_2			firing "aks74u_2"}
+	{firing_silent_aks74u_3			firing "aks74u_3"}
+	{firing_silent_aks74u_4			firing "aks74u_4"}
+	{firing_silent_akval			firing "akval"}
+	{firing_silent_akval_1			firing "akval_1"}
+	{firing_silent_bizon			firing "bizon"}
+	{firing_silent_cz_scorpion_evo3_1a			firing "cz_scorpion_evo3_1a"}
+	{firing_silent_groza_2			firing "groza_2"}
+	{firing_silent_groza_3			firing "groza_3"}
+	{firing_silent_hk416A5_Silenced			firing "hk416A5_Silenced"}
+	{firing_silent_m4a1_sd_aimpoint			firing "m4a1_sd_aimpoint"}
+	{firing_silent_m4a1_sd_aimpoint_tactical			firing "m4a1_sd_aimpoint_tactical"}
+	{firing_silent_mp5sd			firing "mp5sd"}
+	
+	{firing_grenade_f1 		firing "f1"}
+	{firing_grenade_rgn 		firing "rgn"}
+	{firing_grenade_rgo 		firing "rgo"}
+	{firing_grenade_m61 		firing "m61"}
+	{firing_grenade_m67 		firing "m67"}
+	{firing_grenade_rgd 		firing "rgd"}
+	{firing_grenade_rkg3 		firing "rkg3"}
+	{firing_grenade_molotov_coctail 		firing "molotov_coctail"}
+	{firing_grenade_smoke 		firing "smoke"}
+	
+	
+	{firing_knife_axe 		firing "axe"}
+	{firing_knife_ballistic_knife 		firing "ballistic_knife"}
+	{firing_knife_knife_army 		firing "knife_army"}
+	{firing_knife_knife_bowie 		firing "knife_bowie"}
+	{firing_knife_knife_ger 		firing "knife_ger"}
+	{firing_knife_knife_japan 		firing "knife_japan"}
+	{firing_knife_knife_old 		firing "knife_old"}
+	{firing_knife_knife_rus 		firing "knife_rus"}
+	{firing_knife_knife_union 		firing "knife_union"}
+	{firing_knife_knife1 		firing "knife1"}
+	{firing_knife_rambo_knife 		firing "rambo_knife"}
+
+	
+	
+	{actor_tank    actor  "tank"  }
+	{actor_cannon  actor  "cannon"}
+	{human 		   actor  "human" }  
+	{vehicle_00    actor  "vision_lev00"}
+	{vehicle_01    actor  "vision_lev01"}
+	{vehicle_02    actor  "vision_lev02"}
+	{vehicle_03    actor  "vision_lev03"}
+	{vehicle_04    actor  "vision_lev04"}
+	{vehicle_04_spa    actor  "vision_lev04_spa"}
+	{vehicle_05    actor  "vision_lev05"}
+	{stealth_plane    actor  "vision_lev_stealth"}	;средняя ЭПР 0,5м2
+	{small_UAV    actor  "vision_lev_small_UAV"}
+	{UAV    actor  "vision_lev_UAV"}
+	{plane    actor  "vision_lev_plane"}	;средняя ЭПР 3м2
+	{helicopter    actor  "vision_lev_heli"}
+	{vehicle_06    actor  "vision_lev06"}
+	{vehicle_07    actor  "vision_lev07"}
+	{bigship    actor  "vision_lev_bigship"}
+	{submarine    actor  "vision_lev_submarine"}
+	{cannon_01     actor  "vision_lev01_can"}
+	{cannon_01a     actor  "vision_lev01a_can"}
+	{cannon_02     actor  "vision_lev02_can"}
+	{cannon_03     actor  "vision_lev03_can"}
+	{cannon_04     actor  "vision_lev04_can"}
+	{cannon_05     actor  "vision_lev05_can"}
+	{missile     actor  "vis_level_missile"}
+	{impactor     actor  "vis_level_impactor"}	;средняя ЭПР 0,1м2
+	{proj_point     actor  "vis_proj_point"}
+	{antirad_point     actor  "vis_antirad_point"}
+	{large_antirad_point     actor  "vis_large_antirad_point"}
+
+	
+	{japanese	   breed   "japanese"}
+	{tankman2	   breed   "tankman2"}
+	{kamikaze	   breed   "kamikaze"}
+	{sniper		   breed   "sniper"}
+}
+
+{ranges
+	{human
+		{human}
+	}
+	{vehicle
+;		{vehicle_01}
+;		{vehicle_02}
+;		{vehicle_03}
+;		{vehicle_04}
+;		{vehicle_05}
+		{vehicle_06}
+;		{vehicle_07}
+	}
+}

@@ -1,0 +1,6 @@
+{from "pattern armorplate"
+	{entity "defender2_smersh"}
+	{desc "Бронежилет <c(00FF00)>ФОРТ-Дефендер-2 с РПС СМЕРШ<c(FFFFFF)>  ФСБ России\nКласс защиты <c(FF0000)>5<c(FFFFFF)>"}
+	{mass 1.0}
+	;no info
+}

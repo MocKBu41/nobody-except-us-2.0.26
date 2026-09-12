@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "helmet_m826_driver"}
+	{mass 1.5}
+}

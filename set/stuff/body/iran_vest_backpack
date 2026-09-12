@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "iran_vest_backpack"}
+	{mass 8}
+}

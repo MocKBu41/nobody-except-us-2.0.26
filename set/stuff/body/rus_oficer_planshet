@@ -1,0 +1,9 @@
+{from "pattern armor"
+	{entity "rus_oficer_planshet"}
+	{inventory
+		{size 2 2}
+		{weight 100}
+	}
+	                      
+}
+

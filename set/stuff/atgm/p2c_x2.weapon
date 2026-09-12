@@ -1,0 +1,27 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{fillingVisible "rocket"}
+	{filling "ammo p2c" 2}
+	          {fireSound "reactive/konkurs_launch"}
+			  {reloadSound "chn/Metis_reload"}
+	{mass 7}
+	{recoveryTime 3}
+	{rechargeTime 30}
+	;{inventory {noView}}
+	{cursor "Fagot"}
+	{cursorReloading "Fagot_reload"}
+	("damage" a(1) b(1) c(1) d(1) e(1))
+	{projectileDamage 0}
+	{parameters "p2c fg"
+                          {maxRange 160}
+		{aimRange 160}
+	}
+	    {parameters "ammo p2c cm"
+                {maxRange 160}
+		{aimRange 160}
+	}
+	    {parameters "ammo p2c tb"
+                {maxRange 160}
+		{aimRange 160}
+	}
+}

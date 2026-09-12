@@ -1,0 +1,10 @@
+{from "pattern proj_pointer"
+	{entity "48n6_missile"}	
+		
+	        {mass 1850}
+	        {inventory		
+		{weight 100}		
+		{size 7 2}	
+	}	
+	{tag  "big" "size4" "88to105" "rus_radpassive_missile" "-ap" "-rocketlauncher" "no_ricochet" "-low_speed" "antimissile" "anti_ballistic_missile_rus"} 
+}

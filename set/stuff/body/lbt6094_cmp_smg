@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "lbt6094_cmp_smg"}
+	{mass 6.4}
+	;1.4 основа + 2,5*2 ESAPI
+}

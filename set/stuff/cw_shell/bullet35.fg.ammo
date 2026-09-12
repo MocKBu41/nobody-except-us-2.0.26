@@ -1,0 +1,21 @@
+{from "pattern fg"
+	{tag "size1" "ic" "autocannon_small" "fx_25_40"}
+	{mass 1.58}
+	{inventory
+		{size 3 1}
+		{weight 25}
+		{block 4}
+	}	
+
+;	("fg" args 0.8)
+	{entity "35mm_hei"}
+	{trace
+		{view "/texture/fx/trace2"
+			{ScaleY 0.24}
+		}
+		{length 3.5}
+	}
+	
+{damage blastwave {energy 0.7} {area 2.6 2.9}}
+{damage add blastwave {energy 1.2} {area 1.8 2.1}}
+}

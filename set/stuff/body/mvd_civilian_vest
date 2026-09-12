@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "mvd_civilian_vest"}
+	{desc "Бронежилет"}
+	{mass 3.0}
+}

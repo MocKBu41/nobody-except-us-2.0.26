@@ -1,0 +1,247 @@
+(define "generic_v"
+    {charge %c}
+    {score %sc}
+    {icon %i}
+    {tags "%t"}
+    {group "%g"}
+    {button "%b"}
+    {cw %cw}
+    {cp %cp}
+)
+;plane
+(define "p"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/pilot:%n)"}
+)
+; Helicopter with pilots
+(define "h"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/vertpilot:%n)"}
+)
+; vehicle (car, tank, heli, plane) with custom crew
+(define "v_cust"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%crew:%n)"}
+)
+; vehicle with tankmans
+(define "v"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/tankman:%n )"}
+)
+;вдв танкисты
+(define "vdv_t"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/vdv_tankman:%n )"}
+)
+;для абраши
+(define "v_abr"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/tankman:1 mp2/%s/tankman2:2 mp2/%s/tankman3:1 )"}
+)
+; vehicle with tankmans of different side
+(define "v_nation"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%crew_nation/tankman:%n )"}
+)
+; !!!
+(define "v_nation1"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%crew_nation/tankman:%n )"}
+)
+; vehicle with supporters of different side
+(define "vs_nation"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%crew_nation/vehicle_supporter:%n )"}
+)
+; vehicle with supporters of different side
+(define "vs_nation1"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%crew_nation/vehicle_supporter:%n )"}
+)
+; vehicle with engineer of different side
+(define "vp_nation"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%crew_nation/engineer:%n )"}
+)
+; helicopter with pilot of different side !new
+(define "he_nation"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%crew_nation/pilot:%n) "}
+)
+(define "he_nation1"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%crew_nation/pilot:%n) "}
+)
+; air with pilot of different side !new
+(define "air_nation"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp2/%crew_nation/pilot:%n )"}
+ )
+; vehicle with supporters
+(define "vs"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/vehicle_supporter:%n )"}
+)
+; vehicle with miners
+(define "vap"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/antitank_miner:%n )"}
+)
+; vehicle with engineers
+(define "ve"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/engineer:%n )"}
+)
+; vehicle with smg & support units
+(define "vs+"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/vehicle_supporter:%n ) mp2/%s/smgs:%m"}
+)
+; vehicle with tankmans & support units
+(define "v+"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/tankman:%n ) mp2/%s/vehicle_supporter:%m"}
+)
+; vehicle with tankmans & amount limit
+(define "va"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/tankman:%n )"}
+)
+; APC with supporters
+(define "vb"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/tankman:1 mp2/%s/%brig/vehicle_supporter:%n)"}
+)
+;Самолет с десантом
+(define "v3"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%s/%n1 mp2/%s/%n2 mp2/%s/%n3 mp2/%s/%n4 mp2/%s/%n5 mp2/%s/%n6 mp2/%s/%n7 mp2/%s/%n8 mp2/%s/%n9 mp2/%s/%na)"}
+)
+(define "v3b"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/brit/%n1 mp2/brit/%n2 mp2/brit/%n3 mp2/brit/%n4 mp2/brit/%n5 mp2/brit/%n6 mp2/brit/%n7 mp2/brit/%n8 mp2/brit/%n9 mp2/brit/%na)"}
+)
+(define "v3g"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/frg/%n1 mp2/frg/%n2 mp2/frg/%n3 mp2/frg/%n4 mp2/frg/%n5 mp2/frg/%n6 mp2/frg/%n7 mp2/frg/%n8 mp2/frg/%n9 mp2/frg/%na)"}
+)
+(define "v3f"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/fr/%n1 mp2/fr/%n2 mp2/fr/%n3 mp2/fr/%n4 mp2/fr/%n5 mp2/fr/%n6 mp2/fr/%n7 mp2/fr/%n8 mp2/fr/%n9 mp2/fr/%na)"}
+)
+(define "v3i"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/idf/%n1 mp2/idf/%n2 mp2/idf/%n3 mp2/idf/%n4 mp2/idf/%n5 mp2/idf/%n6 mp2/idf/%n7 mp2/idf/%n8 mp2/idf/%n9 mp2/idf/%na)"}
+)
+(define "v3bgcz"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/brit/%n1 mp2/cz/%n2 mp2/cz/%n3 mp2/cz/%n4 mp2/cz/%n5 mp2/cz/%n6 mp2/cz/%n7 mp2/cz/%n8 mp2/cz/%n9 mp2/cz/%na)"}
+)
+(define "v3gercz"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/frg/%n1 mp2/cz/%n2 mp2/cz/%n3 mp2/cz/%n4 mp2/cz/%n5 mp2/cz/%n6 mp2/cz/%n7 mp2/cz/%n8 mp2/cz/%n9 mp2/cz/%na)"}
+)
+(define "v3cz"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/cz/%n1 mp2/cz/%n2 mp2/cz/%n3 mp2/cz/%n4 mp2/cz/%n5 mp2/cz/%n6 mp2/cz/%n7 mp2/cz/%n8 mp2/cz/%n9 mp2/cz/%na)"}
+)
+(define "v_pol"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp2/%s/tankman2:%n )"}
+)
+(define "v3pol"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/pol/%n1 mp2/pol/%n2 mp2/pol/%n3 mp2/pol/%n4 mp2/pol/%n5 mp2/pol/%n6 mp2/pol/%n7 mp2/pol/%n8 mp2/pol/%n9 mp2/pol/%na)"}
+)
+;Корабли=========================
+(define "kusa"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%s/%n1) %c2 ( mp2/%s/%n1) %c3 ( mp2/%s/%n1) %c4 ( mp2/%s/%n1) %c5 ( mp2/%s/%n1) %c6 ( mp2/%s/%n1) %c7 ( mp2/%s/%n1) %c8 ( mp2/%s/%n1) %c9 ()"}
+)
+(define "krus2"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%s/%n1) %c2 ( mp2/%s/%n1) %c3 ( mp2/%s/%n1) %c4 ( mp2/%s/%n1) %c5 ( mp2/%s/%n1) %c6 ( mp2/%s/%n1) %c7 ( mp2/%s/%n1) %c8 ( mp2/%s/%n1) %c9 ( mp2/%s/%n1) %c10 ( mp2/%s/%n1) %c11 ( mp2/%s/%n1) %c12 ()"}
+)
+(define "krus"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%s/%n1) %c2 ( mp2/%s/%n1) %c3 ( mp2/%s/%n1) %c4 ( mp2/%s/%n1) %c5 ( mp2/%s/%n1) %c6 ( mp2/%s/%n1) %c7 ()"}
+)
+(define "krus1"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%s/%n1) %c2 ( mp2/%s/%n1) %c3 ( mp2/%s/%n1) %c4 ()"}
+)
+;================================
+;ПУ и радар Патриота
+(define "vpat"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%s/%n1 ) %c2 ()"}
+)
+;ПУ и радар Патриота NATO !!!!!!!!!!!
+(define "vpat_nation"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%crew_nation/vehicle_supporter:%n ) %c2 ()"}
+)
+;Арта прицепленная
+(define "vart"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/%s/%n1 ) %c2 ( mp2/%s/%n1 )"}
+)
+(define "vartgb"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/brit/%n1 ) %c2 ( mp2/%s/%n1 )"}
+)
+(define "vartf"
+    ("generic_v" c(%c) sc(%sc) t(%t %s %brig) g(%g) i(%i) b(%b) cw(%cw) cp(%cp))
+    {content "%c1 ( mp2/fr/%n1 ) %c2 ( mp2/fr/%n1 )"}
+)
+
+(define "how"
+	{"%name(%side)"
+   		{charge %c}
+    	{score %sc}
+    	{icon %i}
+ 		{charge %c}
+		{content "%c1 ( mp2/%side/vehicle_supporter:4 ) %c2 ( mp2/%side/vehicle_supporter:2 )"}
+		{tags "all cannon heavy_art fixed %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info %c2}
+	}
+)
+(define "how2"
+	{"%name(%side)"
+   		{charge %c}
+    	{score %sc}
+    	{icon %i}
+ 		{charge %c}
+		{content "%c1 ( mp2/%side/vehicle_supporter:2 ) %c2 ( mp2/%side/vehicle_supporter:0 )"}
+		{tags "all cannon heavy_art fixed %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info %c2}
+	}
+)
+(define "4_vehicles"
+	{"%name(%side)"
+   		{charge %c}
+    	{score %sc}
+    	{icon %i}
+ 		{charge %c}
+		{content "%c1 ( mp2/%side/vehicle_supporter:2 ) %c2 ( mp2/%side/vehicle_supporter:0 ) %c3 ( mp2/%side/vehicle_supporter:2 ) %c4 ( mp2/%side/vehicle_supporter:0 )"}
+		{tags "all cannon heavy_art fixed %side %t %brig"}
+		{group "%g"}
+		{button "%b"}
+		{cost %cost}
+		{fore %f}
+		{info %c2}
+	}
+)
+
+(include "units_rus_f.set")
+(include "units_usa_f.set")
+(include "units_nato_f.set")
+(include "units_ukr_f.set")

@@ -1,0 +1,18 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "ammo tamir" 10}	
+	{fillingVisible "missle"}	
+	{fireSound "bazooka/patriotLaunch"}	
+	{mass 50}
+	{recoveryTime 2}
+	{rechargeTime 300}
+	{AimingTolerance 10}
+	{inventory {noView}}
+	{maxRange 600}	
+	{aimRange 900}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+}

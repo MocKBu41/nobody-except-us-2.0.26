@@ -1,0 +1,33 @@
+{weapon_bullet
+	{tag "to_hand cannot_lie nokeep"}
+	
+	{filling "ammo switchblade600" 1}
+	{preloaded}
+	{fireSound "gun/katapulta"}
+	{mass 3}
+	{inventory
+		{size 3 2}
+		{weight 100}
+		{fsm "stuff"}
+	}
+	{states
+		{reload	"squat-cover"}
+		{unload	"squat-cover"}
+		{fire	"squat-cover"	}
+		{aim 	"squat-cover"	}
+		{can_aim  "squat-cover"	}
+	}
+	{foresight "Foresight3"}
+	{curve "cumulative"}
+	{entity "switchblade600_w"}
+	{recoveryTime 30}
+	{rechargeTime 30}
+	{maxRange 100}	
+	{aimRange 100}
+	{speed 10}
+	{gravity 1}
+	{calibre 73}
+	{spreading 2}
+	{cursor "attack"}
+	{cursorReloading "cannon_reload_all"}
+}

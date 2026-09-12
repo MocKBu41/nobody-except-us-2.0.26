@@ -1,0 +1,12 @@
+{item
+	{desc "броня джигернаута"}
+	{tag "itemin1hand keepEntity"}
+	{entity "jugernaut_body"}
+	{inventory
+		{size 3 2}
+		{weight 100}
+		{link_bone "IK_UpDown"}
+		{fsm "stuff"}
+	}
+	{mass 1}
+}

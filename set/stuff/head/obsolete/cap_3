@@ -1,0 +1,4 @@
+{from "helmet pattern"
+	{desc "Baseball Cap Comtac"}
+	{entity "cap_3"}
+}

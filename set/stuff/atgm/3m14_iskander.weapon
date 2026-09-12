@@ -1,0 +1,19 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "3m14k ammo" 4}
+	{fireSound "bazooka/patriotLaunch"}	
+	{mass 50}
+	{recoveryTime 5}	;1 ñ äëÿ âñåé ñèñòåìû, íî ïóñêîâûõ äâå.
+	{rechargeTime 300}
+	{inventory {noView}}
+;	{cursor "zenite_on"}
+;	{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	("damage" a(1) b(1) c(1) d(1) e(1))
+	{AimingTolerance 5}
+		{maxRange 680}
+		{aimRange 680}
+		{cursor "cannon_on_fg_9"}
+		{cursorReloading "cannon_reload_fg"}
+}

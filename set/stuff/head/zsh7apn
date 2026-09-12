@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "zsh7apn"}
+	{mass 1.7}
+}

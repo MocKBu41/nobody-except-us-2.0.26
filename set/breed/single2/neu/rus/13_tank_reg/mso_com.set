@@ -1,0 +1,26 @@
+{breed
+	{skin "cw_neu_rus_13reg_com"}
+	{portrait "_new/rus/inf"}
+	{icon "officer"}
+	{icon_priority 1}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_com")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "545 ammo" 210}
+		{item "binocular"}
+		{item "bandage" 5}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "ak74m_1p78" filling "545 ammo" 30}
+		{item "smoke rdg2b grenade" 2}
+		{item "sandbag_kit"}
+		{in_hands 6} 
+	}
+}

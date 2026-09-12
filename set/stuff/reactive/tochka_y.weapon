@@ -1,0 +1,36 @@
+{weapon_bullet	
+	{tag "gun"}
+	{filling "ammo tochka" 1}
+	{fillingVisible "rock"}
+	{fireSound "reactive/missile_big"}
+		{range 400 400}
+		{spreading
+			{SpreadRadius 26}	;КВО порядка 450м
+		}
+	{rechargeTime 300}
+	{recoverytime 2}
+	{gravity 4}
+	{speed 4}
+	{aimtype curved}
+	{cursor "tactical"}
+	{cursorReloading "cannon_reload_fg_timer_300"}
+
+
+	{parameters "nuk"
+	    {range 400 400} 
+		{spreading
+			{SpreadRadius 26}	
+		}
+		{cursor "tactical"}
+		{cursorReloading "cannon_reload_fg_timer_300"}
+    }
+    {parameters "sn"
+	    {range 1000 1000} 
+		{spreading
+			{SpreadRadius 2}	
+		}
+		{cursor "tactical"}
+		{cursorReloading "cannon_reload_fg_timer_300"}
+    }
+}
+

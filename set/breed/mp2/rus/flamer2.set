@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_vkpo"}
+	{portrait "_new/rus/flamer"}
+	{icon "flamers2"}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_bazooker")
+	{inventory
+		{item "6b45_rpg"}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "545 ammo" 120}
+		{item "smoke rdg2b grenade"}
+		{item "bandage" 10}
+		{item "shmel weapon" 2 filling "shmel_ammo ammo" 1}
+		{item "f1 grenade" 2}
+		{item "rgd grenade" 2}
+		{in_hands 1}
+	}
+}

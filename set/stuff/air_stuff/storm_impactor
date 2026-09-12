@@ -1,0 +1,19 @@
+{from "pattern proj_impactor"
+	{entity "storm_impactor"}
+                {inventory
+		{weight 100}
+		{size 6 2}
+	}
+	{tag "no_ricochet" "fg" "big" "size4" "88to105" "fx_upto50kg"} 
+	;45 кг кум и 56 кг фугасный, суммарно можно считать 101кг кумулятивно-фугасный
+	;Калибр кум. заряда 360мм, оптимизирован на широкий канал, но миллиметров 1000 должен пробить
+	{tag "he_over30"}
+{damage blastwave {energy 0.7} {area 20.1 23.1}}
+{damage add blastwave {energy 1.2} {area 17.1 19.7}}
+{damage add blastwave {energy 2.5} {area 12.7 14.6}}
+{damage add blastwave {energy 6.5} {area 9.7 11.1}}
+{damage add blastwave {energy 11} {area 4.1 4.7}}
+{damage add blastwave {energy 22} {area 2 3}}
+{damage add blastwave {energy 30} {area 0.1 0.1}}
+{damage cumulative {damage 1000} {distance 3}}
+}

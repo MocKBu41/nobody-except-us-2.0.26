@@ -1,0 +1,12 @@
+{from "pattern armor"
+	{entity "rus_vdv_radio_station1"}
+	{inventory
+		{size 2 2}
+		{weight 10}
+	}
+	                       
+}
+
+
+
+

@@ -1,0 +1,10 @@
+{from "pattern proj_pointer"
+	
+	{entity "3m14k"}
+                {mass 1770.0}
+	        {inventory
+		{weight 100}
+		{size 7 1}
+	}
+	{tag "no_ricochet" "fg" "big" "size4" "88to105"} 
+}

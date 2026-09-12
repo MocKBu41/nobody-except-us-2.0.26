@@ -1,0 +1,18 @@
+{from "pattern fg"
+	{tag "big" "size4" "122to128fg" "fx_111_145"}
+	{tag "fg_120_shell"} ; только длЯ ammo.set
+	{mass 17.3}
+	
+	{inventory
+		{size 6 1}
+	}	
+	{entity "shell_120mm_cn_fg"}
+	{view "shell_120mm_cn_fg"}
+	;Примерно 4.3 кг ВВ гексал - аналог снаряда Ноны с другим взрывателем
+	{tag "he_2to4_5"}
+{damage blastwave {energy 0.7} {area 11.2 12.9}}
+{damage add blastwave {energy 1.2} {area 9.6 11}}
+{damage add blastwave {energy 2.5} {area 5.9 6.8}}
+{damage add blastwave {energy 6.5} {area 3.1 3.6}}
+{damage add blastwave {energy 11} {area 1.1 1.2}}
+}

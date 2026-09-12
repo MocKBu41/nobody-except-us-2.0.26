@@ -1,0 +1,12 @@
+{from "pattern cosmeticarmor"
+	{entity "rus_gf_rpg1"}
+	{inventory
+		{size 1 1}
+		{weight 100}
+	}
+                       
+}
+
+
+
+

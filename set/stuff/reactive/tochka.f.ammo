@@ -1,0 +1,34 @@
+{bullet
+	{tag "shell" "size5" "fg" "no_ricochet" "fragmentary" "big" "itemin2hands" "fx_upto1000kg"}
+	{tag "fg_150_shell"}
+	{inventory
+		{size 9 2}
+		{weight 3000}
+	}	
+	{mass 5000}
+	{entity "tochka_ya"}
+	{view "tochka_ya"
+		{tail "rocket_smokebig_short_detwarh_tochka" "tail"}
+	}
+	{detonationThickness 2}
+	{applyProjectile}
+	;около 400 кг ВВ
+	{tag "he_over30"}
+{damage blastwave {energy 0.7} {area 35.6 40.9}}
+{damage add blastwave {energy 1.2} {area 28.7 33}}
+{damage add blastwave {energy 2.5} {area 22.8 26.2}}
+{damage add blastwave {energy 6.5} {area 17 19.5}}
+{damage add blastwave {energy 11} {area 9.6 11.1}}	{damage add blastwave	 ; HE, FG antitank
+		{energy 22}
+		{area 5.5 7}
+	}
+	{damage add blastwave	 ; HE, kinetic, direct hit
+		{energy 50}
+		{area 2 3}
+	}
+	{damage add fire
+			{radius 20}
+			{heating 10}
+			{time 10}
+	}
+}

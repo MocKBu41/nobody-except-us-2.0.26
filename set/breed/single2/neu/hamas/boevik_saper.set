@@ -1,0 +1,20 @@
+{breed
+	{skin "cw_hamas"}
+	{portrait "_new/arb/boevik"}
+	{icon "sappers"}
+	{icon_priority 0}
+	{nationality arb}
+	{armors
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_smg")
+	{inventory
+		{item "mine_detector"}
+		{item "knife_rus"}
+		{item "Aks47"}
+		{item "762 ammo" 120}
+		{item "plant"}
+		{in_hands 2}
+	}
+}

@@ -1,0 +1,12 @@
+{from "pattern armor"
+	{entity "rus_gf_assault_umtbs_saper1"}
+	{inventory
+		{size 1 1}
+		{weight 100}
+	}
+	                      
+}
+
+
+
+

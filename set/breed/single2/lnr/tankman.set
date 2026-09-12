@@ -1,0 +1,19 @@
+{breed
+	{skin "cw_lnr_mob"}
+	{portrait "_new/rus/inf"}
+	{icon "tankman"}
+	{icon_priority 0}
+	{nationality arm}
+	{armors
+		{head "tsh3l"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_tankman")
+	{inventory
+		{item "545 ammo" 60}
+		{item "bandage" 10}
+		{item "aksu74" filling "545 ammo" 30}
+		{in_hands 2}
+	}
+}

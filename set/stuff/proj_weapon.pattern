@@ -1,0 +1,42 @@
+;SDL
+{weapon_bullet
+	{tag "rocketlauncher to_hand ap cannot_lie nokeep low_speed"}
+	{calibre 1}
+	{inventory
+		{size 5 2}
+		{link_bone "gun_back"}
+		{weight 100}
+		{fsm "bazooka"}
+	}
+	{mass 6.1}
+	{states
+		{reload	"reload-bazooka"}
+		{unload	"unload-bazooka"}
+		{fire	"fire-bazooka"	}
+		{aim 	"aim-bazooka"	}
+		{can_aim  "can-aim-bazooka"	}
+	}
+	{foresight "Foresight3"}
+	{speed 50000}
+	{gravity 0}
+	{cursor "fg_on"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{rechargeTime 5}
+	{curve "bullet"}
+
+	{projectileDamageThreshold 0.1}
+	{projectileDamage 0.1}  
+
+	;{cursor "cannon_on"}
+	{spreading 0.01
+		{BurstRecoveryTime 0.01}
+		{BurstAccuracy 100}
+		{SpreadRadius 0.01}
+	}
+
+	{AimingTolerance 0.01}
+	{maxRange 40}
+	{aimRange 45}	; == maxRange
+}

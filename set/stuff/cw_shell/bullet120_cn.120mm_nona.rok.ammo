@@ -1,0 +1,24 @@
+{from "pattern fg"
+	{tag "big size4 fg 122to128fg" "fx_111_145"}
+	{tag "fg_120_shell"} ; только для ammo.set
+	
+	{mass 20.5}
+	{inventory
+		{size 6 1}
+	}	
+;	("fg_heavy" args 18)
+;	{cumulative 0.80}
+	{entity "shell_120mm_cn_rok"}
+	{view "shell_120mm_cn_rok"{tail "rocket_smoke_short" "tail"}}
+	;аналог АР ЗОФ50 ВВ - 3.36кг гексал.
+        {tag "he_2to4_5"}
+{damage blastwave {energy 0.7} {area 9.7 11.2}}
+{damage add blastwave {energy 1.2} {area 8.1 9.4}}
+{damage add blastwave {energy 2.5} {area 4.6 5.3}}
+{damage add blastwave {energy 6.5} {area 1.8 2.1}}
+	{damage add blastwave	 ; HE, FG antitank
+		{energy 11}
+		{area 0.2 0.2}
+	}
+}
+;5 волна бонус.

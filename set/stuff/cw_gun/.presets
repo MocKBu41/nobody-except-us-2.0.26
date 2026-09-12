@@ -1,0 +1,6 @@
+;Modern by Pheonix
+(include "\set\big.firearms.accuracy")
+{curve "gun_std"}
+(define "speed"   {speed (* 0.2 %s)} )
+(define "speed_artillery" {speed 80})
+(define "speed_mrls" {speed 65})

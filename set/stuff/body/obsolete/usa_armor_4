@@ -1,0 +1,8 @@
+{from "pattern overcoat"
+	
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+	{entity "usa_armor_4"}
+}

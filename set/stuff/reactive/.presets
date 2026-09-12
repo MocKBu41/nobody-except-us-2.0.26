@@ -1,0 +1,33 @@
+(include "\set\big.firearms.accuracy")
+(include "\set\small.firearms.accuracy")
+(define "heavy_artillery"
+	{tag "mrl"}
+	{fillingVisible "rocket"}
+	{inventory {noView}}
+	{foresight "foresight"}
+	{aimRange 170}
+	{maxRange 170}
+;	{spreading
+;		{SpreadRadius 17}
+;		{radiusFunction
+;			0.0		10.1
+;			0.2		10.3
+;			0.5		10.6
+;			0.8		11
+;			1.00	11.2
+;		}
+;	}
+;	{aimtype adaptive}
+	{gravity 3}
+	{AimingTolerance 0.1}
+	;{cursor "cannon_on"}
+	;{cursorReloading "cannon_reload"}
+	{cursor "target_fg"}
+	{cursorReloading "cannon_reload_fg"}	
+	{rechargeTime 60.0}
+	(mod "mp"
+		{rechargeTime 210}
+	)
+)
+(define "speed_artillery" {speed 80})
+(define "speed_mrls" {speed 65})

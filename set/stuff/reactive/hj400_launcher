@@ -1,0 +1,24 @@
+{weapon_bullet
+	{tag "weapon" "skill_tankgun" "bullet" "prepare"}	;"bullet" is needed for work of levelling and skills
+    {Special
+		{Mode aim}
+		{PrepareTime 2}
+		{PrepareCursor "aimed_shot"}
+	}
+	{tag "gun"}
+	("heavy_artillery")
+	{filling "hj400 ammo" 2}
+	{fillingvisible "rocket0"}
+	{fireSound "reactive/missile_big"}
+	{recoveryTime 3}
+
+		{range 800 800} ;äëÿ êàññåòíîé 300 êì.
+		("CW_acc_artillery" mils(2))
+		{rechargeTime 120}
+		{aimtype adaptive}
+		{gravity 0.89}
+		{speed 10}
+	             {cursor "tactical"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+  
+}

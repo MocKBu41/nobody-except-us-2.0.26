@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "rubin_gp_a"}
+	{mass 12}
+}

@@ -1,0 +1,69 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_neu_ukr_pilot"}
+	{portrait "ua/pilot"}
+	{icon pilot}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{body "lpsv_us_pilot"}
+		{head "zsh7apn"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_1
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"pistol" lvl_3
+		}
+		{"gra_launch" lvl_1
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_4
+		}
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "110%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 1
+		}
+		{"skill_tankgun" lev_4
+		}
+		{"skill_atgm_launcher" lev_4
+		}
+		{"skill_airgun" lev_4
+		}
+		{"skill_airgm_launcher" lev_4
+		}
+	}
+	{veterancy
+		{"crew_lvl_1" 4
+		}
+		{"crew_lvl_2" 16
+		}
+		{"crew_lvl_3" 48
+		}
+		{"crew_lvl_4" 96
+		}
+		{"crew_lvl_5" 160
+		}
+	}
+	{inventory
+		{item "bandage" 5}
+		{item "knife_japan"}
+		{item "pm_sil" filling "standart ammo" 8}
+		{item "standart ammo" 24}
+		{in_hands 2}
+	}
+}

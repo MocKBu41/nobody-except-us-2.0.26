@@ -1,0 +1,15 @@
+{from "pattern proj_impactor"
+	{entity "9m330_1_impactor"}	
+	{inventory		
+		{weight 100}		
+		{size 6 1}	
+	}	
+	{tag  "big" "size2" "88to105" "pierce" "ptrk" "-ap" "-rocketlauncher" "fx_111_145"} 
+	;масса БЧ 14 кг, масса ВВ около 6.2 кг,
+	;Тип БЧ ОФ	
+	{damage blastwave {energy 0.7} {area 12.6 14.5}}
+	{damage add blastwave {energy 1.2} {area 10.8 12.4}}
+	{damage add blastwave {energy 2.5} {area 7.2 8.2}}
+	{damage add blastwave {energy 6.5} {area 4.3 5}}
+	{damage add blastwave {energy 11} {area 2.2 2.5}}
+}

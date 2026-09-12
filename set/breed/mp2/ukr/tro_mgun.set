@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_neu_ukr_tro2"}
+	{portrait "ua/smg2"}
+	{icon mgs}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{body otv_ukr_smg}
+		{head "kaska_1m_chehol"}
+	}
+	(include "perks_generic.inc")
+	("traits_army_mgun")
+	{inventory
+		{item "bandage" 10}
+		{item "pkm" filling "pkm_ammo ammo" 100}
+		{item "pkm_ammo ammo" 600}
+		{item "rgd grenade" 2}
+		
+		{item "sandbag_kit"}
+		{item "smoke grenade rdg2b" 2}
+		{in_hands 1}
+	}
+}

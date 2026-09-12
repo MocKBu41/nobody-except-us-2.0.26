@@ -1,0 +1,7 @@
+{from "pattern overcoat"
+	{entity "iotv3_acu"}
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+}

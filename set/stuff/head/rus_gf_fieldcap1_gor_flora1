@@ -1,0 +1,8 @@
+{from "helmet1_ger"
+	{inventory
+		{size 2 2}
+		{weight 100}
+}
+	{entity "rus_gf_fieldcap1_gor_flora1"}
+	                        
+}

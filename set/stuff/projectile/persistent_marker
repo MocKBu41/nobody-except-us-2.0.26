@@ -1,0 +1,28 @@
+;SDL
+{weapon_bullet
+	{tag "weapon smallitemin1hand pistol sd -prepare"}
+	{filling "persmarker ammo" 50}
+	{preloaded}
+	{ammoLocked}
+	{Automatic}
+	{recoveryTime 20}
+	{rechargeTime 20}
+;	{entity "rus_las_ammo"}
+	{inventory
+		{size 2 2}
+		{weight 100}
+		{fsm "belt"}
+	}
+	;{RelaxationTime 0}
+	{states
+		{aim 		"aim"	}
+		{can_aim	"can-aim"}
+	}
+	{mass 1.5}
+	{aimRange 10}
+	{maxRange 10}
+		{spreading 0.001}
+	{gravity 0}
+	{speed 500}
+	{AimingTolerance 2}
+}

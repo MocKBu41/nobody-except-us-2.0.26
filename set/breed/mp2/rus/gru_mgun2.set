@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_rus_sso_atacs"}
+	{portrait "_new/rus/sso"}
+	{icon "mgs"}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head "lshz1plus_sso"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_elite_mgun")
+	{inventory
+		{item "lbt6094_rus_mgun_a"}
+		{item "rgd grenade" 3}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "rpk_ammo ammo" 560}
+		{item "rpk_74_3" filling "545 ammo" 45}
+		{item "smoke rdg2b grenade"}
+		{in_hands 5}
+	}
+}

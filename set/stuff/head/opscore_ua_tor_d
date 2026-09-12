@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "opscore_ua_tor_d"}
+	{mass 1.08}
+}

@@ -1,0 +1,4 @@
+(define "speed"   
+	{speed (* 0.5 %s)}  
+)
+(include "\set\big.firearms.accuracy")

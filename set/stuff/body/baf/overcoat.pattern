@@ -1,0 +1,8 @@
+{item
+	{tag "smallitemin1hand body armor"}
+	{mass 8.0};средний бж 3-го класса защиты весит именно столько
+	{inventory
+		{size 2 3}
+		{fsm "belt"}
+	}       
+}

@@ -1,0 +1,22 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/specnaz"}
+	{icon smgs}
+	{icon_priority 2}
+	{nationality rus}
+    {armors
+		{head "6b47che2_headphones"}
+	}
+	(include "perks_generic.inc")
+	("traits_specnaz_sniper")
+	{inventory
+		{item "6b45-1_sniper"}
+		{item "bandage" 10}
+		
+		{item "rgo grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "svd" filling "svd_ammo ammo" 10}
+		{item "svd_ammo ammo" 240}
+		{in_hands 4}
+	}
+}

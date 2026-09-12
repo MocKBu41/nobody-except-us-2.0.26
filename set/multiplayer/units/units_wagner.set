@@ -1,0 +1,142 @@
+;fore - ýòî äîñòóïíîñòü þíèòà äëÿ ïåðâîé ïîêóïêè. 
+;åñëè ôîðå 1 - ñðàçó
+;åñëè ôîðå 0 - òî ÷åðåç c
+;åñëè ôîðå 0.5 - òî ÷åðåç ñ\2
+;åñëè ôîðå -1 - òî ÷åðåç 2*ñ
+
+;------------------------------------------------------------------------------
+
+
+;íàñòðîèòü ãðóïïû!
+
+;===============================общие=========================================== 
+
+("squad_with2types" side(wagner) name(bazookers2) c1(bazooker2:1) c2(bazooker2_help:1) c(120) g(supp) b(common) brig(common) t(all) cost(25) f(1) info(bazookers2))
+("squad_with2types" name(pzrk) side(wagner) c(250) g(pzrk) c1(pzrk:1) c2(pzrkhelp:1) b(common) brig(common) t(all antiair) cost(40) f(1) info(pzrk))
+{"pzrk2_wagner"					("v3" c(500) c1(mtlb)	brig(common) t(all inf_wag aat) s(wagner) n(2) n1(vehicle_supporter:2) n2(pzrk:2) n3(pzrkhelp:2) g(pzrk)  sc(11) b(common) i(0) cw(0) cp(0)) {cost 85} {fore 0.97}}
+{"kord_stan_nov"				("vs" c(240) brig(common) t(all nobot) s(wagner) n(2) g(stan1) sc(20) b(common) i(6) cw(1) cp(4)) {cost 20} {fore 1}}
+{"ags30_stan_nov"				("vs" c(240) brig(common) t(all nobot) s(wagner) n(2) g(stan1) sc(80) b(common) i(7) cw(1) cp(5)) {cost 80} {fore 0.5}}
+{"ptur_konkurs_nov"				("vs" c(250) brig(common) t(all nobot) s(wagner) n(2) g(stan) sc(35) b(common) i(9) cw(1) cp(5)) {cost 35} {fore 1}}
+{"metis_m_nov"					("vs" c(150) brig(common) t(additional nobot) s(wagner) n(1) g(ptursmall) sc(25) b(common) i(10) cw(1) cp(5)) {cost 25} {fore 1}}
+{"shilka_nov"					("v" c(300)	 brig(common) t(all art aat) s(wagner) n(4) g(zpu) sc(80) b(common) i(14) cw(0) cp(10)) {cost 80} {fore 1}} 
+{"9k35_strela-10_wagner"		("v" c(240)  brig(common) t(all art aat) s(wagner) n(3) g(zpu) sc(100) b(common) i(15) cw(0) cp(10)) {cost 80} {fore 1}}
+{"brdm2_wagner"     			("vs" c(420) brig(common) t(all recon) s(wagner) n(4) g(btr2)   sc(45) a(1) b(common) i(20) cw(0) cp(10)) {cost 45} {fore 1}}
+{"2c4_tulpan"					("v"  c(400) brig(common) t(all art nobot) 		s(wagner) n(2) g(mina)  	sc(480) b(common) i(19) cw(0) 	cp(40)) {cost 200} {fore 0}}
+("squad_with11types" 	side(wagner) name(zek) c(120) g(advinf1) c1(zek_com:1) c2(zek_mgun:3) c3(zek_radio:1) c4(zek_rpg:4) c5(zek_rpghelp:1) c6(zek_smg2:3) c7(zek_smg:4) c8(zek_sniper:2) c9(zek_zamcom:1) b(common) brig(common) t(all specnaz infantry) cost(120) f(1) info(zek))
+{"ural-4320_long_tenti"			("v3" c(180) c1(ural-4320_long_tent) brig(common) t(all infantry) s(wagner) n(3) n1(zek_smg:1) n2(zek_com:1) n3(zek_mgun:1) n4(zek_rpg:1) n5(zek_rpghelp:1) n6(zek_sniper:1) n7(zek_smg2:1) n8(zek_smg:2) g(advinf1)  sc(20) b(common) i(21) cw(30) cp(10)) {cost 50} {fore 0}}
+{"btr70i"						("v3" c(180) c1(btr70) brig(common) t(all infantry) s(wagner) n(3) n1(zek_smg:2) n2(zek_com:1) n3(zek_mgun:1) n4(zek_rpg:1) n5(zek_rpghelp:1) n6(zek_sniper:1) n7(zek_smg2:1) n8(zek_smg:2) g(advinf1)  sc(20) b(common) i(22) cw(30) cp(10)) {cost 60} {fore 0}}
+;===============================поддержка=========================================== 
+
+{"ural_art_nov"				("vs" c(600) brig(common) t(all supply nobot) s(wagner) n(2) g(supply6) 	sc(50) b(supl) i(1) cw(0) cp(1)) {cost 50} {fore 1}} 
+{"ural_eng_nov"				("ve" c(240) brig(common) t(all supply nobot) s(wagner) n(2) g(supply7) 	sc(50) b(supl) i(2) cw(0) cp(1)) {cost 50} {fore 1}}
+{"ural-4320_fuel_wagner"	("ve" c(240) brig(common) t(all supply nobot) s(wagner) n(2) g(fuel) 	sc(25) b(supl) i(3) cw(0) cp(1)) {cost 25} {fore 1}}  
+{"ural-4320_tent2"			("vs" c(120) brig(common) t(additional nobot) s(wagner) n(1) g(truck) sc(10) b(supl) i(4) cw(0) cp(0)) {cost 10} {fore 1}}
+{"mtlb_nov"					("vs" c(250) brig(common) t(additional nobot) s(wagner) n(2) g(btr1) sc(20) b(supl) i(5) cw(0) cp(5)) {cost 20} {fore 1}}
+
+
+("squad_with2types" name(tankman) 			side(wagner) c(1) 	g(eng) c1(tankman:1) b(supl) brig(common) t(all tankman nobot) cost(10) f(1) info(tankman))
+("squad_with1types" name(vehicle_supporter) side(wagner) c(30) 	g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all vs nobot) cost(15) f(1) info(vehicle_supporter))
+
+{"eleron_catapult_wagner" 	("vart" c(500) c1(eleron_catapult) c2(eleron_control) brig(common) t(all art nobot) s(wagner) n1(vehicle_supporter:1) g(bpla) sc(80) b(supl) i(7) cw(0) cp(5)) {cost 75} {fore 0.6}}
+{"bmr-3_wagner" 			("vart_kamaz" c(600) c1(bmr-3) c2(ur_83p) brig(common) t(all art nobot) s(wagner) n1(tankman:2) n2(vehicle_supporter:2) g(demine) sc(80) b(supl) i(8) cw(0) cp(5)) {cost 80} {fore 0.5}}
+{"psnr5"					("vs" c(900) brig(common) t(all nobot) s(wagner) n(2) g(psnr) sc(50) b(supl) i(9) cw(1) cp(15)) {cost 150} {fore 0}}
+
+;===============================ввс=========================================== 
+
+("squad_with2types" name(pilot) side(wagner) c(300) g(eng) c1(pilot:1) b(vvsw_hqcar) brig(vvsw) t(all ) cost(40) f(0) info(pilot))
+
+{"mi-24p"						("h" c(240) brig(vvsw) t(additional aircraft duel_heli nobot) s(wagner) n(2) g(heli)   sc(170) b(vvsw_hqcar) i(1) cw(0) cp(15)) {cost 170} {fore 0.45}}
+{"mi17_b8"						("h" c(180) brig(vvsw) t(additional aircraft duel_heli nobot) s(wagner) n(2) g(heli2)  sc(200) b(vvsw_hqcar) i(2) cw(0) cp(10)) {cost 100} {fore 0.8}}
+
+{"su-25sm_support_light_wagner"		("p" c(240) brig(vvsw) t(all aircraft nobot) s(wagner) n(1) g(airlight)  sc(300) b(vvsw_hqcar) i(3) cw(0) cp(20)) {cost 250} {fore 0.45}}
+{"mig-29s_s13"					("p" c(240) brig(vvsw) t(all aircraft nobot) s(wagner) n(1) g(airlight)  sc(300) b(vvsw_hqcar) i(4) cw(0) cp(20)) {cost 270} {fore 0.45}}
+
+{"su-25sm_support_wagner"				("p" c(400) brig(vvsw) t(all aircraft nobot) s(wagner) n(1) g(air)  sc(300) b(vvsw_hqcar) i(5) cw(0) cp(25)) {cost 300} {fore 0.4}}
+{"mig-29s_bomber"				("p" c(300) brig(vvsw) t(all aircraft nobot) s(wagner) n(1) g(air)  sc(300) b(vvsw_hqcar) i(6) cw(0) cp(25)) {cost 280} {fore 0.4}}
+
+{"su24m_kab500l"				("p" c(600) brig(vvsw) t(all aircraft nobot) s(wagner) n(1) g(airb)  sc(360) b(vvsw_hqcar) i(7) cw(0) cp(50)) {cost 350} {fore 0.3}}
+
+{"su24m_strike_w"				("p" c(400) brig(vvsw) t(additional aircraft duel_fighter strike nobot) s(wagner) n(1) g(air_strike)  sc(560) b(vvsw_hqcar) i(8) cw(0) cp(100)) {cost 500} {fore 0}}
+
+{"su24m_w"						("p" c(500) brig(vvsw) t(additional aircraft nobot) s(wagner) n(2) g(ppr)  sc(370) b(vvsw_hqcar) i(9) cw(0) cp(45)) {cost 120} {fore 0.3}}
+
+;===============================пво===========================================
+
+
+{"mig-29s_aa_wagner"			("p" c(350) brig(pvow) t(additional aircraft duel_fighter aat nobot) s(wagner) n(1) g(air1)  sc(340) 	b(pvow_hqcar) i(1) cw(0) cp(50)) {cost 200} {fore 0.3}}
+{"mig-29s_bb_wagner"			("p" c(200) brig(pvow) t(additional aircraft duel_fighter aat nobot) s(wagner) n(1) g(air2)  sc(290) 	b(pvow_hqcar) i(2) cw(0) cp(20)) {cost 100} {fore 0.3}}
+
+{"tunguska_nov"					("v" c(250) brig(pvow) t(all art aat) 							  	s(wagner) n(4) g(pvo) 	sc(130) b(pvow_hqcar) 	i(3) cw(0) cp(25)) {cost 130} {fore 0.5}}
+{"pantsir_s"					("v" c(400) brig(pvow) t(all art aat wagnerpvo support_frontline) 	s(wagner) n(3) g(pvo1) sc(130) b(pvow_hqcar) 	i(4) cw(0) cp(40)) {cost 280} {fore 0}}
+{"buk_m1" 						("v" c(500) brig(pvow) t(all art aat nobot) 						s(wagner) n(4) g(pvo2) sc(300) b(pvow_hqcar)	i(5) cw(0) cp(40)) {cost 200} {fore 0.55}}
+{"9s18_kupol_wagner" 			("v" c(350) brig(pvow) t(all art nobot) 							s(wagner) n(4) g(pvor) sc(100) b(pvow_hqcar) 	i(6) cw(0) cp(10)) {cost 60} {fore 0.7}}
+
+{"p-37_wagner" 						("vs" c(300) brig(pvow) t(additional antiair nobot) 				s(wagner) n(4) g(radar) sc(30) b(pvow_hqcar) i(7) cw(0) cp(10)) {cost 30} {fore 1}}
+
+{"ural_avia_wagner"						("vs" c(900) brig(pvow) t(all supply nobot) 						s(wagner) n(2) g(123) 	sc(100) b(pvow_hqcar) i(8) cw(0) cp(2)) {cost 100} {fore 1}} 
+{"ural_art_pvo_wagner"					("vs" c(900) brig(pvow) t(all supply nobot) 						s(wagner) n(2) g(supplyart) 	sc(100) b(pvow_hqcar) i(9) cw(0) cp(2)) {cost 100} {fore 1}} 
+
+
+;=============================арта==============================================
+
+
+("squad_with2types" name(miners) 	side(wagner) 	c(240) g(eng)  c1(antipersonel_miner:4) c2(antitank_miner:4) 	b(artbrw_hqcar) brig(artbrw) t(all nobot) 	cost(50) f(1) info(miners))
+("squad_with1types" name(sappers) 	side(wagner) 	c(240) g(eng)  c1(saper:1) 										b(artbrw_hqcar) brig(artbrw) t(all nobot) 	cost(10) f(1) info(miners))
+("squad_with9types" name(scout)		side(wagner)	c(300) g(spot) c1(scout2:3) 									b(artbrw_hqcar) brig(artbrw) t(all infantry) cost(20) f(1) info(elite))
+
+{"mt12_rapira_wagner"		("vart" c(300) c1(mtlb_new) c2(mt12_rapira) brig(artbrw) t(all art nobot) s(wagner) n(2) n1(vehicle_supporter:2) g(stan1) sc(45) a(1) b(artbrw_hqcar) i(1) cw(5) cp(15)) {cost 45} {fore 1}}
+
+{"d1_neu"				("vart" c(240) c1(mtlb_new) c2(d1_neu) 	brig(artbrw) t(all art nobot) s(wagner) n(2) n1(vehicle_supporter:2) g(art) sc(160) a(1) b(artbrw_hqcar) i(2) cw(5) cp(15)) {cost 100} {fore 0.90}}
+{"d30_wagner"			("vart" c(300) c1(mtlb_new) c2(d30) brig(artbrw) t(all art nobot) s(wagner) n(2) n1(vehicle_supporter:2) g(art) sc(160) a(1) b(artbrw_hqcar) i(3) cw(5) cp(25)) {cost 160} {fore 0.85}}
+
+{"2c3_akaciya_nov"		("v" 	c(360) brig(artbrw) t(additional art nobot) s(wagner) n(4) g(lart1)  	sc(200) b(artbrw_hqcar) i(7) cw(0) 	cp(30)) {cost 200} {fore 0.8}}
+{"msta_nov"				("v" 	c(400) brig(artbrw) t(all art nobot) 		s(wagner) n(4) g(lart)  	sc(480) b(artbrw_hqcar) i(8) cw(0) 	cp(50)) {cost 400} {fore 0}}
+
+
+{"ural_grad_nov" 		("vs" c(400) brig(artbrw) t(all art nobot)  s(wagner) n(2) g(rszo) sc(320) 	 b(artbrw_hqcar) i(9) m(4) cw(0) cp(50)) {cost 450} {fore 0}}
+{"uragan_wagner"		("vs" c(460) brig(artbrw) t(all art2 nobot) s(wagner) n(2) g(rszo) sc(450)   b(artbrw_hqcar)  i(10) cw(0) cp(55)) {cost 500} {fore 0}}
+
+
+{"iskander-k" 		("vs" c(1200) brig(artbrw) t(all art nobot) s(wagner) n(3) g(otrk)  sc(100) b(artbrw_hqcar) i(11) cw(0) cp(35)) {cost 100} {fore 0}}
+
+;============================наемники============================
+
+("squad_with11types" side(wagner) name(stormtroopers2) c(180) g(advinf2) 
+c1(naem_com:1) c2(naem_mgun:1) c3(naem_radio:1) c4(naem_rpg:2) c5(naem_rpghelp:1) c6(naem_smg2:4) c7(naem_smg:4) c8(naem_sniper:2) c9(naem_zamcom:1) 
+b(naem_hqcar) brig(naem) t(all inf) cost(50) f(0) info(stormtroopers2))
+
+{"btr82a_novi"				("v3" c(120) c1(btr82a_nov) 		   brig(naem) t(all infantry) s(wagner) n(3) n1(tankman:3) n2(naem_com:1) n3(naem_mgun:1) n4(naem_rpg:1) n5(naem_rpghelp:1) n6(naem_sniper:1) n7(naem_smg2:1) n8(naem_smg:2) g(advinf3)  sc(20) b(naem_hqcar) i(1) cw(30) cp(25)) {cost 60} {fore 1}}
+{"bmp1_novi"					("v3" c(180) c1(bmp1_nov) 			   brig(naem) t(all infantry) s(wagner) n(3) n1(tankman:3) n2(naem_com:1) n3(naem_mgun:1) n4(naem_rpg:1) n5(naem_rpghelp:1) n6(naem_sniper:1) n7(naem_smg2:1) n8(naem_smg:2) g(advinf3)  sc(20) b(naem_hqcar) i(2) cw(30) cp(25)) {cost 50} {fore 0}}
+{"bmp2_new_without_ptyri"	("v3" c(200) c1(bmp2_new_without_ptyr) brig(naem) t(all infantry) s(wagner) n(3) n1(tankman:3) n2(naem_com:1) n3(naem_mgun:1) n4(naem_rpg:1) n5(naem_rpghelp:1) n6(naem_sniper:1) n7(naem_smg2:1) n8(naem_smg:2) g(advinf3)  sc(20) b(naem_hqcar) i(3) cw(30) cp(25)) {cost 100} {fore 0.5}}
+
+{"t-55_wagner"				("v" c(240) brig(naem) t(additional tanks_only duel_tanks70) s(wagner) n(4) g(obt_old)	sc(175) b(naem_hqcar) i(4) cw(0) cp(15)) {cost 120} {fore 1}} 
+{"t80bv_2_wagner"			("v" c(300) brig(naem) t(additional tanks_only duel_tanks80) s(wagner) n(3) g(obt)		sc(175) b(naem_hqcar) i(5) cw(0) cp(25)) {cost 150} {fore 0.3}} 
+{"t72b3_wagner"				("v" c(360) brig(naem) t(additional tanks_only duel_tanks80) s(wagner) n(3) g(obt)		sc(175) b(naem_hqcar) i(6) cw(0) cp(25)) {cost 160} {fore 0}} 
+{"t90sm_zpy12_wagner"		("v" c(600) brig(naem) t(additional tanks_only duel_tanks90) s(wagner) n(3) g(obt_top)  sc(175) b(naem_hqcar) i(7) cw(0) cp(40)) {cost 400} {fore 0}} 
+
+{"kamaz_43269"			("vs" c(120) brig(naem) t(additional nobot) s(wagner) n(2) g(btr1) 		sc(20) b(naem_hqcar) i(8)  cw(0) cp(5)) {cost 20}   {fore 1}}
+;{"yaz_patrior_2b14"		("v" c(300) brig(naem) t(additional nobot) s(wagner) n(2) g(min) 	sc(20) b(naem_hqcar) i(9)  cw(0) cp(15)) {cost 100} {fore 0}}
+{"mtlb_c60"				("vs" c(180) brig(naem) t(additional nobot) s(wagner) n(2) g(c60) 		sc(20) b(naem_hqcar) i(10) cw(0) cp(10)) {cost 160}  {fore 0}}
+{"mtlb_c5_vasilek"		("vs" c(420) brig(naem) t(additional nobot) s(wagner) n(2) g(min) 	sc(20) b(naem_hqcar) i(11) cw(0) cp(15)) {cost 180} {fore 0}}
+
+;============================вагенер============================
+
+("squad_with11types" side(wagner) name(elite) c(120) g(advinf2) 
+c1(wagner_com:1) c2(wagner_mgun:1) c3(wagner_radio:1) c4(wagner_rpg:1) c5(wagner_rpghelp:1) c6(wagner_smg2:1) c7(wagner_smg:1) c8(wagner_sniper:1) c9(wagner_zamcom:1) 
+b(wagnera_hqcar) brig(wagnera) t(all specnaz infantry) cost(50) f(1) info(elite))
+("squad_with2types" name(snipers)  side(wagner) c(180) g(snipe1) c1(spiner:3) b(wagnera_hqcar) brig(wagnera) t(all duel_snipers) cost(60) f(0) info(snipers))
+("squad_with2types" name(snipers2)  side(wagner) c(120) g(snipe1) c1(at_rifle:1) c2(scout2:1) b(wagnera_hqcar) brig(wagnera) t(all duel_snipers) cost(40) f(0) info(snipers))
+{"mtlb_vmki"		("v3" c(120) c1(mtlb_vmk) 	brig(wagnera) t(all infantry) s(wagner) n(3) n1(tankman:2) n2(wagner_com:1) n3(wagner_mgun:1) n4(wagner_rpg:1) n5(wagner_rpghelp:1) n6(wagner_sniper:1) n7(wagner_smg2:1) n8(wagner_smg:2) g(advinf2)  sc(20) b(wagnera_hqcar) i(1) cw(30) cp(25)) {cost 60} {fore 1}}
+{"btr80_nov2i"	("v3" c(180) c1(btr80_nov2) brig(wagnera) t(all infantry) s(wagner) n(3) n1(tankman:3) n2(wagner_com:1) n3(wagner_mgun:1) n4(wagner_rpg:1) n5(wagner_rpghelp:1) n6(wagner_sniper:1) n7(wagner_smg2:1) n8(wagner_smg:2) g(advinf2)  sc(20) b(wagnera_hqcar) i(2) cw(30) cp(25)) {cost 50} {fore 0}}
+{"bmp1_new2i"	("v3" c(200) c1(bmp1_new2)	brig(wagnera) t(all infantry) s(wagner) n(3) n1(tankman:3) n2(wagner_com:1) n3(wagner_mgun:1) n4(wagner_rpg:1) n5(wagner_rpghelp:1) n6(wagner_sniper:1) n7(wagner_smg2:1) n8(wagner_smg:2) g(advinf2)  sc(20) b(wagnera_hqcar) i(3) cw(30) cp(25)) {cost 100} {fore 0.5}}
+
+{"t62m_wagner"		("v_ukr" c(240) brig(wagnera) t(additional tanks_only duel_tanks70) s(wagner) n(4) g(obt2)	sc(175) b(wagnera_hqcar)  i(4)	cw(0) cp(15)) {cost 120} {fore 1}} 
+{"t72av_nov"		("v_ukr" c(300) brig(wagnera) t(additional tanks_only duel_tanks80) s(wagner) n(3) g(obt1)	sc(175) b(wagnera_hqcar) 	i(5)	cw(0) cp(25)) {cost 150} {fore 0.3}} 
+{"t-64bv_wagner"	("v_ukr" c(360) brig(wagnera) t(additional tanks_only duel_tanks90) s(wagner) n(3) g(obt1)	sc(175) b(wagnera_hqcar) 	i(6)	cw(0) cp(25)) {cost 160} {fore 0}} 
+
+{"yaz_patrior_flamer"	("v3" c(120) c1(yaz_patrior) 	brig(wagnera) t(all infantry flamer) s(wagner) n(1) n1(wagner_smg:1) n2(wagner_com:1) n3(flamer2:3) g(advinf3)  sc(20) b(wagnera_hqcar) i(8) cw(30) cp(25)) {cost 60} {fore 1}}
+{"yaz_patrior_zu23_2"	("v" c(120) brig(wagnera) t(additional nobot) s(wagner) n(4) g(yaz) 		sc(20) b(wagnera_hqcar) i(9)  cw(0) cp(10)) {cost 60}   {fore 0}}
+{"yaz_patrior_kornet"	("v" c(300) brig(wagnera) t(additional nobot) s(wagner) n(3) g(yaz) 		sc(20) b(wagnera_hqcar) i(10) cw(0) cp(15)) {cost 180}   {fore 0}}
+{"yaz_patrior_rapira"	("v" c(240) brig(wagnera) t(additional nobot) s(wagner) n(3) g(yaz) 		sc(20) b(wagnera_hqcar) i(11) cw(0) cp(15)) {cost 120}  {fore 0}}
+
+{"mtlb_vmk_ogon"		("vs" c(420) brig(wagnera) t(additional nobot) s(wagner) n(3) g(ogon) 		sc(20) b(wagnera_hqcar) i(12) cw(0) cp(15)) {cost 200}  {fore 0}}

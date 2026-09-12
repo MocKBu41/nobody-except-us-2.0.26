@@ -1,0 +1,15 @@
+{from "pattern proj_impactor"
+	{entity "48n6_impactor"}	
+	{inventory		
+		{weight 100}		
+		{size 6 1}	
+	}	
+	{tag  "big" "size2" "88to105" "AA_missile_2gen" "-ap" "-rocketlauncher" "fx_upto250kg"} 
+	;масса БЧ 144 кг, масса ВВ около 63 кг,
+	;Тип БЧ ОФ	
+	{damage blastwave {energy 0.7} {area 19 21.8}}
+	{damage add blastwave {energy 1.2} {area 16.4 18.9}}
+	{damage add blastwave {energy 2.5} {area 12.2 14}}
+	{damage add blastwave {energy 6.5} {area 9.1 10.5}}
+	{damage add blastwave {energy 11} {area 4.3 4.9}}
+}

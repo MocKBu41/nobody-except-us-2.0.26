@@ -1,0 +1,72 @@
+{breed
+	{skin "neu_wagner"}
+	{portrait "rus/wagner"}
+	{icon mgs}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head "6b47che1"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_3
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "180%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.8
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "rgd grenade" 3}
+		{item "6b45-1_pulemetchik"}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "pkm_ammo ammo" 600}
+		{item "smoke rdg2b grenade"}
+		{item "lbt6094_delta_mgun"}
+		{item "pkm" filling "pkm_ammo ammo" 100}
+		{item "sandbag_kit"}
+		{in_hands 6}
+	}
+}

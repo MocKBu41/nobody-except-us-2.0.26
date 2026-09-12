@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "kaska_1m_chehol_ghillie"}
+	{mass 1.5}
+}

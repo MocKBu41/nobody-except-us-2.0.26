@@ -1,0 +1,29 @@
+{from "pattern proj_impactor"
+	{entity "fp1_base_impactor"}
+              {inventory
+		{weight 100}
+		{size 5 1}
+	}
+	{tag "no_ricochet" "big" "size4" "88to105" "pierce" "ptrk" "fx_upto50kg"} 
+	;БЧ около 40 кг (оск-фуг), вес ВВ можно оценить в 20кг (достаточно произвольно, но с учетом выбранного шаблона)
+	{damage blastwave {energy 0.7} {area 14.7 17}}
+    {damage add blastwave {energy 1.2} {area 12.5 14.4}}
+    {damage add blastwave {energy 2.5} {area 8.8 10.1}}
+    {damage add blastwave {energy 6.5} {area 6.8 7.8}}
+    {damage add blastwave {energy 11} {area 3.5 4}}
+	{damage add blastwave	 ; HE, kinetic, direct hit
+		{energy 25}
+		{area 0.2 0.4}
+	}
+	{damage add fire
+		{radius 7}
+		{heating 15}
+		{time 2}
+	}
+	{damage add fire
+		{radius 2}
+		{heating 50}
+		{time 1}
+	}
+ 
+}

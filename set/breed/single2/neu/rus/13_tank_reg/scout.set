@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_neu_rus_13reg_scout"}
+	{portrait "_new/rus/scout"}
+	{icon scouts}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+	(include "perks_generic.inc")
+	("traits_scout")
+	{inventory
+		{item "6b45_strelok"}
+		{item "bandage" 5}
+		{item "c4_bomb" 2}
+		{item "smoke rdg2b grenade"}
+		{item "smoke rdg2b grenade"}
+		{item "545 ammo" 240}
+		{item "rpg26 weapon" 3 filling "rpg26 ammo" 1}
+		{item "rgo grenade" 2}
+		{item "rgn grenade" 2}
+		{item "aks74_4" filling "545 ammo" 30}
+		{in_hands 9}
+	}
+}

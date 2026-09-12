@@ -1,0 +1,22 @@
+{breed
+	{skin "cw_hamas2"}
+	{portrait "_new/arb/boevik"}
+	{icon "boevik_smgs"}
+	{icon_priority 0}
+	{nationality arb}
+	{armors
+		{head pasgt_helmet_syr}
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_smg")
+	{inventory
+		{item "lbt6094_clear"}
+		{item "bandage" 10}
+		{item "knife_rus"}
+		{item "Aks47"}
+		{item "762 ammo" 240}
+		{item "rgd grenade" 3}
+		{in_hands 3}
+	}
+}

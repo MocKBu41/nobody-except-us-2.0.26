@@ -1,0 +1,234 @@
+;fore - ýòî äîñòóïíîñòü þíèòà äëÿ ïåðâîé ïîêóïêè. 
+;åñëè ôîðå 1 - ñðàçó
+;åñëè ôîðå 0 - òî ÷åðåç c
+;åñëè ôîðå 0.5 - òî ÷åðåç ñ\2
+;åñëè ôîðå -1 - òî ÷åðåç 2*ñ
+
+;------------------------------------------------------------------------------
+
+
+;íàñòðîèòü ãðóïïû!
+
+;===============================общие=========================================== 
+("squad_with2types" 	name(bazooker2) side(ukr) c(180) g(supp)  c1(bazooker2:1) c2(bazooker2_help:1) b(common) brig(common) t(all) cost(100) f(0) info(bazookers2))
+("squad_with2types" 	name(pzrk) 		side(ukr) c(250) g(pzrk1) c1(pzrk:1) c2(pzrk_help:1) b(common) brig(common) t(all antiair) cost(40) f(1) info(pzrk))
+
+{"pzrk2_ukr"			("v3" c(500) c1(hmmwv_m998) brig(common) t(all antiair) s(ukr) n(2) n1(vehicle_supporter:1) n2(pzrk:2) n3(pzrk_help:2) g(pzrk1)  sc(11) b(common) i(1) cw(0) cp(0)) {cost 85} {fore 0.97}}
+{"kord_stan_ukr"		("vs" c(240) brig(common) t(all nobot) s(ukr) n(2) g(stan1) sc(20) b(common) i(2) cw(1) cp(4)) {cost 20} {fore 1}}
+{"ags30_stan_ukr"		("vs" c(240) brig(common) t(all nobot) s(ukr) n(2) g(stan1) sc(80) b(common) i(3) cw(1) cp(5)) {cost 80} {fore 0.5}}
+{"2b11_ukr"				("vart" c(540) c1(mtlb_ukr) c2(2b11_ukr) brig(common) t(all nobot) s(ukr) n(2) n1(vehicle_supporter:2) g(stan1) sc(110) a(1) b(common) i(4) cw(5) cp(15)) {cost 110} {fore 0}}
+{"metis_m_ukr"			("vs" c(150) brig(common) t(all nobot) s(ukr) n(1) g(ptursmal) sc(25) b(common) i(5) cw(1) cp(5)) {cost 25} {fore 1}}
+{"ptur_konkurs_ukr"		("vs" c(250) brig(common) t(all nobot) s(ukr) n(2) g(ptursmall) sc(35) b(common) i(6) cw(1) cp(5)) {cost 35} {fore 1}}
+{"stugna-p"				("vs" c(420) brig(common) t(all nobot) s(ukr) n(2) g(stugna) sc(25) b(common) i(7) cw(1) cp(15)) {cost 160} {fore 0}}
+{"Shilka_ukr"			("v_ukr" c(300)  brig(common) t(all  aat) s(ukr) n(4) g(zpu2) sc(80) b(common) i(8) cw(0) cp(10)) {cost 80} {fore 1}} 
+{"9k35_strela-10"		("v_ukr" c(240)  brig(common) t(all aat) s(ukr) n(3) g(zpu2) sc(100) b(common) i(9) cw(0) cp(10)) {cost 80} {fore 1}}
+
+{"m113a3_ukri"			("v3" c(270) c1(m113a3) 	 brig(common) t(all inf_ukr infantry) s(ukr) n(2) n1(tankman:2) n2(tro_com:1) n3(tro_rpb:1) n4(tro_rpghelp:1) n5(tro_mgun:1) n6(tro_mgunhelp:1) n7(tro_smg:1) n8(tro_smg2:1)      		  g(inf)  sc(55) b(common) i(10) cw(0) cp(10)) {cost 60} {fore 1}}
+{"btr80_2_ukri"			("v3" c(260) c1(btr80_2_ukr) brig(common) t(all inf_ukr infantry) s(ukr) n(2) n1(tankman:2) n2(tro_com:1) n3(tro_rpb:1) n4(tro_rpghelp:1) n5(tro_mgun:1) n6(tro_mgunhelp:1) n7(tro_smg:1) n8(tro_smg2:1) 			  g(inf)  sc(55) b(common) i(11) cw(0) cp(10)) {cost 70} {fore 1}}
+{"zil131i"				("v3" c(240) c1(zil131) 	 brig(common) t(all inf_ukr infantry) s(ukr) n(1) n1(vehicle_supporter:1)     n2(tro_com:1) n3(tro_rpb:1) n4(tro_rpghelp:1) n5(tro_mgun:1) n6(tro_mgunhelp:1) n7(tro_smg:1) n8(tro_smg2:1) g(inf) sc(55) b(common) i(12) cw(0) cp(5)) {cost 55} {fore 1}}
+
+{"kipri2"    	("vs" c(300) brig(common) t(all recon) s(ukr) n(4) g(btr2)   sc(45) a(1) b(common) i(13) cw(0) cp(10)) {cost 45} {fore 1}}
+
+{"mistral_stan"			("vs" c(300) brig(common) t(all nobot antiair) s(ukr) n(2) g(pzrk1) sc(25) b(common) i(14) cw(1) cp(10)) {cost 120} {fore 0.5}}
+
+;===============================support===========================================
+
+{"kraz_6322"	 ("vs_ukr" c(240) brig(common) t(all supply nobot) s(ukr) n(2) g(supply5)   sc(10) b(supl) i(1) cw(0) cp(5)) {cost 50} {fore 1}}
+
+{"kraz_6322_eng" ("vs_ukr" c(240) brig(common) t(all supply nobot) s(ukr) n(2) g(supply7) 	sc(10) b(supl) i(5) cw(0) cp(2)) {cost 50} {fore 1}} 
+{"mtlb_ukr"		 ("v" c(250) brig(common) t(additional nobot) s(ukr) n(2) g(supply11) sc(25) b(supl) i(5) cw(0) cp(6)) {cost 20} {fore 1}}
+{"kraz_6322_fuel"		("vs_ukr" c(250) brig(common) t(additional nobot) s(ukr) n(2) g(supply9) sc(25) b(supl) i(7) cw(0) cp(5)) {cost 20} {fore 1}}
+("squad_with1types" 		name(vehicle_supporter) side(ukr) c(30) g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all vs nobot) cost(15) f(1) info(vehicle_supporter))
+("squad_with2types" 		name(tankman)   side(ukr) c(20)  g(eng)  c1(tankman:2) b(supl) brig(common) t(all nobot) cost(10) f(0) info(tankman))
+
+
+("squad_with11types_custom" name(operator_bpla) side(ukr) crew_nation(ukr)  c(680) g(operator_bpla) c1(operator_bpla:1) b(supl) brig(common) t(all nobot) cost(50) f(0.6) info(operator_bpla))
+("squad_with2types" 		name(operator_fpv) 	side(ukr)					c(600) g(operator_fpv)  c1(operator_fpv:1)  b(supl) brig(common) t(all nobot) cost(100) f(0.5) info(operator_fpv))
+
+{"mstar_v6ukr"			("vs" c(900) brig(common) t(all nobot ) s(ukr) n(2) g(mstar) sc(25) b(supl) i(10) cw(1) cp(15)) {cost 150} {fore 0}}
+
+
+{"kraz_6322_sup" 			("vs_ukr" c(240) brig(common) t(all supply  nobot) s(ukr) n(2) g(supply6) 	sc(15) b(supl)		   i(15) cw(0) cp(2)) {cost 50} {fore 1}}
+{"kraz_6322_art_pvo" 		("vs_ukr" c(600) brig(ukr_aa) t(all supply  nobot) s(ukr) n(2) g(supply8) 	sc(15) b(supl) i(16) cw(0) cp(2)) {cost 100} {fore 1}}
+{"kraz_6322_avi"			("vs_ukr" c(600) brig(ukr_aa) t(all supply  nobot) s(ukr) n(2) g(supply7) 	sc(15) b(supl) i(17) cw(0) cp(2)) {cost 100} {fore 1}} 
+
+{"lav25_2_ukr"		("v3" c(300) 	brig(common) t(additional nobot p)  c1(lav25_2) s(ukr) n1(vehicle_supporter:2) g(khm_ukr)   sc(45) a(1) 	b(supl) i(18) cw(0) cp(-100) info(khm)) {cost 300} {fore 1}}
+;===============================air===========================================
+
+{"mi-24v_ukr" ("h" c(180) brig(vvc) t(additional aircraft duel_heli ) s(ukr) n(2) g(heli)  sc(170) b(vvc_hqcar) i(1) cw(0) cp(20)) {cost 100} {fore 0.45}}
+{"mi-24p_2"   ("h" c(150) brig(vvc) t(additional aircraft duel_heli ) s(ukr) n(2) g(heli)  sc(170) b(vvc_hqcar) i(2) cw(0) cp(20)) {cost 70} {fore 0.45}}
+{"sso_ukr"						("v3u" c(600) c1(mi17_unarmed_urk) brig(vvc) t(additional ssa nobot) s(ukr) n(2) n1(vertpilot:2) n2(sso_rpghelp:1) n3(sso_sniper:1) n4(sso_of:1) n5(sso_rpg:1) n6(sso_smg3:4) g(sso)  sc(55) b(vvc_hqcar) i(3) cw(0) cp(2)) {cost 80} {fore 0.3}}
+
+("squad_with2types" 				name(pilot)   side(ukr) c(300)  g(eng)  c1(pilot:1) b(vvc_hqcar) brig(vvc) t(all ) cost(40) f(0) info(pilot))
+{"su-25sm_accurate_ukr"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(1) g(air) 		sc(300)    b(vvc_hqcar) i(4) cw(0) cp(30)) {cost 300} {fore 0.4}}
+{"su-25sm_strike_ukr"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(1) g(air)  		sc(400)    b(vvc_hqcar) i(5) cw(0) cp(30)) {cost 350} {fore 0.5}}
+{"su-25sm_support_lighti_ukr"		("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(1) g(air_sup)   sc(390)    b(vvc_hqcar) i(6) cw(0) cp(30)) {cost 200} {fore 0.2}}
+
+{"mig-29s_harm"						("p" c(500) brig(vvc) t(additional aircraft  nobot)       s(ukr) n(2) g(ppr)         sc(370) b(vvc_hqcar) i(7) cw(0) cp(20)) {cost 200} {fore 0}}
+{"su24m_harm"						("p" c(500) brig(vvc) t(additional aircraft  nobot)       s(ukr) n(2) g(ppr)         sc(370) b(vvc_hqcar) i(8) cw(0) cp(20)) {cost 150} {fore 0.3}}
+
+{"su24m_kab"						("p" c(600) brig(vvc) t(all aircraft nobot) 			  s(ukr) n(2) g(airb)        sc(360) b(vvc_hqcar) i(9) cw(0) cp(30)) {cost 350} {fore 0.3}}
+
+{"su24m_storm"						("p" c(400) brig(vvc) t(additional aircraft strike nobot) s(ukr) n(2) g(air_strike)  sc(560) b(vvc_hqcar) i(10) cw(0) cp(50)) {cost 500} {fore 0}}
+
+{"bayraktar_tb2_mamc"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(tb2)  sc(400) b(vvc_hqcar) i(11) cw(0) cp(5)) {cost 100} {fore 0.3}}
+{"bayraktar_tb2_maml"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(tb2)  sc(400) b(vvc_hqcar) i(12) cw(0) cp(5)) {cost 120} {fore 0.3}}
+
+{"fp-1_base"						("p" c(60) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(fp1)  sc(400) b(vvc_hqcar) i(13) cw(0) cp(5)) {cost 25} {fore 0.5}}
+{"fp-2_base"						("p" c(60) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(fp1)  sc(400) b(vvc_hqcar) i(14) cw(0) cp(5)) {cost 40} {fore 0.2}}
+{"fp-5_base"						("p" c(120) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(fp1)  sc(400) b(vvc_hqcar) i(15) cw(0) cp(5)) {cost 150} {fore 0.2}}
+;===============================arty===========================================
+
+
+("squad_with9types"	 	name(miners)  side(ukr) 	c(240) g(eng) c1(antipersonal_miner:4) c2(antitank_miner:4) b(arta_hqcar) brig(arta) t(all nobot) cost(50) f(1) info(miners))
+("squad_with2types" 	name(sappers) side(ukr)	 	c(60)  g(eng) c1(saper:2) b(arta_hqcar) brig(arta) t(all nobot) cost(10) f(1) info(miners))
+("squad_with11types" 	name(scout)		 side(ukr) c(180) g(elite) c1(scout2:3) b(arta_hqcar) brig(arta) t(all elite) cost(20)  f(1) info(scout))
+
+{"mt12_rapira_ukr"		("vart" c(300) c1(mtlb_ukr) c2(mt12_rapira_ukr) brig(arta) t(all art nobot) s(ukr) n(2) n1(artilerist:2)  g(art) sc(45) b(arta_hqcar) i(1) cw(5) cp(15)) {cost 45} {fore 1}}
+
+{"m777"					("vart" c(360) c1(kraz_6322) c2(m777a1) 		brig(arta) t(additional art art_stan nobot p) s(ukr) n(2) n1(artilerist:2) g(art_stan1) sc(100) a(1) b(arta_hqcar) i(3)  cw(5) cp(20)) {cost 250} {fore 0.3}}
+{"msta_b"				("vart" c(360) c1(mtlb_ukr) c2(2a65_msta_b) brig(arta) t(additional art art_stan nobot) s(ukr) n(2) n1(artilerist:2) g(art_stan1) sc(100) a(1) b(arta_hqcar) i(4)  cw(5) cp(20)) {cost 200} {fore 0.3}}
+
+{"2c3_akaciya_ukr"		("v" c(360) brig(arta) t(additional art nobot) s(ukr) n(4) g(lart)  sc(200) b(arta_hqcar) i(5)  cw(0) cp(30)) {cost 350} {fore 0}}
+
+{"msta_ukr"				("v" c(400) brig(arta) t(additional art2_2 nobot art2) s(ukr) n(4) g(lart2)  sc(480) b(arta_hqcar) i(7) cw(0) cp(50)) {cost 480} {fore 0}}
+{"ahs_krab"				("v" c(440) brig(arta) t(additional art2_2 nobot art2 p) s(ukr) n(4) g(lart2)  sc(480) b(arta_hqcar) i(8) cw(0) cp(50)) {cost 500} {fore 0}}
+{"2s7_pion_ukr"			("v" c(440) brig(arta) t(additional art2 nobot) s(ukr) n(3) g(lart2)  sc(480) b(arta_hqcar) i(9) cw(0) cp(65)) {cost 450} {fore 0}}
+
+{"pzh2000_ukr"			("v" c(600) brig(arta) t(additional art2 nobot p) s(ukr) n(4) g(lart3)  sc(480) b(arta_hqcar) i(10) cw(0) cp(65)) {cost 500} {fore 0}}
+ 
+{"ural_grad_ukr"		("v" c(420) brig(arta) t(additional art3 nobot) s(ukr) n(2) g(rszo1) sc(320) b(arta_hqcar) i(11)  m(4) cw(0) cp(40)) {cost 450} {fore 0}}
+
+{"uragan_nov"			("v" c(500) brig(arta) t(additional art3 nobot) s(ukr) n(2) g(rszo1) sc(400) b(arta_hqcar) i(12) cw(0) cp(40)) {cost 500} {fore 0}}
+
+{"bm-30_vilkha"			("v" c(1200) brig(arta) t(additional art4 nobot) s(ukr) n(3) g(rszo2)  sc(450) b(arta_hqcar) i(13) cw(0) cp(70)) {cost 650} {fore 0}}
+	
+{"m142_himarser"		("v" c(1200) brig(arta) t(additional art4 nobot p) s(ukr) n(2) g(rszo2) sc(400) b(arta_hqcar) i(14) cw(0) cp(70)) {cost 600} {fore 0}}
+
+{"tochka_y"				("v" c(900)  brig(arta) t(additional otrk nobot p) s(ukr) n(3) g(otrk)  sc(450) b(arta_hqcar) i(15) cw(0) cp(50)) {cost 200} {fore 0}}
+{"m142_himars_atacams"	("v" c(1400) brig(arta) t(additional otrk nobot strike) s(ukr) n(2) g(otrk2)  sc(450) b(arta_hqcar) i(16) cw(0) cp(50)) {cost 350} {fore 0}}
+{"grom2"				("v" c(1500) brig(arta) t(additional otrk nobot strike) s(ukr) n(2) g(otrk2)  sc(450) b(arta_hqcar) i(17) cw(0) cp(50)) {cost 400} {fore 0}}
+
+
+;===============================antiair===========================================
+
+
+{"mig-29s_aa_ukr"			("p" c(330) brig(ukr_aa) t(additional aircraft duel_fighter nobot) s(ukr) n(1) g(air1)  sc(340) b(ukr_aa_hqcar) i(1) cw(0) cp(30)) {cost 250} {fore 0.5}}
+
+{"mig-29s_bb_ukr"			("p" c(360) brig(ukr_aa) t(additional aircraft duel_fighter nobot) s(ukr) n(1) g(air_aa)  sc(290) b(ukr_aa_hqcar) i(2) cw(0) cp(40)) {cost 150} {fore 0.3}}
+
+{"su27"						("p" c(400) brig(ukr_aa) t(additional aircraft duel_fighter nobot) s(ukr) n(1) g(air_aa)  sc(290) b(ukr_aa_hqcar) i(3) cw(0) cp(40)) {cost 340} {fore 0.3}}
+
+{"tunguska_ukr"				("v" c(250) brig(ukr_aa) t(all art aat) s(ukr) n(4) g(pvo19) sc(80) b(ukr_aa_hqcar) i(4) cw(0) cp(25)) {cost 120} {fore 0.5}}
+{"tor_m1_ukr"				("v" c(300) brig(ukr_aa) t(all art aat) s(ukr) n(3) g(pvo19) sc(80) b(ukr_aa_hqcar) i(5) cw(0) cp(25)) {cost 150} {fore 0.5}}
+{"buk_m1_ukr"				("v" c(500) brig(ukr_aa) t(all art aat nobot) s(ukr) n(3) g(pvo17) sc(80) b(ukr_aa_hqcar) i(6) cw(0) cp(30)) {cost 200} {fore 0.55}}
+
+{"patriot_launcher_v2_ukr"    ("vpat" c(600) 	c1(patriot_truck) c2(patriot_launcher_v2)  brig(ukr_aa) t(all art nobot strike) 						 s(ukr) n(2) n1(vehicle_supporter:2) g(pvo45)  sc(140) a(2) b(ukr_aa_hqcar) i(7) cw(0) cp(40)) {cost 400} {fore 0}}
+{"patriot_radar_ukr"          ("vpat" c(600) 	c1(patriot_truck) c2(patriot_radar)   	   brig(ukr_aa) t(all art cannon heavy_art fixed nobot p)  		 s(ukr) n(2) n1(vehicle_supporter:2) g(pvo46)  sc(120) a(2) b(ukr_aa_hqcar) i(8) cw(0) cp(20)) {cost 80} {fore 0}}
+
+{"nasams_ii_launcher_ukr"     ("vradar" c(300)	c1(nasams_ii_launcher) c2(hawk_cwar)    brig(ukr_aa) t(additional antiair aat support_frontline p) s(ukr) n(2) n1(vehicle_supporter:2) n2() g(pvo19)  sc(150) a(2) b(ukr_aa_hqcar) i(9) cw(0) cp(20)) {cost 170}{fore 0}}
+
+
+{"9s18_kupol_ukr" 			("v" c(350) brig(ukr_aa) t(all art nobot) s(ukr) n(4) g(pvo18) sc(100) b(ukr_aa_hqcar) i(10) cw(0) cp(10)) {cost 60} {fore 0.7}}
+
+{"p-37_ukr" 				("vs_ukr" c(300) brig(ukr_aa) t(additional antiair nobot) s(ukr) n(4) g(radar) sc(30) b(ukr_aa_hqcar) i(11) cw(0) cp(10)) {cost 30} {fore 1}}
+
+
+{"bayraktar_tb2"			("p" c(300) brig(ukr_aa) t(additional aircraft nobot) s(ukr) n(0) g(tb2_ua)  sc(400) b(ukr_aa_hqcar) i(12) cw(0) cp(5)) {cost 50} {fore 0}}
+
+{"30n6"					("v" c(1200) brig(ukr_aa) t(all art aat nobot strike) s(ukr) n(2) g(s300) 	sc(80) b(ukr_aa_hqcar) i(13) cw(0) cp(50)) {cost 500} {fore 0.2}}
+{"5p85se"				("v" c(1200) brig(ukr_aa) t(all art aat nobot p) 	  s(ukr) n(3) g(s3000)  sc(80) b(ukr_aa_hqcar) i(14) cw(0) cp(25)) {cost 200}  {fore 0.2}}
+
+;===============================dhv===========================================
+
+
+("squad_with9types" 	name(stormtroopers2) side(ukr) c(120) g(inf) c1(vdv_com:1) c2(vdv_mgun:1) c3(vdv_mgunhelp:1) c4(vdv_rpg:1) c5(vdv_rpghelp:1) c6(vdv_smg2:2) c7(vdv_smg:2) c8(vdv_sniper:1) b(dhv_hqcar) brig(dhv) t(all infantry) cost(50) f(1) info(stormtroopers2))
+
+{"m1126i_ukr"			("v3" c(150)  brig(dhv) t(additional infantry) 			c1(m1126) 		   s(ukr) n(3) n1(tankman:3) n2(vdv_com:1)  n3(vdv_mgun:1) n4(vdv_rpg_help:1) 	n5(vdv_rpg:1) n6(vdv_smg2:1) n7(vdv_smg:2)  g(advinf_1)  sc(55) b(dhv_hqcar) i(1) cw(0) cp(10)) {cost 80} {fore 1}}
+{"btr-4e1_sq" 			("v3" c(320)  brig(dhv) t(additional infantry) 			c1(btr_4e)  	   s(ukr) n(3) n1(tankman:3) n2(vdv_com:1)  n3(vdv_mgun:1) n4(vdv_rpg_help:1) 	n5(vdv_rpg:1) n6(vdv_smg2:1) n7(vdv_smg:1) 	g(advinf_1)  sc(50) b(dhv_hqcar) i(2) cw(0) cp(15)) {cost 90} {fore 0.5}}
+{"bmd2_ukri"			("v3" c(180)  brig(dhv) t(additional infantry) 			c1(bmd2_ukr) 	   s(ukr) n(3) n1(tankman:3) n2(vdv_com:1)  n3(vdv_mgun:1) n4(vdv_rpg_help:1) 	n5(vdv_rpg:1) n6(vdv_smg2:1) n7(vdv_smg:2)  g(advinf_2)  sc(55) b(dhv_hqcar) i(3) cw(0) cp(15)) {cost 100} {fore 0}}
+{"marder_1a3_ukri"		("v3" c(300)  brig(dhv) t(additional inf_ukr infantry)	c1(marder_1a3_ukr) s(ukr) n(3) n1(tankman:3) n2(vdv_com:1) 	n3(vdv_mgun:1) n4(vdv_rpg_help:1)   n5(vdv_rpg:1) n7(vdv_smg2:1) n8(vdv_smg:1)  g(advinf_2)  sc(15) b(dhv_hqcar) i(4) cw(0) cp(20)) {cost 120} {fore 0}}
+
+
+{"t80bv_ukr"			("v" c(300) brig(dhv) t(all tanks_only duel_tanks80 tank_rus) s(ukr) n(3) g(obt_tir1)  sc(175) b(dhv_hqcar) i(5) m(4) cw(0) cp(30)) {cost 160} {fore 0.9}} 
+{"challenger_2_ukr"		("v" c(330) brig(dhv) t(all tanks_only duel_tanks80 tank_rus) s(ukr) n(4) g(obt_tir2)  sc(175) b(dhv_hqcar) i(6) m(4) cw(0) cp(40)) {cost 180} {fore 0}} 
+
+
+{"2c9_ukr"			 	("v" c(480) brig(dhv) t(additional art nobot) s(ukr) n(3) g(art_vdv)  sc(300) b(dhv_hqcar) i(7) cw(0) cp(50)) {cost 300} {fore 0}}	
+
+{"novator"    			("vs" c(300) brig(dhv) t(all recon) s(ukr) n(4) g(btr2)   sc(45) a(1) b(dhv_hqcar) i(8) cw(0) cp(2)) {cost 5} {fore 1}}	
+
+
+{"mi17_unarmedu_sq"		("v3" c(150) c1(mi17_unarmed_urk) brig(dhv) t(additional infantry nobot) s(ukr) n(2) n1(vertpilot:2) n2(vdv_com:1) n3(vdv_mgun:1) n4(vdv_rpghelp:1) n5(vdv_rpg:1) n6(vdv_smg2:1) n7(vdv_smg:1) n8(vdv_sniper:1) g(advinf_1)  sc(55) b(dhv_hqcar) i(9) cw(0) cp(10)) {cost 80} {fore 1}}
+
+{"mi-24p_3"      		("h" c(600) brig(dhv) t(all vert) s(ukr) n(2) g(vert)  sc(170) b(dhv_hqcar) i(10) cw(0) cp(30)) {cost 300} {fore 0}}
+
+("squad_with11types" 	name(scout2)		 side(ukr) c(180) g(elite) c1(scout:1) c2(scout2:2) b(dhv_hqcar) brig(dhv) t(all elite) cost(30)  f(0) info(scout2))
+
+{"novator_ptrk"			("v3" c(240)  brig(dhv) t(additional infantry) c1(novator) s(ukr) n(3) n1(vehicle_supporter:1) n2(vdv_com:1) n3(vdv_smg:3) g(ptrk)  sc(55) b(dhv_hqcar) i(11) cw(0) cp(5)) {cost 60} {fore 0}}
+
+
+
+
+;===============================meh===========================================
+
+("squad_with11types" side(ukr) name(stormtroopers) c(300) g(elitef1) c1(sso_rpghelp:1) c2(sso_sniper2:1) c3(sso_com:1) c4(sso_rpg:1) c5(sso_smg:2) c6(sso_smg2:1) c7(sso_smg2:2)  c8(sso_smg3:1)  c9(sso_mgun:1)  b(meh_hqcar) brig(meh) t(all specnaz infantry) cost(100) f(0) info(stormtroopers))
+
+{"btr-4e_sq" 		("v3" c(180) brig(meh) t(additional infantry inf_ukr) c1(btr4e1_ptur) 	s(ukr) n1(tankman:2) n2(meh_com:1) n3(meh_mgun:1) n4(meh_rpg:1) n5(meh_rpghelp:1) n6(meh_smg:1) n7(meh_smg2:1) n8(meh_sniper:1) g(advinf_11) 	sc(50) b(meh_hqcar) i(1) cw(0) cp(20)) {cost 120} {fore 0.9}}
+{"bmp2_new_ukr_sq" 	("v3" c(280) brig(meh) t(additional infantry inf_ukr) c1(bmp2_new_ukr)  s(ukr) n1(tankman:3) n2(meh_com:1) n3(meh_mgun:1) n4(meh_rpg:1) n5(meh_rpghelp:1) n6(meh_smg:2) n7(meh_smg2:2) n8(meh_sniper:1) g(advinf_22) 	sc(50) b(meh_hqcar) i(2) cw(0) cp(20)) {cost 100} {fore 1}}
+{"bredly_ukri"		("v3" c(320) brig(meh) t(additional infantry inf_ukr) c1(m2a3_brat) 	s(ukr) n1(tankman:3) n2(meh_com:1) n3(meh_mgun:1) n4(meh_rpg:1) n5(meh_rpghelp:1) n6(meh_smg:1) n7(meh_smg2:1) n8(meh_sniper:1) g(advinf_33)    sc(50) b(meh_hqcar) i(3) cw(0) cp(25)) {cost 140} {fore 0}}
+
+
+
+("squad_with2types" name(snipers)  		side(ukr) c(180) g(snipe1) c1(sniper_at:1) 	c2(sniper_support:1) b(meh_hqcar) brig(meh) t(all duel_snipers) cost(30) f(0) info(snipers))
+("squad_with2types" name(snipers2) 		side(ukr) c(120) g(snipe1) c1(sniper:1)    	c2(sniper_support:1) b(meh_hqcar) brig(meh) t(all duel_snipers) cost(30) f(0) info(snipers))
+("squad_with2types" name(bazooker_m32)  side(ukr) c(120) g(m32)    c1(bazooker_m32:1) c2(meh_smg:1)   	b(meh_hqcar) brig(meh) t(all m32) cost(15) f(0) info(bazooker_m32))
+
+{"pt-91_ukr"		("v" c(250) t(additional tanks_only duel_tanks80) brig(meh) s(ukr) n(3) g(obt1)  sc(150) b(meh_hqcar) i(7) cw(0) cp(20)) {cost 160} {fore 1}} 
+{"t-64bv_ukr"		("v" c(300) t(additional tanks_only duel_tanks80) brig(meh) s(ukr) n(3) g(obt1)  sc(150) b(meh_hqcar) i(8) cw(0) cp(20)) {cost 160} {fore 1}}
+{"leopard_2a6i"		("v3" c(400) t(additional tanks_only duel_tanks80) c1(leopard_2a6)  brig(meh) s(ukr) n1(tankman:4) g(obt2)  sc(150) b(meh_hqcar) i(9) cw(0) cp(30)) {cost 190} {fore 0.4}} 
+{"t-64bm1"			("v" c(360) t(additional tanks_only duel_tanks80) brig(meh) s(ukr) n(3) g(obt2)  sc(150) b(meh_hqcar) i(10) cw(0) cp(30)) {cost 180} {fore 0.5}}
+{"bm_oplot"			("v" c(400) t(additional tanks_only duel_tanks90) brig(meh) s(ukr) n(3) g(obt3)  sc(150) b(meh_hqcar) i(11) cw(0) cp(35)) {cost 200} {fore 0}}
+
+{"mortarfr_ukr"		("vart" c(240) c1(vab_reco) c2(mortarfr) brig(meh) t(all art nobot) s(ukr) n(2) n2(vehicle_supporter:2) g(art_stan1) sc(30) a(1) b(meh_hqcar) i(12) cw(5) cp(30)) {cost 120} {fore 0}}
+{"mtlb_turret"		("vs"   c(480) brig(meh) t(all att)   s(ukr)  n(2) g(s_konkurs)  sc(85)      b(meh_hqcar) i(13) cw(0) cp(15)) {cost 150} {fore 0}}
+{"kraz_coguar_ags"	("vs"   c(300) brig(meh) t(all recon) s(ukr)  n(4) g(btr2)   	   sc(45) a(1) b(meh_hqcar) i(14) cw(0) cp(10)) {cost 45} {fore 1}}
+
+
+
+
+;===============================morhex===========================================
+
+
+("squad_with11types" 			side(ukr)  name(elite) c(300) g(elitef1) c1(azov_com:1) c2(azov_smg:2) c3(azov_smg2:2) c3(azov_rpghelp:1) c4(azov_rpg:1) c5(azov_mgun:1) c6(azov_sniper:1) c7(azov_smg2:2) b(morh_hqcar) brig(morh) t(all specnaz infantry) cost(100) f(0) info(elite))
+
+{"btr80_ukr_sq" 			("v3" c(280)  	brig(morh) t(additional infantry inf_ukr) c1(btr80_ukr) 	s(ukr) n1(tankman:3) n2(mor_smg:1) n3(mor_smg3:2) n4(mor_smg2:1) n5(mor_rpghelp:1) n6(mor_sniper:1) n7(mor_mgun:1) n8(mor_mgunhelp:1)  n9(mor_rpg:1) g(advinf_old1) 	sc(50) b(morh_hqcar) i(1) cw(0) cp(10)) {cost 70} {fore 1}}	
+{"btr-3e_sq" 				("v3" c(300) 	brig(morh) t(additional infantry inf_ukr) c1(btr_3e) 		s(ukr) n1(tankman:3) n2(mor_smg:1) n3(mor_smg3:1) n4(mor_smg2:1) n5(mor_rpghelp:1) n6(mor_sniper:1) n7(mor_mgun:1) n8(mor_mgunhelp:1)  n9(mor_rpg:1) g(advinf_old1) 	sc(50) b(morh_hqcar) i(2) cw(0) cp(15)) {cost 120} {fore 0.5}}
+{"bmp3_ukr_sq" 				("v3" c(400) 	brig(morh) t(additional infantry inf_ukr) c1(bmp3_ukr) 		s(ukr) n1(tankman:3) n2(mor_smg:1) n3(mor_smg3:1) n4(mor_smg2:1) n5(mor_rpghelp:1) n6(mor_sniper:2) n7(mor_mgun:2) n8(mor_mgunhelp:1)  n9(mor_rpg:1) g(advinf_top) 		sc(50) b(morh_hqcar) i(3) cw(0) cp(20)) {cost 150} {fore 0}}
+	
+
+{"t-64bv"				("v_ukr" c(300)	brig(morh) t(additional tanks_only duel_tanks80)  	 s(ukr) n(3) g(obt_old)  sc(150) b(morh_hqcar) i(4) cw(0) cp(30)) {cost 160} {fore 1}} 
+{"t80bv_ukri"			("v_ukr" c(250) brig(morh) t(additional tanks_only duel_tanks70)  	 s(ukr) n(3) g(obt_old)  sc(110) b(morh_hqcar) i(5) cw(0) cp(30)) {cost 180} {fore 0.5}}
+{"t80bvm_2_ukr"			("v_ukr" c(400)	brig(morh) t(additional tanks_only duel_tanks80)     s(ukr) n(3) g(obt_top)  sc(150) b(morh_hqcar) i(6) cw(0) cp(35)) {cost 200} {fore 0}} 
+
+{"amx10rcr_ukr"          ("v3" c(400) 	brig(morh) t(all)  c1(amx10rcr) s(ukr) n1(tankman:3) g(ltank) sc(45) b(morh_hqcar) i(7) cw(0) cp(10)) {cost 45} {fore 1}}
+
+{"m1097_avenger_ukr" 	("v3" c(240) 	brig(morh) t(additional recon1) c1(m1097_avenger) 		s(ukr) n1(tankman:3) g(zpu1) 	sc(50) b(morh_hqcar) i(8) cw(0) cp(5)) {cost 60} {fore 0.5}}
+
+{"d30_ukr"				("vart" c(600) c1(mtlb_ukr) c2(d30_ukr)  brig(morh)   t(all art nobot)  s(ukr) n(2) n1(artilerist:2) g(art) sc(100) a(1) b(morh_hqcar) i(9)  cw(5) cp(15)) {cost 200} {fore 0}}
+
+{"hmmwv_turretukr"		("v3" c(300) 	brig(morh) t(additional recon2123)  c1(hmmwv_turret) s(ukr) n1(vehicle_supporter:4) g(btr2)   sc(45) a(1) 	b(morh_hqcar) i(10) cw(0) cp(10)) {cost 45} {fore 1}}
+{"hmmwv_tow_ukr"		("vs" c(240) brig(morh) t(all att) 	 s(ukr) n(4) g(att)   sc(45) a(1) 	b(morh_hqcar) i(11) cw(0) cp(10)) {cost 100} {fore 0}}
+
+;===============================nato===========================================
+
+
+
+
+
+
+
+
+
+
+

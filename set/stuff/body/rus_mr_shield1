@@ -1,0 +1,14 @@
+{from "pattern mask"
+	
+{entity "rus_mr_shield1"} 
+{inventory 
+{size 1 2} 
+{weight 1} 
+{link_bone "left_hand"} 
+} 
+{mass 1} 
+} 
+
+
+
+

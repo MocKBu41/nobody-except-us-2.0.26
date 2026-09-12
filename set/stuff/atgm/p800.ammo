@@ -1,0 +1,9 @@
+{from "pattern proj_pointer"
+	
+	{entity "p800"}
+                {inventory
+		{weight 3900}
+		{size 8 2}
+	}
+	{tag "no_ricochet" "fg" "big" "size4" "88to105" "antiship" "semiactive" "malahit"} 
+}

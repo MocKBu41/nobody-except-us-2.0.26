@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "idf_or201_spec"}
+	{mass 1.1}
+}

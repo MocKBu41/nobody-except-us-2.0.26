@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+        	{entity "asv_vest_mcum_m416_back_belt_b"}
+        	{mass 8.4}
+        	;1.4 основа + 2,5*2 ESAPI + 1*2 кг боковые ESAPI
+        }

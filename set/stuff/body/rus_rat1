@@ -1,0 +1,6 @@
+{from "pattern overcoat"
+        {tag "armor"}
+	
+	{entity "rus_rat1"}
+	{mass 8}
+}

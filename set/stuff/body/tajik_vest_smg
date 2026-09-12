@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "tajik_vest_smg"}
+	{mass 10}
+}

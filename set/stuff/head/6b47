@@ -1,0 +1,8 @@
+{from "pattern cw_helmet"
+	{entity "6b47"}
+	{mass 1.0}
+	{inventory
+		{link_bone "helmet_link"}
+		{fsm "belt"}
+	}
+}

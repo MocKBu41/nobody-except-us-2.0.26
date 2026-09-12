@@ -1,0 +1,27 @@
+{breed
+	{skin "cw_rus_vkpo_gilly"}
+	{portrait "_new/rus/inf"}
+	{icon "snipers"}
+	{icon_priority 2}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_elite_sniper")
+	{inventory
+		{item "6b45_sniper1"}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "akval_1" filling "vin_ammo ammo" 20}
+		{item "vin_ammo ammo" 240}
+		{item "rgo grenade" 4}
+		{item "plant" 1}
+		{item "binocular"}
+		{item "smoke rdg2b grenade"}
+		{in_hands 4}
+	}
+}

@@ -1,0 +1,68 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_ua_pix_meh"}
+	{portrait "ua/smg"}
+	{icon bazookers}
+	{icon_priority 0}
+	{nationality ukr}
+	
+	{perks
+		{"vision" mp_mgunner
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_4
+		}
+		{"melee" lvl_3
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.8
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_6
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_6
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "bandage" 15}
+		{item "m32" filling "nato_pg fg ammo" 6}
+		{item "nato_pg p ammo" 18}
+		
+		{item "nato_pg cm ammo" 12}
+		{item "1m_helmet_uavdv"}
+		{in_hands 5}
+	}
+}

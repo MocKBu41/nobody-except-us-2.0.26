@@ -1,0 +1,10 @@
+{from "pattern overcoat"
+	{tag "armor"}
+	                   
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+	
+	{entity "cz_iba_acu"}
+}

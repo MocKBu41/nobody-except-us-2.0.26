@@ -1,0 +1,34 @@
+{weapon_bullet
+	{tag "weapon" "skill_tankgun" "bullet" "prepare"}	;"bullet" is needed for work of levelling and skills
+    {Special
+		{Mode aim}
+		{PrepareTime 2}
+		{PrepareCursor "aimed_shot"}
+	}
+	{tag "gun"}
+	("heavy_artillery")
+	{filling "ammo grom" 2}
+	{fillingvisible "rocket0"}
+	{fireSound "reactive/missile_big"}
+	{recoveryTime 3}
+
+	{range 600 600}
+	("accuracy_kab" kvo_meters(35))
+	{rechargeTime 240}
+	{recoverytime 2}
+	{gravity 4}
+	{speed 4}
+	{aimtype curved}
+	{cursor "cannon_on_heat_10"}
+	{cursorReloading "cannon_reload_heat_timer_240"}
+	{parameters "fg"
+		{cursor "cannon_on_fg_14"}
+	    {cursorReloading "cannon_reload_fg_timer_240"}
+	}
+	{parameters "cl"
+		{cursor "cannon_on_heat_10"}
+		{cursorReloading "cannon_reload_heat_timer_240"}
+	}
+
+  
+}

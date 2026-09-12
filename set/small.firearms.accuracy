@@ -1,0 +1,935 @@
+;SDL
+
+;=================CtA=================
+(define "distance_1" 
+	{spreading 
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 5.00 %r4)}}
+	}		
+)
+(define "distance_2" 
+	{spreading 
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 2.50 %r4)}}
+	}		
+)
+(define "distance_3" 
+	{spreading 
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 2.25 %r4)}}
+	}		
+)
+(define "distance_4" 
+	{spreading 
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 2.00 %r4)}}
+	}		
+)
+(define "distance_5" 
+	{spreading 
+		{radiusTable {10 0} {50 %r1} {100 %r2} {150 %r3} {200 %r4} {500 (* 2.50 %r4)}}
+	}		
+)
+
+
+(define "accuracy_assault"
+	("distance_2" r1(0.50) r2(1.50) r3(2.75) r4(3.25))
+)
+(define "accuracy_assault_boost"
+	("distance_2" r1(0.45) r2(1.40) r3(2.60) r4(3.05))
+)
+(define "accuracy_assault_boost2"
+	("distance_2" r1(0.425) r2(1.35) r3(2.525) r4(2.95))
+)
+(define "accuracy_assault_improved"
+	("distance_2" r1(0.45) r2(1.40) r3(2.60) r4(3.05))
+)
+
+(define "accuracy_pistol"
+	("distance_1" r1(0.60) r2(1.60) r3(2.85) r4(3.35))
+)
+(define "accuracy_pistol_boost"
+	("distance_1" r1(0.55) r2(1.50) r3(2.70) r4(3.15))
+)
+(define "accuracy_pistol_boost2"
+	("distance_1" r1(0.525) r2(1.45) r3(2.625) r4(3.05))
+)
+(define "accuracy_pistol_improved"
+	("distance_1" r1(0.55) r2(1.50) r3(2.70) r4(3.15))
+)
+
+
+(define "accuracy_mgun"
+	("distance_3" r1(0.70) r2(1.70) r3(2.95) r4(3.45))
+)
+(define "accuracy_mgun_boost"
+	("distance_3" r1(0.65) r2(1.60) r3(2.80) r4(3.25))
+)
+(define "accuracy_mgun_improved"
+	("distance_3" r1(0.65) r2(1.60) r3(2.80) r4(3.25))
+)
+
+(define "accuracy_heavy_mgun"
+	("distance_4" r1(0.80) r2(1.80) r3(3.05) r4(3.55))
+)
+(define "accuracy_heavy_mgun_boost"
+	("distance_4" r1(0.75) r2(1.70) r3(2.90) r4(3.35))
+)
+(define "accuracy_heavy_mgun_improved"
+	("distance_4" r1(0.75) r2(1.70) r3(2.90) r4(3.35))
+)
+
+
+(define "accuracy_smg"
+	("distance_1" r1(0.80) r2(1.80) r3(3.05) r4(3.55))
+)
+(define "accuracy_smg_boost"
+	("distance_1" r1(0.75) r2(1.70) r3(2.90) r4(3.35))
+)
+(define "accuracy_smg_boost2"
+	("distance_1" r1(0.725) r2(1.65) r3(2.825) r4(3.25))
+)
+(define "accuracy_smg_improved"
+	("distance_1" r1(0.75) r2(1.70) r3(2.90) r4(3.35))
+)
+
+
+(define "accuracy_grenade_launcher"
+	("distance_3" r1(0.90) r2(1.90) r3(3.15) r4(7.50))
+)
+(define "accuracy_grenade_launcher_boost"
+	("distance_3" r1(0.85) r2(1.80) r3(3.00) r4(7.30))
+)
+(define "accuracy_grenade_launcher_improved"
+	("distance_3" r1(0.85) r2(1.80) r3(3.00) r4(7.30))
+)
+
+
+(define "accuracy_sniper_rifle"
+	("distance_5" r1(0.50) r2(1.00) r3(2.00) r4(2.50))
+)
+
+
+;=================
+
+(define "distance_3" 
+	{spreading 
+		{radiusTable {0 0} {30 %r1} {60 %r2} {90 %r3}}
+	}		
+)
+(define "distance_2" 
+	{spreading 
+		{radiusTable {0 0} {15 %r1} {40 %r2} {80 %r3}}
+	}		
+)
+
+(define "distance_1" 
+	{spreading 
+		{radiusTable {0 0} {10 %r1} {25 %r2} {60 %r3}}
+	}		
+)
+
+(define "accuracy_flaer"
+	("distance_1" r1(3.50) r2(8.00) r3(12.50))
+)
+
+(define "accuracy_3" 
+	{spreading 
+		{radiusTable {0 0.01} {20 %r1} {40 %r2} {60 %r3}}
+	}		
+)
+(define "accuracy_4" 
+	{spreading 
+		{radiusTable {0 0.01} {20 %r1} {40 %r2} {70 %r3}}
+	}		
+)
+
+(define "accuracy_5" 
+	{spreading 
+		{radiusTable {0 0.01} {20 %r1} {35 %r2} {70 %r3}}
+	}		
+)
+;======Cold War========
+(define "accuracy_Ak47"
+	("accuracy_3" r1(0.9) r2(1.8) r3(2.6))
+)
+(define "accuracy_Ak74"
+	("accuracy_3" r1(0.9) r2(1.6) r3(2.2))
+)
+(define "accuracy_Ak74spec"
+	("accuracy_3" r1(0.9) r2(1.4) r3(2))
+)
+(define "accuracy_Ak74u"
+	("accuracy_3" r1(0.9) r2(1.4) r3(2))
+)
+(define "accuracy_AkVal"
+	("accuracy_3" r1(0.9) r2(1.2) r3(1.8))
+)
+(define "accuracy_Abakan"
+	("accuracy_3" r1(0.9) r2(1.4) r3(1.8))
+)
+(define "accuracy_PKM"
+	("accuracy_3" r1(1.8) r2(2) r3(2.8))
+)
+(define "accuracy_PKT"
+	("accuracy_3" r1(1.8) r2(2.2) r3(3))
+)
+(define "accuracy_RPK74"
+	("accuracy_3" r1(1.6) r2(2) r3(2.6))
+)
+(define "accuracy_PKVT"
+	("accuracy_3" r1(2) r2(3) r3(4))
+)
+;======Addon===========
+(define "accuracy_50BR"
+	("accuracy_3" r1(1.2) r2(1.8) r3(2.2))
+)
+(define "accuracy_M240"
+	("accuracy_4" r1(1.6) r2(2.2) r3(2.6))
+)
+(define "accuracy_smg_m4a1"
+	("accuracy_5" r1(0.9) r2(1.5) r3(2.2))
+)
+(define "accuracy_smg_scar"
+	("accuracy_5" r1(0.6) r2(1.2) r3(1.8))
+)
+(define "accuracy_smg_mp5sd"
+	("accuracy_5" r1(0.9) r2(1.3) r3(2))
+)
+(define "accuracy_smg_m4a1S"
+	("accuracy_5" r1(0.7) r2(1.2) r3(1.6))
+)
+(define "accuracy_m16"
+	("accuracy_5" r1(0.7) r2(1) r3(1.6))
+)
+(define "accuracy_m16a4"
+	("accuracy_5" r1(0.5) r2(0.8) r3(1.4))
+)
+;=================
+(define "accuracy_pistol"
+	("accuracy_3" r1(1) r2(2) r3(3))
+)
+
+(define "accuracy_smg"
+	("accuracy_5" r1(0.8) r2(2) r3(3.2))
+)
+
+(define "accuracy_rifle"
+	("accuracy_5" r1(0.6) r2(1.2) r3(1.35))
+)
+
+(define "accuracy_automatic_rifle"
+	("accuracy_5" r1(0.6) r2(1.15) r3(1.38))
+)
+
+(define "accuracy_carabine"
+	("accuracy_5" r1(0.6) r2(1.23) r3(1.43))
+)
+
+(define "accuracy_sniper_rifle"
+	("accuracy_3" r1(0.6) r2(1.1) r3(2))
+)
+
+(define "accuracy_mgun"
+	("accuracy_4" r1(1.5) r2(2) r3(4.5))
+)
+
+(define "accuracy_ptr"
+	("accuracy_4" r1(1) r2(2) r3(3))
+)
+
+(define "accuracy_dshk"
+	("accuracy_3" r1(3) r2(4.5) r3(6))
+)
+
+
+(define "accuracy_uberbrowning"
+	("accuracy_3" r1(1) r2(2) r3(4))
+)
+;============================================
+;recoil and sway
+(define "cw_recoil_low"
+;	{recoil
+;		{shoot {0.40 0.2} {0 0.40}}			; pitch / +- random and yaw / +- random, per shot, degree
+;		{maxAngle 10 10}					; max recoil angle (pitch/yaw), degree
+;		{restoreTime 0.25 0.005}					; restore time, sec
+;		{restoreDelay 0.2}					; delay before restore, sec
+;	}
+)
+(define "cw_recoil_medium"
+;	{recoil
+;		{shoot {0.45 0.2} {0 0.45}}
+;		{maxAngle 10 10}
+;		{restoreTime 0.25 0.005}
+;		{restoreDelay 0.2}
+;	}
+)
+(define "cw_recoil_high"
+;	{recoil
+;		{shoot {0.55 0.2} {0 0.55}}
+;		{maxAngle 10 10}
+;		{restoreTime 0.25 0.005}
+;		{restoreDelay 0.2}
+;	}
+)
+(define "cw_sway_low"
+;	{swayparams
+;		{bounds -0.2 0.2 -0.2 0.2}		; x -> negativeYaw, y -> positiveYaw, z -> negativePitch, w -> positive Pitch (in degree)
+;		{speed 0.3}							; cos/sin revolutions per second
+;	}
+)
+(define "cw_sway_medium"
+;	{swayparams
+;		{bounds -0.3 0.3 -0.3 0.3}
+;		{speed 0.3}
+;	}
+)
+(define "cw_sway_high"
+;	{swayparams
+;		{bounds -0.5 0.5 -0.5 0.5}
+;		{speed 0.3}
+;	}
+)
+;============================================
+;based on MOA
+;============================================
+(define "accuracy_optic_sight" 
+	{spreading 
+		{radiusTable 
+			{0 0.01} 
+			{20 (* 0.07 %moa)} 
+			{50 (* 0.15 %moa)} 
+			{70 (* 0.29 %moa)} 
+			{75 (* 0.36 %moa)} 
+			{100 (* 0.7 %moa)} 
+			{105 (* 0.88 %moa)} 
+			{110 (* 1.05 %moa)} 
+			{115 (* 1.26 %moa)} 
+			{120 (* 1.39 %moa)}
+			{130 (* 1.75 %moa)}
+			{140 (* 2.09 %moa)}
+			{150 (* 2.8 %moa)}
+			{175 (* 4.2 %moa)}
+		}
+		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+		{SpreadPower	1.7}
+		{SpreadXYRatio	1.0}
+		{BurstRecoveryTime 1.5}
+	}
+)
+(define "accuracy_optic_sight_at_rifle" 
+	{spreading 
+		{radiusTable 
+			{0 0.01} 
+			{20 (* 0.3 0.07 %moa)} 
+			{50 (* 0.3 0.15 %moa)} 
+			{70 (* 0.3 0.29 %moa)} 
+			{75 (* 0.3 0.36 %moa)} 
+			{100 (* 0.3 0.7 %moa)} 
+			{105 (* 0.3 0.88 %moa)} 
+			{110 (* 0.3 1.05 %moa)} 
+			{115 (* 0.3 1.26 %moa)} 
+			{120 (* 0.3 1.39 %moa)}
+			{130 (* 0.3 1.75 %moa)}
+			{140 (* 0.3 2.09 %moa)}
+			{150 (* 0.3 2.8 %moa)}
+			{175 (* 0.3 4.2 %moa)}
+		}
+		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+		{SpreadPower	1.7}
+		{SpreadXYRatio	1.0}
+		{BurstRecoveryTime 1.5}
+	}
+)
+(define "accuracy_collimator" 
+	{spreading 
+		{radiusTable 
+			{0 0.01} 
+			{20 (* 0.07 %moa)} 
+			{50 (* 0.16 %moa)} 
+			{70 (* 0.32 %moa)} 
+			{75 (* 0.40 %moa)} 
+			{100 (* 0.77 %moa)} 
+			{105 (* 0.96 %moa)} 
+			{110 (* 1.16 %moa)} 
+			{115 (* 1.35 %moa)} 
+			{120 (* 1.53 %moa)} 
+			{140 (* 2.3 %moa)}
+			{150 (* 3.06 %moa)}
+			{175 (* 4.6 %moa)}
+		}
+		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+		{SpreadPower	1.7}
+		{SpreadXYRatio	1.0}
+		{BurstRecoveryTime 1.5}
+	}
+)
+(define "accuracy_open_sight" 
+	{spreading 
+		{radiusTable 
+			{0 0.01} 
+			{20 (* 0.07 %moa)} 
+			{70 (* 0.18 %moa)} 
+			{70 (* 0.35 %moa)} 
+			{75 (* 0.43 %moa)} 
+			{100 (* 0.84 %moa)} 
+			{105 (* 1.05 %moa)} 
+			{110 (* 1.26 %moa)} 
+			{115 (* 1.47 %moa)} 
+			{120 (* 1.67 %moa)} 
+			{140 (* 2.51 %moa)}
+			{150 (* 3.33 %moa)} 
+			{175 (* 5.0 %moa)} 
+		}
+		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+		{SpreadPower	1.7}
+		{SpreadXYRatio	1.0}
+		{BurstRecoveryTime 1.5}
+	}
+)
+(define "accuracy_optic_rpg" 
+	{spreading 
+		{radiusTable 
+			{0 0.01} 
+			{20 (* 0.02 %moa)} 
+			{30 (* 0.07 %moa)} 
+			{50 (* 0.14 %moa)} 
+			{65 (* 0.24 %moa)} 
+			{75 (* 0.36 %moa)} 
+			{90 (* 0.55 %moa)}
+			{100 (* 0.70 %moa)}
+			{110 (* 1.06 %moa)}
+			{120 (* 1.10 %moa)}
+			{150 (* 1.60 %moa)}
+		}
+		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+		{SpreadPower	1.7}
+		{SpreadXYRatio	1.0}
+	}
+)
+(define "accuracy_open_rpg" 
+	{spreading 
+		{radiusTable 
+			{0 0.01} 
+			{20 (* 0.02 %moa)} 
+			{30 (* 0.07 %moa)} 
+			{50 (* 0.14 %moa)} 
+			{65 (* 0.24 %moa)} 
+			{75 (* 0.43 %moa)} 
+			{90 (* 0.66 %moa)}
+			{100 (* 0.84 %moa)}
+			{110 (* 1.27 %moa)}
+			{120 (* 1.33 %moa)}
+		}
+		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+		{SpreadPower	1.7}
+		{SpreadXYRatio	1.0}
+	}
+)
+;========;until DMS won't apply range restriction
+;Удалить, если будет нормальное ограничение дальности в прямом
+(define "accuracy_optic_rpg_100"
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.02 %moa)} 
+;			{30 (* 0.07 %moa)} 
+;			{70 (* 0.14 %moa)} 
+;			{75 (* 0.24 %moa)} 
+;			{60 (* 0.36 %moa)} 
+;			{70 (* 0.55 %moa)}
+;			{80 (* 0.70 %moa)}
+;			{110 (* 1.06 %moa)}
+;			{120 (* 1.10 %moa)}
+;			{110 (* 15 %moa)}	;until DMS won't apply range restriction
+;			{140 (* 15 %moa)}	;until DMS won't apply range restriction
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_rpg_70"
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.02 %moa)} 
+;			{30 (* 0.07 %moa)} 
+;			{70 (* 0.14 %moa)} 
+;			{75 (* 0.24 %moa)} 
+;			{60 (* 0.36 %moa)} 
+;			{70 (* 0.55 %moa)}
+;			{80 (* 15 %moa)}
+;			{110 (* 15 %moa)}
+;			{120 (* 15 %moa)}
+;			{140 (* 15 %moa)}	;until DMS won't apply range restriction
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_rpg_60"
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.02 %moa)} 
+;			{30 (* 0.07 %moa)} 
+;			{70 (* 0.14 %moa)} 
+;			{75 (* 0.24 %moa)} 
+;			{60 (* 0.36 %moa)} 
+;			{65 (* 15 %moa)}	;until DMS won't apply range restriction
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_rpg_50"
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.02 %moa)} 
+;			{30 (* 0.07 %moa)} 
+;			{70 (* 0.14 %moa)} 
+;			{75 (* 0.24 %moa)} 
+;			{55 (* 15 %moa)}	;until DMS won't apply range restriction
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_rpg_40"
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.02 %moa)} 
+;			{30 (* 0.07 %moa)} 
+;			{70 (* 0.14 %moa)} 
+;			{45 (* 15 %moa)}	;until DMS won't apply range restriction
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_rpg_50" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.02 %moa)} 
+;			{30 (* 0.07 %moa)} 
+;			{70 (* 0.14 %moa)} 
+;			{75 (* 0.24 %moa)} 
+;			{55 (* 15 %moa)}	;until DMS won't apply range restriction
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_rpg_40" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.02 %moa)} 
+;			{30 (* 0.07 %moa)} 
+;			{70 (* 0.14 %moa)} 
+;			{45 (* 15 %moa)}	;until DMS won't apply range restriction
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+
+
+
+
+
+
+
+
+
+
+
+(define "accuracy_optic_sight_100" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 0.36 %moa)} 
+;			{70 (* 0.7 %moa)} 
+;			{105 (* 0.88 %moa)} 
+;			{110 (* 1.05 %moa)} 
+;			{115 (* 1.26 %moa)} 
+;			{120 (* 1.39 %moa)}
+;			{110 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_100" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 0.40 %moa)} 
+;			{70 (* 0.77 %moa)} 
+;			{105 (* 0.96 %moa)} 
+;			{110 (* 1.16 %moa)} 
+;			{115 (* 1.35 %moa)} 
+;			{120 (* 1.53 %moa)} 
+;			{110 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_100" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 0.43 %moa)} 
+;			{70 (* 0.84 %moa)} 
+;			{105 (* 1.05 %moa)} 
+;			{110 (* 1.26 %moa)} 
+;			{115 (* 1.47 %moa)} 
+;			{120 (* 1.67 %moa)} 
+;			{110 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_sight_92" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 0.36 %moa)} 
+;			{70 (* 0.7 %moa)} 
+;			{105 (* 0.88 %moa)} 
+;			{110 (* 1.05 %moa)} 
+;			{115 (* 1.26 %moa)} 
+;			{120 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_92" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 0.40 %moa)} 
+;			{70 (* 0.77 %moa)} 
+;			{105 (* 0.96 %moa)} 
+;			{110 (* 1.16 %moa)} 
+;			{115 (* 1.35 %moa)} 
+;			{120 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_92" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 0.43 %moa)} 
+;			{70 (* 0.84 %moa)} 
+;			{105 (* 1.05 %moa)} 
+;			{110 (* 1.26 %moa)} 
+;			{115 (* 1.47 %moa)} 
+;			{120 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_sight_85" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 0.36 %moa)} 
+;			{70 (* 0.7 %moa)} 
+;			{105 (* 0.88 %moa)} 
+;			{110 (* 1.05 %moa)} 
+;			{115 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_85" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 0.40 %moa)} 
+;			{70 (* 0.77 %moa)} 
+;			{105 (* 0.96 %moa)} 
+;			{110 (* 1.16 %moa)} 
+;			{115 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_85" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 0.43 %moa)} 
+;			{70 (* 0.84 %moa)} 
+;			{105 (* 1.05 %moa)} 
+;			{110 (* 1.26 %moa)} 
+;			{115 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_sight_77" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 0.36 %moa)} 
+;			{70 (* 0.7 %moa)} 
+;			{105 (* 0.88 %moa)} 
+;			{110 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_77" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 0.40 %moa)} 
+;			{70 (* 0.77 %moa)} 
+;			{105 (* 0.96 %moa)} 
+;			{110 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_77" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 0.43 %moa)} 
+;			{70 (* 0.84 %moa)} 
+;			{105 (* 1.05 %moa)} 
+;			{110 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_sight_70" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 0.36 %moa)} 
+;			{70 (* 0.7 %moa)} 
+;			{105 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_70" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 0.40 %moa)} 
+;			{70 (* 0.77 %moa)} 
+;			{105 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_70" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 0.43 %moa)} 
+;			{70 (* 0.84 %moa)} 
+;			{105 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_optic_sight_63" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 0.36 %moa)} 
+;			{63 (* 0.56 %moa)} 
+;			{70 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_63" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 0.40 %moa)} 
+;			{63 (* 0.62 %moa)} 
+;			{70 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_63" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 0.43 %moa)} 
+;			{63 (* 0.67 %moa)} 
+;			{70 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+
+(define "accuracy_optic_sight_50" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 0.36 %moa)} 
+;			{63 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_50" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 0.40 %moa)} 
+;			{63 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_50" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 0.43 %moa)} 
+;			{63 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+
+(define "accuracy_optic_sight_40" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.29 %moa)} 
+;			{75 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 92 86 80 74 68 62 56 50}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_collimator_40" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.32 %moa)} 
+;			{75 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 96 93 87 82 77 71 66 60 55}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)
+(define "accuracy_open_sight_40" 
+;	{spreading 
+;		{radiusTable 
+;			{0 0.01} 
+;			{20 (* 0.07 %moa)} 
+;			{70 (* 0.35 %moa)} 
+;			{75 (* 50 %moa)}		;ограничение дальности
+;		}
+;		{BurstAccuracy 100 97 94 89 84 79 74 70 65 60}
+;		{SpreadPower	1.7}
+;		{SpreadXYRatio	1.0}
+;	}
+)

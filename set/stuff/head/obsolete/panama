@@ -1,0 +1,4 @@
+{from "helmet pattern"
+	{desc "Panama"}
+	{entity "panama"}
+}

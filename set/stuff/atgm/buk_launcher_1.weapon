@@ -1,0 +1,18 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "ammo 9m38_1 buk" 4}
+	{fillingVisible "rocket"}	
+	{fireSound "bazooka/kub_Launch"}	
+	{mass 50}
+	{recoveryTime 8}
+	{rechargeTime 160}
+	{AimingTolerance 5}	;только для пассивного наведения
+	{inventory {noView}}
+	{maxRange 380}          ;БУК-М1 с ЗУР 9М38М1 - 35 км.
+	{aimRange 470}          ;дальность предварительного наведения
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+}

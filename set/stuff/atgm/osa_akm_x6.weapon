@@ -1,0 +1,19 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{desc "9M33 X6"}
+	{filling "ammo 9m33" 6}
+	{fillingVisible "rocket"}
+	{foresight "foresight"}
+	{fireSound "bazooka/kub_Launch"}	
+	{mass 50}
+	{recoveryTime 4}
+	{rechargeTime 180}
+	{inventory {noView}}
+	{maxRange 180}
+	{aimRange 230}
+;	{cursor "zenite_on"}
+;	{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_18"}
+}

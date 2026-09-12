@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/specnaz"}
+	{icon smgs}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+	(include "perks_generic.inc")
+	("traits_specnaz_smg")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "bandage" 10}
+		{item "rus_radio_station"}
+		{item "rgo grenade" 2}
+		{item "545 ammo" 240}
+		{item "ak74m_1p78" filling "545 ammo" 30}
+		{item "rgn grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 5}
+	}
+}

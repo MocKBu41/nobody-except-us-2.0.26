@@ -1,0 +1,18 @@
+{from "pattern proj_impactor"
+	{entity "9m38_1_impactor"}
+              {inventory
+		{weight 100}
+		{size 5 1}
+	}
+	{tag  "big" "size3" "88to105" "AA_missile" "-ap" "-rocketlauncher" "-low_speed" "fx_upto50kg"}
+	;9м38м1 - БЧ 9Н314М1 - ВВ ТГ-24 33.5 кг к расчету кольцевой детонации. полуготовые поражающие элементы - двутавры.
+	{damage blastwave {energy 0.7} {area 18.1 20.8}}
+        {damage add blastwave {energy 1.2} {area 15.8 18.2}}
+        {damage add blastwave {energy 2.5} {area 10 11.5}}
+        {damage add blastwave {energy 6.5} {area 7.7 8.9}}
+        {damage add blastwave {energy 11} {area 3.8 4.4}}
+}
+;ВВ ТГ-24 гексоген - 76 %.Тротил - 24 %. Т.э.-1.35. И.э.-1.
+;33.5 x 1 = 33.5кг к расчету кольцевой детонации
+;Ельцин С. Н. Зенитные ракетные комплексы «Бук». Ракета 9М38М, устройство и функционирование
+;https://cdn.aviaforum.ru/images/2015/10/717283_098b298be52a1cde571115b4255696e6.pdf

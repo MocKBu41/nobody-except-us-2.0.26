@@ -1,0 +1,18 @@
+{from "pattern proj_weapon_air"
+	{tag "gun"}
+	{filling "ammo x32" 2}
+	{fillingVisible "x32_"}	
+	{foresight "Foresight7"}
+	{fireSound "reactive/missile_large/"}
+	{mass 1000}
+	{recoveryTime 1}
+	{rechargeTime 160}
+	{inventory {noView}}
+	{maxRange 650}	;500 км
+	{aimRange 650}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_fg_9"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+}

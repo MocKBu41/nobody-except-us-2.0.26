@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "scuba"}
+	{mass 6}
+}

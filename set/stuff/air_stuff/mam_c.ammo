@@ -1,0 +1,29 @@
+{from "pattern proj_impactor"
+	
+	{tag "ammo"}
+	{tag "big" "size2" "88to105" "fx_90_110"}
+	{tag "fg_100_shell"}
+	{tag "bomb"} ; òîëüêî äëÿ ammo.set
+	{inventory
+		{size 3 1}
+		{weight 15}
+		{noView}
+		{fsm "stuff"}
+	}	
+	{mass 15}
+	{entity "mam_C"}
+	{view "mam_C"
+		{tail ""}
+	}
+	;140 êã ÂÂ
+		{tag "he_07to2"}
+	{damage blastwave {energy 0.7} {area 6.9 7.9}}
+	{damage add blastwave {energy 1.2} {area 5.4 6.2}}
+	{damage add blastwave {energy 2.5} {area 1.9 2.2}}
+	{damage add blastwave	 ; HE, FG anti-IFV
+		{energy 4.5}
+		{area 0.1 0.2}
+	}
+}
+
+

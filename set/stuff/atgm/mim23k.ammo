@@ -1,0 +1,10 @@
+{from "pattern proj_pointer"
+	{entity "mim23k_ammo"}
+    {inventory
+		{weight 100}
+		{size 4 1}
+	}
+	{mass 690}
+	;"RadAA_missile_2gen"
+	{tag  "big" "size4" "88to105" "-ap" "-rocketlauncher" "no_ricochet" "-low_speed" "usa_radpassive_missile" "antimissile" "anti_ballistic_missile_usa"} 
+}

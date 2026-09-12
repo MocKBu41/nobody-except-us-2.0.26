@@ -1,0 +1,21 @@
+{breed
+	{skin "cw_hamas"}
+	{portrait "_new/arb/boevik"}
+	{icon "engineer"}
+	{icon_priority 0}
+	{nationality arb}
+	{armors
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_smg")
+	{inventory
+		{item "knife_rus"}
+		{item "Aks47"}
+		{item "762 ammo" 120}
+		{item "repair_kit"}
+		{item "netting_kit"}
+		{item "spade_inv" 2}
+		{in_hands 1}
+	}
+}

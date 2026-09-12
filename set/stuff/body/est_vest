@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "est_vest"}
+	{mass 12}
+}

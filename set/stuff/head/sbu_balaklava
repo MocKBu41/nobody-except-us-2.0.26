@@ -1,0 +1,12 @@
+{item
+	
+{tag "itemin1hand keepEntity"}
+	{entity "SBU_balaklava"}
+	{inventory
+		{size 2 2}
+		{weight 100}
+{link_bone "Head"}
+{fsm "stuff"}
+	}
+	{mass 0.1}
+}

@@ -1,0 +1,14 @@
+{item
+	
+{tag "itemin1hand keepEntity"}
+	{entity "glass_ua"}
+        
+	{inventory
+		{size 2 2}
+		{weight 100}
+{link_bone "Head"}
+{fsm "stuff"}
+ 
+	}
+	{mass 1}
+}

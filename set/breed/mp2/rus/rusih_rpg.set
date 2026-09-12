@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_rus_ruhih_atacs"}
+	{portrait "rus/rusih"}
+	{icon bazookers}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head lshz1plus_sso}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_bazooker")
+	{inventory
+		{item "lbt6094_rus_rpg_a"}
+		{item "bandage" 10}
+		{item "rgo grenade" 4}
+		{item "smoke rdg2b grenade"}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "545 ammo" 300}
+		{item "rpg7 weapon" filling "pg-7vr rpg7 ammo" 1}
+		{item "pg-7vr rpg7 ammo" 2}
+		{in_hands 5}
+	}
+}

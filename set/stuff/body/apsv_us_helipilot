@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "apsv_us_helipilot"}
+	{mass 1.0}
+	;no info
+}

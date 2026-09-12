@@ -1,0 +1,12 @@
+{from "pattern proj_pointer"
+	
+	{entity "hydra_dagr"}
+                {mass 20}
+	        {inventory
+		{weight 40}
+		{size 6 1}
+	}
+	{tag "no_ricochet" "cm" "big" "size4" "88to105" "agm114" "pierce" "ptrk" "semiactive"} 
+	{tag "atgm_cw" "atgm_ground"} ; только для ammo.set
+	
+}

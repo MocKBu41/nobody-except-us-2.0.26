@@ -1,0 +1,29 @@
+{bullet
+	{tag "shell size5 fg no_ricochet fragmentary big itemin2hands"}
+	{tag "fg_150_shell"} ; только для ammo.set
+	{inventory
+		{size 9 2}
+		{weight 3000}
+	}	
+	{mass 5000}
+	{entity "iskander_ammo_tb"}
+	{view "iskander_ammo_tb"
+		{tail "rocket_smokebig_short_detwarh_iskander" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	;около 480 кг БЧ предп.
+	;Эквивалентна ОДАБ-500, но больше площадь поражени из-за кассетного заряда
+	{damage blastwave	 ; fragmentary
+		{energy 0.7}
+		{area 4 5}
+	}
+	{damage add blastwave	 ; HE antipersonnel
+		{energy 1.2}
+		{area 2 3}
+	}
+	{damage add blastwave	 ; HE, FG anti-APC
+		{energy 2.5}
+		{area 0.1 0.1}
+	}
+}

@@ -1,0 +1,65 @@
+{from "pattern gun"
+	
+	{filling "bullet35 ammo" 35}
+
+	{fireSound "gun/35mm_bushmaster3"}	
+	{reloadSound "flak38"}
+
+	{RecoveryTime 0.30}	
+	{RechargeTime 0.30}
+	
+	{spreading
+		{spreadradius 	1}
+		{SpreadXYRatio	1.1}
+		{SpreadPower	1.7}
+		{BurstAccuracy 100 85 75}
+	}
+
+	{SpreadTolerance 0.5}
+	{Automatic}
+	{traceFreq 1}
+	{range 140 140}	
+	("speed" s(1000))
+	("37-57caliber")
+	{RelaxationTime 1}
+
+;	{cursor "zenite_on"}
+;	{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_ap_2"}
+	{cursorReloading "cannon_reload_ap"}
+
+	{AimingTolerance 3}
+	{SpreadTolerance 0.3}
+	{calibre 35}
+	{projectileDamage 35}
+
+	("CW_acc_common" mils(0.5))	
+	("CW_acc_common_120" mils(0.5))
+
+	{parameters "ap"
+		;{projectileDamageTable {10 100} {30 80} {50 70} {70 40} {90 25} {110 15} {130 9}}
+		("CW_small_AP_damage" penetr_1000m(40))
+		("CW_acc_common" mils(0.5))
+		("CW_acc_common_120" mils(0.5))
+		("speed" s(1100))
+	}                
+	{parameters "apcr"
+		("CW_small_APCR_damage_WC" penetr_1000m(120))
+		("CW_acc_common" mils(0.3))	
+		("CW_acc_common_120" mils(0.3))
+		("speed" s(1300))
+		{cursor "cannon_on_apcr_2"}
+		{cursorReloading "cannon_reload_apcr"}
+	}    
+	{parameters "fg" 
+		("CW_acc_common" mils(0.5))
+		("CW_acc_common_120" mils(0.5))
+		{spreading
+			{SpreadXYRatio	1}
+			{SpreadPower	1.7}
+			{BurstAccuracy 100 85 75}
+		}
+    	{cursor "cannon_on_fg_13"}
+		{cursorReloading "cannon_reload_fg"}
+	}        
+}

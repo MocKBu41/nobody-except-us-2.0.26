@@ -1,0 +1,28 @@
+{from "pattern proj_impactor"
+	{tag "big" "size3" "122to128fg" "low_speed" "fx_111_145"}
+	{mass 22}
+	{tag "bomb"} ; òîëüêî äëÿ ammo.set
+	{inventory
+		{size 3 1}
+		{weight 10}
+		{noView}
+		{fsm "stuff"}
+	}	
+	{mass 22}
+	{entity "mam_l"}
+	{view "mam_l"
+		{tail ""}
+	}
+	;140 êã ÂÂ
+	{tag "he_4_5to8"}
+	{damage blastwave {energy 0.7} {area 13 15}}
+	{damage add blastwave {energy 1.2} {area 11.2 12.8}}
+	{damage add blastwave {energy 2.5} {area 7.4 8.6}}
+	{damage add blastwave {energy 6.5} {area 4.6 5.4}}
+	{damage add blastwave {energy 11} {area 2.3 2.7}}
+	{damage add blastwave	 ; HE, kinetic, direct hit
+		{energy 17}
+		{area 0.1 0.1}
+	}
+}
+

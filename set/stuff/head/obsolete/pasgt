@@ -1,0 +1,5 @@
+{from "tankhelmet_rus"
+	
+	{tag "armor"}
+	{entity "PASGT"}
+}

@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "shutzweste"}
+	{mass 13.7}
+}

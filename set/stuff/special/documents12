@@ -1,0 +1,10 @@
+{item
+	{tag "smallitemin1hand keepentity dropboxed"}
+	
+	{inventory
+		{weight 100}
+		{fsm "belt"}
+	}	
+	{mass 5}
+	{entity "documents"}
+}

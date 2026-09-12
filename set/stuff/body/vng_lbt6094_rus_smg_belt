@@ -1,0 +1,6 @@
+{from "pattern armorplate"
+	{entity "vng_lbt6094_rus_smg_belt"}
+	{desc "Бронежилет <c(00FF00)>LBT6094<c(FFFFFF)> СпН Росгвардии\nКласс защиты живот-спина-бока <c(FF0000)>6а-6а-6а<c(FFFFFF)> \n"}
+	{mass 8.4}
+	;1.4 основа + 2,5*2 ESAPI + 1*2 кг боковые ESAPI
+}

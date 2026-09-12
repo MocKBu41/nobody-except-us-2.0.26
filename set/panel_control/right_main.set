@@ -1,0 +1,81 @@
+;SDL
+;-----------------------------------------------------------------------------------------------------------------------;
+; conditions																											;
+;-----------------------------------------------------------------------------------------------------------------------;
+; "vehicle" "tank" "cannon" "tractor" "human"	:	show this control based on actors properties						;
+; "single"										:	show this control only if a single actor is selected				;
+; "multiple"									:	show this control only if multiple actors (squad) is selected		;
+; "commander"									:	show this control only if the selected actor is a squad commander	;
+; "disabled"									:	show this control even if it is disabled							;
+;-----------------------------------------------------------------------------------------------------------------------;
+{panel_control
+	{gc_cp_state_fire
+		{position 0 0}
+	}
+	{gc_cp_state_move
+		{position 1 0}
+	}
+	{gc_cp_state_pose
+		{position 2 0}
+		{condition "human"}
+		{priority 0}
+	}
+	{gc_cp_state_cannon
+		{position 2 0}
+		{condition "cannon"}
+		{priority 1}
+	}
+	{gc_cp_state_attach
+		{position 2 0}
+		{condition "tractor"}
+		{priority 2}
+	}
+
+	{switch_hatch
+		{position 3 0}
+		{condition "vehicle"}
+	}
+	{gc_cp_squad_control
+		{position 3 0}
+		{condition "multiple"}
+	}
+	{gc_cp_browse_attack
+		{position 0 1}
+	}
+	{gc_cp_browse_useitem
+		{position 1 1}
+;		{condition "human"}
+	}
+	{gc_cp_browse_airsupped
+		{condition "vehicle"}
+	}
+	
+	{rotate
+		{position 2 1}
+	}
+	{emit
+		{position 3 1}
+		{condition "vehicle"}
+	}
+	{examine
+		{position 0 2}
+	}
+	{repair
+		{position 1 2}
+	}
+	{specability
+		{position 2 2}
+		{condition "vehicle"}
+	}
+	{gc_cp_command_cancel
+		{position 3 2}
+	}
+	{speed_air
+		{condition "vehicle"}
+		
+	}
+	{phone_act
+		{condition "human"}
+		
+	}
+}

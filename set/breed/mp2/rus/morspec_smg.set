@@ -1,0 +1,27 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/marine"}
+	{icon "smgs"}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head "6b47che1"}
+	}
+
+
+	(include "perks_generic.inc")
+	("traits_elite_smg")
+	{inventory
+		{item "6b45-1_ststrelok"}
+		{item "ak103_gp25_pbs_1p87" filling "762 ammo" 30}
+		{item "762 ammo" 240}
+		{item "rpg26 weapon" filling "rpg26 ammo" 1}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "ak103_gp25_pbs_1p87_podstvol" filling "mortar pd m ammo" 1}
+		{item "mortar pd m ammo" 8}
+		{item "rgo grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{in_hands 1}
+	}
+}

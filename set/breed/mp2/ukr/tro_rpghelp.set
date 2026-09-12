@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_neu_ukr_tro2"}
+	{portrait "ua/smg2"}
+	{icon smgs}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{body "otv_ukr_smg"}
+		{head "1m_helmet_ua"}
+	}
+	(include "perks_generic.inc")
+	("traits_army_bazooker")
+	{inventory
+		{item "545 ammo" 180}
+		{item "bandage" 10}
+		{item "rgd grenade"}
+		{item "ak74u" filling "545 ammo" 30}
+		
+		{item "pg-7v rpg7 ammo" 2}
+		{item "pg-7vl rpg7 ammo" 3}
+		{item "smoke grenade rdg2b" 2}
+		{item "sandbag_kit"}
+		{in_hands 3}
+	}
+}

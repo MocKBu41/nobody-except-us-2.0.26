@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "idf_tankvest"}
+	{mass 3.0}
+	;no info
+}

@@ -1,0 +1,6 @@
+﻿{army
+	{id 0}
+	{title "mp/army/ukr"}
+	{icon "/interface/pages/multi/flag_ukr"}
+	{flag "/interface/scene/common/flag-ukr"}
+}

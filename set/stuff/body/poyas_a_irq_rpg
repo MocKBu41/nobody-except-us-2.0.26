@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "poyas_a_irq_rpg"}
+	{mass 1.0}
+	;no info
+}

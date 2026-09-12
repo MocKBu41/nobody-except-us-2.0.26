@@ -1,0 +1,28 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/specnaz"}
+	{icon "officer"}
+	{icon_priority 2}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_specnaz_com")
+	{inventory
+		{item "6b45-1_medic"}
+		{item "545 ammo" 240}
+		
+		{item "smoke rdg2b grenade" 2}
+		{item "ak74m_gp25_1p78" filling "545 ammo" 30}
+		{item "gp25_ak74m_1p78" filling "mortar pd a ammo" 1}
+		{item "bandage" 25}
+		{item "mortar pd a ammo" 4}
+		{item "mortar pd p ammo" 4}
+		{item "rgo grenade" 2}
+		{item "sandbag_kit"}
+		{in_hands 3}
+	}
+}

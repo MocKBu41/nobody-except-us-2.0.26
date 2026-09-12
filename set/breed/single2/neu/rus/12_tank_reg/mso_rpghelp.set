@@ -1,0 +1,26 @@
+{breed
+	{skin "cw_neu_rus_12reg"}
+	{portrait "_new/rus/inf"}
+	{icon "bazookers"}
+	{icon_priority 1}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_bazooker")
+	{inventory
+		{item "6b45-1_rpg7"}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "pg-7vl rpg7 ammo" 2}
+		{item "rpg7_og-7v rpg7 ammo" 2}
+		{item "545 ammo" 180}
+		{item "sandbag_kit"}
+		{item "bandage" 10}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{in_hands 1}
+	}
+}

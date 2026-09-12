@@ -1,0 +1,75 @@
+{breed
+	{skin "neu_wagner_5"}
+	{portrait "rus/wagner_scout"}
+	{icon at_rifle}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+	{perks
+		{"vision" mp_sniper
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"pistol" lvl_4
+		}
+		{"gra_launch" lvl_2
+		}
+		{"melee" lvl_3
+		}
+		{"avoidance" lvl_3
+		}
+		{"health" "200%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "180%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.9
+		}
+		{"telescope"}
+		{"aimedshot"}
+		{"field_glass"}
+		{"stealth"}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"specnaz_lvl_1" 4
+		}
+		{"specnaz_lvl_2" 16
+		}
+		{"specnaz_lvl_3" 48
+		}
+		{"specnaz_lvl_4" 96
+		}
+		{"specnaz_lvl_5" 160
+		}
+	}
+	{inventory
+		{item "6b45_sniper1"}
+		{item "plant"}
+		{item "bandage" 5}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade"}
+		{item "f1 grenade"}
+		{item "l96a1" filling "762nato ammo" 10}
+		{item "762x51_x20 ammo" 120}
+		{in_hands 6}
+	}
+}

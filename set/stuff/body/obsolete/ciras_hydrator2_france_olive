@@ -1,0 +1,11 @@
+{from "pattern overcoat"
+	{desc "CIRAS France OD"}
+	{tag "armor"}
+	                   
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+	
+	{entity "ciras_hydrator2_france_olive"}
+}

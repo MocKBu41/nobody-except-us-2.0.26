@@ -1,0 +1,11 @@
+{from "pattern overcoat"
+	{desc "Britain SAS CIRAS MTP"}
+	{tag "armor"}
+	                   
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+	
+	{entity "brit_sas_ciras_mtp"}
+}

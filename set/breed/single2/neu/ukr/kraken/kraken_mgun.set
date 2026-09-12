@@ -1,0 +1,70 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_neu_ukr_kraken"}
+	{portrait "ua/ngu"}
+	{icon mgs}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{head "opscore_neu_ukr_azov_com"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_3
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "180%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.8
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "bandage" 10}
+		{item "rgd grenade" 2}
+		{item "pkm" filling "pkm_ammo ammo" 100}
+		{item "pkm_ammo ammo" 600}
+		{item "smoke grenade rdg2b" 2}
+		{item "lbt6094_ukr_mgun"}
+		{in_hands 2}
+	}
+}

@@ -1,0 +1,31 @@
+{from "pattern gun"	; Zu23-2
+	
+	{filling "bullet40 fg ammo" 10}
+	{fireSound "gun/40mm_ct40"}	
+	{reloadSound "flak38"}
+	{RecoveryTime 0.32}		;разные режимы огня с отсечкой, но темп 180-200
+	{RechargeTime 0.32}		;питание двумя магазинами
+	
+	{spreading
+		{spreadradius 	1}
+		{SpreadXYRatio	1.0}
+		{SpreadPower	1.7}
+		{BurstAccuracy 100 85 80}
+	}	
+	;{cursor "m242_APCR"}
+	;{cursorReloading "m242_APCR_reload"}
+	{cursor "cannon_on_fg_2"}
+	{cursorReloading "cannon_reload_fg"}
+	{Automatic}
+	{range 190 190}			;дальность стрельбы 4 км только по воздуху, БПС 3500 по наземным целям вообще 2500 рекомендуют
+							;https://www.thalesgroup.com/sites/default/files/asset/document/rapidfire_05_13pr.pdf
+	("speed" s(1100))
+	{calibre 40}
+    ("CW_acc_common" mils(0.35))
+	;кучность БПС 0,4-0,35 совпадает по разным данным,
+	;кучность снарядов GP и ABM дается в каталоге Nexter 0,5, но в данных для всей системы - 1
+	;https://ndiastorage.blob.core.usgovcloudapi.net/ndia/2005/garm/wednesday/duckworth.pdf
+	;https://www.thinkdefence.co.uk/cased-telescoped-armament-system/
+	;Пока не будет более подробных данных, берем среднее значение, 0,75.
+	("CW_small_APCR_damage_WC" penetr_1000m(157))              
+}

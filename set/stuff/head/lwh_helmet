@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "lwh_helmet"}
+	{mass 1.39}
+}

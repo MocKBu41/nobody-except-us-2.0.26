@@ -1,0 +1,9 @@
+{from "pattern proj_pointer"
+	{entity "pac3_mse"}
+    {inventory
+		{weight 100}
+		{size 7 1}
+	}
+	{mass 316}
+	{tag  "big" "size4" "88to105" "-ap" "-rocketlauncher" "no_ricochet" "-low_speed" "usa_radpassive_missile" "antimissile" "anti_ballistic_missile_usa"} 
+}

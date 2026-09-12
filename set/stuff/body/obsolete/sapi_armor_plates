@@ -1,0 +1,6 @@
+{from "pattern armorplate"
+	{inventory
+		{link_bone "plate_sapi"}
+	}
+	{entity "sapi_armor_plates"}
+}

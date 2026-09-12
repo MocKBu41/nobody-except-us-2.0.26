@@ -1,0 +1,62 @@
+{from "pattern gun"
+	
+	{filling "M61ammo" 1000}
+	{mass 50}
+	{foresight "foresight2"}
+	
+	{maxRange 190}
+	{aimRange 190}	;дальность предварительного наведения
+	{recoveryTime 0.02}
+	{rechargeTime 8}	
+	{AimingTolerance 1}
+	{Automatic}
+	{burst
+		{short 50 5}
+		{long 100 20}
+	}	
+	("speed" s(1030))
+	("14-20caliber")
+	{SpreadTolerance 0.3}
+	{traceFreq 1}
+	{RelaxationTime 0}
+	{healthDamage 605}
+	{projectileDamage 40}	
+;	{projectileDamageTable {20 29} {45 26} {90 19} {110 14}} 
+	{calibre 20}
+	{fireSound "gun/m134"}
+	{reloadSound "flak38"}
+	;{cursor "Cobra"}
+	;{cursorReloading "zenite_reload"}
+	;{cursor "cannon_on_fg"}
+	;{cursorReloading "cannon_reload_fg"}
+	{cursor "cannon_on_ap_5"}
+	{cursorReloading "cannon_reload_ap"}
+	("CW_acc_common" mils(1.5))
+	("CW_acc_common_90" mils(1.5))
+	("CW_small_AP_damage" penetr_1000m(12))	;http://www.gd-ots.com/download/20mm%20M50%20Series.pdf
+	{parameters "pgu"
+		("CW_small_APCR_damage_DU" penetr_1000m(10))
+		("CW_acc_common" mils(1.5))
+		("CW_acc_common_90" mils(1.5))
+		{maxRange 190}
+		{aimRange 190}	;дальность предварительного наведения
+	    ;{cursor "Cobra"}
+	    ;{cursorReloading "zenite_reload"}
+		;{cursor "cannon_on_ap"}
+		{cursor "cannon_on_ap_5"}
+		{cursorReloading "cannon_reload_ap"}
+	}
+        {parameters "FAP"
+		("CW_small_APCR_damage_WC" penetr_1000m(22))
+		("CW_acc_common" mils(1.5))
+		("CW_acc_common_90" mils(1.5))
+		{maxRange 190}
+		{aimRange 190}	;дальность предварительного наведения
+	    ;{cursor "Cobra"}
+	    ;{cursorReloading "zenite_reload"}
+		;{cursor "cannon_on_ap"}
+		{cursor "cannon_on_ap_5"}
+		{cursorReloading "cannon_reload_ap"}
+	}
+}
+

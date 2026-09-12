@@ -1,0 +1,26 @@
+{breed
+	{skin "cw_lnr"}
+	{portrait "_new/rus/inf"}
+	{icon "smgs"}
+	{icon_priority 1}
+	{nationality arm}
+	{armors
+		{head "6b7_new1_cf"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_mgun")
+	{inventory
+		{item "6b23-strelok"}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "pkm_ammo ammo" 400}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "545 ammo" 180}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 6}
+	}
+}

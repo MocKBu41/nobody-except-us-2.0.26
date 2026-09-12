@@ -1,0 +1,7 @@
+{from "pattern overcoat"
+	{entity "lbt_1_aor"}
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+}

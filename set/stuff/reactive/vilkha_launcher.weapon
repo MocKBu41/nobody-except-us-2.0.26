@@ -1,0 +1,15 @@
+{from "smerch_launcher weapon"
+	{filling "ammo tornado_s" 12}
+	{parameters "olha"	;управл ОФ 120км
+		("CW_acc_guided" kvo_meters(5))
+		{range 490 490}
+		{cursor "cannon_on_fg_14"}
+	    {cursorReloading "cannon_reload_fg_timer_240"}
+		{Spreading	
+		    {SpreadXYRatio	1.0}
+	    }
+	}
+
+}	
+
+

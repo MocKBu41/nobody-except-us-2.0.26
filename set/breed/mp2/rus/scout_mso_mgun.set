@@ -1,0 +1,22 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/scout"}
+	{icon scouts}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "lshz1plus_sso"}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_mgun")
+	{inventory
+		{item "lbt6094_rus_mgun"}
+		{item "rgd grenade" 3}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "pkp" filling "pkm_ammo ammo" 200}
+		{item "pkm_ammo ammo" 600}
+		{item "smoke rdg2b grenade"}
+		{in_hands 4}
+	}
+}

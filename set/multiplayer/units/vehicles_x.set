@@ -1,0 +1,49 @@
+;----- Extra -----
+
+
+;°°°heroes°°°													
+{"m113a3"				( "extra"   t()    sc(150)  cw(0) cp(5)) }
+{"bmp1_ukr"				( "extra"   t()    sc(150)  cw(0) cp(15)) }
+{"btr80_2_ukr"			( "extra"   t()    sc(150)  cw(0) cp(10)) }
+{"zil131"				( "extra"   t()    sc(150)  cw(0) cp(5))  }
+{"mi17_unarmed_urk"		( "extra"   t()    sc(150)  cw(0) cp(5)) }
+
+{"bmd1_ukr"				( "extra"   t()    sc(150)  cw(0) cp(15)) }
+{"bmd2_ukr"				( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"m1126"				( "extra"   t()    sc(150)  cw(0) cp(5)) }
+{"btr_3e"				( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"novator"				( "extra"   t()    sc(150)  cw(0) cp(5)) }
+{"btr4e1_ptur"			( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"bmp2_new_ukr"			( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"btr4e"				( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"btr4e1i"				( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"btr4e1"				( "extra"   t()    sc(150)  cw(0) cp(20)) }
+
+{"bmp3_ukr"				( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"brdm2_strela_ukr"		( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"m113a_ukr"			( "extra"   t()    sc(150)  cw(0) cp(5)) }
+{"m1126_mk19_ukr"		( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"marder_1a3_ukr"		( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"m2a3_brat"			( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"btr80_ukr"			( "extra"   t()    sc(150)  cw(0) cp(10)) }
+{"cv9040"				( "extra"   t()    sc(150)  cw(0) cp(15)) }
+{"mortarfr"				( "extra"   t()    sc(150)  cw(0) cp(10)) }
+{"vab_reco"				( "extra"   t()    sc(150)  cw(0) cp(5)) }
+{"patriot_launcher_v2"				( "extra"   t()    sc(150)  cw(0) cp(40)) }
+{"nasams_ii_launcher"				( "extra"   t()    sc(150)  cw(0) cp(20)) }
+{"patriot_radar"				( "extra"   t()    sc(150)  cw(0) cp(10)) }
+
+;=============wagner==================================================
+
+
+{"btr82a_nov"						( "extra"   t()    sc(150)  cw(0) cp(10)) }
+{"bmp1_nov"							( "extra"   t()    sc(150)  cw(0) cp(10)) }
+{"bmp2_new_without_ptyr"			( "extra"   t()    sc(150)  cw(0) cp(15)) }
+{"mtlb_vmk"							( "extra"   t()    sc(150)  cw(0) cp(10)) }
+{"btr80_nov2"						( "extra"   t()    sc(150)  cw(0) cp(10)) }
+{"bmp1_new2"						( "extra"   t()    sc(150)  cw(0) cp(10)) }
+
+{"lav25_2"							( "extra"   t()    sc(150)  cw(0) cp(-100)) }
+{"vbci_vpc_1"							( "extra"   t()    sc(150)  cw(0) cp(-100)) }
+
+

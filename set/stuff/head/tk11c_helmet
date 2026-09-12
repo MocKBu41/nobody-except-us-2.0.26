@@ -1,0 +1,8 @@
+{from "pattern cw_helmet"
+	{entity "tk11c_helmet"}
+	{mass 1.2}	;unknown
+	{inventory
+		{link_bone "helmet_link"}
+		{fsm "belt"}
+	}
+}

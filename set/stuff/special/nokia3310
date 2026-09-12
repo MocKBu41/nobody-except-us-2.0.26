@@ -1,0 +1,10 @@
+{item
+	{tag "itemin2hands"}
+	
+	{entity "nokia3310"}
+	{inventory
+		{weight 1}
+		{fsm "stuff"}
+	}
+	{mass 1}
+}

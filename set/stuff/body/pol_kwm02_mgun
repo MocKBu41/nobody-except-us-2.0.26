@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "pol_kwm02_mgun"}
+	{mass 14}
+	;14 с 4 ESAPI
+}

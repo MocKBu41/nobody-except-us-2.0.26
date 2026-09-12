@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_neu_rus_200brg"}
+	{portrait "_new/rus/inf"}
+	{icon "sappers"}
+	{icon_priority 1}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_engineering_troops")
+	{inventory
+		{item "6b45_rpg"}
+		{item "mine_detector"}
+		{item "545 ammo" 120}
+		{item "bandage" 10}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "wirecutters"}
+		{item "smoke rdg2b grenade"}
+		{in_hands 4}
+	}
+}

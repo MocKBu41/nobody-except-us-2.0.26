@@ -1,0 +1,20 @@
+{breed
+	{skin "cw_hamas3"}
+	{portrait "_new/arb/boevikmg"}
+	{icon "boevik_mgun"}
+	{icon_priority 0}
+	{nationality arb}
+	{armors
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_mgun")
+	{inventory
+		{item "rgd grenade" 3}
+		{item "bandage" 15}
+		{item "knife_rus"}
+		{item "pkm"}
+		{item "pkm_ammo ammo" 600}
+		{in_hands 3}
+	}
+}

@@ -1,0 +1,22 @@
+{breed
+	{skin "cw_rus_ruhih_atacs"}
+	{portrait "rus/rusih"}
+	{icon officer}
+	{icon_priority 3}
+	{tags "officer"}
+	{nationality rus}
+	(include "perks_generic.inc")
+	("traits_elite_com")
+	{inventory
+		{item "ak12_1p87_tactical" filling "545 ammo" 30}
+		{item "545 ammo" 300}
+		{item "lbt6094_rus_mg_rpg_help_belt"}
+		{item "mvd_opscore_vng"}
+		{item "f1 grenade" 4}
+		{item "bandage" 10}
+		{item "smoke grenade rdg2b" 2}
+		{item "binocular"}
+		{item "rpg26 weapon" filling "rpg26 ammo" 1}
+		{in_hands 3}
+	}
+}

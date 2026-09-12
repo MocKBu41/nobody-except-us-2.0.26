@@ -1,0 +1,4 @@
+{from "pattern mask"
+	{entity "s10_gasmask"}
+	{mass 0.2}
+}

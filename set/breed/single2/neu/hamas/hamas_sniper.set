@@ -1,0 +1,70 @@
+{breed
+	{skin "cw_hamas"}
+	{portrait "_new/arb/boevik1"}
+	{icon boevik_snipers}
+	{icon_priority 0}
+	{nationality arb}
+	{perks
+		{"vision" mp_sniper
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"pistol" lvl_4
+		}
+		{"gra_launch" lvl_4
+		}
+		{"melee" lvl_5
+		}
+		{"avoidance" lvl_3
+		}
+		{"health" "250%"
+		}
+		{"stamina" "250%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 1.1
+		}
+		{"stealth"}
+		{"telescope"}
+		{"aimedshot"}
+		{"field_glass"}
+		{"skill_tankgun" lev_3
+		}
+		{"skill_atgm_launcher" lev_4
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"specnaz_lvl_1" 2
+		}
+		{"specnaz_lvl_2" 3
+		}
+		{"specnaz_lvl_3" 5
+		}
+		{"specnaz_lvl_4" 7
+		}
+		{"specnaz_lvl_5" 9
+		}
+	}
+	{armors
+		{head opscore_mcum_halfolive_none_2}
+	}
+	{inventory
+		{item "bandage" 15}
+		{item "rgd grenade" 2}
+		{item "taher" filling "762x51_x20 ammo" 1}
+		{item "762x51_x20 ammo" 100}
+		{item "lbt6094_bandit_smg"}
+		{in_hands 2}
+	}
+}

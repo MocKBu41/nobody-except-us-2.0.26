@@ -1,0 +1,74 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_neu_ukr_meh"}
+	{portrait "ua/scout"}
+	{icon snipers}
+	{icon_priority 0}
+	{nationality ukr}
+	
+	{perks
+		{"vision" mp_sniper
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"pistol" lvl_4
+		}
+		{"gra_launch" lvl_4
+		}
+		{"melee" lvl_5
+		}
+		{"avoidance" lvl_3
+		}
+		{"health" "250%"
+		}
+		{"stamina" "250%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 1.1
+		}
+		{"stealth"}
+		{"telescope"}
+		{"aimedshot"}
+		{"field_glass"}
+		{"skill_tankgun" lev_3
+		}
+		{"skill_atgm_launcher" lev_4
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"specnaz_lvl_1" 4
+		}
+		{"specnaz_lvl_2" 16
+		}
+		{"specnaz_lvl_3" 48
+		}
+		{"specnaz_lvl_4" 96
+		}
+		{"specnaz_lvl_5" 160
+		}
+	}
+	{inventory
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "ak74m_gp25_1p78" filling "545 ammo" 30}
+		{item "gp25_ak74m_1p78" filling "mortar pd a ammo" 1}
+		{item "545 ammo" 240}
+		{item "mortar pd a ammo" 8}
+		{item "binocular"}
+		{item "smoke rdg2b grenade" 2}
+		{item "spcs_ua_smg"}
+		{in_hands 3}
+	}
+}

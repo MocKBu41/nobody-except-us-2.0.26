@@ -1,0 +1,18 @@
+{from "pattern proj_weapon_air"
+	{tag "gun"}
+	{filling "ammo agm88" 4}
+	{fillingVisible "agm88_"}	
+	{foresight "Foresight8"}
+	{fireSound "reactive/missile_large/"}
+	{mass 25}
+	{recoveryTime 5}
+	{rechargeTime 160}
+	{inventory {noView}}
+	{maxRange 455}	;depends of flight parameters, 50-100 km, we'll take 75
+	{aimRange 455}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "antiradar"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+}

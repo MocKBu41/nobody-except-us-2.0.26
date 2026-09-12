@@ -1,0 +1,71 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_neu_ukr_rdk"}
+	{portrait "ua/ngu"}
+	{icon mgs}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{head "opscore_mcum_halfolive_glasses_up"}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"pistol" lvl_2
+		}
+		{"gra_launch" lvl_3
+		}
+		{"melee" lvl_2
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "180%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.8
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 8
+		}
+		{"lvl_3" 24
+		}
+		{"lvl_4" 48
+		}
+		{"lvl_5" 80
+		}
+	}
+	{inventory
+		{item "bandage" 10}
+		{item "rgd grenade" 4}
+		{item "m240_acog" filling "762nato ammo" 100}
+		{item "762nato ammo" 600}
+		{item "smoke grenade rdg2b" 2}
+		{item "sandbag_kit"}
+		{item "asv_vest_mcum_ak_mgun_e"}
+		{in_hands 2}
+	}
+}

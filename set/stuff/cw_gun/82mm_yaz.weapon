@@ -1,0 +1,32 @@
+{from "pattern gun"   
+	{ZeroingAccuracy 0.8 0.6 0.5}
+	{DisableRicochet}
+	{aimtype curved}
+	{traceFreq 0}
+	{filling "ammo 82mm" 1}
+	{fireSound "reactive/82mm_podnos"}
+	{reloadSound "reactive_reload/mortar_reload"}
+	{rechargeTime 3}
+	{range 140 140}
+	{gravity 1}
+	("speed" s(820)) 
+	{calibre 82}
+	("CW_acc_artillery" mils(10.92))
+	;	{cursor "cannon_on"}
+	;	{cursorReloading "cannon_reload"}
+	;{cursor "cannon_on_fg"}
+	{cursor "mortar"}
+	{cursorReloading "cannon_reload_fg"}
+			; s
+    {parameters "82mm er"     
+		{aimRange 166}	;http://cjaie.com/content/details30_51.html
+		{maxRange 166}
+	}             {parameters "82mm l"     
+		{cursor "signal"}
+		{cursorReloading "cannon_reload_all"}
+	}
+             {parameters "82mm sm"     
+		{cursor "cannon_on_sm"}
+		{cursorReloading "cannon_reload_sm"}
+	}	
+}

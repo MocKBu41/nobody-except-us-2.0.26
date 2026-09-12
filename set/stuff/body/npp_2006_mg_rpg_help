@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "npp_2006_mg_rpg_help"}
+	{mass 10.0}
+}

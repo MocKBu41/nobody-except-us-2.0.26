@@ -1,0 +1,19 @@
+{breed
+	{skin "cw_neu_rus_200brg2"}
+	{portrait "_new/rus/inf"}
+	{icon pzrk}
+	{icon_priority 4}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+	(include "perks_generic.inc")
+	("traits_army_bazooker")
+	{inventory
+		{item "6b45_strelok"}
+		{item "igla weapon" filling "igla_s ammo" 1}
+		{item "igla_s ammo" 2}
+		{item "bandage" 10}
+		{in_hands 1}
+	}
+}

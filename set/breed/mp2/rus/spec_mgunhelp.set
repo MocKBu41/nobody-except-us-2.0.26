@@ -1,0 +1,28 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/specnaz"}
+	{icon smgs}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+	(include "perks_generic.inc")
+	("traits_specnaz_mgun")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "bandage" 10}
+		{item "pkm_ammo ammo" 400}
+		{item "rgo grenade" 1}
+		{item "545 ammo" 180}
+		{item "ak74m_gp25_1p78" filling "545 ammo" 30}
+		{item "gp25_ak74m_1p78" filling "mortar pd a ammo" 1}
+		{item "mortar pd a ammo" 2}
+		{item "mortar pd p ammo" 2}
+		{item "rgn grenade" 1}
+		{item "smoke rdg2b grenade"}
+		{item "rshg-1 weapon" 1 filling "rshg-1 ammo" 1}
+		{item "sandbag_kit"}
+		{in_hands 5}
+	}
+}

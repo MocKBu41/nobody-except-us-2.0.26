@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_rus_officer"}
+	{portrait "_new/rus/officer"}
+	{icon "officer"}
+	{icon_priority 2}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_officer")
+	{inventory
+		{item "6b45"}
+		{item "standart ammo" 100}
+		{item "smoke rdg2b grenade"}
+		{item "binocular"}
+		{item "makarov" filling "standart ammo" 8}
+		{item "bandage" 5}
+		{in_hands 3}
+	}
+}

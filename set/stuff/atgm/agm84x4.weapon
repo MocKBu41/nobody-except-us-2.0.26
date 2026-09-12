@@ -1,0 +1,18 @@
+{from "pattern proj_weapon_air"
+	{tag "gun"}
+	{filling "ammo agm-84d" 4}
+	{fillingVisible "Harpoon_"}	
+	{foresight "Foresight1"}
+	{fireSound "reactive/missile_large/"}
+	{mass 25}
+	{recoveryTime 1}
+	{rechargeTime 160}
+	{inventory {noView}}
+	{maxRange 525}
+	{aimRange 525}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_fg_8"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+}

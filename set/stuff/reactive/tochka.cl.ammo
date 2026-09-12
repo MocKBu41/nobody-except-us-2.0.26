@@ -1,0 +1,29 @@
+{bullet
+	{tag "big" "shell" "fg" "size2" "no_ricochet" "tochka_cl" "fragmentary"  "m270_cl" "cw_rocket_cl_detector"}
+	{tag "cluster_shell"} ; только для ammo.set
+	{inventory
+		{size 9 2}
+		{weight 3000}
+	}	
+	{mass 3000}
+	{entity "tochka_cl"}
+	{view "tochka_cl"
+		{tail "rocket_smokebig_short_detwarh_atacms_cl" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+	;644 суббоеприпаса M77 для M26.К реализации M26A2 - 518 x M77.
+	{damage blastwave	 ; fragmentary
+		{energy 0.2}
+		{area 30 90}
+	}
+	{damage add blastwave	 ; HE antipersonnel
+		{energy 1.2}
+		{area 2 3}
+	}
+	{damage add blastwave	 ; HE, FG anti-APC
+		{energy 4}
+		{area 0.5 0.9}
+	}
+}
+

@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "bel_vest_rpg"}
+	{mass 1.5}
+}

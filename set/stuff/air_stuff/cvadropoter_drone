@@ -1,0 +1,16 @@
+{from "pattern throwable"
+	{entity "cvadropoter_ammo"}
+	{tag "grenade"}
+    {inventory
+		{weight 100}
+		{size 3 4}
+		{fsm "belt"}
+	}
+	{mass 4}
+	{tag "no_ricochet"} 
+	{throw
+		{range 20}
+		{startAngle 40}
+		{spreading 0.3}
+	}
+}

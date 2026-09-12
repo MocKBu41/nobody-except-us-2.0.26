@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/marine"}
+	{icon bazookers}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head "6b47che1"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_elite_bazooker")
+	{inventory
+		{item "6b45-1_rpg7"}
+		{item "pg-7vr rpg7 ammo" 2}
+		{item "bandage" 10}
+		{item "rgo grenade" 2}
+		{item "762 ammo" 180}
+		{item "pg-7vl rpg7 ammo" 2}
+		{item "smoke rdg2b grenade"}
+		{item "ak103_pbs_1p87" filling "762 ammo" 30}
+		{in_hands 7}
+	}
+}

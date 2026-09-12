@@ -1,0 +1,4 @@
+{from "fieldcap_rus"
+	{tag "head_closed"}
+	{entity "rus_sso_helm"}
+}

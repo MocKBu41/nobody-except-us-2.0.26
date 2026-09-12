@@ -1,0 +1,22 @@
+{bullet
+	{tag "ammo"}
+	{tag "itemin2hands"}
+	{tag "no_ricochet" "fg" "big" "fragmentary" "size4" "fx_upto250kg"}
+	{tag "bomb"}
+	{inventory
+		{size 0 0}
+		{weight 500}
+	}
+	{entity "500kg_kamikadze"}
+	{mass 500}
+	{tag "he_over30"}
+	{damage blastwave {energy 0.7} {area 25 32}}	;óìåíüøåíî äÿ èñêëþ÷åíèÿ ñàìîïîäðûâà
+	{damage add blastwave {energy 1.2} {area 19.7 22.7}}
+	{damage add blastwave {energy 2.5} {area 14.7 16.9}}
+	{damage add blastwave {energy 6.5} {area 11 12.6}}
+	{damage add blastwave {energy 11} {area 4.8 5.6}}
+	{damage add blastwave	 ; HE, FG antitank
+		{energy 22}
+		{area 3 5}
+	}
+}

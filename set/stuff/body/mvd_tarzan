@@ -1,0 +1,6 @@
+{from "pattern armorplate"
+	{entity "mvd_tarzan"}
+	{desc "Разгрузочный жилет Тарзан МВД"}
+	{mass 1.0}
+	;no info
+}

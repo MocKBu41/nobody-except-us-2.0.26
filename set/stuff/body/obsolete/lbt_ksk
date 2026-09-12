@@ -1,0 +1,8 @@
+{from "pattern overcoat"
+	{desc "Бронежилет LBT-KSK"}
+	{entity "lbt_ksk"}
+	{inventory
+		{size 2 3}
+		{weight 100}
+	}
+}

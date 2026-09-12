@@ -1,0 +1,9 @@
+{item
+	{tag "smallitemin1hand head"}
+	{tag "armor"}
+	{mass 1.2}
+	{inventory
+		{fsm "belt"}
+		{weight 100}
+	}
+}

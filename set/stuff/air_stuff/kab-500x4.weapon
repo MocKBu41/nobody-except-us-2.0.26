@@ -1,0 +1,5 @@
+{from "kab-500x2 weapon"
+	;Su-34
+	{filling "ammo kab-500s" 4}
+	{fillingVisible "bombc_"}
+}

@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_neu_rus_12reg_tank"}
+	{portrait "_new/rus/tankman"}
+	{icon "tankman"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head "6b48_helmet"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_tankman")
+	{veterancy
+		
+		("veterancy_crew_v")
+	}
+	{inventory
+		{item "6b48"}
+		{item "545 ammo" 60}
+		{item "bandage" 10}
+		{item "aks74" filling "545 ammo" 30}
+		{in_hands 3}
+	}
+}

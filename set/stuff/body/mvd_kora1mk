@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "mvd_kora1mk"}
+	{desc "Бронежилет МВД РФ Кора1MK"}
+	{mass 3.0}
+}

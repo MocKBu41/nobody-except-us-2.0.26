@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "smersh"}
+	{mass 1.0}
+	;no info
+}

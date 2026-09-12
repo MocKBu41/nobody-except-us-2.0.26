@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_sso_atacs"}
+	{portrait "_new/rus/sso"}
+	{icon bazookers}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head "lshz1plus_sso"}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_bazooker")
+	{inventory
+		{item "lbt6094_rus_rpg"}
+		{item "rpg27 weapon" filling "rpg27 ammo" 1}
+		{item "rshg-2 weapon" 2 filling "rshg-2 ammo" 1}
+		{item "bandage" 10}
+		{item "rgo grenade" 2}
+		{item "rgd grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "ak103_pbs_1p87" filling "762 ammo" 30}
+		{item "762 ammo" 240}
+		{in_hands 7}
+	}
+}

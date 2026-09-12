@@ -1,0 +1,9 @@
+{from "pattern proj_pointer"
+	{entity "tamir"}
+    {inventory
+		{weight 100}
+		{size 5 1}
+	}
+	{mass 90}
+	{tag  "big" "size2" "88to105" "-ap" "-rocketlauncher" "no_ricochet" "-low_speed" "usa_radpassive_missile" "antimissile" "anti_ballistic_missile_usa"} 
+}

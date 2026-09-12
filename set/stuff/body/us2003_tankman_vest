@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "us2003_tankman_vest"}
+	{mass 3.8}
+	;no info
+}

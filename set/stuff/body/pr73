@@ -1,0 +1,13 @@
+{from "pattern armor"
+	{entity "pr73"}
+	{desc "Палка резиновая ПР-73Ф"}
+	{inventory
+		{size 1 2}
+		{weight 5}
+	}
+	                        
+}
+
+
+
+

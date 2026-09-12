@@ -1,0 +1,61 @@
+{game
+	 {class battle_zones}
+	{order 30}
+	{parameters	"flagCount=3:5,7:9,9:11,13:16;points_table=0/0,0.01/0.4,0.08/0.5,0.16/0.6,0.24/0.9,0.32/1,0.39/1.1,0.47/1.2,0.55/1.8,0.62/1.9,0.7/2,0.78/2.5,0.85/3,0.93/4;flag_capture_time=3;flag_release_time=3;flag_capture_factor=1.6"}
+	{settings
+		{options 		gameDuration scoreFinal friendlyFire showPiercing showDamageReports enableSpectators enableStrategy randomSpawnPoints}
+		{optionsAdvanced 	 preparationTime floraRespawn fogOfWar}
+		{optionsRanked 		}
+		{fogOfWar 		fog_realistic}
+		{difficulty 		multiplayer}
+		{gameDuration 		"120 min"} ; min
+		{scoreMin			4000}
+		{scoreMax			15000}
+		{scoreFinal			15000}
+		{impregnableTimeout	4}	; sec
+		{floraRespawn 0}
+		{friendlyFire}
+		{showPiercing 0}
+		{showDamageReports 1}
+		{preparationTimeMin	0}
+		{preparationTimeMax	0}
+		{preparationTime	0}
+		{useUnitLevelRestrictions}
+		{enableBots}
+	}
+	{teamSettings
+		{teamsMode normal}
+		{teams
+			{"a"}
+			{"b"}
+		}
+	}
+	{ranked
+		{enabled}
+	}
+	{presets
+		{"p:biatlon"		{gameMode "duel"}		{unitMode "Vduelbiatlon"}	{specMode "duel_1"}
+		   {common
+			{unitset
+				{value "biatlon"}
+			}
+			{commandPoints "*=1"} 
+			{chargeFactors "*=0"}
+			{budgets
+				{vehicle
+					{mode "without_update"}
+					{resource 
+						{start 		5}
+						{finish 	10000}
+						{speed 		0}
+						{limitmin	5}
+						{limitmax	5}
+						{speedset 	"5"}
+					} 
+					;{buttons "common"}
+				}
+			} 
+		   }
+		}
+    }
+}

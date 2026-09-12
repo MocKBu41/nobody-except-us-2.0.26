@@ -1,0 +1,19 @@
+{breed
+	{skin "cw_rus_vkpo"}
+	{portrait "_new/rus/inf"}
+	{icon pzrk}
+	{icon_priority 4}
+	{nationality rus}
+	{armors
+		{head "6b7_new1"}
+	}
+	(include "perks_generic.inc")
+	("traits_militia_smg")
+	{inventory
+		{item "6b23-strelok"}
+		{item "igla weapon" filling "igla_s ammo" 1}
+		{item "igla_s ammo" 2}
+		{item "bandage" 10}
+		{in_hands 1}
+	}
+}

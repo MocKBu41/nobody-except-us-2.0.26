@@ -1,0 +1,16 @@
+{from "pattern proj_impactor"
+	{entity "switchblade600_impactor"}
+              {inventory
+		{weight 100}
+		{size 5 1}
+	}
+	{tag "no_ricochet" "cm" "big" "size3" "88to105" "pierce" "ptrk" "fx_111_145" "fx_cm"} 
+	;2.67 кг ВВ - БЧ 8,4, кумулятивный расчет 
+	{tag "he_2to4_5"}
+	{damage blastwave {energy 0.7} {area 13.1 15.1}}
+	{damage add blastwave {energy 1.2} {area 7.1 8.2}}
+	{damage add blastwave {energy 2.5} {area 3.8 4.3}}
+	{damage add blastwave {energy 6.5} {area 0.5 0.6}}
+	{damage cumulative {damage 750} {distance 5}}
+ 
+}

@@ -1,0 +1,94 @@
+{weapon_bullet
+	{tag "gun" "weapon" "skill_tankgun" "bullet"}	;"bullet" is needed for work of levelling and skills
+	("heavy_artillery")
+	{filling "ammo grad" 1}
+
+	{fillingVisible "missle"}	
+	{fireSound "reactive/grad_burst"}
+	{burst {min 0} {short 5} {long 5} {noaiming}}
+;	{burst {min 20} {short 20} {long 20}} ;нужно для стрельбы по триггеру
+	{Automatic} ;нужно для стрельбы по триггеру
+	{rechargeTime 10}
+	("relaxationtime" rt(3))
+	{recoveryTime 0.9}
+	{burst {min 10} {noaiming}}
+
+		{range 400 400}  ;9М22У - 20.4 км 
+		{aimRange 290}
+		{maxRange 400}
+		("CW_acc_artillery" mils(5))
+;		{gravity 4}
+;		{speed 100}
+		{gravity 1.25}
+		("speed_mrls")
+		;{aimtype adaptive}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_fg_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	    {cursorReloading "cannon_reload_fg_timer_210"}
+	{parameters "fgh"
+	    {gravity 1.05}
+;		{gravity 3}
+		("CW_acc_artillery" mils(5))	
+		{range 330 330}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_fg_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	}
+	{parameters "rok"
+        {gravity 1.00}
+		("CW_acc_artillery" mils(5))	
+		{range 400 400}
+		;{cursor "cannon_on_fg_4"}
+		{cursor "cannon_on_fg_14"}
+		;{cursorReloading "cannon_reload_fg"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+	}
+	{parameters "spbe"
+        {gravity 1.05}
+		("CW_acc_artillery" mils(5))
+		{range 400 400}
+		;{cursor "cannon_on_heat_5"}
+		{cursor "cannon_on_heat_10"}
+		;{cursorReloading "cannon_reload_heat"}
+		{cursorReloading "cannon_reload_heat_timer_210"}
+	}
+	{parameters "clcn" 
+		{gravity 1.05}
+		("CW_acc_artillery" mils(5))	
+		{range 400 400}
+		;{cursor "cannon_on_heat_3"}
+		{cursor "cannon_on_heat_10"}
+		;{cursorReloading "cannon_reload_heat"}
+		{cursorReloading "cannon_reload_heat_timer_210"}
+	}
+	{parameters "cl"
+   
+		{gravity 1.05}
+		("CW_acc_artillery" mils(5))	
+		{range 400 400}
+		;{cursor "cannon_on_heat_3"}
+		{cursor "cannon_on_heat_10"}
+		;{cursorReloading "cannon_reload_heat"}
+		{cursorReloading "cannon_reload_heat_timer_210"}
+	}
+	{parameters "mine"
+;		{gravity 9}
+		{range 400 400}
+		("CW_acc_artillery" mils(5))
+		;{cursor "cannon_on_fg_3"}
+		;{cursorReloading "cannon_reload_fg"}
+		{cursor "mine"}
+		;{cursorReloading "cannon_reload_all"}
+		{cursorReloading "cannon_reload_all_timer_210"}
+	}
+
+}	
+;Для 9М22У - Рассеивание Дмакс: Вд – 1/200, Вб – 1/130.	
+;http://www.russianarms.ru/forum/index.php/topic,1016.0.html	
+;	
+;	
+;	
+;http://splav.org/v3/grad.asp	
+

@@ -1,0 +1,69 @@
+{breed
+	{skin "cw_rus_fsb_alpha_10x"}
+	{portrait "MVD/fsb_alfa_10e"}
+	{icon defend}
+	{icon_priority 1}
+	{nationality rus}
+	{armors
+		{head mvd_opscore_fsb}
+	}
+	{perks
+		{"vision" mp_soldier
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_2
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"pistol" lvl_3
+		}
+		{"gra_launch" lvl_4
+		}
+		{"melee" lvl_4
+		}
+		{"avoidance" lvl_2
+		}
+		{"health" "200%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "200%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 0.9
+		}
+		{"skill_tankgun" lev_1
+		}
+		{"skill_atgm_launcher" lev_1
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"lvl_1" 1
+		}
+		{"lvl_2" 2
+		}
+		{"lvl_3" 4
+		}
+		{"lvl_4" 6
+		}
+		{"lvl_5" 8
+		}
+	}
+	{inventory
+		{item "mars2_vest_black_ak_smg_b_belt"}
+		{item "bandage" 10}
+		{item "f1 grenade" 4}
+		{item "ak103_pbs_1p87" filling "762 ammo" 30}
+		{item "762 ammo" 240}
+		{item "rpg27 weapon" 2 filling "rpg27 ammo" 1}
+		{in_hands 4}
+	}
+}

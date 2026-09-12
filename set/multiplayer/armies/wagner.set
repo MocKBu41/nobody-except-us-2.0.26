@@ -1,0 +1,6 @@
+﻿{army
+	{id 1}
+	{title "mp/army/wagner"}
+	{icon "/interface/pages/multi/flag_wagner"}
+	{flag "/interface/scene/common/flag-wagner"}
+}

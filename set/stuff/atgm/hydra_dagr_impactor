@@ -1,0 +1,21 @@
+{from "pattern proj_impactor"
+	{entity "hydra_dagr_impactor"}
+              {inventory
+		{weight 100}
+		{size 5 1}
+	}
+	{tag "no_ricochet" "cm" "big" "size4" "88to105" "pierce" "ptrk" "fx_111_145" "fx_cm"} 
+	;примерно 4 кг ВВ - 9 кг бч
+	{tag "he_2to4_5"}
+	{damage blastwave {energy 0.7} {area 8 9.2}}
+        {damage add blastwave {energy 1.2} {area 6.3 7.3}}
+        {damage add blastwave {energy 2.5} {area 2.8 3.2}}
+	{damage add blastwave	 ; HE, FG anti-IFV
+		{energy 6.5}
+		{area 0.1 0.2}
+	}
+	{damage cumulative
+		{damage 400}
+		{distance 3}
+	}
+}

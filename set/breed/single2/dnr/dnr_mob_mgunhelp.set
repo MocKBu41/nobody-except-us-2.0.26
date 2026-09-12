@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_dnr_mob"}
+	{portrait "_new/rus/inf"}
+	{icon "smgs"}
+	{icon_priority 1}
+	{nationality arm}
+	{armors
+		{head "sh-68"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_smg")
+	{inventory
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "pkm_ammo ammo" 400}
+		{item "ak74b" filling "545 ammo" 30}
+		{item "545 ammo" 180}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 5}
+	}
+}

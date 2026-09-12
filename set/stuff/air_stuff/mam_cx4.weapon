@@ -1,0 +1,25 @@
+{weapon_bullet
+	;su
+	{tag "weapon fg"}
+	{tag "weapon skill_airgun bullet"}	;"bullet" is needed for work of levelling and skills
+
+	{inventory
+		{noView}
+	}
+	{filling "mam_c" 4}
+	{fillingVisible "bombi_"}
+	{fireSound "reactive/bomb"}
+	{recoveryTime 0.3}
+	{rechargeTime 120}
+	{range 160 180}
+	;{cursor "glonass"}
+             ;{cursorReloading "glonass_reload"}
+	{cursor "bomb_on"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_210"}
+	{automatic}
+	{gravity 0.15}
+	{speed 18}
+	{aimtype direct}
+	("accuracy_kab" kvo_meters(0.2))
+}

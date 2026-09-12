@@ -1,0 +1,9 @@
+{from "pattern overcoat"
+	{tag "armor"}
+	                 
+	{inventory
+		{size 2 2}
+		{weight 100}
+	}
+	{entity "rus_sf_bron_driver1_multi1"}
+}

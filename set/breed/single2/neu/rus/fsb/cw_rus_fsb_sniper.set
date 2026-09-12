@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_fsb_alpha_10x"}
+	{portrait "MVD/fsb_alfa_10e"}
+	{icon "snipers"}
+	{icon_priority 2}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "mvd_opscore_fsb"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_sniper")
+	{inventory
+		{item "mars2_vest_black_ak_marksman_c"}
+		{item "bandage" 15}
+		{item "knife_rus" 3}
+		{item "sv98" filling "svd_ammo ammo" 10}
+		{item "rgd grenade" 2}
+		{item "svd_ammo ammo" 120}
+		{item "smoke grenade"}
+		{in_hands 4}
+	}
+}

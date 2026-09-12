@@ -1,0 +1,11 @@
+{bullet
+	{entity "fp1_base_loaded"}
+	{tag "smallitemin1hand keepentity dropboxed ground_other_rus"}
+    {inventory
+		{weight 100}
+		{size 6 4}
+		{fsm "belt"}
+	}
+	{mass 200}
+	{tag "no_ricochet"} 
+}

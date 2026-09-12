@@ -1,0 +1,27 @@
+{from "pattern fg"
+	
+	{tag "big" "size4" "150to152fg" "fx_146_299"}
+	{tag "fg_150_shell"}
+	
+	{detonationThickness 40}
+	
+	{mass 110}
+	
+	{inventory
+		{size 6 2}
+	}	
+	
+	{entity "203mm_3vof34"} 
+	{view "203mm_3vof34"}
+	
+	{tag "he_8to30"}
+{damage blastwave {energy 0.7} {area 15.2 17.4}}
+{damage add blastwave {energy 1.2} {area 12.8 14.7}}
+{damage add blastwave {energy 2.5} {area 9.1 10.5}}
+{damage add blastwave {energy 6.5} {area 7 8}}
+{damage add blastwave {energy 11} {area 3.6 4.1}}
+	{damage add blastwave	 ; HE, kinetic, direct hit
+		{energy 22}
+		{area 0.5 1}
+	}
+}

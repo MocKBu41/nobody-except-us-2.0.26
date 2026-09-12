@@ -1,0 +1,19 @@
+{from "pattern fg"
+	{tag "size1" "37to47" "pierce" "autocannon_small" "fx_25_40"}
+	{mass 4}
+	{inventory
+		{size 3 1}
+		{weight 25}
+		{block 4}
+	}
+	("fg" args 1.9)
+	{entity "shell_fg_40"}
+	{trace
+		{view "/texture/fx/trace2"
+			{ScaleY 0.26}
+		}
+		{length 4}
+	}
+	{damage blastwave {energy 0.7} {area 4 4.6}}
+	{damage add blastwave {energy 1.2} {area 1.9 2.2}}
+}

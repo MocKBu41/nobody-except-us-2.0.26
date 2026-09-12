@@ -1,0 +1,41 @@
+;Created by Pheonix 
+{from "pattern tank_gun"    ; "M1_Abrams"
+   	
+	{filling "bullet_105_how" 3}
+	{fireSound "gun/L118_ 105mm_shot"}
+	{reloadSound "L118_ 105mm_reload"}
+	{RecoveryTime 6.7}
+	{rechargeTime 6.7}
+	{range 190 190}
+	("speed" s(737))
+	("100-128caliber")
+	{calibre 15}
+	("damage4" a(200) b(200) c(200) d(200) e(200)) ;М393 бронебойно-фугасный
+	("CW_acc_common" mils(0.26));оценка
+	("CW_acc_common_130" mils(0.26))
+	;{cursor "tankgun_HESH"}
+	;{cursorReloading "tankgun_HESH_reload"}	
+	;{cursor "cannon_on_fg_4"}
+	;{cursorReloading "cannon_reload_fg"}
+	{cursor "cannon_on_HESH"}
+	{cursorReloading "cannon_reload_HESH"}
+
+	{parameters "bullet105how_uk fg"	
+		{range 190 190}	
+	}
+    {parameters "bullet105how_uk sm"	
+		{range 190 190}	
+		;{cursor "cannon_on_dm_0"}
+		{cursor "cannon_on_sm"}
+		{cursorReloading "cannon_reload_sm"}
+	}            
+    {parameters "bullet105how_usa fg"	
+		{range 190 190}	
+	}
+    {parameters "bullet105how_usa sm"	
+		{range 190 190}	
+		;{cursor "cannon_on_dm_0"}
+		{cursor "cannon_on_sm"}
+		{cursorReloading "cannon_reload_sm"}
+	}
+}

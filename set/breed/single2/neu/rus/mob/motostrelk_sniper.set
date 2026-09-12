@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_vkpo_gilly"}
+	{portrait "_new/rus/inf"}
+	{icon "snipers"}
+	{icon_priority 4}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "6b47che2_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_smg")
+	{inventory
+		{item "6b23_sniper1"}
+		{item "t5000" filling "8_6x70_x10 ammo" 5}
+		{item "8_6x70_x10 ammo" 160}
+		{item "rgd grenade" 2}
+		{item "f1 grenade" 2}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{in_hands 1}
+	}
+}

@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "type15_clear"}
+	{mass 4}
+}

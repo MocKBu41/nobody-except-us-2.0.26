@@ -1,0 +1,16 @@
+{bullet
+	
+	{tag "big shell bomb grad size1 no_ricochet fx_gren"}
+	{tag "cluster_shell"} ; только для ammo.set
+	{inventory
+		{size 7 1}
+		{weight 100}
+	}	
+	{mass 56.4}
+	{entity "shell_122mm_reactive_oa"}
+	{view "shell_122mm_reactive_oa"
+		{tail "rocket_oa_smoke_short" "tail"}
+	}
+	{detonationThickness 1}
+	{applyProjectile}
+}

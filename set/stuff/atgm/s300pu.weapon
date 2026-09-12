@@ -1,0 +1,23 @@
+{from "pattern proj_weapon"
+	{tag "gun"}
+	{filling "ammo 5v55r s-300" 4}
+	{fillingVisible "missile_"}
+	{fireSound "reactive/s300"}	
+	{mass 400}
+	{recoveryTime 5}	
+	{rechargeTime 120}
+	{AimingTolerance 5}	;òîëüêî äëÿ ïàññèâíîãî íàâåäåíèÿ
+	{inventory {noView}}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_aa"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+	{maxRange 475}
+	{aimRange 500}
+
+	{parameters "5v55t"
+		{maxRange 800}
+		{aimRange 800}
+	}	
+}

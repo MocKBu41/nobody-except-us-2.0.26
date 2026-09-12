@@ -1,0 +1,20 @@
+{breed
+	{skin "cw_rus_ruhih_atacs"}
+	{portrait "rus/rusih"}
+	{icon smgs}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head lshz1plus_sso}
+	}
+	(include "perks_generic.inc")
+	("traits_elite_smg")
+	{inventory
+		{item "ak74m_1p29" filling "545 ammo" 30}
+		{item "545 ammo" 300}
+		{item "f1 grenade" 2}
+		{item "rgo grenade" 2}
+		{item "6b45-1_strelok"}
+		{item "bandage" 10}
+	}
+}

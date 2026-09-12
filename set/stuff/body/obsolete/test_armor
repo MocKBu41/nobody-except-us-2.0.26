@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "test_armor"}
+	{mass 12.0}
+}

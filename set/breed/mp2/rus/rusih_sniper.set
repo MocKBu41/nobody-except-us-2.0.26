@@ -1,0 +1,22 @@
+{breed
+	{skin "cw_rus_ruhih_atacs"}
+	{portrait "rus/rusih"}
+	{icon snipers}
+	{icon_priority 3}
+	{tags "sniper2"}
+	{nationality rus}
+
+	(include "perks_generic.inc")
+	("traits_elite_sniper")
+	{inventory
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "rgn grenade" 3}
+		{item "smoke rdg2b grenade"}
+		{item "lbt6094_bandit_marksman"}
+		{item "svdk" filling "svdk_ammo ammo" 10}
+		{item "svdk_ammo ammo" 200}
+		{in_hands 6}
+	}
+}

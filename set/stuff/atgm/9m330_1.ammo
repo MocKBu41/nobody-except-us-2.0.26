@@ -1,0 +1,10 @@
+{from "pattern proj_pointer"
+	{entity "9m330_1"}	
+		
+	        {mass 165.0}
+	        {inventory		
+		{weight 100}		
+		{size 6 1}	
+	}	
+	{tag "no_ricochet" "big" "size4" "88to105" "pierce" "ptrk" "AA_missile_2gen" "semiactive" "anti_smallmissile" "ground_active_rus" "anti_ballistic_missile_rus"} 
+}

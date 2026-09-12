@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "spcs_ua_mg"}
+	{mass 12}
+	;13 с 4 ESAPI
+}

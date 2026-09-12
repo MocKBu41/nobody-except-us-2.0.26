@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_hamas"}
+	{portrait "_new/arb/boevik1"}
+	{icon "boevik_snipers"}
+	{icon_priority 0}
+	{nationality arb}
+	{armors
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_sniper")
+	{inventory
+		{item "tarzan"}
+		{item "bandage" 15}
+		{item "plant" 2}
+		{item "knife_rus" 3}
+		{item "svd"}
+		{item "rgd grenade" 2}
+		{item "svd_ammo ammo" 40}
+		{item "Beretta92"}
+		{item "standart ammo" 30}
+		{in_hands 4}
+	}
+}

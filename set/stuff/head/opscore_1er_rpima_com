@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "opscore_1er_rpima_com"}
+	{mass 1.58}
+}

@@ -1,0 +1,21 @@
+{breed
+	{skin "cw_hamas3"}
+	{portrait "_new/arb/boevik"}
+	{icon "boevik_bazookers"}
+	{icon_priority 0}
+	{nationality arb}
+	{armors
+	}
+
+	(include "perks_generic.inc")
+	("traits_militia_bazooker")
+	{inventory
+		{item "rpg_bag"}
+		{item "rpg7 weapon" filling "pg-7vl rpg7 ammo" 1}
+		{item "pg-7vl rpg7 ammo" 3}
+		{item "standart ammo" 30}
+		{item "bandage" 10}
+		{item "Beretta92"}
+		{in_hands 1}
+	}
+}

@@ -1,0 +1,22 @@
+{from "pattern proj_weapon_ground"
+	{tag "rocketlauncher" "to_hand ap" "cannot_lie" "nokeep" "AA_missile"}
+	{entity "igla"}
+	{tag "AA_missile_2gen" "-low_speed"}
+	
+	{filling "ammo igla_S" 1}	
+        {fireSound "bazooka/IGLA_shot"}	
+		{reloadSound "chn/Metis_reload"}
+        {mass 6};http://rbase.new-factoria.ru/missile/wobb/igla_c/igla_c.shtml	
+	{inventory
+		{size 6 2}
+	}
+	{rechargeTime 20}	
+	{maxRange 140}   ;6000 примерно	
+	{aimRange 220}	;дальность предварительного наведения
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	;{cursor "cannon_on_aa"}
+	{cursor "cannon_on_pzrk"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_20"}
+}

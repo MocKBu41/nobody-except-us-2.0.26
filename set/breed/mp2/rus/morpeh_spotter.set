@@ -1,0 +1,27 @@
+{breed
+	{skin "cw_rus_gorka1_rastr"}
+	{portrait "_new/rus/marine"}
+	{icon "snipers"}
+	{icon_priority 2}
+	{tags "sniper2"}
+	{nationality rus}
+	{armors
+		{head "6b47che1_headphones"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_advanced_spotter")
+	{inventory
+		{item "6b45-1_ststrelok"}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "ak74m_gp25_1p78" filling "545 ammo" 30}
+		{item "gp25_ak74m_1p78" filling "mortar pd a ammo" 1}
+		{item "545 ammo" 240}
+		{item "mortar pd a ammo" 8}
+		{item "binocular"}
+		{item "smoke rdg2b grenade" 2}
+		{in_hands 4}
+	}
+}

@@ -1,0 +1,25 @@
+{breed
+	{skin "cw_dnr"}
+	{portrait "_new/rus/inf"}
+	{icon "smgs"}
+	{icon_priority 1}
+	{nationality arm}
+	{armors
+		{head "6b7_new"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_mgun")
+	{inventory
+		{item "6b23_pulemetchik"}
+		{item "bandage" 10}
+		{item "smoke rdg2b grenade"}
+		{item "rgd grenade" 2}
+		{item "pkm" filling "pkm_ammo ammo" 100}
+		{item "pkm_ammo ammo" 600}
+		{item "f1 grenade" 2}
+		{item "smoke rdg2b grenade"}
+		{item "sandbag_kit"}
+		{in_hands 4}
+	}
+}

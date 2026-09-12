@@ -1,0 +1,11 @@
+{bullet
+	{tag "ammo"}
+	{tag "no_ricochet" "fg" }
+	{inventory
+		{size 1 1}
+		{weight 500}
+	}
+	{entity "magura_ammo"}
+	{mass 500}
+	
+}

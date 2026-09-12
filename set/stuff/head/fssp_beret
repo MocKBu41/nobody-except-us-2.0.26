@@ -1,0 +1,5 @@
+{from "pattern cw_hat"
+	{entity "fssp_beret"}
+	{desc "Берет ФССП РФ"}
+	{mass 0.2}
+}

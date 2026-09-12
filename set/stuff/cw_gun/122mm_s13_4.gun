@@ -1,0 +1,16 @@
+﻿{from "pattern gun_air"    
+   	{gravity 3}
+	{filling "bullet122s13" 20}
+	{fireSound "reactive/S-8/"}
+	{recoveryTime 0.3}
+	{Automatic}
+	{rechargeTime 100}
+	{range 170 170}	;3 км
+	("speed" s(600)) 
+	("CW_acc_heli" mils(8))
+;тут вертолетный вариант
+	;{cursor "cannon_on_fg"}
+	{cursor "cannon_on_fg_4"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_100"}
+}			

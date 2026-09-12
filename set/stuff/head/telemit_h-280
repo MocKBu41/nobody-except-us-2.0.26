@@ -1,0 +1,4 @@
+{from "pattern cw_hat"
+	{entity "telemit_h-280"}
+	{mass 1.0}
+}

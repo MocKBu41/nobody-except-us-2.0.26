@@ -1,0 +1,43 @@
+{weapon_bullet
+	{tag "weapon" "skill_tankgun" "bullet" "prepare"}	;"bullet" is needed for work of levelling and skills
+    {Special
+		{Mode aim}
+		{PrepareTime 5}
+		{PrepareCursor "aimed_shot"}
+	}
+	{tag "gun"}
+	("heavy_artillery")
+	
+	{filling "ammo ATACMS" 1}
+	{fillingvisible "rocket00"}
+	{fireSound "reactive/missile_big"}
+	{recoveryTime 3}
+
+		{range 575 575} ;для кассетной 300 км.
+		;("accuracy_kab" kvo_meters(20))
+		("accuracy_kab" kvo_meters(8)) ; тест
+		;{cursor "gps"}
+		;{cursorReloading "gps_reload"}
+		{rechargeTime 210}
+		;{gravity 6}
+		;{speed 200}
+		{aimtype adaptive}
+		{gravity 1}
+		{speed 10}
+
+	             {cursor "tactical"}
+	             {cursorReloading "cannon_reload_fg_timer_210"}
+
+             {parameters "cl"
+	              {cursor "tactical_heat"}
+	              {cursorReloading "cannon_reload_heat_timer_210"}
+              }
+	{parameters "fg"
+		{range 575 575} ;для ОФ 300 км.
+		("accuracy_kab" kvo_meters(8))
+		;{cursor "cannon_on_fg_6"}
+		;{cursorReloading "cannon_reload_fg"}
+		{cursor "tactical"}
+		{cursorReloading "cannon_reload_fg_timer_210"}
+	}
+}

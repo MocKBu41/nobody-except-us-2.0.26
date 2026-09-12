@@ -1,0 +1,19 @@
+{breed
+	{skin "cw_rus_vkpo_vdv"}
+	{portrait "_new/rus/vdv"}
+	{icon tankman}
+	{icon_priority 2}
+	{nationality rus}
+	{armors
+		{head "6b48_helmet"}
+	}
+	(include "perks_generic.inc")
+	("traits_tankman")
+	{inventory
+		{item "6b48"}
+		{item "545 ammo" 60}
+		{item "bandage" 10}
+		{item "aks74" filling "545 ammo" 30}
+		{in_hands 3}
+	}
+}

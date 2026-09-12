@@ -1,0 +1,72 @@
+{breed
+	{behaviour soldier}
+	{skin "cw_neu_ukr_dshv"}
+	{portrait "ua/smg"}
+	{icon smgs}
+	{icon_priority 0}
+	{nationality ukr}
+	{armors
+		{body otv_ukr_smg}
+		{head "kaska_1m_chehol_ghillie"}
+	}
+	{perks
+		{"vision" mp_specnaz
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_4
+		}
+		{"pistol" lvl_4
+		}
+		{"gra_launch" lvl_4
+		}
+		{"melee" lvl_5
+		}
+		{"avoidance" lvl_3
+		}
+		{"health" "250%"
+		}
+		{"stamina" "250%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"speed" 1.1
+		}
+		{"stealth"}
+		{"field_glass"}
+		{"skill_tankgun" lev_3
+		}
+		{"skill_atgm_launcher" lev_4
+		}
+		{"skill_airgun" lev_1
+		}
+		{"skill_airgm_launcher" lev_1
+		}
+	}
+	{veterancy
+		{"specnaz_lvl_1" 4
+		}
+		{"specnaz_lvl_2" 16
+		}
+		{"specnaz_lvl_3" 48
+		}
+		{"specnaz_lvl_4" 96
+		}
+		{"specnaz_lvl_5" 160
+		}
+	}
+	{inventory
+		{item "ak74b" filling "545 ammo" 30}
+		{item "545 ammo" 300}
+		{item "nlaw weapon" 2 filled}
+		{item "bandage" 10}
+		{item "rgd grenade" 4}
+		{item "smoke grenade rdg2b" 2}
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

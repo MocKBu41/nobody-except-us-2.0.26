@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "hgu55_plane"}
+	{mass 0.9}
+}

@@ -1,0 +1,23 @@
+{breed
+	{skin "cw_rus_vkpo"}
+	{portrait "_new/rus/inf"}
+	{icon "minmen"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head "6b47che2"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_army_smg")
+	{inventory
+		{item "6b45_ststrelok"}
+		{item "buldog" filling "mortar pd ammo" 6}
+		{item "mortar pd a ammo" 12}
+		{item "mortar pd p ammo" 12}
+		{item "545 ammo" 90}
+		{item "aksu74" filling "545 ammo" 30}
+		{item "bandage" 5}
+		{in_hands 1}
+	}
+}

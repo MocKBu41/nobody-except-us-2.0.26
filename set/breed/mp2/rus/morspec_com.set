@@ -1,0 +1,28 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/marine"}
+	{icon officer}
+	{icon_priority 3}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head "6b47che1"}
+	}
+
+	(include "perks_generic.inc")
+	("traits_elite_com")
+	{inventory
+		{item "6b45-1_strelok"}
+		{item "smoke rdg2b grenade"}
+		{item "binocular"}
+		{item "bandage" 5}
+		{item "rgd grenade" 2}
+		{item "rgn grenade" 2}
+		{item "gsh18" filling "9mm ammo" 18}
+		{item "9mm ammo" 54}
+		{item "smoke rdg2b grenade" 2}
+		{item "ak103_pbs_1p87" filling "762 ammo" 30}
+		{item "762 ammo" 240}
+		{in_hands 9}
+	}
+}

@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "otv_tan_mg"}
+	{mass 7.4}
+}

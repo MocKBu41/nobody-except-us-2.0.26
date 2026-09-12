@@ -1,0 +1,7 @@
+;for Brimstone
+{from "missilets"
+;	{gravity 20}
+;	{speed 300}
+{gravity 0.95}
+{speed 50}
+}

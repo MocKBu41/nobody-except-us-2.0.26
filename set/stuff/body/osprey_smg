@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "osprey_smg"}
+	{mass 14.5}
+	;5 основа + 3*2 плиты+1.75*2 боковые плиты
+}

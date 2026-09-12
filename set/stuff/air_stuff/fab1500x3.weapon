@@ -1,0 +1,24 @@
+{weapon_bullet
+	;su
+	{tag "weapon fg"}
+	{tag "weapon skill_airgun bullet"}	;"bullet" is needed for work of levelling and skills
+
+	{inventory
+		{noView}
+	}
+	{filling "ammo fab1500bomb" 3}
+	{fillingVisible "bomba_"}
+	{fireSound "reactive/bomb"}
+	{foresight "foresight1"}
+	{recoveryTime 0.4}
+	{rechargeTime 180}
+	{range 110 240}
+	{automatic}
+	{gravity 0.15}
+	{speed 23}
+	{aimtype direct}
+	{cursor "bomb_on_2"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_210"}	
+	("accuracy_kab" kvo_meters(10))
+}

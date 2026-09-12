@@ -1,0 +1,4 @@
+{from "pattern cw_helmet"
+	{entity "m80_helmet_guard"}
+	{mass 0.96}
+}

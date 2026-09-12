@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "type06_driver"}
+	{mass 4}
+}

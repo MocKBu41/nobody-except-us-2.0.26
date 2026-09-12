@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "shutzweste_driver"}
+	{mass 11}
+}

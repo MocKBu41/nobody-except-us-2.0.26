@@ -1,0 +1,165 @@
+;fore - ýòî äîñòóïíîñòü þíèòà äëÿ ïåðâîé ïîêóïêè. 
+;åñëè ôîðå 1 - ñðàçó
+;åñëè ôîðå 0 - òî ÷åðåç c
+;åñëè ôîðå 0.5 - òî ÷åðåç ñ\2
+;åñëè ôîðå -1 - òî ÷åðåç 2*ñ
+
+;------------------------------------------------------------------------------
+
+;=========================================================================‹èíèß ôðîíòà=================================================
+;=========================================åðâàß âêëàäêà============================ natocommon1 (îáû÷íàß ïåõîòà è íà áòðáìï)
+
+("squad_with11types_custom" side(nato) crew_nation(frg) name(frg_squad) c(180) g(inf1)
+c1(frg_com:1) c2(frg_gren:2) c3(frg_rpg:1) c4(frg_mgun:1) c5(frg_rifleman:1)  c6(frg_rpghelp:1)
+b(natocommon1) brig(bund) t(all ob) cost(55) f(1) info(frg_squad))
+
+("squad_with11types_custom" side(nato) crew_nation(fr) name(fr_squad) c(180) g(inf2) c1(fr_com:1) c2(fr_gren:2) c3(fr_light_mgun:2) c4(fr_marksman:1) c5(fr_smg:1) c7(fr_bazooker:1) c8(fr_rpghelp:1) 
+b(natocommon1) brig(fra) t(all ob) cost(80) f(1) info(fr_squad))
+
+("squad_with11types_custom" side(nato) crew_nation(fr) name(fr_squad_elite) c(400) g(inf3) c1(1er_rpima_fr_com:1) c2(1er_rpima_fr_zamcom:3) c3(1er_rpima_fr_marksman:1) c4(1er_rpima_fr_heavy_mgun:2) c5(1er_rpima_fr_bazooker:1) c6(1er_rpima_fr_smg:1) c7(1er_rpima_fr_smg3:1) b(natocommon1) brig(fra) t(all specnaz) cost(105) f(0) info(fr_squad_elite))
+
+("squad_with11types_custom" side(nato) crew_nation(frg) name(frg_ksk) c(400) g(infelite) 
+c1(ksk_com:1) c2(ksk_marksman:1) c3(ksk_mgun:1) c4(ksk_rpg:1) c5(ksk_smg:3) c6(ksk_smg2:1) c7(ksk_smg3:1)
+b(natocommon1) brig(bund) t(all ob) cost(110) f(0) info(frg_ksk))
+
+("squad_with11types_custom" side(nato) crew_nation(brit) name(brit_squad) c(180) g(inf2)
+c1(brit_com:1) c2(brit_bazooker:1) c3(brit_gren:2) c4(brit_light_mgun:2) c5(brit_marksman:1) c6(brit_smg:1) c7(brit_bazooker_help:1)  
+b(natocommon1) brig(gb) t(all at) cost(80) f(1) info(brit_squad))
+
+("squad_with11types_custom" side(nato) crew_nation(brit) name(brit_squad_elite) c(400) g(inf3)
+ c1(sas_com:1) c2(sas_bazooker:1) c3(sas_marksman:1) c4(sas_mgun:1) c5(sas_rifleman:2) c6(sas_rocket_launcher:1) c7(sas_smg:2) c8(sas_light_mgun:1)
+ b(natocommon1) brig(gb) t(all at) cost(105) f(0) info(brit_squad))
+ 
+{"warriori"		("v3b" c(200) c1(warrior)brig(gb) t(all at) s(nato) n(3) n1(tankman:3) n2(brit_com:1) n3(brit_bazooker:1) n4(brit_marksman:1) n5(brit_smg:2) n6(brit_gren:2)
+g(inf2)  sc(0) b(natocommon1) i(1) cw(0) cp(10)) {cost 85} {fore 1}}
+
+{"fv432_mk2i"		("v3b" c(180) c1(fv432_mk2)brig(gb) t(all at) s(nato) n(2) n1(tankman:2) n2(brit_com:1) n3(brit_bazooker:1) n4(brit_marksman:1) n5(brit_smg:2) n6(brit_gren:2) n7(brit_heavy_mgun:1)
+g(inf21)  sc(0) b(natocommon1) i(2) cw(0) cp(5)) {cost 75} {fore 1}}
+
+{"boxer_gun_noptur_gbi"		("v3b" c(240) c1(boxer_gun_noptur_gb)brig(gb) t(all at) s(nato) n(3) n1(tankman:3) n2(brit_com:1) n3(brit_bazooker:1) n4(brit_marksman:1) n5(brit_smg:1) n6(brit_gren:2) 
+g(inf23)  sc(0) b(natocommon1) i(3) cw(0) cp(10)) {cost 120} {fore 0}}
+
+{"nh90"            ("v3b" c(300) c1(nh90) brig(gb) t(all at) s(nato) n(4) n1(pilot:2) n2(brit_com:1) n3(brit_bazooker:1) n4(brit_gren:2) n5(brit_marksman:1) n6(brit_bazooker_help:1) n7(brit_heavy_mgun:1) n8(brit_smg:2) 
+g(inf2)  sc(0) b(natocommon1) i(4) cw(0) cp(5)) {cost 100} {fore 0}}
+
+{"marder_1a3i" ("v3g" c(300) c1(marder_1a3)brig(bund) t(all ob) s(nato) n(3) n1(tankman:3) n2(frg_com:1) n3(frg_gren:1) n4(frg_rpg:1) n5(frg_mgun:1) n6(frg_rifleman:1) n7(frg_rpghelp:1) 
+g(inf1)  sc(0) b(natocommon1) i(5) cw(0) cp(5)) {cost 90} {fore 0}}
+
+{"pumai" ("v3g" c(800) c1(puma)brig(bund) t(all ob) s(nato) n(3) n1(tankman:3) n2(frg_com:1) n3(frg_gren:1) n4(frg_rpg:1) n5(frg_mgun:1) n6(frg_rifleman:1) n7(frg_rpghelp:1) 
+g(inf2)  sc(0) b(natocommon1) i(6) cw(0) cp(5)) {cost 200} {fore 0}}
+
+{"boxer_gmg" ("v3g" c(240) c1(boxer_gmg)brig(bund) t(all at) s(nato) n(3) n1(tankman:3) n2(frg_com:1) n3(frg_gren:1) n4(frg_rpg:1) n5(frg_mgun:1) n6(frg_rifleman:1) n7(frg_rpghelp:1) 
+g(inf2)  sc(0) b(natocommon1) i(7) cw(0) cp(5)) {cost 120} {fore 0}}
+
+{"boxer_mguni" ("v3g" c(200) c1(boxer_mgun)brig(bund) t(all) s(nato) n(3) n1(tankman:3) n2(frg_com:1) n3(frg_gren:1) n4(frg_rpg:1) n5(frg_mgun:1) n6(frg_rifleman:1) n7(frg_rpghelp:1) 
+g(inf2)  sc(0) b(natocommon1) i(8) cw(0) cp(5)) {cost 110} {fore 0}}
+
+{"boxer_guni" ("v3g" c(550) c1(boxer_gun)brig(bund) t(all) s(nato) n(3) n1(tankman:3) n2(frg_com:1) n3(frg_gren:1) n4(frg_rpg:1) n5(frg_mgun:1) n6(frg_rifleman:1) n7(frg_rpghelp:1) 
+g(inf2)  sc(0) b(natocommon1) i(9) cw(0) cp(5)) {cost 125} {fore 0}}
+
+{"vbci_vpci" ("v3f" c(220) c1(vbci_vpc)brig(fra) t(all ob) s(nato) n(2) n1(tankman:3) n2(fr_com:1) n3(fr_smg2:2) n4(fr_smg:2) n5(fr_marksman:1) n6(fr_eryx:1) n7(fr_eryx_help:1) 
+g(inf2)  sc(0) b(natocommon1) i(10) cw(0) cp(5)) {cost 110} {fore 0}}
+
+{"vbcii" ("v3f" c(500) c1(vbci)brig(fra) t(all) s(nato) n(3) n1(tankman:3) n2(fr_com:1) n3(fr_smg2:2) n4(fr_smg:2) n5(fr_light_mguns:1) n6(fr_gren:1) 
+g(inf2)  sc(0) b(natocommon1) i(11) cw(0) cp(10)) {cost 125} {fore 0}}
+
+{"vbci_2i" ("v3f" c(700) c1(vbci_2)brig(fra) t(all) s(nato) n(3) n1(tankman:3) n2(fr_com:1) n3(fr_smg2:1) n4(fr_smg:2) n5(fr_light_mguns:1) n6(fr_gren:1) n7(fr_marksman:1) 
+g(inf3)  sc(0) b(natocommon1) i(12) cw(0) cp(15)) {cost 180} {fore 0}}
+
+;==================================================‚òðîàß âêëàäêà========================================= natocommon2 (ðàñ÷Þòû, ïàðû è ò.ä)
+("squad_with11types_custom" side(nato) crew_nation(cz) name(cz_rpg) c(130) g(rpg) c1(2cz_bazooker2:1) c2(2cz_rpghelp:1) b(natocommon2) brig(common) t(all) cost(15) f(1) info(cz_rpg))
+
+("squad_with11types_custom" side(nato) crew_nation(cz) name(pzrk) c(180) g(pzrk) c1(pzrk_soldier:1) c2(pzrk_help_soldier:1) b(natocommon2) brig(common) t(all) cost(20) f(1) info(pzrk))
+
+("squad_with11types_custom" side(nato) crew_nation(frg) name(tankman) c(180) g(eng) c1(tankman:2) b(natocommon2) brig(common) t(all) cost(20) f(1) info(tankman))
+
+("squad_with11types_custom" side(nato) crew_nation(frg) name(vehicle_supporter) c(180) g(support) c1(vehicle_supporter:2) b(natocommon2) brig(common) t(all) cost(15) f(1) info(vehicle_supporter))
+
+("squad_with11types_custom" side(nato) crew_nation(fr) name(sappers) c(240) g(suppart) 
+c1(saper:2) b(natocommon2) brig(abn) t(all at) cost(10) f(1) info(sappers))
+
+("squad_with11types_custom" side(nato) crew_nation(brit) name(brit_scouts) c(300) g(spc) c1(sas_scout_com:1) c2(sas_scout_rifleman:1) c3(sas_scout_bazooker:1) b(natocommon2) brig(gb) t(all) cost(60) f(1) info(gb_scouts))
+
+("squad_with11types_custom" name(brit_jav) side(nato) crew_nation(brit) c(300) g(jav) c1(brit_jav:1) c2(brit_javhelp:1)b(natocommon2) brig(gb) t(all) cost(50) f(0) info(brit_jav))
+
+("squad_with11types_custom" side(nato) crew_nation(brit) name(brit_shipers) c(240) g(snip) c1(brit_sniper:1) c2(brit_spotter:1)   b(natocommon2) brig(gb) t(all) cost(30) f(1) info(brit_shipers))
+
+("squad_with11types_custom" name(at_rifle_brit) side(nato) crew_nation(brit) c(240) g(snip) c1(brit_at_rifle:1) c2(brit_at_rifle_help:1) b(natocommon2) brig(gb) t(all) cost(35) f(1) info(at_rifle_brit))
+
+;==================================================’ðåòüß âêëàäêà========================================== natocommon3 (ñòàíêîâêà)
+{"mistral_stan" ("vs_nation" c(500) brig(common) t(all ob) s(nato) crew_nation(fr) n(2) g(pvo_st) sc(0) b(natocommon3) i(1) cw(1) cp(5)) {cost 70} {fore 1}} 
+
+{"browning_m2hb_stan_nato" ("vs_nation1" c(180) c1(browning_m2hb_stan) brig(common) t(all ob) s(nato) crew_nation(frg) n(2) g(1) sc(0) b(natocommon3) i(2) cw(1) cp(5)) {cost 20} {fore 1}} 
+
+{"gmg_stan" ("vs_nation" c(300) brig(common) t(all ob) s(nato) crew_nation(frg) n(2) g(1) sc(0) b(natocommon3) i(3) cw(1) cp(5)) {cost 90} {fore 0}}  
+
+{"l16_mortar" ("vs_nation" c(300) brig(common) t(all ob) s(nato) crew_nation(frg) n(2) g(1) sc(0) b(natocommon3) i(4) cw(1) cp(5)) {cost 90} {fore 0}}  
+
+{"milan_stan" ("vs_nation" c(180) brig(common) t(all ob) s(nato) crew_nation(frg) n(1) g(mil) sc(0) b(natocommon3) i(5) cw(1) cp(5)) {cost 35} {fore 1}}  
+
+{"spike_stan" ("vs_nation" c(560) brig(common) t(all ob) s(nato) crew_nation(frg) n(2) g(spike) sc(0) b(natocommon3) i(6) cw(1) cp(15)) {cost 90} {fore 0}}
+
+{"mortarfr"		("vartf" c(600) c1(vab_reco) c2(mortarfr) brig(fra) t(all at) s(nato) n(2) n1(vehicle_supporter:2) g(min) sc(0)  b(natocommon3) i(7) cw(5) cp(30)) {cost 160} {fore 1}} 
+
+{"exactor_mk2"	("vartgb" c(1200) c1(land_rover_exactor) c2(exactor_mk2) brig(gb) t(all) s(nato) n(4) n1(vehicle_supporter:4) g(art) sc(0) a(1) b(natocommon3) i(8) cw(5) cp(10)) {cost 200} {fore 0}} 
+
+{"mistral_stan" ("vs_nation" c(300) brig(common) t(all at) s(nato) crew_nation(fr) n(2) g(pvo_st) sc(10) b(common) i(2) cw(0) cp(5)) {cost 70} {fore 0}} 
+
+;==================================================—åòâÞðòàß âêëàäêà======================================= natocommon4 (ñàïëàé)
+{"man_ammo" ("vs_nation" c(600) brig(common) t(all) s(nato) n(2) crew_nation(frg) g(supply5)   sc(0) b(natocommon4) i(1) cw(0) cp(2)) {cost 100} {fore 1}}
+
+{"man_repair" ("vs_nation" c(240) brig(common) t(all) s(nato) n(2) crew_nation(frg) g(supply6)   sc(0) b(natocommon4) i(2) cw(0) cp(2)) {cost 50} {fore -0.5}}
+
+{"man_avia" ("vs_nation" c(600) brig(nrf) t(all)  s(nato) n(2) crew_nation(brit) g(supairn)  sc(0) b(natocommon4)   i(3) m(2) cw(0) cp(2)) {cost 100} {fore 1}}
+
+{"man_art" ("vs_nation" c(450) brig(abn) t(all) s(nato) n(2) crew_nation(frg) g(supply4)   sc(0) b(natocommon4) i(4) cw(0) cp(2)) {cost 100} {fore 1}}
+
+{"uh60_nato" ("he_nation" c(200) c1(uh60) brig(nrf) t(all)  s(nato) crew_nation(brit) n(4)  g(helin)   sc(0) b(natocommon4) i(5) cw(0) cp(10)) {cost 30} {fore 1}}
+
+{"renault_gbc_180" ("v3f" c(120) c1(renault_gbc_180)brig(common) t(all) s(nato) n(1) n1(vehicle_supporter:1) g(truck)  sc(0) b(natocommon4) i(6) cw(0) cp(2)) {cost 10} {fore 1}}
+
+;===================================================ßòàß âêëàäêà=================================================== natocommon5 (áðîíåòåõíèêà)
+{"challenger_2"           ("v_nation" c(220) brig(gb) t(all at) s(nato) n(4) crew_nation(brit) g(tank)  sc(0) b(natocommon5)   i(1) m(2) cw(0) cp(20)) {cost 165} {fore 1}}
+
+{"leclerc"           ("v_nation" c(840) brig(fra) t(all ob) s(nato) n(3) crew_nation(fr) g(tank2)  sc(0) b(natocommon5)   i(2) m(2) cw(0) cp(25)) {cost 190} {fore -1}}
+
+{"leopard_2a0"           ("v_nation" c(400) brig(bund) t(all ob) s(nato) n(4) crew_nation(frg) g(bund_hqcar)  sc(100) b(natocommon5)   i(10) m(2) cw(0) cp(20)) {cost 165} {fore 0}}
+
+
+{"leclerc_azur"           ("v_nation" c(600) brig(fra) t(all at) s(nato) n(3) crew_nation(fr) g(tank21)  sc(0) b(natocommon5)   i(3) m(2) cw(0) cp(30)) {cost 200} {fore 0.3}}
+
+{"leopard_2a5" ("v_nation" c(540) brig(bund) t(all ob) s(nato) n(4) crew_nation(frg) g(tank1)   sc(0) b(natocommon5) i(4) cw(0) cp(20)) {cost 165} {fore -1}}
+
+{"ajax"		("v3b" c(600) c1(ajax)brig(gb) t(all) s(nato) n(4) n1(tankman:4) g(spc)  sc(0) b(natocommon5) i(5) cw(0) cp(15)) {cost 100} {fore 0}}
+
+{"amx10rc"             ("v_nation" c(400) brig(fra) t(all at) s(nato) n(4) crew_nation(fr) g(ltank)   sc(0) b(natocommon5) i(6) cw(0) cp(15)) {cost 70} {fore 1}}
+
+{"amx10rcr"             ("v_nation" c(400) brig(fra) t(all ob) s(nato) n(4) crew_nation(fr) g(ltank)   sc(0) b(natocommon5) i(7) cw(0) cp(15)) {cost 80} {fore 0}}
+
+{"vbl_milan" ("v_nation" c(300) brig(fra) t(all) s(nato) n(3) crew_nation(fr) g(btr3)  sc(0) b(natocommon5) i(8) cw(0) cp(5)) {cost 45} {fore 0}}
+
+{"vab_mephisto"             ("v_nation" c(600) brig(fra) t(all) s(nato) n(3) crew_nation(fr) g(btr3)   sc(0) b(natocommon5) i(9) cw(0) cp(10)) {cost 90} {fore 0}}
+
+
+;==================================================˜åñòàß âêëàäêà============================================================== natocommon6 (ïîääåðæêà)
+{"as_90" ("v_nation" c(900) brig(abn) t(all at) s(nato) n(5) crew_nation(frg) g(art)  sc(0) b(natocommon6) i(1) cw(0) cp(45)) {cost 250} {fore 0}}
+
+{"sampt_arabel"        ("v_nation" c(300) brig(abn) t(all ob) s(nato) crew_nation(fr) n(4) g(pvo45)  sc(0) a(2) b(natocommon6) i(2) cw(0) cp(5)) {cost 70} {fore 0.8}}
+
+{"sampt_mamba"        ("v_nation" c(350)  brig(abn) crew_nation(fr) t(all ob) s(nato) n(2) g(pvo46)  sc(0) a(2) b(natocommon6) i(3) cw(0) cp(10)) {cost 80} {fore 0}}
+
+{"roland" ("vs_nation" c(450) brig(abn) t(all) s(nato) crew_nation(frg) n(4) g(pvo2) sc(0) b(natocommon6) i(4) cw(0) cp(20)) {cost 150} {fore 0}}  
+
+{"eurofighter_aa"  ("air_nation" c(550) brig(nrf)t(all)  s(nato) n(1) crew_nation(brit) g(antiair)   sc(0) b(natocommon6) i(5) cw(0) cp(20)) {cost 200} {fore 0}}
+
+{"tornado_gr4_antirad" ("air_nation" c(600) brig(nrf) t(all at)  s(nato) n(2) crew_nation(brit) g(air2)   sc(0) b(natocommon6) i(6) cw(0) cp(20)) {cost 230} {fore 0}}
+
+{"f-16c_antiship"            ("air_nation" c(900) brig(usaf) t(all ob) s(nato) n(1) crew_nation(brit) g(air2)  sc(0) b(natocommon6) i(8) cw(0) cp(20)) {cost 240} {fore 0}}
+
+{"tornado_gr4_support" ("air_nation" c(500) brig(nrf) t(all at)  s(nato) n(2) crew_nation(brit) g(s2)   sc(0) b(natocommon6) i(8) cw(0) cp(20)) {cost 300} {fore 0}}
+
+{"zubr_grec"	("krus1" c(5) c1(ak630_rls) c2(ak630:2) c3(a22_ogon:2) c4(zubr) brig(common) t(all at zubr) s(nato) n(0) g(stan) sc(0) b(natocommon6) i(9) cw(2) cp(0)) {cost 200} {fore 1}}
+
+{"lcac_fra" ("v3f" c(60) c1(lcac) brig(fra) t(all at lcac_nato) s(nato) n(2) n1(tankman:3) g(lcac)  sc(0) b(natocommon6) i(10) cw(0) cp(0)) {cost 80} {fore 1}}
+
+{ "arley_burke_a2"        ("kusa" c(900)  c1(mk32_left) c2(mk32_right) c3(mk38_mod2:2) c4(mk41_32) c5(mk41_64) c6(mk45) c7(spg62_radar:3) c8(phalanx) c9(arley_burke_a2)  brig(common) t(all at arley_burke) s(nato) g(airbag)  sc(0) b(usacommon6) i(8) cw(0) cp(70)) {cost 600} {fore 1}} 

@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "type06h_smg"}
+	{mass 9.2}
+	;4+2*2.6 плиты=9,2
+}

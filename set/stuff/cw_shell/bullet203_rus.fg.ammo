@@ -1,0 +1,39 @@
+{from "pattern fg"
+	{tag "big" "size4" "150to152fg" "fx_146_299"}
+	{detonationThickness 40}
+	{mass 102}
+	{inventory
+		{size 6 2}
+		{weight 150}
+	}	
+	
+	{entity "shell_rus_fg_203"}
+	{view "shell_rus_fg_203"}
+
+	{tag "he_4_5to8"}
+
+	{damage blastwave	 ; fragmentary
+		{energy 0.7}
+		{area 15.2 17.5}
+	}
+	{damage add blastwave	 ; HE antipersonnel
+		{energy 1.2}
+		{area 12.9 14.8}
+	}
+	{damage add blastwave	 ; HE, FG anti-APC
+		{energy 2.5}
+		{area 9.2 10.5}
+	}
+	{damage add blastwave	 ; HE, FG anti-IFV
+		{energy 6.5}
+		{area 7 8.1}
+	}
+	{damage add blastwave	 ; HE, FG antitank
+		{energy 13}
+		{area 3.6 4.1}
+	}
+	{damage add blastwave	 ; HE, kinetic, direct hit
+		{energy 25}
+		{area 0.2 0.4}
+	}
+}

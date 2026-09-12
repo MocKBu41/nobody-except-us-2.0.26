@@ -1,0 +1,11 @@
+{from "pattern proj_pointer"
+	{entity "5v55r_missile"}	
+		
+	        {mass 1650}
+	        {inventory		
+		{weight 630}		
+		{size 7 2}	
+	}	
+	{tag  "big" "size4" "88to105" "rus_radpassive_missile" "-ap" "-rocketlauncher" "no_ricochet" "-low_speed" "usa_radpassive_missile" "antimissile"} 
+	
+}

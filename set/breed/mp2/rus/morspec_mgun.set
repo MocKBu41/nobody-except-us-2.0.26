@@ -1,0 +1,24 @@
+{breed
+	{skin "cw_rus_6sh122"}
+	{portrait "_new/rus/marine"}
+	{icon "mgs"}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head "6b47che1"}
+	}
+
+
+	(include "perks_generic.inc")
+	("traits_elite_mgun")
+	{inventory
+		{item "6b45-1_pulemetchik"}
+		{item "rgd grenade" 3}
+		{item "bandage" 15}
+		{item "smoke rdg2b grenade"}
+		{item "pkp" filling "pkm_ammo ammo" 200}
+		{item "pkm_ammo ammo" 600}
+		{item "smoke rdg2b grenade"}
+		{in_hands 4}
+	}
+}

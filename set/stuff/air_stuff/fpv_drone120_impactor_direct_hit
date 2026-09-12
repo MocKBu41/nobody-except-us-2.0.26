@@ -1,0 +1,17 @@
+{from "pattern proj_impactor"
+	{entity "fpv_drone120_impactor_direct_hit"}
+              {inventory
+		{weight 100}
+		{size 5 1}
+	}
+	{tag "big" "size4" "122to128fg" "bullet120_RUS" "bullet120_NATO_mine" "bullet120_USA_mine" "fx_111_145"}
+	{tag "fg_120_shell"}
+	;2.67 кг ВВ - БЧ 8,4, кумулятивный расчет 
+  	{damage blastwave {energy 0.7} {area 9.8 11.3}}
+{damage add blastwave {energy 1.2} {area 8.2 9.5}}
+{damage add blastwave {energy 2.5} {area 4.7 5.4}}
+{damage add blastwave {energy 6.5} {area 1.9 2.2}}
+{damage add blastwave {energy 11} {area 0.2 0.25}}
+	
+ 
+}

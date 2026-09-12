@@ -1,0 +1,18 @@
+{from "pattern proj_weapon_air"
+	{tag "gun"}
+	{filling "ammo kh47m2" 1}
+	{fillingVisible "kh47m2"}	
+	{foresight "Foresight7"}
+	{fireSound "reactive/missile_large/"}
+	{mass 1000}
+	{recoveryTime 1}
+	{rechargeTime 160}
+	{inventory {noView}}
+	{maxRange 800}	;500 км
+	{aimRange 800}
+	;{cursor "zenite_on"}
+	;{cursorReloading "zenite_reload"}
+	{cursor "cannon_on_fg_9"}
+	{cursorReloading "cannon_reload_fg"}
+	;{cursorReloading "cannon_reload_fg_timer_160"}
+}

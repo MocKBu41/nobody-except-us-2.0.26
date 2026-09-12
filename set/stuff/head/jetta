@@ -1,0 +1,5 @@
+{from "pattern cw_helmet"
+	{entity "jetta"}
+	{desc "Шлем <c(00FF00)>ПШ-97 Джетта<c(FFFFFF)>  МВД России\nКласс защиты <c(FF0000)>1<c(FFFFFF)> "}
+	{mass 1.7}
+}

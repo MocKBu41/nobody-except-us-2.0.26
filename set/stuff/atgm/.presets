@@ -1,0 +1,50 @@
+;Modern by Pheonix
+(include "\set\small.firearms.accuracy")
+(define "speed"   
+	{speed (* 0.5 %s)}  
+)
+;Special define for rpgs
+;----------------------Modern==================== 
+(define "damage"                                                                                                         
+;	{projectileDamageTable {10 %a} {30 %b} {50 %c} {70 %d} {100 %e} {120 (* 0.4 %e)} {140 (* 0.3 %e)} {160 (* 0.2 %e)} }
+	{projectileDamageTable {10 %a} {30 %b} {50 %c} {70 %d} {100 %e} {120 %e} {140 %e} {160 %e} }
+)
+;a - 20, b - 50, c - 80, d -100, e - 120
+;----------------------==========================
+;---------------------Modern----------------------
+(define "accuracy"   
+	{spreading 
+		{radiusTable {0 0} {20 %r1} {40 %r2} {80 %r3} {120 %r4} {140 (* 6 %r4)}}
+	}
+)
+(define "accuracy_ptrk"   
+	{spreading 
+		{radiusTable {0 0} {20 %r1} {40 %r2} {80 %r3} {120 %r4} {140 %r5}}
+	}
+)
+;--------------------------------------------
+(define "accuracy_RPG7" 
+	("accuracy" r1(2) r2(3) r3(4) r4(5.5))
+)
+(define "accuracy_RPG18" 
+	("accuracy" r1(1.5) r2(2.5) r3(3.5) r4(5.5))
+)
+(define "accuracy_m136" 
+	("accuracy" r1(1) r2(2) r3(3) r4(4))
+)
+(define "accuracy_RPG2" 
+	("accuracy" r1(2) r2(2.5) r3(3.5) r4(4.5))
+)
+
+(define "accuracy_9k14" 
+	("accuracy_ptrk" r1(1.0) r2(1.5) r3(1.8) r4(2.1) r5(2.4))
+)
+(define "accuracy_9k111" 
+	("accuracy_ptrk" r1(0.3) r2(0.7) r3(1.0) r4(1.2) r5(1.5))
+)
+(define "accuracy_9k111_x5" 
+	("accuracy_ptrk" r1(0.2) r2(0.5) r3(0.7) r4(1.0) r5(1.2))
+)
+(define "accuracy_9k121" 
+	("accuracy_ptrk" r1(0.8) r2(0.8) r3(0.8) r4(0.8) r5(0.8))
+)

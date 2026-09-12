@@ -1,0 +1,12 @@
+{item
+	{desc "шлем джигурнаута"}
+{tag "itemin1hand keepEntity"}
+	{entity "jugernaut_slem"}
+	{inventory
+		{size 2 2}
+		{weight 100}
+{link_bone "Head"}
+{fsm "stuff"}
+	}
+	{mass 1}
+}

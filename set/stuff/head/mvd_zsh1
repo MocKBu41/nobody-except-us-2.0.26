@@ -1,0 +1,5 @@
+{from "pattern cw_helmet"
+	{entity "mvd_zsh1"}
+	{desc "Шлем <c(00FF00)>ЗШ-1<c(FFFFFF)>  МВД России\nКласс защиты <c(FF0000)>2<c(FFFFFF)> "}
+	{mass 1.7}
+}

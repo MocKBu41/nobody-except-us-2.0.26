@@ -1,0 +1,5 @@
+{from "pattern armorplate"
+	{entity "inkassator_vest"}
+	{desc "Бронежилет инкассатора"}
+	{mass 3.0}
+}

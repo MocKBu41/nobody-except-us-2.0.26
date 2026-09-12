@@ -1,0 +1,4 @@
+{from "pattern armorplate"
+	{entity "6b23-1_smersh"}
+	{mass 7.9}
+}

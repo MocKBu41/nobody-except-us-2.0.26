@@ -1,0 +1,12 @@
+{from "pattern armor"
+	{entity "rus_razgruz_vdv_smg1"}
+	{inventory
+		{size 2 2}
+		{weight 100}
+	}
+	                        
+}
+
+
+
+
