@@ -258,11 +258,11 @@ end
 
 local function armDetachWindow(id,target,reason)
  if not id or not target then return end
- C.DetachWindows[id]={groupId=id,target=target,until=C.Time+(NEU_BOT.DetachedAdoptWindowSec or 25),remaining=NEU_BOT.DetachedAdoptMaxPerGroup or 6,reason=reason}
- log("DETACH WINDOW group="..id.." target="..target.." until="..C.DetachWindows[id].until.." reason="..tostring(reason))
+ C.DetachWindows[id]={groupId=id,target=target,expiresAt=C.Time+(NEU_BOT.DetachedAdoptWindowSec or 25),remaining=NEU_BOT.DetachedAdoptMaxPerGroup or 6,reason=reason}
+ log("DETACH WINDOW group="..id.." target="..target.." expiresAt="..C.DetachWindows[id].expiresAt.." reason="..tostring(reason))
 end
 local function adoptUnmatchedDetached(sid)
- local ids={} for id,w in pairs(C.DetachWindows) do if w and w.until>=C.Time and (w.remaining or 0)>0 and C.Groups[id] and not C.Groups[id].stopped and C.Groups[id].phase=="attack" and C.Groups[id].target then ids[#ids+1]=id end end
+ local ids={} for id,w in pairs(C.DetachWindows) do if w and w.expiresAt>=C.Time and (w.remaining or 0)>0 and C.Groups[id] and not C.Groups[id].stopped and C.Groups[id].phase=="attack" and C.Groups[id].target then ids[#ids+1]=id end end
  table.sort(ids)
  if #ids==0 then return false end
  C.DetachAssignCursor=(C.DetachAssignCursor%#ids)+1
