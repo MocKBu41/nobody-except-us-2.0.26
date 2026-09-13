@@ -10,6 +10,9 @@ NEU_BOT = {
     SpawnRetrySec = 2,
     CriticalSpawnRetrySec = 10,
     CriticalSpawnRetryCycles = 3,
+    SupportSpawnRetrySec = 15,
+    SupportSpawnRetryCycles = 8,
+
     AssaultGroups = 2,
     OpeningTankDelaySec = 5,
     OpeningMaintenanceSec = 10,
@@ -18,24 +21,30 @@ NEU_BOT = {
     VehicleFollowDelaySec = 5,
     AntiAirPatrolSec = 20,
     SupportPatrolSec = 20,
+
     AttackWaitSec = 300,
-    AttackResultCheckSec = 75,
+    AttackResultCheckSec = 90,
     CaptureNextAttackDelaySec = 3,
-    CombatCollapseGraceSec = 20,
     NextAttackDelaySec = 3,
-    TankReinforcementSec = 300,
-    InfantryReinforcementSec = 300,
-    MaxAssaultInfantrySquads = 3,
+    TankReinforcementSec = 180,
+    InfantryReinforcementSec = 90,
+    MinAssaultInfantrySquads = 2,
+    MaxAssaultInfantrySquads = 4,
     MaxDefenseSquadsPerFlag = 1,
+
     PointStartCheckSec = 3,
     PointStartSquadSize = 12,
     PointStartSpawnRetrySec = 5,
+
     DetachedAdoptWindowSec = 25,
     DetachedAdoptMaxPerGroup = 6,
+
     HeliPatrolSec = 20,
     DirectionRecoverySec = 20,
+
     AntiRadDelaySec = 180,
     EnemyResponseCheckSec = 120,
+
     MapMatchMinRatio = 0.75,
     MapFinalFile = "_flag_points_final.json",
     MapIndexFile = "_map_points_index.json"
