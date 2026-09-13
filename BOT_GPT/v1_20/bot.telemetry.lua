@@ -7,6 +7,7 @@ local C=nil
 local installed=false
 local lastSnapshot=-1
 local fileReady=false
+local activePath=nil
 
 local function esc(v)
     local s=tostring(v or "")
@@ -16,11 +17,31 @@ end
 local function q(v) return '"'..esc(v)..'"' end
 local function bool(v) return v and "true" or "false" end
 local function num(v) return type(v)=="number" and tostring(v) or "null" end
-local function path()
-    return (NEU_BOT and NEU_BOT.TelemetryPath) or "bot_gpt_telemetry.jsonl"
+
+local function candidatePaths()
+    local out={}
+    if NEU_BOT and NEU_BOT.TelemetryPath then out[#out+1]=NEU_BOT.TelemetryPath end
+    local mod=(NEU_BOT and NEU_BOT.ModFolder) or "nobody except us 2.0.26"
+    out[#out+1]="mods\\"..mod.."\\resource\\script\\multiplayer\\bot_gpt_telemetry.jsonl"
+    out[#out+1]="resource\\script\\multiplayer\\bot_gpt_telemetry.jsonl"
+    out[#out+1]="bot_gpt_telemetry.jsonl"
+    return out
 end
+
+local function openTelemetry(mode)
+    if activePath then
+        local f=io.open(activePath,mode)
+        if f then return f,activePath end
+    end
+    for _,p in ipairs(candidatePaths()) do
+        local f=io.open(p,mode)
+        if f then activePath=p return f,p end
+    end
+    return nil,nil
+end
+
 local function append(line)
-    local f=io.open(path(),"a")
+    local f=openTelemetry("a")
     if not f then return false end
     f:write(line,"\n")
     f:flush()
@@ -139,9 +160,10 @@ function T.install(core)
     if NEU_BOT.TelemetryEnabled==nil then NEU_BOT.TelemetryEnabled=true end
     if not NEU_BOT.TelemetryEnabled then return T end
 
-    local f=io.open(path(),"w")
+    local f,p=openTelemetry("w")
     if f then
-        f:write('{"type":"session","version":"1.20","time":0,"path":'..q(path())..'}\n')
+        f:write('{"type":"session","version":"1.20","time":0,"path":'..q(p)..'}\n')
+        f:flush()
         f:close()
         fileReady=true
     end
@@ -151,7 +173,11 @@ function T.install(core)
         baseLog(m)
         if fileReady then T.event(m) end
     end
-    if fileReady then baseLog('TELEMETRY v1.20 file='..path()) else baseLog('TELEMETRY DISABLED cannot open '..path()) end
+    if fileReady then
+        baseLog('TELEMETRY v1.20 ACTIVE path='..tostring(activePath))
+    else
+        baseLog('TELEMETRY DISABLED: cannot create bot_gpt_telemetry.jsonl in multiplayer/game paths')
+    end
     return T
 end
 
