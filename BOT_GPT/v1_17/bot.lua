@@ -1,2 +1,3 @@
 -- NEU BOT v1.17
 -- Based on v1.16. All tank calls now use the full duel_tanks70/80/90 pool randomly.
+-- Snapshot marker: full active bot.lua is deployed in script/multiplayer/bot.lua at blob e39033bf88ad590172eb60f39396c75a7c242a4e.
