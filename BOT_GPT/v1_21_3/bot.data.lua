@@ -55,3 +55,4 @@ function readAllUnits(sq, units, army)
     local files = {"units_nato.set","units_ch.set","units_rus.set","units_usa.set","units_nov.set","units_ukr.set","units_wagner.set"}
     for _, name in ipairs(files) do readUnitsRaw(path .. name, units, army) end
 end
+
