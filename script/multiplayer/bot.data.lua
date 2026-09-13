@@ -15,35 +15,31 @@ NEU_BOT = {
 
     AssaultGroups = 2,
     OpeningTankDelaySec = 5,
-    OpeningMaintenanceSec = 10,
     InfantryReissueSec = 5,
-    OrderCooldownSec = 12,
-    VehicleFollowDelaySec = 5,
+    OrderCooldownSec = 10,
     AntiAirPatrolSec = 20,
     SupportPatrolSec = 20,
 
     AttackWaitSec = 300,
     AttackResultCheckSec = 90,
-    CaptureNextAttackDelaySec = 3,
-    NextAttackDelaySec = 3,
+    CaptureNextAttackDelaySec = 4,
     TankReinforcementSec = 180,
     InfantryReinforcementSec = 90,
     MinAssaultInfantrySquads = 2,
     MaxAssaultInfantrySquads = 4,
     MaxDefenseSquadsPerFlag = 1,
 
+    BTGAssemblySec = 15,
+    BTGApproachSec = 15,
+    RouteChoiceCount = 3,
+    MaxWavesSameTarget = 2,
+    DismountAdoptDelaySec = 2,
+    DismountHintWindowSec = 20,
+
     PointStartCheckSec = 3,
     PointStartSquadSize = 12,
     PointStartSpawnRetrySec = 5,
-
-    DetachedAdoptWindowSec = 25,
-    DetachedAdoptMaxPerGroup = 6,
-
     HeliPatrolSec = 20,
-    DirectionRecoverySec = 20,
-
-    AntiRadDelaySec = 180,
-    EnemyResponseCheckSec = 120,
 
     MapMatchMinRatio = 0.75,
     MapFinalFile = "_flag_points_final.json",
