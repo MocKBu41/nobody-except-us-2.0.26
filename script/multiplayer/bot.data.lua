@@ -26,6 +26,7 @@ NEU_BOT = {
     OrderCooldownSec = 12,
     VehicleFollowDelaySec = 5,
     AntiAirPatrolSec = 20,
+    SupportPatrolSec = 20,
 
     AttackWaitSec = 300,
     AttackResultCheckSec = 120,
@@ -36,13 +37,11 @@ NEU_BOT = {
     PointStartCheckSec = 5,
     PointStartSquadSize = 12,
     PointStartSpawnRetrySec = 5,
-    -- Pointstart retries continue until Spawn succeeds or ownership changes.
 
     DetachedAdoptWindowSec = 25,
     DetachedAdoptMaxPerGroup = 6,
 
     HeliPatrolSec = 20,
-
     DirectionRecoverySec = 30,
 
     AntiRadDelaySec = 180,
@@ -68,4 +67,3 @@ function readAllUnits(sq, units, army)
         readUnitsRaw(path .. name, units, army)
     end
 end
-
