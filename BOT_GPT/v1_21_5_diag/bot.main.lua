@@ -4,5 +4,5 @@ T.install(N)
 local D=require([[/script/multiplayer/bot.positiondiag]])
 D.install(N)
 require([[/script/multiplayer/bot.v1_21.logic]])
-N.log('v1.21.4 DIAGNOSTIC POSITION PROBE ACTIVE')
+N.log('v1.21.5 TARGETED POSITION API DIAG ACTIVE')
 return N
