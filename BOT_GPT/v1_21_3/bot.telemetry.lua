@@ -1,5 +1,5 @@
--- NEU BOT v1.21.2 telemetry exporter
--- Snapshot export is driven from the bot's real processSpawn/onSecond path.
+-- NEU BOT v1.21.3 telemetry exporter
+-- v1.21.3 separates ACTUAL scene positions from bot orders/destinations.
 
 local T={}
 local N=nil
@@ -48,7 +48,7 @@ local function pointJson(name)
 end
 local function ownerName(o)
  if o==BotApi.Instance.team then return "bot" end
- if o==BotApi.Instance.enemyTeam then return "enemy" end
+ if o==BotApi.Instance.enemyTeam then return "player" end
  return "neutral"
 end
 local function aliveListJson(list)
@@ -66,6 +66,64 @@ local function eventKind(msg)
  if s:find("AIR ",1,true) or s:find("art",1,true) or s:find("support",1,true) then return "support" end
  if s:find("FAILED",1,true) or s:find("BLOCK",1,true) then return "warning" end
  return "info"
+end
+
+local function safeField(o,k)
+ local ok,v=pcall(function() return o and o[k] end)
+ if ok then return v end
+ return nil
+end
+local function readXY(o)
+ if not o then return nil,nil end
+ local p=safeField(o,"position") or safeField(o,"pos") or safeField(o,"center") or o
+ local x=safeField(p,"x")
+ local y=safeField(p,"y")
+ local z=safeField(p,"z")
+ if type(x)=="number" and type(y)=="number" then return x,y end
+ if type(x)=="number" and type(z)=="number" then return x,z end
+ return nil,nil
+end
+local function unitId(o,fallback)
+ return safeField(o,"squadId") or safeField(o,"id") or safeField(o,"name") or fallback
+end
+local function sceneCollection(name)
+ local ok,v=pcall(function() return BotApi.Scene and BotApi.Scene[name] end)
+ if ok then return v end
+ return nil
+end
+local function collectFrom(name,side,out,seen)
+ local coll=sceneCollection(name)
+ if type(coll)~="table" then return 0 end
+ local n=0
+ for k,v in pairs(coll) do
+  local tv=type(v)
+  if tv=="table" or tv=="userdata" then
+   local x,y=readXY(v)
+   if x and y then
+    local id=unitId(v,k)
+    local key=side..":"..tostring(id)..":"..tostring(x)..":"..tostring(y)
+    if not seen[key] then
+     seen[key]=true
+     local role=(side=="bot" and C and C.SquadRole and C.SquadRole[id]) or safeField(v,"role") or safeField(v,"type") or "unknown"
+     local group=(side=="bot" and C and C.SquadGroup and C.SquadGroup[id]) or safeField(v,"groupId")
+     out[#out+1]='{"id":'..q(id)..',"side":'..q(side)..',"role":'..q(role)..',"group":'..num(group)..',"x":'..num(x)..',"y":'..num(y)..',"source":'..q("Scene."..name)..'}'
+     n=n+1
+    end
+   end
+  end
+ end
+ return n
+end
+local function actualUnitsJson()
+ local out,seen={},{}
+ -- Read-only probes only. No unknown native methods are called.
+ collectFrom("Squads","bot",out,seen)
+ collectFrom("OwnSquads","bot",out,seen)
+ collectFrom("EnemySquads","player",out,seen)
+ collectFrom("EnemyUnits","player",out,seen)
+ collectFrom("Units","unknown",out,seen)
+ collectFrom("Entities","unknown",out,seen)
+ return '['..table.concat(out,',')..']',#out
 end
 
 function T.event(msg)
@@ -96,20 +154,17 @@ function T.snapshot()
  if N.MAP and N.MAP.spawn then spawn='{"x":'..num(N.MAP.spawn.x)..',"y":'..num(N.MAP.spawn.y)..'}' end
  local mapKey=(N.MAP and N.MAP.mapKey) or "unknown"
  local nextAir=C.NextAircraftAllowedAt or 0
- local json='{"type":"snapshot","version":"1.21.2","time":'..num(C.Time or 0)..',"map":'..q(mapKey)..',"team":'..q(BotApi.Instance.team)..',"enemyTeam":'..q(BotApi.Instance.enemyTeam)..',"attackUnlocked":'..bool(C.AttackUnlocked)..',"neutralsCleared":'..bool(C.NeutralsCleared)..',"flagsMine":'..num(f.mineCount)..',"flagsEnemy":'..num(f.enemyCount)..',"flagsNeutral":'..num(f.neutralCount)..',"airCooldownRemaining":'..num(math.max(0,nextAir-(C.Time or 0)))..',"spawn":'..spawn..',"flags":['..table.concat(flags,',')..'],"groups":['..table.concat(groups,',')..']}'
+ local actualUnits,actualCount=actualUnitsJson()
+ local json='{"type":"snapshot","version":"1.21.3","time":'..num(C.Time or 0)..',"map":'..q(mapKey)..',"team":'..q(BotApi.Instance.team)..',"enemyTeam":'..q(BotApi.Instance.enemyTeam)..',"attackUnlocked":'..bool(C.AttackUnlocked)..',"neutralsCleared":'..bool(C.NeutralsCleared)..',"flagsMine":'..num(f.mineCount)..',"flagsEnemy":'..num(f.enemyCount)..',"flagsNeutral":'..num(f.neutralCount)..',"airCooldownRemaining":'..num(math.max(0,nextAir-(C.Time or 0)))..',"spawn":'..spawn..',"actualPositionCount":'..num(actualCount)..',"flags":['..table.concat(flags,',')..'],"groups":['..table.concat(groups,',')..'],"units":'..actualUnits..'}'
  return append(json)
 end
 
 function T.onBotTick()
  if not C or not fileReady then return end
  local t=C.Time or 0
- if t~=lastSnapshot then
-  lastSnapshot=t
-  T.snapshot()
- end
+ if t~=lastSnapshot then lastSnapshot=t T.snapshot() end
 end
-
-function T.onQuant() T.onBotTick() end -- compatibility fallback
+function T.onQuant() T.onBotTick() end
 
 function T.install(core)
  if installed then return T end
@@ -119,12 +174,9 @@ function T.install(core)
  if not NEU_BOT.TelemetryEnabled then return T end
  ensureDir()
  local f=openFile("w")
- if f then
-  f:write('{"type":"session","version":"1.21.2","time":0,"path":'..q(TELEMETRY_PATH)..'}\n'); f:flush(); f:close(); fileReady=true
- end
+ if f then f:write('{"type":"session","version":"1.21.3","time":0,"path":'..q(TELEMETRY_PATH)..'}\n'); f:flush(); f:close(); fileReady=true end
  local baseLog=N.log
  function N.log(m) baseLog(m); if fileReady then T.event(m) end end
- -- Hook a function that the real one-second bot cycle always reaches.
  local baseProcessSpawn=N.processSpawn
  function N.processSpawn(...)
   local r=baseProcessSpawn(...)
@@ -132,11 +184,10 @@ function T.install(core)
   return r
  end
  if fileReady then
-  baseLog('TELEMETRY v1.21.2 ACTIVE FIXED_PATH='..TELEMETRY_PATH)
-  baseLog('TELEMETRY v1.21.2 SNAPSHOT HOOK=processSpawn/C.Time')
+  baseLog('TELEMETRY v1.21.3 ACTIVE FIXED_PATH='..TELEMETRY_PATH)
+  baseLog('TELEMETRY v1.21.3 ACTUAL POSITION PROBE=READ_ONLY_SCENE_FIELDS')
  else
-  baseLog('TELEMETRY v1.21.2 ERROR cannot create FIXED_PATH='..TELEMETRY_PATH)
-  baseLog('TELEMETRY v1.21.2 HINT create folder manually: '..TELEMETRY_DIR)
+  baseLog('TELEMETRY v1.21.3 ERROR cannot create FIXED_PATH='..TELEMETRY_PATH)
  end
  return T
 end
