@@ -1,4 +1,5 @@
 -- NEU BOT v1.21.4 diagnostic position probe
+-- FIX: no os.execute during gameplay, so no flashing cmd.exe windows.
 -- Purpose: discover a READ-ONLY path to real unit/squad coordinates without calling unknown native methods.
 
 local D={}
@@ -6,6 +7,7 @@ local N=nil
 local C=nil
 local installed=false
 local ranAt={}
+local fileReady=false
 
 local MOD_FOLDER=(NEU_BOT and NEU_BOT.ModFolder) or "nobody except us 2.0.26"
 local DIR="mods\\"..MOD_FOLDER.."\\resource\\script\\multiplayer\\telemetry"
@@ -17,13 +19,13 @@ local function esc(v)
  return s
 end
 local function q(v) return '"'..esc(v)..'"' end
-local function ensureDir()
- if os and os.execute then pcall(os.execute,'if not exist "'..DIR..'" mkdir "'..DIR..'"') end
-end
+
+-- IMPORTANT: no os.execute here. The telemetry folder already exists in normal v1.21.x installs.
+-- We only use io.open. If the folder is missing, diagnostics simply disable themselves instead of spawning cmd.exe.
 local function append(kind,name,data)
- ensureDir()
+ if not fileReady then return end
  local f=io.open(PATH,"a")
- if not f then return end
+ if not f then fileReady=false; return end
  f:write('{"type":"diag","time":'..tostring((C and C.Time) or 0)..',"kind":'..q(kind)..',"name":'..q(name)..',"data":'..q(data)..'}\n')
  f:flush(); f:close()
 end
@@ -82,7 +84,6 @@ local function iterate(label,coll,maxn)
    n=n+1
    append("item",label.."["..tostring(k).."]","key="..describe(k).." value="..describe(v))
    if type(v)=="table" or type(v)=="userdata" then probeFields(label..".value"..n,v) end
-   -- Some GEM collections enumerate squad IDs as scalar values. Try read-only indexing by key and by value.
    local okK,byK=safeGet(coll,k)
    if okK and byK~=nil and byK~=v then
     append("index_by_key",label.."["..tostring(k).."]",describe(byK))
@@ -113,13 +114,13 @@ local function probeRoot(label,o)
  append("root",label,describe(o)); metaKeys(label,o); probeFields(label,o)
 end
 function D.run(tag)
+ if not fileReady then return end
  append("run","START",tostring(tag or "manual"))
  probeRoot("BotApi",BotApi)
  probeRoot("BotApi.Scene",BotApi and BotApi.Scene)
  probeRoot("BotApi.Commands",BotApi and BotApi.Commands)
  local names={"Squads","OwnSquads","EnemySquads","EnemyUnits","Units","Entities","Actors","Vehicles","Humans","Objects","Soldiers","Players","Teams","Flags"}
  for _,name in ipairs(names) do probeSceneField(name) end
- -- Probe known own squad IDs against Scene and likely containers without calling functions.
  if C and C.SquadRole then
   local count=0
   for sid,role in pairs(C.SquadRole) do
@@ -141,7 +142,7 @@ function D.run(tag)
  append("run","END",tostring(tag or "manual"))
 end
 function D.onTick()
- if not C then return end
+ if not C or not fileReady then return end
  local t=C.Time or 0
  for _,at in ipairs({3,15,60}) do
   if t>=at and not ranAt[at] then ranAt[at]=true; D.run("t="..at) end
@@ -150,16 +151,23 @@ end
 function D.install(core)
  if installed then return D end
  installed=true; N=core; C=N.C
- ensureDir()
  local f=io.open(PATH,"w")
- if f then f:write('{"type":"session","version":"1.21.4-diagnostic","time":0}\n'); f:close() end
+ if f then
+  f:write('{"type":"session","version":"1.21.4-diagnostic-noconsole","time":0}\n')
+  f:flush(); f:close(); fileReady=true
+ else
+  fileReady=false
+ end
  local base=N.processSpawn
  function N.processSpawn(...)
   local r=base(...)
   D.onTick()
   return r
  end
- if N.log then N.log('POSITION DIAG v1.21.4 ACTIVE path='..PATH) end
+ if N.log then
+  if fileReady then N.log('POSITION DIAG v1.21.4 NO-CONSOLE ACTIVE path='..PATH)
+  else N.log('POSITION DIAG DISABLED: cannot open '..PATH..' (create telemetry folder manually)') end
+ end
  return D
 end
 return D
