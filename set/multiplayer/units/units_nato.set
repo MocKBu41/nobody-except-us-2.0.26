@@ -35,7 +35,7 @@
 
  
 ("squad_with11types_custom" side(nato) crew_nation(frg) name(tankman) c(1) g(eng) c1(tankman:1) b(supl) brig(common) t(all tankman nobot) cost(10) f(1) info(tankman))
-("squad_with11types_custom" side(nato) crew_nation(frg) name(vehicle_supporter) c(30) g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all vs nobot) cost(15) f(1) info(vehicle_supporter))
+("squad_with11types_custom" side(nato) crew_nation(frg) name(vehicle_supporter) c(30) g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all  nobot pointstart) cost(15) f(1) info(vehicle_supporter))
 ("squad_with11types_custom" side(nato) crew_nation(brit) name(pilot) c(50) g(airadd) c1(pilot:1) b(supl) brig(nrf) t(all p nobot) cost(40) f(1) info(pilot))
  
  
@@ -59,16 +59,16 @@
  
  
 ;===============================NATO AIR==NATO Response Force==NRF=======================================
-{"tornado_gr4_support_light" ("air_nation" c(200) brig(nrf) t(additional aircraft nobot)  s(nato) n(2) crew_nation(brit) g(helina)   sc(420) b(nrf_hqcar) i(1) cw(0) cp(25)) {cost 200} {fore 0.4}}
-{"mq9_nato" ("he_nation" c(400) c1(mq9_nato) brig(nrf) t(additional aircraft nobot)  s(nato)  crew_nation(frg) n(0) g(bplan)   sc(160) b(nrf_hqcar) i(2) cw(0) cp(5)) {cost 160} {fore 0.3}}
+{"tornado_gr4_support_light" ("air_nation" c(200) brig(nrf) t(additional aircraft nobot airbot aircraftlight)  s(nato) n(2) crew_nation(brit) g(helina)   sc(420) b(nrf_hqcar) i(1) cw(0) cp(25)) {cost 200} {fore 0.4}}
+{"mq9_nato" ("he_nation" c(400) c1(mq9_nato) brig(nrf) t(additional aircraft nobot airbot uavbot)  s(nato)  crew_nation(frg) n(0) g(bplan)   sc(160) b(nrf_hqcar) i(2) cw(0) cp(5)) {cost 160} {fore 0.3}}
 {"tiger_hap_at"            ("v_cust" c(200)  brig(nrf) t(all nobot) crew(fr/vertpilot)  s(nato)  n(2)  g(helina)   sc(160) b(nrf_hqcar) i(3) cw(0) cp(20)) {cost 160} {fore 0.4}}
 {"tiger_hap_support"            ("v_cust" c(200)  brig(nrf) t(all nobot) crew(fr/vertpilot)  s(nato)  n(2)  g(helina)   sc(160) b(nrf_hqcar) i(4) cw(0) cp(20)) {cost 160} {fore 0.4}}
-{"f-16c_support_pol"            ("v_cust" c(350)  brig(nrf) t(all aircraft nobot support_frontline) crew(pol/pilot)  s(nato)  n(1)  g(air_at)   sc(250) b(nrf_hqcar) i(5) cw(0) cp(30)) {cost 250} {fore 0.1}}
+{"f-16c_support_pol"            ("v_cust" c(350)  brig(nrf) t(all aircraft nobot airbot support_frontline) crew(pol/pilot)  s(nato)  n(1)  g(air_at)   sc(250) b(nrf_hqcar) i(5) cw(0) cp(30)) {cost 250} {fore 0.1}}
 
-{"eurofighter_ab" ("air_nation" c(500) brig(nrf) t(additional aircraft nobot)  s(nato) n(1) crew_nation(brit) g(antiair)   sc(360) b(nrf_hqcar) i(8) cw(0) cp(50)) {cost 460} {fore 0.35}}
-{"tornado_gr4_antirad" ("air_nation" c(500) brig(nrf) t(additional aircraft nobot)  s(nato) n(2) crew_nation(brit) g(air2)   sc(450) b(nrf_hqcar) i(9) cw(0) cp(50)) {cost 450} {fore 0.4}}
-{"tornado_gr4_at" ("air_nation" c(600) brig(nrf) t(additional aircraft nobot)  s(nato) n(2) crew_nation(brit) g(s1)   sc(580) b(nrf_hqcar) i(10) cw(0) cp(120)) {cost 580} {fore 0}}
-{"tornado_gr1_bomber" ("air_nation" c(580) brig(nrf) t(additional aircraft nobot)  s(nato) n(2) crew_nation(brit) g(s2)   sc(450) b(nrf_hqcar) i(11) cw(0) cp(90)) {cost 450} {fore 0.3}}
+{"eurofighter_ab" ("air_nation" c(500) brig(nrf) t(additional aircraft airbot nobot)  s(nato) n(1) crew_nation(brit) g(antiair)   sc(360) b(nrf_hqcar) i(8) cw(0) cp(50)) {cost 460} {fore 0.35}}
+{"tornado_gr4_antirad" ("air_nation" c(500) brig(nrf) t(additional aircraft nobot antirad)  s(nato) n(2) crew_nation(brit) g(air2)   sc(450) b(nrf_hqcar) i(9) cw(0) cp(50)) {cost 450} {fore 0.4}}
+{"tornado_gr4_at" ("air_nation" c(600) brig(nrf) t(additional aircraft airbot nobot)  s(nato) n(2) crew_nation(brit) g(s1)   sc(580) b(nrf_hqcar) i(10) cw(0) cp(120)) {cost 580} {fore 0}}
+{"tornado_gr1_bomber" ("air_nation" c(580) brig(nrf) t(additional aircraft  airbot nobot)  s(nato) n(2) crew_nation(brit) g(s2)   sc(450) b(nrf_hqcar) i(11) cw(0) cp(90)) {cost 450} {fore 0.3}}
 {"tornado_gr4_strike" ("air_nation" c(500) brig(nrf) t(additional aircraft nobot)  s(nato) n(2) crew_nation(brit) g(air2)   sc(400) b(nrf_hqcar) i(12) cw(0) cp(50)) {cost 400} {fore 0.3}}
 {"nh90sas"            ("v3b" c(600) c1(nh90_sas) brig(nrf) t(all aircraft nobot) s(nato) n(2) n1(pilot:2) n2(2sas_com:1) n3(2sas_scout_bazooker:1) n4(2sas_smg2:2) n5(2sas_marksman:1) n6(2sas_rocket_launcher:1) n7(2sas_heavy_mgun:1) n8(2sas_smg:2) g(sso)  sc(120) b(nrf_hqcar) i(13) cw(0) cp(5)) {cost 80} {fore 0.8}}
 
@@ -102,7 +102,7 @@ c1(saper:2) b(abn_hqcar) brig(abn) t(all nobot) cost(10) f(1) info(sappers))
 
 {"as_90"          ("v_nation" c(500) brig(abn) t(additional art nobot) s(nato) n(5) crew_nation(frg) g(art)   sc(260) b(abn_hqcar) i(3) cw(0) cp(50)) {cost 260} {fore 0.5}}
 {"ahs_krab_nato" ("v_nation" c(600) brig(abn) t(additional art nobot) s(nato) n(4) crew_nation(pl) g(art)   sc(260) b(abn_hqcar) i(7) cw(0) cp(50)) {cost 400} {fore 0.5}}
-{"pzh2000" ("v_nation" c(1500) brig(abn) t(additional art nobot) s(nato) n(5) crew_nation(frg) g(art2) sc(480) b(abn_hqcar) i(4) cw(0) cp(70)) {cost 500} {fore 0.35}}
+{"pzh2000" ("v_nation" c(1500) brig(abn) t(additional art nobot artsupport) s(nato) n(5) crew_nation(frg) g(art2) sc(480) b(abn_hqcar) i(4) cw(0) cp(70)) {cost 500} {fore 0.35}}
 {"lars2" ("v_nation" c(600) brig(abn) t(all art nobot) s(nato) crew_nation(frg) n(2) g(mlrs) sc(240) b(abn_hqcar) i(5) cw(0) cp(45)) {cost 450} {fore 0.1}}  
 {"mrls_atacms_nato" ("v_nation" c(1330) brig(abn) t(all art nobot) s(nato) crew_nation(frg) n(2) g(otrk) sc(80) b(abn_hqcar) i(6) m(4) cw(0) cp(60)) {cost 80} {fore 0}}
 

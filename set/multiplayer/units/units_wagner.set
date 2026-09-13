@@ -35,7 +35,7 @@
 
 
 ("squad_with2types" name(tankman) 			side(wagner) c(1) 	g(eng) c1(tankman:1) b(supl) brig(common) t(all tankman nobot) cost(10) f(1) info(tankman))
-("squad_with1types" name(vehicle_supporter) side(wagner) c(30) 	g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all vs nobot) cost(15) f(1) info(vehicle_supporter))
+("squad_with1types" name(vehicle_supporter) side(wagner) c(30) 	g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all nobot) cost(15) f(1) info(vehicle_supporter))
 
 {"eleron_catapult_wagner" 	("vart" c(500) c1(eleron_catapult) c2(eleron_control) brig(common) t(all art nobot) s(wagner) n1(vehicle_supporter:1) g(bpla) sc(80) b(supl) i(7) cw(0) cp(5)) {cost 75} {fore 0.6}}
 {"bmr-3_wagner" 			("vart_kamaz" c(600) c1(bmr-3) c2(ur_83p) brig(common) t(all art nobot) s(wagner) n1(tankman:2) n2(vehicle_supporter:2) g(demine) sc(80) b(supl) i(8) cw(0) cp(5)) {cost 80} {fore 0.5}}
@@ -90,7 +90,7 @@
 {"d30_wagner"			("vart" c(300) c1(mtlb_new) c2(d30) brig(artbrw) t(all art nobot) s(wagner) n(2) n1(vehicle_supporter:2) g(art) sc(160) a(1) b(artbrw_hqcar) i(3) cw(5) cp(25)) {cost 160} {fore 0.85}}
 
 {"2c3_akaciya_nov"		("v" 	c(360) brig(artbrw) t(additional art nobot) s(wagner) n(4) g(lart1)  	sc(200) b(artbrw_hqcar) i(7) cw(0) 	cp(30)) {cost 200} {fore 0.8}}
-{"msta_nov"				("v" 	c(400) brig(artbrw) t(all art nobot) 		s(wagner) n(4) g(lart)  	sc(480) b(artbrw_hqcar) i(8) cw(0) 	cp(50)) {cost 400} {fore 0}}
+{"msta_nov"				("v" 	c(400) brig(artbrw) t(all art nobot artsupport) 		s(wagner) n(4) g(lart)  	sc(480) b(artbrw_hqcar) i(8) cw(0) 	cp(50)) {cost 400} {fore 0}}
 
 
 {"ural_grad_nov" 		("vs" c(400) brig(artbrw) t(all art nobot)  s(wagner) n(2) g(rszo) sc(320) 	 b(artbrw_hqcar) i(9) m(4) cw(0) cp(50)) {cost 450} {fore 0}}

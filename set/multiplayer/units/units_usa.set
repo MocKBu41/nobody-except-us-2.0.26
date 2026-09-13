@@ -37,8 +37,10 @@
 {"m939"           ("vs" c(120) brig(common) t(all recon nobot) s(usa) n(1) g(truck)   sc(10) a(1) b(supl) i(4) cw(0) cp(2)) {cost 10} {fore 1}}  
 
 
+
+
 ("squad_with2types" name(tankman) 			side(usa) c(1)   g(supp) 		  c1(tankman:1) 		  b(supl) brig(common) t(all tankman nobot) cost(10) f(1)   info(tankman))
-("squad_with1types" name(vehicle_supporter) side(usa) c(30)  g(support)		  c1(vehicle_supporter:2) b(supl) brig(common) t(all vs nobot) 		cost(15) f(1)   info(vehicle_supporter))
+("squad_with1types" name(vehicle_supporter) side(usa) c(30)  g(support)		  c1(vehicle_supporter:2) b(supl) brig(common) t(all nobot pointstart) 		cost(15) f(1)   info(vehicle_supporter))
 ("squad_with1types" name(operator_bpla) 	side(usa) c(620) g(operator_bpla) c1(operator_bpla:1)     b(supl) brig(common) t(all nobot)         cost(40) f(0.6) info(operator_bpla))
 ("squad_with2types" name(pilot) 			side(usa) c(40)  g(supp) 		  c1(Pilot:1) 		      b(supl) brig(usaf)   t(all p nobot)		cost(40) f(1)   info(pilot))
 
@@ -57,9 +59,9 @@
 
 
 ;===============================USAF===========================================
-{"a-10c_support_light"            ("h"      c(200) brig(usaf) t(additional aircraft nobot) s(usa) n(1) g(heli)  sc(320) b(usaf_hqcar)   i(1) cw(0) cp(20)) {cost 180} {fore 0.4}}
-{"ac130"           			      ("h"      c(100) brig(usaf) t(all aircraft ac130 nobot)  s(usa) n(2) g(heli)  sc(155) b(usaf_hqcar)   i(2) cw(0) cp(20)) {cost 140} {fore 0.5}}
-{"mq9"            				  ("h"      c(300) brig(usaf) t(additional aircraft nobot)     s(usa) n(0) 							  g(heli1)  sc(80)  b(usaf_hqcar) i(3) cw(0) cp(5))  {cost 80} {fore 0.5}}
+{"a-10c_support_light"            ("h"      c(200) brig(usaf) t(additional aircraft nobot airbot) s(usa) n(1) g(heli)  sc(320) b(usaf_hqcar)   i(1) cw(0) cp(20)) {cost 180} {fore 0.4}}
+{"ac130"           			      ("h"      c(100) brig(usaf) t(all aircraft ac130 aircraftsupportbot nobot)  s(usa) n(2) g(heli)  sc(155) b(usaf_hqcar)   i(2) cw(0) cp(20)) {cost 140} {fore 0.5}}
+{"mq9"            				  ("h"      c(300) brig(usaf) t(additional aircraft nobot airbot)     s(usa) n(0) 							  g(heli1)  sc(80)  b(usaf_hqcar) i(3) cw(0) cp(5))  {cost 80} {fore 0.5}}
 
 {"Apache"           	 		  ("v_cust" c(200)  brig(usaf) t(all aircraft duel_heli nobot)  s(usa) n(2) crew(usa/vertpilot_apache) g(heli)   		sc(155) b(usaf_hqcar) i(3) cw(0) cp(20)) {cost 155} {fore 0.4}}
 {"Apache_spike"            		  ("v_cust" c(1200) brig(usaf) t(all aircraft duel_heli nobot ) s(usa) n(2) crew(usa/vertpilot_apache) g(heli_spike)	sc(450) b(usaf_hqcar) i(4) cw(0) cp(25)) {cost 200} {fore 0}}
@@ -67,17 +69,17 @@
 {"ah6"           			      ("v_cust" c(120)  brig(usaf) t(all aircraft duel_heli2 nobot) s(usa) n(2) crew(usa/vertpilot_apache) g(heli2)  		sc(155) b(usaf_hqcar) i(6) cw(0) cp(10)) {cost 80} {fore 0.4}}
 
 
-{"a-10c_bomber"                   ("h" c(450) brig(usaf) t(all aircraft nobot)        s(usa) n(1) g(air1)  sc(340) b(usaf_hqcar) i(6) cw(0) cp(40)) {cost 240} {fore 0.3}}
+{"a-10c_bomber"                   ("h" c(450) brig(usaf) t(all aircraft airbot nobot)        s(usa) n(1) g(air1)  sc(340) b(usaf_hqcar) i(6) cw(0) cp(40)) {cost 240} {fore 0.3}}
 {"a-10c_AT"                 	  ("h" c(400) brig(usaf) t(all aircraft nobot)        s(usa) n(1) g(air1)  sc(340) b(usaf_hqcar) i(7) cw(0) cp(25)) {cost 200} {fore 0.3}}
-{"a-10c_support"                  ("h" c(350) brig(usaf) t(additional aircraft nobot) s(usa) n(1) g(air1)  sc(320) b(usaf_hqcar) i(8) cw(0) cp(25)) {cost 200} {fore 0.3}}
+{"a-10c_support"                  ("h" c(350) brig(usaf) t(additional  airbot aircraft nobot) s(usa) n(1) g(air1)  sc(320) b(usaf_hqcar) i(8) cw(0) cp(25)) {cost 200} {fore 0.3}}
 
 {"f-22_fighter-bomber"            ("h" c(430) brig(usaf) t(all aircraft nobot)        			   		  s(usa) n(1) g(airb)  sc(360) b(usaf_hqcar) i(9)  cw(0) cp(40)) {cost 300} {fore 0.3}}
 {"f-35c_stealthab"                ("h" c(430) brig(usaf) t(all aircraft nobot) 					  		  s(usa) n(1) g(airb)  sc(290) b(usaf_hqcar) i(10) cw(0)  cp(35)) {cost 270} {fore 0.5}}
 
-{"f-16c_support"           		  ("h" c(450) brig(usaf) t(additional aircraft duel_fighter nobot) 		  s(usa) n(1) g(air3)  sc(360) b(usaf_hqcar) i(11)  cw(0) cp(30)) {cost 300} {fore 0.4}}
+{"f-16c_support"           		  ("h" c(450) brig(usaf) t(additional aircraft duel_fighter  airbot nobot) 		  s(usa) n(1) g(air3)  sc(360) b(usaf_hqcar) i(11)  cw(0) cp(30)) {cost 300} {fore 0.4}}
 {"f-35c_support"                  ("h" c(500) brig(usaf) t(additional aircraft duel_fighter nobot) 		  s(usa) n(1) g(air3)  sc(410) b(usaf_hqcar) i(12) cw(0) cp(40)) {cost 400} {fore 0.25}}
 
-{"f-16c_antirad"                  ("h" c(340) brig(usaf) t(additional aircraft duel_fighter nobot) 		  s(usa) n(1) g(air2)  sc(250) b(usaf_hqcar) i(13) cw(0) cp(15)) {cost 150} {fore 0.3}}
+{"f-16c_antirad"                  ("h" c(340) brig(usaf) t(additional aircraft duel_fighter nobot antirad) 		  s(usa) n(1) g(air2)  sc(250) b(usaf_hqcar) i(13) cw(0) cp(15)) {cost 150} {fore 0.3}}
 
 {"f-35c_strike"            		  ("h" c(500) brig(usaf) t(additional aircraft duel_fighter strike nobot) s(usa) n(1) g(air4)  sc(450) b(usaf_hqcar) i(14) cw(0) cp(50)) {cost 500} {fore 0}}
 
@@ -113,7 +115,7 @@
 
 {"m119"		("vart" c(500) c1(hmmwv_m998_tent) c2(m119) brig(usart) t(all art nobot) s(usa) n(2) n1(vehicle_supporter_usmc:2) g(how) sc(85) a(1) b(usart_hqcar) i(2) cw(5) cp(20)) {cost 85} {fore 0.8}} 
 
-{"paladin" 			("v" c(600) brig(usart) t(all art nobot) s(usa) n(4) g(lart)  sc(400) b(usart_hqcar) i(3) cw(0) cp(40)) {cost 400} {fore 0.25}}
+{"paladin" 			("v" c(600) brig(usart) t(all art nobot artsupport) s(usa) n(4) g(lart)  sc(400) b(usart_hqcar) i(3) cw(0) cp(40)) {cost 400} {fore 0.25}}
 
 {"mrls" 						("v"    c(840)  					brig(usart) t(all art nobot) s(usa) n(2) 			   g(rszo) sc(55) b(usart_hqcar) i(4) m(4) cw(0) cp(55)) {cost 450} {fore 0}}
 {"m142_himarser_usa"			("v3" 	c(800) c1(m142_himarser)	brig(usart) t(all art nobot) s(usa) n(2) n1(tankman:2) g(rszo) sc(55) b(usart_hqcar) i(5) m(4) cw(0) cp(50)) {cost 400} {fore 0}}

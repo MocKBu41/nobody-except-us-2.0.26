@@ -42,7 +42,7 @@
 
 
 ("squad_with2types" name(tankman) side(rus) c(1) g(eng) c1(tankman:1) b(supl) brig(common) t(all tankman nobot) cost(10) f(1) info(tankman))
-("squad_with1types" name(vehicle_supporter) side(rus) c(30) g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all vs nobot) cost(15) f(1) info(vehicle_supporter))
+("squad_with1types" name(vehicle_supporter) side(rus) c(30) g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all nobot pointstart) cost(15) f(1) info(vehicle_supporter))
 ("squad_with2types" name(pilot) side(rus) c(300) g(eng) c1(Pilot:1) b(supl) brig(vvs) t(all p nobot) cost(40) f(1) info(pilot))
 ("squad_with2types" name(operator_fpv) 	side(rus)					c(600) g(operator_fpv)  c1(operator_fpv:1)  b(supl) brig(common) t(all nobot) cost(100) f(0.5) info(operator_fpv))
 
@@ -61,21 +61,21 @@
 {"mi28ub"		("h" c(240) brig(vvs) t(all aircraft duel_heli nobot) s(rus) n(2) g(heli)  sc(170) b(vvs_hqcar) i(5) cw(0) cp(20)) {cost 170} {fore 0.45}}
 {"ka52"	("h" c(240) brig(vvs) t(additional aircraft duel_heli nobot) s(rus) n(2) g(heli)  sc(200) b(vvs_hqcar) i(7) cw(0) cp(30)) {cost 200} {fore 0.3}}
 
-{"su-25sm_support_light"	("p" c(240) brig(vvs) t(all aircraft nobot) s(rus) n(1) g(heli)  sc(300) b(vvs_hqcar) i(1) cw(0) cp(20)) {cost 250} {fore 0.45}}
-{"su-25sm_support"	("p" c(400) brig(vvs) t(all aircraft nobot) s(rus) n(1) g(air)  sc(300) b(vvs_hqcar) i(8) cw(0) cp(40)) {cost 300} {fore 0.4}}
-{"su-25sm_strike"	("p" c(550) brig(vvs) t(additional aircraft nobot) s(rus) n(1) g(air)  sc(400) b(vvs_hqcar) i(9) cw(0) cp(40)) {cost 350} {fore 0.5}}
-{"su-25sm_accurate"	("p" c(550) brig(vvs) t(additional aircraft nobot) s(rus) n(1) g(air)  sc(390) b(vvs_hqcar) i(10) cw(0) cp(40)) {cost 320} {fore 0.5}}
+{"su-25sm_support_light"	("p" c(240) brig(vvs) t(all aircraft nobot airbot ) s(rus) n(1) g(heli)  sc(300) b(vvs_hqcar) i(1) cw(0) cp(20)) {cost 250} {fore 0.45}}
+{"su-25sm_support"	("p" c(400) brig(vvs) t(all aircraft nobot airbot) s(rus) n(1) g(air)  sc(300) b(vvs_hqcar) i(8) cw(0) cp(40)) {cost 300} {fore 0.4}}
+{"su-25sm_strike"	("p" c(550) brig(vvs) t(additional aircraft nobot airbot) s(rus) n(1) g(air)  sc(400) b(vvs_hqcar) i(9) cw(0) cp(40)) {cost 350} {fore 0.5}}
+{"su-25sm_accurate"	("p" c(550) brig(vvs) t(additional aircraft nobot airbot) s(rus) n(1) g(air)  sc(390) b(vvs_hqcar) i(10) cw(0) cp(40)) {cost 320} {fore 0.5}}
 
 
 {"mig-29k_ab"	("p" c(600) brig(vvs) t(all aircraft nobot) s(rus) n(1) g(airb)  sc(360) b(vvs_hqcar) i(12) cw(0) cp(50)) {cost 400} {fore 0.3}}
-{"su-34_medbomber"	("p" c(600) brig(vvs) t(additional aircraft duel_fighter nobot) s(rus) n(2) g(air)  sc(420) b(vvs_hqcar) i(15) cw(0) cp(100)) {cost 500} {fore 0.5}}
-{"su-34_bomber"	("p" c(600) brig(vvs) t(additional aircraft duel_fighter nobot) s(rus) n(2) g(air)  sc(420) b(vvs_hqcar) i(16) cw(0) cp(100)) {cost 500} {fore 0.5}}
+{"su-34_medbomber"	("p" c(600) brig(vvs) t(additional aircraft duel_fighter nobot airbot) s(rus) n(2) g(air)  sc(420) b(vvs_hqcar) i(15) cw(0) cp(100)) {cost 500} {fore 0.5}}
+{"su-34_bomber"	("p" c(600) brig(vvs) t(additional aircraft duel_fighter nobot ) s(rus) n(2) g(air)  sc(420) b(vvs_hqcar) i(16) cw(0) cp(100)) {cost 500} {fore 0.5}}
 
 {"su-35_strike"	("p" c(400) brig(vvs) t(additional aircraft duel_fighter strike nobot) s(rus) n(1) g(air_strike)  sc(560) b(vvs_hqcar) i(17) cw(0) cp(100)) {cost 500} {fore 0}}
 {"tu22m3"		("p" c(400) brig(vvs) t(additional aircraft duel_fighter strike nobot) s(rus) n(4) g(air_strike)  sc(560) b(vvs_hqcar) i(18) cw(0) cp(100)) {cost 500} {fore 0}}
 
 
-{"su-34_antirad"	("p" c(500) brig(vvs) t(additional aircraft duel_fighter nobot) s(rus) n(2) g(air2)  sc(370) b(vvs_hqcar) i(19) cw(0) cp(45)) {cost 300} {fore 0.3}}
+{"su-34_antirad"	("p" c(500) brig(vvs) t(additional aircraft duel_fighter nobot antirad) s(rus) n(2) g(air2)  sc(370) b(vvs_hqcar) i(19) cw(0) cp(45)) {cost 300} {fore 0.3}}
 
 {"ka52_germes"	("h" c(1800) brig(vvs) t(additional aircraft duel_heli strike nobot) s(rus) n(2) g(helik)  sc(480) b(vvs_hqcar) i(20) cw(0) cp(100)) {cost 480} {fore 0}}
 
@@ -122,7 +122,7 @@
 {"mstab"			("vart" c(360) c1(mtlb_new) c2(2a65_msta_b) brig(artbr) t(all art nobot) s(rus) n(2) n1(vehicle_supporter:2) g(art) sc(160) a(1) b(artbr_hqcar) i(4) cw(5) cp(25)) {cost 150} {fore 0.3}}
 
 {"2c3_akaciya"		("v" c(360)  brig(artbr) t(all art nobot) 		 s(rus) n(4) g(lart1) sc(200) b(artbr_hqcar) i(7) cw(0)  cp(30))  {cost 300} {fore 0.3}}
-{"mstasm2"				("v" c(600)  brig(artbr) t(all art nobot) 		 s(rus) n(4) g(lart)  sc(480) b(artbr_hqcar) i(8) cw(0)  cp(40))  {cost 400} {fore 0.25}}
+{"mstasm2"				("v" c(600)  brig(artbr) t(all art nobot artsupport) 		 s(rus) n(4) g(lart)  sc(480) b(artbr_hqcar) i(8) cw(0)  cp(40))  {cost 400} {fore 0.25}}
 {"2s7_pion"			("v" c(600)  brig(artbr) t(all art nobot) 		 s(rus) n(3) g(lart)  sc(480) b(artbr_hqcar) i(9) cw(0)  cp(40))  {cost 400} {fore 0}}
 {"koalition"		("v" c(2400) brig(artbr) t(all art strike nobot) s(rus) n(3) g(art2)  sc(640) b(artbr_hqcar) i(10) cw(0) cp(100)) {cost 640} {fore 0}}
 

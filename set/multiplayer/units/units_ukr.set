@@ -38,7 +38,7 @@
 {"kraz_6322_eng" ("vs_ukr" c(240) brig(common) t(all supply nobot) s(ukr) n(2) g(supply7) 	sc(10) b(supl) i(5) cw(0) cp(2)) {cost 50} {fore 1}} 
 {"mtlb_ukr"		 ("v" c(250) brig(common) t(additional nobot) s(ukr) n(2) g(supply11) sc(25) b(supl) i(5) cw(0) cp(6)) {cost 20} {fore 1}}
 {"kraz_6322_fuel"		("vs_ukr" c(250) brig(common) t(additional nobot) s(ukr) n(2) g(supply9) sc(25) b(supl) i(7) cw(0) cp(5)) {cost 20} {fore 1}}
-("squad_with1types" 		name(vehicle_supporter) side(ukr) c(30) g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all vs nobot) cost(15) f(1) info(vehicle_supporter))
+("squad_with1types" 		name(vehicle_supporter) side(ukr) c(30) g(support) c1(vehicle_supporter:2) b(supl) brig(common) t(all  nobot pointstart) cost(15) f(1) info(vehicle_supporter))
 ("squad_with2types" 		name(tankman)   side(ukr) c(20)  g(eng)  c1(tankman:2) b(supl) brig(common) t(all nobot) cost(10) f(0) info(tankman))
 
 
@@ -60,19 +60,19 @@
 {"sso_ukr"						("v3u" c(600) c1(mi17_unarmed_urk) brig(vvc) t(additional ssa nobot) s(ukr) n(2) n1(vertpilot:2) n2(sso_rpghelp:1) n3(sso_sniper:1) n4(sso_of:1) n5(sso_rpg:1) n6(sso_smg3:4) g(sso)  sc(55) b(vvc_hqcar) i(3) cw(0) cp(2)) {cost 80} {fore 0.3}}
 
 ("squad_with2types" 				name(pilot)   side(ukr) c(300)  g(eng)  c1(pilot:1) b(vvc_hqcar) brig(vvc) t(all ) cost(40) f(0) info(pilot))
-{"su-25sm_accurate_ukr"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(1) g(air) 		sc(300)    b(vvc_hqcar) i(4) cw(0) cp(30)) {cost 300} {fore 0.4}}
-{"su-25sm_strike_ukr"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(1) g(air)  		sc(400)    b(vvc_hqcar) i(5) cw(0) cp(30)) {cost 350} {fore 0.5}}
-{"su-25sm_support_lighti_ukr"		("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(1) g(air_sup)   sc(390)    b(vvc_hqcar) i(6) cw(0) cp(30)) {cost 200} {fore 0.2}}
+{"su-25sm_accurate_ukr"				("p" c(300) brig(vvc) t(additional aircraft nobot airbot) s(ukr) n(1) g(air) 		sc(300)    b(vvc_hqcar) i(4) cw(0) cp(30)) {cost 300} {fore 0.4}}
+{"su-25sm_strike_ukr"				("p" c(300) brig(vvc) t(additional aircraft nobot airbot) s(ukr) n(1) g(air)  		sc(400)    b(vvc_hqcar) i(5) cw(0) cp(30)) {cost 350} {fore 0.5}}
+{"su-25sm_support_lighti_ukr"		("p" c(300) brig(vvc) t(additional aircraft nobot airbot) s(ukr) n(1) g(air_sup)   sc(390)    b(vvc_hqcar) i(6) cw(0) cp(30)) {cost 200} {fore 0.2}}
 
-{"mig-29s_harm"						("p" c(500) brig(vvc) t(additional aircraft  nobot)       s(ukr) n(2) g(ppr)         sc(370) b(vvc_hqcar) i(7) cw(0) cp(20)) {cost 200} {fore 0}}
-{"su24m_harm"						("p" c(500) brig(vvc) t(additional aircraft  nobot)       s(ukr) n(2) g(ppr)         sc(370) b(vvc_hqcar) i(8) cw(0) cp(20)) {cost 150} {fore 0.3}}
+{"mig-29s_harm"						("p" c(500) brig(vvc) t(additional aircraft  nobot antirad)       s(ukr) n(2) g(ppr)         sc(370) b(vvc_hqcar) i(7) cw(0) cp(20)) {cost 200} {fore 0}}
+{"su24m_harm"						("p" c(500) brig(vvc) t(additional aircraft  nobot antirad)       s(ukr) n(2) g(ppr)         sc(370) b(vvc_hqcar) i(8) cw(0) cp(20)) {cost 150} {fore 0.3}}
 
 {"su24m_kab"						("p" c(600) brig(vvc) t(all aircraft nobot) 			  s(ukr) n(2) g(airb)        sc(360) b(vvc_hqcar) i(9) cw(0) cp(30)) {cost 350} {fore 0.3}}
 
 {"su24m_storm"						("p" c(400) brig(vvc) t(additional aircraft strike nobot) s(ukr) n(2) g(air_strike)  sc(560) b(vvc_hqcar) i(10) cw(0) cp(50)) {cost 500} {fore 0}}
 
-{"bayraktar_tb2_mamc"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(tb2)  sc(400) b(vvc_hqcar) i(11) cw(0) cp(5)) {cost 100} {fore 0.3}}
-{"bayraktar_tb2_maml"				("p" c(300) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(tb2)  sc(400) b(vvc_hqcar) i(12) cw(0) cp(5)) {cost 120} {fore 0.3}}
+{"bayraktar_tb2_mamc"				("p" c(300) brig(vvc) t(additional aircraft airbot uavbot nobot) s(ukr) n(0) g(tb2)  sc(400) b(vvc_hqcar) i(11) cw(0) cp(5)) {cost 100} {fore 0.3}}
+{"bayraktar_tb2_maml"				("p" c(300) brig(vvc) t(additional aircraft airbot uavbot nobot) s(ukr) n(0) g(tb2)  sc(400) b(vvc_hqcar) i(12) cw(0) cp(5)) {cost 120} {fore 0.3}}
 
 {"fp-1_base"						("p" c(60) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(fp1)  sc(400) b(vvc_hqcar) i(13) cw(0) cp(5)) {cost 25} {fore 0.5}}
 {"fp-2_base"						("p" c(60) brig(vvc) t(additional aircraft nobot) s(ukr) n(0) g(fp1)  sc(400) b(vvc_hqcar) i(14) cw(0) cp(5)) {cost 40} {fore 0.2}}
@@ -91,7 +91,7 @@
 
 {"2c3_akaciya_ukr"		("v" c(360) brig(arta) t(additional art nobot) s(ukr) n(4) g(lart)  sc(200) b(arta_hqcar) i(5)  cw(0) cp(30)) {cost 350} {fore 0}}
 
-{"msta_ukr"				("v" c(400) brig(arta) t(additional art2_2 nobot art2) s(ukr) n(4) g(lart2)  sc(480) b(arta_hqcar) i(7) cw(0) cp(50)) {cost 480} {fore 0}}
+{"msta_ukr"				("v" c(400) brig(arta) t(additional art2_2 nobot art2 artsupport) s(ukr) n(4) g(lart2)  sc(480) b(arta_hqcar) i(7) cw(0) cp(50)) {cost 480} {fore 0}}
 {"ahs_krab"				("v" c(440) brig(arta) t(additional art2_2 nobot art2 p) s(ukr) n(4) g(lart2)  sc(480) b(arta_hqcar) i(8) cw(0) cp(50)) {cost 500} {fore 0}}
 {"2s7_pion_ukr"			("v" c(440) brig(arta) t(additional art2 nobot) s(ukr) n(3) g(lart2)  sc(480) b(arta_hqcar) i(9) cw(0) cp(65)) {cost 450} {fore 0}}
 
