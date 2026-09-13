@@ -1,2 +1,1 @@
-require([[/script/multiplayer/bot]])
-
+require([[/script/multiplayer/bot.v1_18.logic]])
