@@ -1,0 +1,2 @@
+-- NEU BOT v1.17
+-- Based on v1.16. All tank calls now use the full duel_tanks70/80/90 pool randomly.
