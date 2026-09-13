@@ -1,65 +1,72 @@
-# NEU BOT v1.21.4 diagnostic
+# NEU BOT v1.21.5 targeted diagnostic
 
-Диагностическая версия на базе v1.21.3. Рабочая логика бота не меняется; добавлено только безопасное исследование BotApi для поиска реальных координат своих и чужих отрядов.
+Диагностическая версия на базе v1.21.4. Боевая логика не меняется. Цель версии — найти точный путь `squadId -> unit/entity/actor -> position` и после этого добавить реальные координаты в телеметрию.
 
-## Что делает диагностика
+## Что уже установлено предыдущим тестом
 
-Файл `bot.positiondiag.lua` запускается вместе с ботом и в моменты примерно 3, 15 и 60 секунд боя исследует доступные объекты BotApi в режиме только чтения.
+- `BotApi.Scene` — userdata.
+- В metatable `BotApi.Scene` виден `IsSquadExists`.
+- `BotApi.Scene.Squads` существует, но содержит числовые squadId, а не объекты с x/y.
+- `BotApi.Commands` содержит известные команды `CaptureFlag`, `EnemyHasTanks`, `Income`, `SayChat`, `Spawn`.
 
-Проверяются:
+Поэтому v1.21.5 больше не делает широкий перебор всех Scene-коллекций.
 
+## Что проверяет v1.21.5
+
+Точечно исследуются:
+
+- `BotApi.Bot`
+- `BotApi.BotScene`
+- `BotApi.BotCommands`
+- `BotApi.BotEvent`
+- `BotApi.BotEvents`
+- `BotApi.Instance`
 - `BotApi.Scene`
 - `BotApi.Commands`
-- `Scene.Squads`
-- `Scene.OwnSquads`
-- `Scene.EnemySquads`
-- `Scene.EnemyUnits`
-- `Scene.Units`
-- `Scene.Entities`
-- `Scene.Actors`
-- `Scene.Vehicles`
-- `Scene.Humans`
-- `Scene.Objects`
-- `Scene.Soldiers`
-- `Scene.Players`
-- `Scene.Teams`
-- `Scene.Flags`
+- `BotApi.Events`
+- содержимое metatable, `__propget`, `__propset`, `__const`, `__index`
+- глобальные Lua API, имена которых содержат `entity`, `actor`, `unit`, `squad`, `position`, `scene`, `vehicle`, `human`, `object`, `getposition` и похожие слова
+- список реальных `Scene.Squads` и известные собственные `C.SquadRole`
 
-Для userdata/table записываются доступные metatable/`__index` ключи и безопасно читаются вероятные поля координат: `x/y/z`, `pos`, `position`, `center`, `location`, `coords`, а также ID, team, owner, role и связанные entity/unit поля.
+Неизвестные native-функции НЕ вызываются. Это только чтение и перечисление доступных методов/свойств.
 
-Неизвестные native-функции не вызываются.
+## Без мигающей консоли
 
-## Диагностический файл
+В этой версии нет `os.execute`, `cmd.exe` и создания каталога во время боя. Диагностика пишет напрямую в уже существующую папку `telemetry` через `io.open`.
 
-После запуска матча создаётся:
+## Когда выполняется
 
-`mods/nobody except us 2.0.26/resource/script/multiplayer/telemetry/bot_api_diag.jsonl`
+Два раза за матч: примерно на 5-й и 30-й секунде. Этого достаточно для сравнения API до и после появления отрядов.
 
-Обычная телеметрия продолжает писаться отдельно в:
+## Файл результата
+
+`mods/nobody except us 2.0.26/resource/script/multiplayer/telemetry/bot_position_api_diag.jsonl`
+
+Обычная телеметрия остаётся в:
 
 `telemetry/bot_gpt_telemetry.jsonl`
 
 ## Установка
 
-Скопировать всё содержимое `BOT_GPT/v1_21_4_diag` в:
+Скопировать содержимое `BOT_GPT/v1_21_5_diag` в:
 
 `mods/nobody except us 2.0.26/resource/script/multiplayer/`
 
-с заменой файлов и начать новый бой.
+с заменой и начать новый матч.
 
-В `game.log` должна появиться строка:
+В `game.log` должна быть строка:
 
-`[NEU-BOT] POSITION DIAG v1.21.4 ACTIVE path=...bot_api_diag.jsonl`
+`[NEU-BOT] POSITION API DIAG v1.21.5 ACTIVE path=...bot_position_api_diag.jsonl`
 
-и затем:
+и:
 
-`[NEU-BOT] v1.21.4 DIAGNOSTIC POSITION PROBE ACTIVE`
+`[NEU-BOT] v1.21.5 TARGETED POSITION API DIAG ACTIVE`
 
-## Что прислать после теста
+## Что прислать
 
-Достаточно прислать:
+После 40–60 секунд боя достаточно двух файлов:
 
-1. `telemetry/bot_api_diag.jsonl`
-2. новый `game.log`
+1. `telemetry/bot_position_api_diag.jsonl`
+2. свежий `game.log`
 
-По этим двум файлам можно определить, какой объект или коллекция реально содержит координаты squad/unit, либо подтвердить, что обычный Lua BotApi координаты противника не экспортирует.
+Если в class table/metatable найдётся функция вроде `GetPosition`, `GetSquad`, `GetUnit`, `GetEntity`, `GetActor` или соответствующее property, следующая версия уже проверит её точечно и безопасно на одном известном squadId.
