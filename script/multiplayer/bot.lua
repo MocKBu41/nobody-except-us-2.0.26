@@ -1,6 +1,5 @@
--- NEU BOT v1.16
--- Based on v1.15. Restores sustained v1.13-style pressure, keeps passengers in transports,
--- and actively calls aircraftlight + artsupport on every assault direction.
+-- NEU BOT v1.17
+-- Based on v1.16. All tank calls now use the full duel_tanks70/80/90 pool randomly.
 -- Verified BotApi commands only: Spawn, CaptureFlag, Income, EnemyHasTanks.
 
 require([[/script/multiplayer/bot.data]])
@@ -362,8 +361,10 @@ local function ensureInfantry(id,reason,minCount)
     if have<minCount and not pendingForGroup("infantry",id) then enqueueSpawn("infantry",reason,0,g.target,id,g.phase) end
 end
 local function ensureTank(id,reason)
-    local g=C.Groups[id] if g and not g.stopped and aliveCount(g.tanks)==0 and not pendingForGroup("tank",id) and not pendingForGroup("tank80plus",id) then
-        enqueueSpawn("tank80plus",reason,0,g.target,id,g.phase)
+    local g=C.Groups[id]
+    if g and not g.stopped and aliveCount(g.tanks)==0 and not pendingForGroup("tank",id) and not pendingForGroup("tank80plus",id) then
+        log("TANK RANDOM pool=duel_tanks70|duel_tanks80|duel_tanks90 group="..tostring(id))
+        enqueueSpawn("tank",reason,0,g.target,id,g.phase)
     end
 end
 local function hasSupportForGroup(tbl,gid)
@@ -388,7 +389,7 @@ local function makeOpeningGroups()
     for i=1,NEU_BOT.AssaultGroups do
         newGroup(i)
         enqueueSpawn("infantry","opening infantry",0,nil,i,"opening")
-        enqueueSpawn("tank","opening tank",NEU_BOT.OpeningTankDelaySec,nil,i,"opening")
+        enqueueSpawn("tank","opening tank random 70/80/90",NEU_BOT.OpeningTankDelaySec,nil,i,"opening")
     end
 end
 local function queuePointStartTargets()
@@ -450,7 +451,7 @@ local function startAttack(id)
     g.target=target g.phase="attack" g.resultCheckAt=C.Time+(NEU_BOT.AttackResultCheckSec or 90) g.nextAttackAt=nil
     log("ATTACK START group="..id.." flag="..target.." I="..groupInfCount(g).." T="..aliveCount(g.tanks))
     ensureInfantry(id,"attack infantry",NEU_BOT.MinAssaultInfantrySquads or 2)
-    ensureTank(id,"attack tank")
+    ensureTank(id,"attack tank random 70/80/90")
     ensureAirSupport(id,target)
     ensureArtSupport(id,target)
     for _,sid in ipairs(g.infantry) do if squadAlive(sid) then capture(sid,target,true) end end
@@ -473,7 +474,7 @@ local function resolveAttackResults()
             else
                 log("ATTACK PRESSURE group="..id.." flag="..tostring(g.target).." I="..groupInfCount(g).." T="..aliveCount(g.tanks))
                 ensureInfantry(id,"stalled attack infantry",NEU_BOT.MinAssaultInfantrySquads or 2)
-                ensureTank(id,"stalled attack tank")
+                ensureTank(id,"stalled attack tank random 70/80/90")
                 ensureAirSupport(id,g.target)
                 ensureArtSupport(id,g.target)
                 g.resultCheckAt=C.Time+(NEU_BOT.AttackResultCheckSec or 90)
@@ -486,7 +487,7 @@ local function processAssaultMaintenance()
     for id,g in pairs(C.Groups) do
         if not g.stopped and g.phase=="attack" and g.target then
             ensureInfantry(id,"assault maintenance infantry",NEU_BOT.MinAssaultInfantrySquads or 2)
-            ensureTank(id,"assault maintenance tank")
+            ensureTank(id,"assault maintenance tank random 70/80/90")
             ensureAirSupport(id,g.target)
             ensureArtSupport(id,g.target)
         end
@@ -530,7 +531,7 @@ end
 local function processReinforcements()
     if C.Time>=C.NextTankReinforcementAt then
         C.NextTankReinforcementAt=C.Time+(NEU_BOT.TankReinforcementSec or 300)
-        for _,id in ipairs(activeGroups()) do ensureTank(id,"periodic tank") end
+        for _,id in ipairs(activeGroups()) do ensureTank(id,"periodic tank random 70/80/90") end
     end
     if C.Time>=C.NextInfantryReinforcementAt then
         C.NextInfantryReinforcementAt=C.Time+(NEU_BOT.InfantryReinforcementSec or 180)
@@ -587,7 +588,7 @@ local function detectLosses()
             C.DeadSquads[sid]=true
             local id=C.SquadGroup[sid] local g=id and C.Groups[id]
             log("LOST squad="..sid.." role="..tostring(role).." group="..tostring(id))
-            if role=="tank" or role=="tank80plus" then if id and g then ensureTank(id,"tank replacement") end end
+            if role=="tank" or role=="tank80plus" then if id and g then ensureTank(id,"tank replacement random 70/80/90") end end
             if (role=="infantry" or role=="infantry_detached") and id and g and g.phase=="attack" then ensureInfantry(id,"infantry replacement",NEU_BOT.MinAssaultInfantrySquads or 2) end
             if role=="aircraftlight" then C.AirSupport[sid]=nil if id and g and g.phase=="attack" then ensureAirSupport(id,g.target) end end
             if role=="artsupport" then C.ArtSupport[sid]=nil if id and g and g.phase=="attack" then ensureArtSupport(id,g.target) end end
@@ -661,10 +662,11 @@ function onGameStart()
     enqueueSpawn("recon","opening recon",0,nil,nil,"opening")
     enqueueSpawn("antiair","opening aa",0,nil,nil,"opening")
     enqueueSpawn("patrol_heli","opening heli",0,nil,nil,"patrol")
-    log("START v1.16 map="..tostring(mapOk))
+    log("START v1.17 map="..tostring(mapOk))
     log("RULE assault-pressure=v1.13-style NO-timeout-retreat minInf="..tostring(NEU_BOT.MinAssaultInfantrySquads or 2))
     log("RULE unmatched-spawn=IGNORE to keep transport passengers mounted")
     log("RULE aircraftlight=CALL-ON-ATTACK artsupport=CALL-ON-ATTACK")
+    log("RULE tanks=RANDOM duel_tanks70|duel_tanks80|duel_tanks90")
     startClock()
     processSpawn()
 end
