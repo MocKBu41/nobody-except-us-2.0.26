@@ -3,10 +3,14 @@
 <title>NEU 1.23 — карта маршрутов</title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#0c1422;color:#eef4ff;font:14px system-ui}header{padding:20px 24px;border-bottom:1px solid #293951;display:flex;align-items:center;gap:20px}h1{font-size:21px;margin:0}header small{color:#9aabc4}button,select,input::file-selector-button{background:#21334d;color:#edf4ff;border:1px solid #3b5171;border-radius:8px;padding:9px 12px;cursor:pointer}button:hover{background:#314969}.tools{display:flex;gap:8px;flex-wrap:wrap;padding:12px 24px}#notice{padding:12px 24px;background:#212b3b;color:#e9c783;min-height:44px}.layout{display:grid;grid-template-columns:270px 1fr 280px;height:calc(100vh - 245px);min-height:420px}aside{overflow:auto;padding:16px;border-right:1px solid #2b3c55}.right{border-left:1px solid #2b3c55;border-right:0}main{position:relative;min-width:0}canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}.row{display:block;text-align:left;width:100%;margin:8px 0;padding:12px}.row strong,.row small{display:block}.row small{margin-top:6px;color:#b7c8df}.selected{border-color:#64e5ac;background:#244640}h2{font-size:15px;margin:0 0 14px}.fact{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #26364d}.fact span{color:#9daec6}.fact b{text-align:right;font-size:12px;overflow-wrap:anywhere}pre{white-space:pre-wrap;font-size:11px;color:#a5bad6}footer{padding:12px 24px;display:flex;gap:20px;align-items:center}#time{flex:1}.legend{color:#a7b8d0;font-size:12px;padding:0 24px 12px}#count{font-size:12px;color:#99aec9}@media(max-width:900px){.layout{grid-template-columns:200px 1fr}.right{display:none}header{flex-wrap:wrap}.layout{height:65vh}}
-</style>
+.help{padding:12px 24px;background:#15243a;line-height:1.5}.help p{margin:5px 0}.help code{color:#8de3c1;overflow-wrap:anywhere}#importStatus{padding:10px 24px;white-space:pre-wrap;color:#dbe9fa}.layout{height:60vh}</style>
 <header><div><h1>NEU · Карта маршрутов <small>1.23</small></h1><small>Назначенные точки движения и построение отрядов</small></div><span id="count"></span></header>
-<div class="tools"><input id="files" type="file" accept=".json" multiple><button id="follow">Следить за файлами</button><button id="fit">Показать всё</button><button id="demo">Демонстрация</button><button id="clear">Очистить</button><button id="save">Сохранить снимок</button></div>
-<div id="notice"></div>
+<div class="tools"><label>Открыть bot_routes_*.json: <input id="files" type="file" accept=".json" multiple></label><button id="follow">Следить за файлами</button><button id="fit">Показать всё</button><button id="demo">Демонстрация</button><button id="clear">Очистить</button><button id="save">Сохранить снимок</button></div>
+<section class="help"><b>Какой файл открыть?</b>
+<p>Выберите <code>bot_routes_&lt;номер бота&gt;.json</code>, например <code>bot_routes_1.json</code>. Файл создаётся ботом во время матча и обновляется каждые 3 игровые секунды.</p>
+<p>Ищите в папке игры: <code>mods\nobody except us 2.0.26\resource\script\multiplayer\</code>. Если там нет файла, проверьте рабочую папку игры.</p>
+<p><b>Если игра останавливается с ошибкой загрузки, файл мог ещё не появиться.</b> Для карты нужны маршруты из <code>bot_routes_*.json</code>. Файлы <code>game.log</code>, <code>_map_points_index.json</code> и <code>_flag_points_final.json</code> не содержат снимок маршрутов отрядов.</p>
+</section><div id="importStatus" role="status">Файл маршрутов ещё не выбран.</div><div id="notice"></div>
 <div class="layout"><aside><h2>Отряды бота</h2><select id="kind"><option value="all">Все типы</option value="infantry">Пехота</option><option value="tank">Танки</option><option value="ifv">БМП</option><option value="other">Другие</option></select><div id="list"></div></aside>
 <main><canvas id="map"></canvas></main><aside class="right"><h2>Выбранный отряд</h2><div id="detail">Выберите отряд слева.</div></aside></div>
 <footer><span id="clock"></span><input id="time" type="range" min="0" max="0" value="0"><label><input id="paths" type="checkbox" checked>Маршруты</label><label><input id="points" type="checkbox" checked>Точки</label><label><input id="front" type="checkbox" checked>Фронт</label></footer>
@@ -75,7 +79,18 @@ function render(){
  'Пунктир — рассчитанный план; белая точка — последнее измерение. Положение между точками не вычисляется.';
 }
 function accept(data){
- if(data.version!=='1.23'||!Array.isArray(data.squads)&&Object.keys(data.squads||{}).length)throw Error('Нужен bot_routes_*.json версии 1.23');
+ if(!data||typeof data!=='object'||data.version!=='1.23')throw Error('Это не снимок маршрутов v1.23. Выберите bot_routes_<номер>.json.');
+ const collection=v=>Array.isArray(v)||(v&&typeof v==='object'&&Object.keys(v).length===0);
+ if(!collection(data.squads)||!collection(data.flags)||!Number.isFinite(data.time)||data.host==null)throw Error('Снимок неполный: нужны host, time, squads и flags. Дождитесь следующего обновления файла.');
+ for(const r of arr(data.squads)){
+  if(!r||r.id==null)throw Error('В снимке есть отряд без ID.');
+  if(r.plan){
+   const p=r.plan;
+   if(!point(p.origin)||!point(p.goal)||!Array.isArray(p.points)||!p.points.every(point))throw Error('У отряда '+r.id+' повреждены координаты маршрута.');
+   if(p.members!==undefined&&!collection(p.members))throw Error('Неверный список бойцов у отряда '+r.id);
+   for(const m of arr(p.members))if(!m||!point(m.deploy)||!Array.isArray(m.points)||!m.points.every(point))throw Error('Повреждён маршрут бойца у отряда '+r.id);
+  }
+ }
  const candidate={...latest,[String(data.host??'bot')]:data};
  const all=Object.values(candidate),squads=all.flatMap(d=>arr(d.squads).map(r=>({...r,host:d.host,key:d.host+':'+r.id})));
  const flags=all.flatMap(d=>arr(d.flags)),maps=new Set(all.map(d=>d.map).filter(Boolean));
@@ -84,11 +99,22 @@ function accept(data){
  frames.push({version:'1.23',host:'VIEW',map:all[0].map,time:Math.max(...all.map(d=>d.time||0)),squads,flags,calibrated:all.every(d=>d.calibrated),unitsPerMeter:all[0].unitsPerMeter});
  if(frames.length>600)frames.shift();$('time').max=frames.length-1;$('time').value=frames.length-1;render()
 }
-async function readFiles(files){for(let f of files){try{accept(JSON.parse(await f.text()))}catch(e){$('notice').textContent=f.name+': '+e.message}}fit()}
+function decodeFile(raw,name){
+ if(/\.log$/i.test(name))throw Error('Это журнал ошибок игры. Для карты откройте bot_routes_<номер бота>.json.');
+ if(/^_(map_points_index|flag_points_final)\.json$/i.test(name))throw Error('Это справочник карты. Нужен bot_routes_<номер бота>.json, созданный во время матча.');
+ raw=raw.replace(/^\uFEFF/,'').trim();
+ if(!raw)throw Error('Файл пока пуст. Подождите 3 игровые секунды и откройте его снова.');
+ try{return JSON.parse(raw)}catch(e){throw Error('JSON не удалось прочитать. Возможно, игра сейчас перезаписывает файл. Подождите 3 секунды и выберите его снова.')}
+}
+async function readFiles(files){
+ const messages=[];
+ for(let f of files){try{const d=decodeFile(await f.text(),f.name);accept(d);messages.push('Загружен '+f.name+' · '+arr(d.squads).length+' отрядов · '+d.time+' с');}catch(e){messages.push(f.name+': '+e.message)}}
+ $('importStatus').textContent=messages.join('\n');fit();
+}
 $('files').onchange=e=>{demo=false;readFiles(e.target.files)};
 $('follow').onclick=async()=>{try{if(!window.showOpenFilePicker)throw Error('Авточтение недоступно. Откройте JSON кнопкой выбора файлов.');handles=await showOpenFilePicker({multiple:true,types:[{description:'Маршруты бота',accept:{'application/json':['.json']}}]});demo=false;await readFiles(await Promise.all(handles.map(h=>h.getFile())))}catch(e){$('notice').textContent=e.message}};
-setInterval(async()=>{if(!handles.length)return;try{for(let h of handles){let f=await h.getFile(),d=JSON.parse(await f.text());if(latest[d.host]?.time!==d.time)accept(d)}}catch(e){$('notice').textContent='Ожидание полного снимка: '+e.message}},3000);
-$('clear').onclick=()=>{frames=[];latest={};handles=[];selected='';demo=false;$('time').max=0;$('time').value=0;render()};
+setInterval(async()=>{if(!handles.length)return;try{for(let h of handles){let f=await h.getFile(),d=decodeFile(await f.text(),f.name);if(latest[d.host]?.time!==d.time)accept(d)}}catch(e){$('notice').textContent='Ожидание полного снимка: '+e.message}},3000);
+$('clear').onclick=()=>{frames=[];latest={};handles=[];selected='';demo=false;$('importStatus').textContent='Файл маршрутов ещё не выбран.';$('time').max=0;$('time').value=0;render()};
 $('time').oninput=render;$('kind').onchange=render;
 for(let id of ['paths','points','front'])$(id).onchange=draw;
 $('fit').onclick=fit;
@@ -97,7 +123,7 @@ canvas.onpointerdown=e=>{drag={x:e.clientX,y:e.clientY};canvas.setPointerCapture
 canvas.onpointermove=e=>{if(!drag)return;view.x-=(e.clientX-drag.x)/view.s;view.y+=(e.clientY-drag.y)/view.s;drag={x:e.clientX,y:e.clientY};draw()};
 canvas.onpointerup=()=>drag=null;canvas.onpointercancel=()=>drag=null;
 $('save').onclick=()=>{const blob=new Blob([JSON.stringify({...frame(),squads:arr(frame().squads).map(r=>({...r,id:r.key}))},null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='route-view-snapshot.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
-$('demo').onclick=()=>{frames=[];latest={};handles=[];demo=true;let squads=[];
+$('demo').onclick=()=>{frames=[];latest={};handles=[];demo=true;$('importStatus').textContent='Открыта демонстрация. Для своих отрядов выберите bot_routes_*.json.';let squads=[];
  for(let [i,kind] of ['infantry','tank','ifv'].entries()){
   let origin={x:-360,y:(i-1)*50},target={x:100,y:0},d=Math.hypot(target.x-origin.x,target.y-origin.y),ux=(target.x-origin.x)/d,uy=(target.y-origin.y)/d,back=[100,75,35][i],goal={x:target.x-ux*back,y:target.y-uy*back},points=[];
   let dist=d-back;for(let x=30;x<dist;x+=30)points.push({x:origin.x+ux*x,y:origin.y+uy*x});points.push(goal);
