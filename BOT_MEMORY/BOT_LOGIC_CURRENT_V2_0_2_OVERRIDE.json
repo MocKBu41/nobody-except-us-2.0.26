@@ -1,0 +1,28 @@
+{
+  "version": "BOT 2.0.2 OVERRIDE",
+  "date": "2026-09-15",
+  "status": "NEEDS_GAME_TEST",
+  "reason": "User requested restoration of behavior that existed before BOT 2.x regression.",
+  "overrides": {
+    "opening_all_neutral_flags": {
+      "enabled": true,
+      "behavior": "At battle start, enqueue one pointstart squad for every neutral flag and bind that squad to that exact flag immediately after spawn.",
+      "source_reference": "BOT_GPT/v1_27/bot.v1_21.logic.lua queueOpening/processPointStart"
+    },
+    "opening_patrol_helicopter": {
+      "enabled": true,
+      "behavior": "Always enqueue one patrol_heli at battle start. This opening helicopter is independent of the later conditional attack_heli gate.",
+      "source_reference": "BOT_GPT/v1_27/bot.v1_21.logic.lua queueOpening"
+    },
+    "main_opening": {
+      "preserve": ["infantry", "recon", "tank", "mech_inf"]
+    },
+    "visualization": {
+      "telemetry_files": ["bot_gpt_telemetry_a.jsonl", "bot_gpt_telemetry_b.jsonl"],
+      "manual_index_loading": false,
+      "geometry_embedded_in_telemetry": true,
+      "show": ["FlagPoint coordinates", "SpawnPoint A coordinates", "SpawnPoint B coordinates", "squad target lines"]
+    }
+  },
+  "note": "This override is authoritative over conflicting BOT_LOGIC_CURRENT rules until the main tile graph is regenerated with these user-requested changes."
+}
