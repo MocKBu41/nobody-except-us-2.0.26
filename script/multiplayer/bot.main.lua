@@ -1,1 +1,1 @@
-return require([[/script/multiplayer/bot.v1_21.logic]])
+return require([[/script/multiplayer/bot.v1_22.logic]])
