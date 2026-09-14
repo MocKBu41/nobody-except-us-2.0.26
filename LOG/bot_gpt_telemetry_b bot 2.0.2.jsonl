@@ -1,0 +1,40 @@
+{"type":"session","v":"2.0","team":"b","enemy":"a","logic":"BOT_LOGIC_CURRENT","geometry":"disabled-until-runtime-map-id"}
+{"type":"snapshot","v":"2.0","t":0,"state":"OPENING","bp":1200,"mine":0,"enemy":0,"neutral":11,"squads":[]}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"OPENING HELI queued at battle start"}
+{"type":"geometry_index","version":"2.0.2","team":"b","runtimeFlags":["f1","f10","f11","f2","f3","f4","f5","f6","f7","f8","f9"],"candidates":[{"key":"4vs4/4vs4_cw_russian_village","ratio":1,"flags":[{"name":"f1","x":-315.44,"y":-2762.68,"z":0},{"name":"f10","x":-1530.34,"y":-1659.02,"z":0},{"name":"f11","x":1078.11,"y":-1529.3,"z":0},{"name":"f2","x":2371.94,"y":-2906.13,"z":0},{"name":"f3","x":-2783.17,"y":-2708.17,"z":0},{"name":"f4","x":-2921.48,"y":-579.13,"z":0},{"name":"f5","x":-230.89,"y":-556.3,"z":0},{"name":"f6","x":2499.32,"y":-763.3,"z":0},{"name":"f7","x":2336.86,"y":1626.39,"z":0},{"name":"f8","x":-253.26,"y":1751.74,"z":0},{"name":"f9","x":-2696.77,"y":1908.09,"z":0}],"spawnA":[{"name":"a1","x":3576.2,"y":-4361.65,"z":0},{"name":"a2","x":1902.66,"y":-4286.18,"z":0},{"name":"a4","x":-3479.74,"y":-4191.12,"z":0},{"name":"a3","x":-434.7,"y":-4352.67,"z":0}],"spawnB":[{"name":"b1","x":-3817.26,"y":4110.8,"z":0},{"name":"b2","x":13.06,"y":4263.57,"z":0},{"name":"b3","x":1749.35,"y":4215.15,"z":0},{"name":"b4","x":4164.73,"y":4019.69,"z":0}]}]}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"SPAWN OK role=patrol_heli unit=mi-24v_ukr"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"ARRIVED squad=1 role=patrol_heli reason=opening heli"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=no candidates"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"OPENING HELI ARRIVED squad=1"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"SPAWN OK role=infantry unit=bazooker2(ukr)"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"ARRIVED squad=2 role=infantry reason=opening"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"SPAWN OK role=recon unit=kipri2"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"ARRIVED squad=4 role=recon reason=opening"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"SPAWN OK role=tank unit=t80bv_ukr"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"ARRIVED squad=6 role=tank reason=opening"}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"SPAWN OK role=mech_inf unit=m113a3_ukri"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"HELI BLOCKED exact enemy tank count unavailable; boolean EnemyHasTanks is insufficient"}
+{"type":"snapshot","v":"2.0","t":1,"state":"OPENING","bp":270,"mine":0,"enemy":0,"neutral":11,"squads":[[1,"patrol_heli",""],[2,"infantry",""],[4,"recon",""],[6,"tank",""]]}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"ARRIVED squad=9 role=mech_inf reason=opening"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"STATE -> EXPAND reason=opening complete"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"TARGET squad=2 role=infantry flag=f1 load=0 neutral=true"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"TARGET squad=9 role=mech_inf flag=f10 load=0 neutral=true"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"TARGET squad=1 role=patrol_heli flag=f11 load=0 neutral=true"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"TARGET squad=4 role=recon flag=f2 load=0 neutral=true"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"TARGET squad=6 role=tank flag=f3 load=0 neutral=true"}
+{"type":"snapshot","v":"2.0","t":16,"state":"EXPAND","bp":570,"mine":0,"enemy":0,"neutral":11,"squads":[[1,"patrol_heli","f11"],[2,"infantry","f1"],[4,"recon","f2"],[6,"tank","f3"],[9,"mech_inf","f10"]]}
+{"type":"event","v":"2.0","t":30,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=no candidates"}
+{"type":"event","v":"2.0","t":30,"team":"b","m":"STATE SNAP t=30 state=EXPAND BP=850 flags=0/0/11"}
+{"type":"snapshot","v":"2.0","t":31,"state":"EXPAND","bp":870,"mine":0,"enemy":0,"neutral":11,"squads":[[1,"patrol_heli","f11"],[2,"infantry","f1"],[4,"recon","f2"],[6,"tank","f3"],[9,"mech_inf","f10"]]}
+{"type":"snapshot","v":"2.0","t":46,"state":"EXPAND","bp":1170,"mine":0,"enemy":0,"neutral":11,"squads":[[1,"patrol_heli","f11"],[2,"infantry","f1"],[4,"recon","f2"],[6,"tank","f3"],[9,"mech_inf","f10"]]}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"STATE SNAP t=60 state=EXPAND BP=1450 flags=0/0/11"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"SPAWN FAILED role=pointstart reason=opening point why=timeout"}
+{"type":"snapshot","v":"2.0","t":61,"state":"EXPAND","bp":1470,"mine":0,"enemy":0,"neutral":11,"squads":[[1,"patrol_heli","f11"],[2,"infantry","f1"],[4,"recon","f2"],[6,"tank","f3"],[9,"mech_inf","f10"]]}
