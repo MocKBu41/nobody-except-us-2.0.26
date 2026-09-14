@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEU 1.23 — карта маршрутов</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0c1422;color:#eef4ff;font:14px system-ui}header{padding:20px 24px;border-bottom:1px solid #293951;display:flex;align-items:center;gap:20px}h1{font-size:21px;margin:0}header small{color:#9aabc4}button,select,input::file-selector-button{background:#21334d;color:#edf4ff;border:1px solid #3b5171;border-radius:8px;padding:9px 12px;cursor:pointer}button:hover{background:#314969}.tools{display:flex;gap:8px;flex-wrap:wrap;padding:12px 24px}#notice{padding:12px 24px;background:#212b3b;color:#e9c783;min-height:44px}.layout{display:grid;grid-template-columns:270px 1fr 280px;height:calc(100vh - 245px);min-height:420px}aside{overflow:auto;padding:16px;border-right:1px solid #2b3c55}.right{border-left:1px solid #2b3c55;border-right:0}main{position:relative;min-width:0}canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}.row{display:block;text-align:left;width:100%;margin:8px 0;padding:12px}.row strong,.row small{display:block}.row small{margin-top:6px;color:#b7c8df}.selected{border-color:#64e5ac;background:#244640}h2{font-size:15px;margin:0 0 14px}.fact{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #26364d}.fact span{color:#9daec6}.fact b{text-align:right;font-size:12px;overflow-wrap:anywhere}pre{white-space:pre-wrap;font-size:11px;color:#a5bad6}footer{padding:12px 24px;display:flex;gap:20px;align-items:center}#time{flex:1}.legend{color:#a7b8d0;font-size:12px;padding:0 24px 12px}#count{font-size:12px;color:#99aec9}@media(max-width:900px){.layout{grid-template-columns:200px 1fr}.right{display:none}header{flex-wrap:wrap}.layout{height:65vh}}
+</style>
+<header><div><h1>NEU · Карта маршрутов <small>1.23</small></h1><small>Назначенные точки движения и построение отрядов</small></div><span id="count"></span></header>
+<div class="tools"><input id="files" type="file" accept=".json" multiple><button id="follow">Следить за файлами</button><button id="fit">Показать всё</button><button id="demo">Демонстрация</button><button id="clear">Очистить</button><button id="save">Сохранить снимок</button></div>
+<div id="notice"></div>
+<div class="layout"><aside><h2>Отряды бота</h2><select id="kind"><option value="all">Все типы</option value="infantry">Пехота</option><option value="tank">Танки</option><option value="ifv">БМП</option><option value="other">Другие</option></select><div id="list"></div></aside>
+<main><canvas id="map"></canvas></main><aside class="right"><h2>Выбранный отряд</h2><div id="detail">Выберите отряд слева.</div></aside></div>
+<footer><span id="clock"></span><input id="time" type="range" min="0" max="0" value="0"><label><input id="paths" type="checkbox" checked>Маршруты</label><label><input id="points" type="checkbox" checked>Точки</label><label><input id="front" type="checkbox" checked>Фронт</label></footer>
+<div class="legend">Зелёный — пехота · Песочный — танки · Синий — БМП · Квадрат — спавн/ориентир · Колесо — масштаб · Перетаскивание — перемещение карты. Карта координат без изображения рельефа. Отряды без координат остаются в списке.</div>
+<script>
+'use strict';
+const $=id=>document.getElementById(id), canvas=$('map'), ctx=canvas.getContext('2d');
+let frames=[],selected='',view={x:0,y:0,s:1},latest={},handles=[],drag=null,demo=false;
+const colors={infantry:'#63e6aa',tank:'#ffcc75',ifv:'#76baff',other:'#ce9aff'};
+const names={infantry:'Пехота',tank:'Танк',ifv:'БМП',other:'Другие'};
+const statuses={preview_only:'План — управление выключено',uncalibrated:'Не задан масштаб метров',adapter_missing:'Нет интерфейса движения',individual_control_missing:'Нет управления бойцами',visualization_only_role:'Только визуализация',moving:'Движение к точке',deploy:'Развёртывание',front:'Наступление фронтом',holding:'Удержание позиции',front_at_flag:'Фронт достиг флага',blocked_point:'Точка непроходима',command_failed:'Команда отклонена',snapshot_missing:'Нет свежих координат',no_order_or_coordinates:'Нет приказа или координат',no_live_members:'Нет живых бойцов'};
+const arr=x=>Array.isArray(x)?x:[];
+const point=p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.y);
+function frame(){return frames[Number($('time').value)]||{squads:[],flags:[]}}
+function rows(){return arr(frame().squads).filter(r=>$('kind').value==='all'||(r.plan&&r.plan.kind)===$('kind').value)}
+function label(r){return (names[r.plan?.kind]||r.role||'Отряд')+' #'+r.id}
+function screen(p){return {x:(p.x-view.x)*view.s+canvas.clientWidth/2,y:canvas.clientHeight/2-(p.y-view.y)*view.s}}
+function dot(p,c,r=4){if(!point(p))return;let q=screen(p);ctx.fillStyle=c;ctx.beginPath();ctx.arc(q.x,q.y,r,0,Math.PI*2);ctx.fill()}
+function text(p,s,c){if(!point(p))return;let q=screen(p);ctx.fillStyle=c;ctx.font='12px system-ui';ctx.fillText(s,q.x+8,q.y-8)}
+function line(points,c,width=1,dash=[]){points=arr(points).filter(point);if(!points.length)return;ctx.strokeStyle=c;ctx.lineWidth=width;ctx.setLineDash(dash);ctx.beginPath();points.forEach((p,i)=>{let q=screen(p);if(i)ctx.lineTo(q.x,q.y);else ctx.moveTo(q.x,q.y)});ctx.stroke();ctx.setLineDash([])}
+function resize(){let d=devicePixelRatio||1;canvas.width=canvas.clientWidth*d;canvas.height=canvas.clientHeight*d;ctx.setTransform(d,0,0,d,0,0);draw()}
+function draw(){
+ let w=canvas.clientWidth,h=canvas.clientHeight;ctx.clearRect(0,0,w,h);
+ ctx.strokeStyle='#23334a';ctx.lineWidth=1;
+ for(let x=0;x<w;x+=50){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke()}
+ for(let y=0;y<h;y+=50){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke()}
+ for(let f of arr(frame().flags)){dot(f.position,'#eef4ff',6);text(f.position,f.name,'#eef4ff')}
+ for(let r of rows()){
+  let p=r.plan;if(!p)continue;let active=!selected||selected===r.key,c=colors[p.kind]||colors.other;
+  ctx.globalAlpha=active?1:.18;
+  if($('paths').checked)line([p.origin,...arr(p.points)],c,active?2:1,[7,5]);
+  if($('points').checked)arr(p.points).forEach((q,i)=>{dot(q,c,2);if(selected===r.key)text(q,String(i+1),'#9bacbf')});
+  dot(p.origin,c,5);text(p.origin,'Старт плана '+r.id,c);
+  if(point(r.spawn)){let a=screen(r.spawn);ctx.strokeStyle=c;ctx.strokeRect(a.x-6,a.y-6,12,12)}
+  if(point(p.goal)){dot(p.goal,c,5);text(p.goal,p.holdMeters?'Стоп '+p.holdMeters.toFixed(1)+' м':'Цель маршрута',c)}
+  if($('front').checked) for(let m of arr(p.members)){
+   line([m.deploy,...arr(m.points)],c,1,[3,4]);dot(m.deploy,c,2);
+   let end=arr(m.points).at(-1);dot(end,c,3)
+  }
+  if(point(r.lastConfirmed)){dot(r.lastConfirmed,'#fff',7);dot(r.lastConfirmed,c,4);text(r.lastConfirmed,'Измерено #'+r.id,'#fff')}
+  if(selected===r.key&&Number.isInteger(r.index)){let q=arr(p.points)[r.index-1];if(q){let z=screen(q);ctx.strokeStyle='#fff';ctx.beginPath();ctx.arc(z.x,z.y,11,0,Math.PI*2);ctx.stroke()}}
+ }
+ ctx.globalAlpha=1;
+ const s=frame().unitsPerMeter||1, units=100/view.s/s;
+ ctx.fillStyle='#ccd9ee';ctx.font='12px system-ui';ctx.fillText('100 px ≈ '+units.toFixed(1)+(frame().calibrated?' м':' усл. ед.'),20,h-20);
+ $('clock').textContent='Время снимка: '+(frame().time??'—')+' с';
+}
+function fit(){
+ let pp=[];for(let r of rows()){if(r.plan){pp.push(r.plan.origin,...arr(r.plan.points));for(let m of arr(r.plan.members))pp.push(m.deploy,...arr(m.points))}pp.push(r.lastConfirmed)}
+ pp.push(...arr(frame().flags).map(f=>f.position));pp=pp.filter(point);if(!pp.length)return draw();
+ let a=Infinity,b=-Infinity,c=Infinity,d=-Infinity;for(let p of pp){a=Math.min(a,p.x);b=Math.max(b,p.x);c=Math.min(c,p.y);d=Math.max(d,p.y)}
+ view.x=(a+b)/2;view.y=(c+d)/2;view.s=Math.max(.0001,Math.min((canvas.clientWidth-100)/Math.max(1,b-a),(canvas.clientHeight-100)/Math.max(1,d-c)));draw()
+}
+function showDetail(r){
+ $('detail').replaceChildren();if(!r)return;
+ const facts=[['Отряд',label(r)],['Бот',r.host],['Группа',r.group??'—'],['Юнит',r.unit??'неизвестен'],['Флаг',r.flag??'—'],['Статус',statuses[r.status]||r.status],['Начало маршрута',r.originSource||'—'],['Спавн',r.spawnSource||'—'],['Шаг',r.plan?.stepMeters? r.plan.stepMeters+' м':'—'],['Точка',r.index? r.index+' / '+arr(r.plan?.points).length:'—'],['Фронт',r.plan?.spacingMeters? r.plan.spacingMeters+' м':'—'],['Координаты измерены',r.observedAt===undefined?'Нет':r.observedAt+' с']];
+ for(let [k,v]of facts){let el=document.createElement('div');el.className='fact';let a=document.createElement('span'),b=document.createElement('b');a.textContent=k;b.textContent=v;el.append(a,b);$('detail').append(el)}
+ let pre=document.createElement('pre');pre.textContent=arr(r.plan?.points).map((p,i)=>String(i+1).padStart(3)+'  '+p.x.toFixed(2)+'  '+p.y.toFixed(2)).join('\n');$('detail').append(pre)
+}
+function render(){
+ $('list').replaceChildren();let rs=rows();$('count').textContent=rs.length+' отрядов · '+rs.filter(r=>r.plan).length+' маршрутов';
+ for(let r of rs){let b=document.createElement('button');b.className='row'+(selected===r.key?' selected':'');let title=document.createElement('strong'),status=document.createElement('small');title.textContent=label(r)+' · бот '+r.host;status.textContent=statuses[r.status]||r.status;b.append(title,status);b.onclick=()=>{selected=r.key;render()};$('list').append(b)}
+ showDetail(rs.find(r=>r.key===selected));draw();
+ $('notice').textContent=(demo?'ДЕМОНСТРАЦИЯ — вымышленные данные. ':'')+
+ (frame().calibrated?'Масштаб задан. ':'Масштаб не подтверждён: подписи метров условны. ')+
+ 'Пунктир — рассчитанный план; белая точка — последнее измерение. Положение между точками не вычисляется.';
+}
+function accept(data){
+ if(data.version!=='1.23'||!Array.isArray(data.squads)&&Object.keys(data.squads||{}).length)throw Error('Нужен bot_routes_*.json версии 1.23');
+ const candidate={...latest,[String(data.host??'bot')]:data};
+ const all=Object.values(candidate),squads=all.flatMap(d=>arr(d.squads).map(r=>({...r,host:d.host,key:d.host+':'+r.id})));
+ const flags=all.flatMap(d=>arr(d.flags)),maps=new Set(all.map(d=>d.map).filter(Boolean));
+ if(maps.size>1)throw Error('Выбраны снимки разных карт. Нажмите «Очистить».');
+ latest=candidate;
+ frames.push({version:'1.23',host:'VIEW',map:all[0].map,time:Math.max(...all.map(d=>d.time||0)),squads,flags,calibrated:all.every(d=>d.calibrated),unitsPerMeter:all[0].unitsPerMeter});
+ if(frames.length>600)frames.shift();$('time').max=frames.length-1;$('time').value=frames.length-1;render()
+}
+async function readFiles(files){for(let f of files){try{accept(JSON.parse(await f.text()))}catch(e){$('notice').textContent=f.name+': '+e.message}}fit()}
+$('files').onchange=e=>{demo=false;readFiles(e.target.files)};
+$('follow').onclick=async()=>{try{if(!window.showOpenFilePicker)throw Error('Авточтение недоступно. Откройте JSON кнопкой выбора файлов.');handles=await showOpenFilePicker({multiple:true,types:[{description:'Маршруты бота',accept:{'application/json':['.json']}}]});demo=false;await readFiles(await Promise.all(handles.map(h=>h.getFile())))}catch(e){$('notice').textContent=e.message}};
+setInterval(async()=>{if(!handles.length)return;try{for(let h of handles){let f=await h.getFile(),d=JSON.parse(await f.text());if(latest[d.host]?.time!==d.time)accept(d)}}catch(e){$('notice').textContent='Ожидание полного снимка: '+e.message}},3000);
+$('clear').onclick=()=>{frames=[];latest={};handles=[];selected='';demo=false;$('time').max=0;$('time').value=0;render()};
+$('time').oninput=render;$('kind').onchange=render;
+for(let id of ['paths','points','front'])$(id).onchange=draw;
+$('fit').onclick=fit;
+canvas.onwheel=e=>{e.preventDefault();view.s*=e.deltaY<0?1.15:1/1.15;view.s=Math.max(.0001,Math.min(100,view.s));draw()};
+canvas.onpointerdown=e=>{drag={x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId)};
+canvas.onpointermove=e=>{if(!drag)return;view.x-=(e.clientX-drag.x)/view.s;view.y+=(e.clientY-drag.y)/view.s;drag={x:e.clientX,y:e.clientY};draw()};
+canvas.onpointerup=()=>drag=null;canvas.onpointercancel=()=>drag=null;
+$('save').onclick=()=>{const blob=new Blob([JSON.stringify({...frame(),squads:arr(frame().squads).map(r=>({...r,id:r.key}))},null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='route-view-snapshot.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
+$('demo').onclick=()=>{frames=[];latest={};handles=[];demo=true;let squads=[];
+ for(let [i,kind] of ['infantry','tank','ifv'].entries()){
+  let origin={x:-360,y:(i-1)*50},target={x:100,y:0},d=Math.hypot(target.x-origin.x,target.y-origin.y),ux=(target.x-origin.x)/d,uy=(target.y-origin.y)/d,back=[100,75,35][i],goal={x:target.x-ux*back,y:target.y-uy*back},points=[];
+  let dist=d-back;for(let x=30;x<dist;x+=30)points.push({x:origin.x+ux*x,y:origin.y+uy*x});points.push(goal);
+  let members=[];if(kind==='infantry')for(let j=0;j<8;j++){let off=(j-3.5)*5.5,deploy={x:goal.x-uy*off,y:goal.y+ux*off},ps=[];for(let t of [30,60,90,100])ps.push({x:deploy.x+ux*t,y:deploy.y+uy*t});members.push({deploy,points:ps})}
+  squads.push({id:i+1,flag:'f1',status:'preview_only',index:1,originSource:'demo',spawnSource:'demo',plan:{origin,target,goal,points,members,kind,stepMeters:30,spacingMeters:i===0?5.5:undefined,holdMeters:i?back:undefined}})
+ }
+ accept({version:'1.23',host:'DEMO',time:0,calibrated:true,unitsPerMeter:1,squads,flags:[{name:'f1',position:{x:100,y:0}}]});fit()
+};
+window.addEventListener('resize',resize);resize();render();
+</script></html>
