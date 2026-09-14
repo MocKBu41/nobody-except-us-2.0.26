@@ -3,7 +3,8 @@
 -- Keep the canonical v2.0 behaviour in bot.logic.base.lua and restore only
 -- the engine event wiring that existed in working historical versions.
 
-local N = require([[/script/multiplayer/bot.logic.base]])
+require([[/script/multiplayer/bot.logic.base]])
+local N = NEU20
 
 BotApi.Events:Subscribe(BotApi.Events.GameStart, onGameStart)
 BotApi.Events:Subscribe(BotApi.Events.GameEnd, onGameStop)
