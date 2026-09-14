@@ -40,6 +40,19 @@ NEU_BOT = {
     DismountAdoptDelaySec = 2,
     DismountHintWindowSec = 20,
 
+    -- v1.22 coordinate tactics
+    RoutePointMeters = 30,
+    InfantryDeployMeters = 100,
+    InfantrySpacingMeters = 5.5,
+    TankMinMeters = 50,
+    TankMaxMeters = 100,
+    IFVMinMeters = 20,
+    IFVMaxMeters = 50,
+
+    -- v1.20-style live map telemetry, extended by v1.22
+    TelemetryEnabled = true,
+    TelemetrySnapshotSec = 1,
+
     PointStartCheckSec = 3,
     PointStartSquadSize = 12,
     PointStartSpawnRetrySec = 5,
@@ -55,4 +68,3 @@ function readAllUnits(sq, units, army)
     local files = {"units_nato.set","units_ch.set","units_rus.set","units_usa.set","units_nov.set","units_ukr.set","units_wagner.set"}
     for _, name in ipairs(files) do readUnitsRaw(path .. name, units, army) end
 end
-
