@@ -1,0 +1,134 @@
+{"type":"session","version":"1.25","time":0,"path":"mods\\nobody except us 2.0.26\\resource\\script\\multiplayer\\bot_gpt_telemetry.jsonl"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"v1.22 TACTICS ACTIVE routeStep=30 deploy=100 spacing=5.5 tank=50..100 ifv=20..50"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"v1.22 BRIDGES move=false carrier=false member=false disembark=false"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"v1.25 TACTICS ACTIVE routeStep=30 deploy=100 spacing=5.5 tank=50..100 ifv=20..50"}
+{"type":"event","version":"1.25","time":0,"kind":"decision","message":"v1.25 LIVE MAP + UNIT ROUTE TELEMETRY ACTIVE"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"READ mods\\nobody except us 2.0.26\\resource\\set\\multiplayer\\units\\units_nato.set added=0"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"FILE MISSING mods\\nobody except us 2.0.26\\resource\\set\\multiplayer\\units\\units_ch.set"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"READ mods\\nobody except us 2.0.26\\resource\\set\\multiplayer\\units\\units_rus.set added=0"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"READ mods\\nobody except us 2.0.26\\resource\\set\\multiplayer\\units\\units_usa.set added=0"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"FILE MISSING mods\\nobody except us 2.0.26\\resource\\set\\multiplayer\\units\\units_nov.set"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"READ mods\\nobody except us 2.0.26\\resource\\set\\multiplayer\\units\\units_ukr.set added=117"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"READ mods\\nobody except us 2.0.26\\resource\\set\\multiplayer\\units\\units_wagner.set added=0"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE pointstart candidates=1"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE patrol_heli candidates=2"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE recon candidates=3"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE infantry candidates=6"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE defense_infantry candidates=6"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE antiair candidates=2"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE tank candidates=10"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE aircraftlight candidates=1"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE artsupport candidates=1"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE aat candidates=5"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE antirad candidates=2"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE strike candidates=6"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE airbot candidates=5"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"ROLE uavbot candidates=2"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f7 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f8 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f6 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f10 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f9 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f5 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f11 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f4 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f2 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f1 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=pointstart group=nil target=f3 reason=opening point"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=infantry group=1 target=nil reason=opening infantry"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=tank group=1 target=nil reason=opening random tank"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=infantry group=2 target=nil reason=opening infantry"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=tank group=2 target=nil reason=opening random tank"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=recon group=nil target=nil reason=opening recon"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=antiair group=nil target=nil reason=opening aa"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"QUEUE role=patrol_heli group=nil target=nil reason=opening heli"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"START v1.21 map=true"}
+{"type":"event","version":"1.25","time":0,"kind":"decision","message":"RULE BTG ASSEMBLY->APPROACH->ASSAULT; FAILED=>REGROUP+NEW ROUTE"}
+{"type":"event","version":"1.25","time":0,"kind":"info","message":"RULE OWN SCENE SCAN=ON; SHARED RANDOM CORRIDOR=ON; ENEMY DIAGNOSTICS=ON"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"ARRIVED squad=0 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":0,"kind":"order","message":"ORDER squad=0 group=nil flag=f7 role=pointstart"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"ARRIVED squad=1 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":0,"kind":"order","message":"ORDER squad=1 group=nil flag=f8 role=pointstart"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"ARRIVED squad=2 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":0,"kind":"order","message":"ORDER squad=2 group=nil flag=f6 role=pointstart"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"ARRIVED squad=3 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":0,"kind":"order","message":"ORDER squad=3 group=nil flag=f10 role=pointstart"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"ARRIVED squad=4 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":0,"kind":"order","message":"ORDER squad=4 group=nil flag=f9 role=pointstart"}
+{"type":"event","version":"1.25","time":0,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=5 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":1,"kind":"order","message":"ORDER squad=5 group=nil flag=f5 role=pointstart"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=6 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":1,"kind":"order","message":"ORDER squad=6 group=nil flag=f11 role=pointstart"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=7 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":1,"kind":"order","message":"ORDER squad=7 group=nil flag=f4 role=pointstart"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=8 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":1,"kind":"order","message":"ORDER squad=8 group=nil flag=f2 role=pointstart"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=9 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":1,"kind":"order","message":"ORDER squad=9 group=nil flag=f1 role=pointstart"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=pointstart unit=vehicle_supporter(ukr)"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=10 role=pointstart group=nil"}
+{"type":"event","version":"1.25","time":1,"kind":"order","message":"ORDER squad=10 group=nil flag=f3 role=pointstart"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=infantry unit=btr80_2_ukri"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=12 role=infantry group=1"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=infantry unit=elite(ukr)"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=13 role=infantry group=2"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=recon unit=kraz_coguar_ags"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"ARRIVED squad=15 role=recon group=nil"}
+{"type":"event","version":"1.25","time":1,"kind":"spawn","message":"SPAWN OK role=antiair unit=pzrk2_ukr"}
+{"type":"event","version":"1.25","time":2,"kind":"spawn","message":"ARRIVED squad=17 role=antiair group=nil"}
+{"type":"event","version":"1.25","time":2,"kind":"spawn","message":"SPAWN OK role=patrol_heli unit=mi-24v_ukr"}
+{"type":"event","version":"1.25","time":2,"kind":"spawn","message":"ARRIVED squad=19 role=patrol_heli group=nil"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=1 group=nil flag=f8 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=2 group=nil flag=f6 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=3 group=nil flag=f10 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=4 group=nil flag=f9 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=5 group=nil flag=f5 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=6 group=nil flag=f11 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=7 group=nil flag=f4 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=8 group=nil flag=f2 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=9 group=nil flag=f1 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=10 group=nil flag=f3 role=pointstart"}
+{"type":"event","version":"1.25","time":7,"kind":"order","message":"ORDER squad=0 group=nil flag=f7 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=1 group=nil flag=f8 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=2 group=nil flag=f6 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=3 group=nil flag=f10 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=4 group=nil flag=f9 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=5 group=nil flag=f5 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=6 group=nil flag=f11 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=7 group=nil flag=f4 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=8 group=nil flag=f2 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=9 group=nil flag=f1 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=10 group=nil flag=f3 role=pointstart"}
+{"type":"event","version":"1.25","time":13,"kind":"order","message":"ORDER squad=0 group=nil flag=f7 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=1 group=nil flag=f8 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=2 group=nil flag=f6 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=3 group=nil flag=f10 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=4 group=nil flag=f9 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=5 group=nil flag=f5 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=6 group=nil flag=f11 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=7 group=nil flag=f4 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=8 group=nil flag=f2 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=9 group=nil flag=f1 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=10 group=nil flag=f3 role=pointstart"}
+{"type":"event","version":"1.25","time":19,"kind":"order","message":"ORDER squad=0 group=nil flag=f7 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=1 group=nil flag=f8 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=2 group=nil flag=f6 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=3 group=nil flag=f10 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=4 group=nil flag=f9 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=5 group=nil flag=f5 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=6 group=nil flag=f11 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=7 group=nil flag=f4 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=8 group=nil flag=f2 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=9 group=nil flag=f1 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=10 group=nil flag=f3 role=pointstart"}
+{"type":"event","version":"1.25","time":25,"kind":"order","message":"ORDER squad=0 group=nil flag=f7 role=pointstart"}
