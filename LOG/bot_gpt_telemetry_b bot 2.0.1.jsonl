@@ -1,0 +1,39 @@
+{"type":"session","v":"2.0","team":"b","enemy":"a","logic":"BOT_LOGIC_CURRENT","geometry":"disabled-until-runtime-map-id"}
+{"type":"snapshot","v":"2.0","t":0,"state":"OPENING","bp":1200,"mine":0,"enemy":0,"neutral":9,"squads":[]}
+{"type":"event","v":"2.0","t":0,"team":"b","m":"SPAWN REJECTED role=infantry unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0","t":1,"team":"b","m":"HELI BLOCKED exact enemy tank count unavailable; boolean EnemyHasTanks is insufficient"}
+{"type":"snapshot","v":"2.0","t":1,"state":"OPENING","bp":1220,"mine":0,"enemy":0,"neutral":9,"squads":[]}
+{"type":"event","v":"2.0","t":2,"team":"b","m":"SPAWN REJECTED role=infantry unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0","t":4,"team":"b","m":"SPAWN OK role=infantry unit=scout(ukr)"}
+{"type":"event","v":"2.0","t":4,"team":"b","m":"ARRIVED squad=3 role=infantry reason=opening"}
+{"type":"event","v":"2.0","t":4,"team":"b","m":"SPAWN OK role=recon unit=kipri2"}
+{"type":"event","v":"2.0","t":4,"team":"b","m":"ARRIVED squad=5 role=recon reason=opening"}
+{"type":"event","v":"2.0","t":4,"team":"b","m":"SPAWN REJECTED role=tank unit=t80bv_ukr -> retry"}
+{"type":"event","v":"2.0","t":6,"team":"b","m":"SPAWN REJECTED role=tank unit=challenger_2_ukr -> retry"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"SPAWN OK role=tank unit=pt-91_ukr"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"ARRIVED squad=12 role=tank reason=opening"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"SPAWN OK role=mech_inf unit=m113a3_ukri"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"ARRIVED squad=15 role=mech_inf reason=opening"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"STATE -> EXPAND reason=opening complete"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"TARGET squad=3 role=infantry flag=f1 load=0 neutral=true"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"TARGET squad=15 role=mech_inf flag=f2 load=0 neutral=true"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"TARGET squad=12 role=tank flag=f3 load=0 neutral=true"}
+{"type":"event","v":"2.0","t":8,"team":"b","m":"TARGET squad=5 role=recon flag=f4 load=0 neutral=true"}
+{"type":"snapshot","v":"2.0","t":16,"state":"EXPAND","bp":570,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"event","v":"2.0","t":30,"team":"b","m":"STATE SNAP t=30 state=EXPAND BP=850 flags=0/0/9"}
+{"type":"snapshot","v":"2.0","t":31,"state":"EXPAND","bp":870,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"snapshot","v":"2.0","t":46,"state":"EXPAND","bp":1170,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"event","v":"2.0","t":60,"team":"b","m":"STATE SNAP t=60 state=EXPAND BP=1450 flags=0/0/9"}
+{"type":"snapshot","v":"2.0","t":61,"state":"EXPAND","bp":1470,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"snapshot","v":"2.0","t":76,"state":"EXPAND","bp":1770,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"event","v":"2.0","t":90,"team":"b","m":"STATE SNAP t=90 state=EXPAND BP=2050 flags=0/0/9"}
+{"type":"snapshot","v":"2.0","t":91,"state":"EXPAND","bp":2070,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"snapshot","v":"2.0","t":106,"state":"EXPAND","bp":2370,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"event","v":"2.0","t":120,"team":"b","m":"STATE SNAP t=120 state=EXPAND BP=2650 flags=0/0/9"}
+{"type":"snapshot","v":"2.0","t":121,"state":"EXPAND","bp":2670,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"snapshot","v":"2.0","t":136,"state":"EXPAND","bp":2970,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"event","v":"2.0","t":150,"team":"b","m":"STATE SNAP t=150 state=EXPAND BP=3250 flags=0/0/9"}
+{"type":"snapshot","v":"2.0","t":151,"state":"EXPAND","bp":3270,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"snapshot","v":"2.0","t":166,"state":"EXPAND","bp":3570,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
+{"type":"event","v":"2.0","t":180,"team":"b","m":"STATE SNAP t=180 state=EXPAND BP=3850 flags=0/0/9"}
+{"type":"snapshot","v":"2.0","t":181,"state":"EXPAND","bp":3870,"mine":0,"enemy":0,"neutral":9,"squads":[[12,"tank","f3"],[15,"mech_inf","f2"],[3,"infantry","f1"],[5,"recon","f4"]]}
