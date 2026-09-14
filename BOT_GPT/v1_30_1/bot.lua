@@ -11,7 +11,9 @@ NEU_BOT={
  InfantryReplacementSec=8, TankReplacementSec=10,
  AAReplacementSec=30, AirSupportCooldownSec=360,
  AirSupportDelaySec=120, PatrolSec=30,
- TelemetrySnapshotSec=15, TelemetryMaxBytes=4500000,
+ TelemetrySnapshotSec=15,
+ -- BOT-vs-BOT creates one file per team. 2.3 MB x 2 = 4.6 MB hard maximum total.
+ TelemetryMaxBytes=2300000,
  TelemetryFile='bot_gpt_telemetry.jsonl'
 }
 local N=require([[/script/multiplayer/bot.core]])
