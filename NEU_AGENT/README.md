@@ -1,5 +1,7 @@
 # NEU Agent
 
+Версия: **v0.1**
+
 Windows GUI-агент для локальной разработки **Nobody Except Us / NEU**.
 
 ## Что умеет
