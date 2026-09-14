@@ -59,8 +59,12 @@ NEU_BOT = {
     CarrierEscortLeashMeters = 15,
     VisualRenderFPS = 60,
 
+    -- Compact telemetry: 15 s snapshots + hard 4.8 MB file budget.
+    -- Static 30 m route points stay available in every saved snapshot, so the current HTML visualizer remains compatible.
     TelemetryEnabled = true,
-    TelemetrySnapshotSec = 1,
+    TelemetrySnapshotSec = 15,
+    TelemetryMaxBytes = 4800000,
+    TelemetryEventReserveBytes = 200000,
 
     PointStartCheckSec = 3,
     PointStartSquadSize = 12,
