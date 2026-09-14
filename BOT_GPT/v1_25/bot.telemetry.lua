@@ -4,7 +4,21 @@ local function esc(v) local s=tostring(v or '') return s:gsub('\\','\\\\'):gsub(
 local function q(v) return '"'..esc(v)..'"' end
 local function num(v) return type(v)=='number' and tostring(v) or 'null' end
 local function bool(v) return v and 'true' or 'false' end
-local function paths() local mod=(NEU_BOT and NEU_BOT.ModFolder) or 'nobody except us 2.0.26' local o={} if NEU_BOT and NEU_BOT.TelemetryPath then o[#o+1]=NEU_BOT.TelemetryPath end o[#o+1]='mods\\'..mod..'\\resource\\script\\multiplayer\\telemetry\\bot_gpt_telemetry.jsonl' o[#o+1]='resource\\script\\multiplayer\\telemetry\\bot_gpt_telemetry.jsonl' o[#o+1]='bot_gpt_telemetry.jsonl' return o end
+local function paths()
+ local mod=(NEU_BOT and NEU_BOT.ModFolder) or 'nobody except us 2.0.26'
+ local o={}
+ if NEU_BOT and NEU_BOT.TelemetryPath then o[#o+1]=NEU_BOT.TelemetryPath end
+ -- First try directories that already exist in the installed mod.
+ o[#o+1]='mods\\'..mod..'\\resource\\script\\multiplayer\\bot_gpt_telemetry.jsonl'
+ o[#o+1]='mods\\'..mod..'\\resource\\script\\multiplayer\\log\\bot_gpt_telemetry.jsonl'
+ o[#o+1]='resource\\script\\multiplayer\\bot_gpt_telemetry.jsonl'
+ o[#o+1]='resource\\script\\multiplayer\\log\\bot_gpt_telemetry.jsonl'
+ -- Backward compatible fallbacks.
+ o[#o+1]='mods\\'..mod..'\\resource\\script\\multiplayer\\telemetry\\bot_gpt_telemetry.jsonl'
+ o[#o+1]='resource\\script\\multiplayer\\telemetry\\bot_gpt_telemetry.jsonl'
+ o[#o+1]='bot_gpt_telemetry.jsonl'
+ return o
+end
 local function openFile(mode) if activePath then local f=io.open(activePath,mode) if f then return f end end for _,p in ipairs(paths()) do local f=io.open(p,mode) if f then activePath=p return f end end end
 local function append(line) local f=openFile('a') if not f then return false end f:write(line,'\n');f:flush();f:close();return true end
 local function mapPoint(name) if not(name and N and N.MAP and N.MAP.loaded) then return nil end local p=N.MAP:point(name) if p and p.x and p.y then return {name=name,x=p.x,y=p.y,z=p.z} end end
