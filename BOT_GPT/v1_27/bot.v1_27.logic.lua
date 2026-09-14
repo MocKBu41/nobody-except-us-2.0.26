@@ -16,10 +16,6 @@ local function clonePoint(p,kind)
  if not valid(p) then return nil end
  return {x=p.x,y=p.y,z=p.z,kind=kind or p.kind}
 end
-local function distance(a,b)
- local dx,dy=b.x-a.x,b.y-a.y
- return math.sqrt(dx*dx+dy*dy)
-end
 local function routeBetween(a,b,step)
  local out={}
  if not(valid(a) and valid(b)) then return out end
@@ -73,10 +69,9 @@ local function planRoute(id,flag)
  local r={squad=id,role=role,target=flag,from=from,to=clonePoint(dest,'target'),points=points,step=STEP,startedAt=C.Time or 0,visualSpeed=speedForRole(role),escort=infantry,carrierLeash=infantry and LEASH or 0,carrierPoints={}}
  if infantry then r.carrierPoints=carrierEscort(points,from) end
  C.NEU27Routes[id]=r
+ -- IMPORTANT: do not print every 30 m waypoint. It made game.log and telemetry grow by megabytes.
+ -- The full waypoint list stays in C.NEU27Routes and is written into compact periodic snapshots for the HTML visualizer.
  N.log('ROUTE30 squad='..tostring(id)..' role='..tostring(role)..' target='..tostring(flag)..' points='..tostring(#points)..' step='..tostring(STEP)..' escort='..tostring(infantry))
- for i,p in ipairs(points) do
-  N.log(string.format('WAYPOINT30 squad=%s role=%s target=%s index=%d x=%.2f y=%.2f meters=%.1f',tostring(id),tostring(role),tostring(flag),i,p.x,p.y,p.meters or 0))
- end
  if infantry then N.log('BTR ESCORT squad='..tostring(id)..' pace=infantry leash='..tostring(LEASH)..'m') end
  return r
 end
