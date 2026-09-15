@@ -1,2 +1,0 @@
-require([[/script/multiplayer/bot]])
-
