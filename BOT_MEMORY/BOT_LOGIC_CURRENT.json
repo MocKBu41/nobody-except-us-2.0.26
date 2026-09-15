@@ -1,6 +1,6 @@
 {
-  "version": "NEU BOT 2.0.3 canonical logic",
-  "status": "NEEDS_GAME_TEST",
+  "version": "NEU BOT 2.0.4 canonical logic",
+  "status": "MODEL_TESTS_PASSED_NEEDS_GAME_TEST",
   "updated": "2026-09-15",
   "source_history": {
     "original_user_graph": "BOT_MEMORY/archive/BOT_LOGIC_ORIGINAL_2026-09-14.json",
@@ -8,7 +8,8 @@
     "previous_test": [
       "LOG/bot_gpt_telemetry_a  bot 2.0.2.jsonl",
       "LOG/bot_gpt_telemetry_b bot 2.0.2.jsonl"
-    ]
+    ],
+    "implementation_base": "BOT_GPT/v2_0_3"
   },
   "invariants": [
     "Every neutral flag present at battle start must receive its own dedicated capture squad/order before the main BTG opening is released.",
@@ -18,7 +19,13 @@
   ],
   "opening": {
     "phase_0_initialize": {
-      "actions": ["reset context", "read faction units", "start economy", "start clock", "prepare map geometry"]
+      "actions": [
+        "reset context",
+        "read faction units",
+        "start economy",
+        "start clock",
+        "prepare map geometry"
+      ]
     },
     "phase_1_all_neutral_flags_first": {
       "enabled": true,
@@ -29,7 +36,9 @@
       "retry_until": "capture squad receives its target/order or flag is already owned",
       "order": "BotApi.Commands:CaptureFlag(squadId, flagName)",
       "main_opening_gate": "FROZEN until every start-neutral flag is covered",
-      "example": "11 neutral flags => 11 separate capture squads/orders before BTG release"
+      "example": "11 neutral flags => 11 separate capture squads/orders before BTG release",
+      "live_coverage": "Before main BTG release, revalidate living dedicated capture squad on each not-owned start flag; replace dead squads on the same flag.",
+      "order_failure": "Explicit false or Lua error does not count as an issued order; retry on same living squad with 15-second cooldown. Void/nil result retains API compatibility and does not prove physical capture."
     },
     "opening_patrol_helicopter": {
       "enabled": true,
@@ -41,17 +50,41 @@
     },
     "phase_2_main_combat_opening": {
       "release_condition": "phase_1 coverage complete",
-      "sequence": ["infantry", "recon", "tank", "mech_inf"]
+      "sequence": [
+        "infantry",
+        "recon",
+        "tank",
+        "mech_inf"
+      ]
     }
   },
   "economy": {
     "start_bp": 1200,
     "income_bp_per_second": 20,
     "reserve_bp": 200,
-    "prices": {"recon":100,"tank":450,"mech_inf":250,"attack_heli":750,"artillery":600,"infantry":150,"antiair":250,"pointstart":0},
-    "cooldowns_sec": {"recon":45,"tank":90,"mech_inf":50,"attack_heli":180,"artillery":120,"infantry":35,"antiair":45,"pointstart":0},
+    "prices": {
+      "recon": 100,
+      "tank": 450,
+      "mech_inf": 250,
+      "attack_heli": 750,
+      "artillery": 600,
+      "infantry": 150,
+      "antiair": 250,
+      "pointstart": 0
+    },
+    "cooldowns_sec": {
+      "recon": 45,
+      "tank": 90,
+      "mech_inf": 50,
+      "attack_heli": 180,
+      "artillery": 120,
+      "infantry": 35,
+      "antiair": 45,
+      "pointstart": 0
+    },
     "spawn_retry_sec": 2,
-    "spawn_timeout_sec": 60
+    "spawn_timeout_sec": 60,
+    "spawn_timeout_starts": "First eligible spawn attempt; time waiting in queue before any attempt does not expire the intent."
   },
   "states": {
     "OPENING": "execute all-neutral coverage gate, then main combat opening",
@@ -69,7 +102,12 @@
     "order_refresh_sec": 15
   },
   "replacement": {
-    "important_roles": ["recon", "tank", "mech_inf", "attack_heli"],
+    "important_roles": [
+      "recon",
+      "tank",
+      "mech_inf",
+      "attack_heli"
+    ],
     "may_use_reserve": true,
     "ordinary_infantry_zero": "queue infantry replacement"
   },
@@ -83,15 +121,32 @@
       "boolean_EnemyHasTanks_is_not_enough": true
     }
   },
-  "artillery": {"enabled": false},
+  "artillery": {
+    "enabled": false
+  },
   "unmatched_passenger_squads": "do not automatically adopt into combat structure",
   "visualization": {
     "one_telemetry_file_per_side": true,
-    "files": ["bot_gpt_telemetry_a.jsonl", "bot_gpt_telemetry_b.jsonl"],
+    "files": [
+      "bot_gpt_telemetry_a.jsonl",
+      "bot_gpt_telemetry_b.jsonl"
+    ],
     "manual_coordinate_index_loading": false,
     "geometry_embedded_as": "geometry_index",
-    "show": ["FlagPoint X/Y", "SpawnPoint A X/Y", "SpawnPoint B X/Y", "squad target lines", "state/events"],
-    "ambiguous_map_names": "viewer must ask/select actual map instead of silently choosing false geometry"
+    "show": [
+      "FlagPoint X/Y",
+      "SpawnPoint A X/Y",
+      "SpawnPoint B X/Y",
+      "squad target lines",
+      "state/events"
+    ],
+    "ambiguous_map_names": "viewer must ask/select actual map instead of silently choosing false geometry",
+    "telemetry_version": "2.0.4",
+    "opening_events": [
+      "OPENING",
+      "POINTSTART",
+      "ORDER"
+    ]
   },
   "not_confirmed_implemented": [
     "safe passenger-only disembark",
@@ -100,5 +155,11 @@
     "IFV/APC stop about 20-50m from target",
     "physical coordinate waypoint execution without a verified engine coordinate bridge"
   ],
-  "memory_rule": "Any future user-requested bot behavior change must be written into THIS file first/at the same time as code, then tested and confirmed from LOG/."
+  "memory_rule": "Any future user-requested bot behavior change must be written into THIS file first/at the same time as code, then tested and confirmed from LOG/.",
+  "validation": {
+    "runtime": "Lua 5.4 with mocked BotApi; six modules syntax checked",
+    "result": "PASS",
+    "test": "BOT_GPT/v2_0_4/tests/opening_regression.lua",
+    "game_test": "Not run; latest uploaded test is 2.0.2"
+  }
 }
