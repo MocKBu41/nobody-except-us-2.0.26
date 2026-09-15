@@ -1,0 +1,234 @@
+{"type":"session","v":"2.0.4","team":"b","enemy":"a","logic":"BOT_LOGIC_CURRENT","geometry":"disabled-until-runtime-map-id"}
+{"type":"snapshot","v":"2.0.4","t":0,"state":"OPENING","bp":1200,"mine":0,"enemy":0,"neutral":11,"squads":[]}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"OPENING MAIN FROZEN until all start flags have capture squads"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"OPENING POINTSTART queued=11 neutral flags=f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11"}
+{"type":"geometry_index","version":"2.0.4","team":"b","runtimeFlags":["f1","f10","f11","f2","f3","f4","f5","f6","f7","f8","f9"],"candidates":[{"key":"4vs4/4vs4_cw_russian_village","ratio":1,"flags":[{"name":"f1","x":-315.44,"y":-2762.68,"z":0},{"name":"f10","x":-1530.34,"y":-1659.02,"z":0},{"name":"f11","x":1078.11,"y":-1529.3,"z":0},{"name":"f2","x":2371.94,"y":-2906.13,"z":0},{"name":"f3","x":-2783.17,"y":-2708.17,"z":0},{"name":"f4","x":-2921.48,"y":-579.13,"z":0},{"name":"f5","x":-230.89,"y":-556.3,"z":0},{"name":"f6","x":2499.32,"y":-763.3,"z":0},{"name":"f7","x":2336.86,"y":1626.39,"z":0},{"name":"f8","x":-253.26,"y":1751.74,"z":0},{"name":"f9","x":-2696.77,"y":1908.09,"z":0}],"spawnA":[{"name":"a1","x":3576.2,"y":-4361.65,"z":0},{"name":"a2","x":1902.66,"y":-4286.18,"z":0},{"name":"a4","x":-3479.74,"y":-4191.12,"z":0},{"name":"a3","x":-434.7,"y":-4352.67,"z":0}],"spawnB":[{"name":"b1","x":-3817.26,"y":4110.8,"z":0},{"name":"b2","x":13.06,"y":4263.57,"z":0},{"name":"b3","x":1749.35,"y":4215.15,"z":0},{"name":"b4","x":4164.73,"y":4019.69,"z":0}]}]}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"OPENING HELI ACCEPTED without GameSpawn unit=mi-24v_ukr; ground queue NOT blocked"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"SPAWN OK role=pointstart unit=bazooker2(ukr)"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ARRIVED squad=4 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"SPAWN OK role=pointstart unit=bazooker2(ukr)"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ORDER squad=4 role=pointstart flag=f3"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"POINTSTART ORDER squad=4 flag=f3"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"OPENING COVERED flag=f3 via=capture_order progress=1/11"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ARRIVED squad=6 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"SPAWN OK role=pointstart unit=bazooker2(ukr)"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ORDER squad=6 role=pointstart flag=f4"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"POINTSTART ORDER squad=6 flag=f4"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"OPENING COVERED flag=f4 via=capture_order progress=2/11"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ARRIVED squad=8 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"SPAWN OK role=pointstart unit=bazooker2(ukr)"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ORDER squad=8 role=pointstart flag=f5"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"POINTSTART ORDER squad=8 flag=f5"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"OPENING COVERED flag=f5 via=capture_order progress=3/11"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ARRIVED squad=10 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"SPAWN OK role=pointstart unit=bazooker2(ukr)"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"ORDER squad=10 role=pointstart flag=f6"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"POINTSTART ORDER squad=10 flag=f6"}
+{"type":"event","v":"2.0.4","t":0,"team":"b","m":"OPENING COVERED flag=f6 via=capture_order progress=4/11"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"HELI BLOCKED exact enemy tank count unavailable; boolean EnemyHasTanks is insufficient"}
+{"type":"snapshot","v":"2.0.4","t":1,"state":"OPENING","bp":1220,"mine":0,"enemy":0,"neutral":11,"squads":[[10,"pointstart","f6"],[4,"pointstart","f3"],[6,"pointstart","f4"],[8,"pointstart","f5"]]}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"ARRIVED squad=12 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"ORDER squad=12 role=pointstart flag=f7"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"POINTSTART ORDER squad=12 flag=f7"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"OPENING COVERED flag=f7 via=capture_order progress=5/11"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":1,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":2,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":2,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":3,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":3,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":3,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":3,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":4,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":4,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"SPAWN OK role=pointstart unit=scout(ukr)"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"ARRIVED squad=23 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"ORDER squad=23 role=pointstart flag=f11"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"POINTSTART ORDER squad=23 flag=f11"}
+{"type":"event","v":"2.0.4","t":5,"team":"b","m":"OPENING COVERED flag=f11 via=capture_order progress=6/11"}
+{"type":"event","v":"2.0.4","t":6,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":6,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":7,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":7,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":7,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":8,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":8,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":9,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":9,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":9,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":10,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":10,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":11,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":11,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":11,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":12,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":12,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":13,"team":"b","m":"SPAWN OK role=pointstart unit=snipers(ukr)"}
+{"type":"event","v":"2.0.4","t":13,"team":"b","m":"ARRIVED squad=24 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":13,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":13,"team":"b","m":"ORDER squad=24 role=pointstart flag=f8"}
+{"type":"event","v":"2.0.4","t":13,"team":"b","m":"POINTSTART ORDER squad=24 flag=f8"}
+{"type":"event","v":"2.0.4","t":13,"team":"b","m":"OPENING COVERED flag=f8 via=capture_order progress=7/11"}
+{"type":"event","v":"2.0.4","t":13,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":14,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":14,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":15,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":15,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":16,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker_m32(ukr) -> retry"}
+{"type":"snapshot","v":"2.0.4","t":16,"state":"OPENING","bp":1520,"mine":0,"enemy":0,"neutral":11,"squads":[[10,"pointstart","f6"],[12,"pointstart","f7"],[23,"pointstart","f11"],[24,"pointstart","f8"],[4,"pointstart","f3"],[6,"pointstart","f4"],[8,"pointstart","f5"]]}
+{"type":"event","v":"2.0.4","t":16,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker_m32(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":17,"team":"b","m":"SPAWN OK role=pointstart unit=bazooker_m32(ukr)"}
+{"type":"event","v":"2.0.4","t":17,"team":"b","m":"ARRIVED squad=25 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":17,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker_m32(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":17,"team":"b","m":"ORDER squad=25 role=pointstart flag=f9"}
+{"type":"event","v":"2.0.4","t":17,"team":"b","m":"POINTSTART ORDER squad=25 flag=f9"}
+{"type":"event","v":"2.0.4","t":17,"team":"b","m":"OPENING COVERED flag=f9 via=capture_order progress=8/11"}
+{"type":"event","v":"2.0.4","t":18,"team":"b","m":"SPAWN REJECTED role=pointstart unit=elite(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":18,"team":"b","m":"SPAWN REJECTED role=pointstart unit=elite(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":19,"team":"b","m":"SPAWN REJECTED role=pointstart unit=elite(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":22,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":22,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":23,"team":"b","m":"SPAWN REJECTED role=pointstart unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":24,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":24,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":25,"team":"b","m":"SPAWN REJECTED role=pointstart unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":26,"team":"b","m":"SPAWN OK role=pointstart unit=scout(ukr)"}
+{"type":"event","v":"2.0.4","t":26,"team":"b","m":"ARRIVED squad=28 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":26,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":26,"team":"b","m":"ORDER squad=28 role=pointstart flag=f1"}
+{"type":"event","v":"2.0.4","t":26,"team":"b","m":"POINTSTART ORDER squad=28 flag=f1"}
+{"type":"event","v":"2.0.4","t":26,"team":"b","m":"OPENING COVERED flag=f1 via=capture_order progress=9/11"}
+{"type":"event","v":"2.0.4","t":27,"team":"b","m":"SPAWN OK role=pointstart unit=scout(ukr)"}
+{"type":"event","v":"2.0.4","t":27,"team":"b","m":"ARRIVED squad=29 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":27,"team":"b","m":"ORDER squad=29 role=pointstart flag=f10"}
+{"type":"event","v":"2.0.4","t":27,"team":"b","m":"POINTSTART ORDER squad=29 flag=f10"}
+{"type":"event","v":"2.0.4","t":27,"team":"b","m":"OPENING COVERED flag=f10 via=capture_order progress=10/11"}
+{"type":"event","v":"2.0.4","t":28,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":30,"team":"b","m":"SPAWN REJECTED role=pointstart unit=scout2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":30,"team":"b","m":"STATE SNAP t=30 state=OPENING BP=1800 flags=0/0/11"}
+{"type":"snapshot","v":"2.0.4","t":31,"state":"OPENING","bp":1820,"mine":0,"enemy":0,"neutral":11,"squads":[[10,"pointstart","f6"],[12,"pointstart","f7"],[23,"pointstart","f11"],[24,"pointstart","f8"],[25,"pointstart","f9"],[28,"pointstart","f1"],[29,"pointstart","f10"],[4,"pointstart","f3"],[6,"pointstart","f4"],[8,"pointstart","f5"]]}
+{"type":"event","v":"2.0.4","t":32,"team":"b","m":"SPAWN REJECTED role=pointstart unit=stormtroopers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":34,"team":"b","m":"SPAWN REJECTED role=pointstart unit=snipers(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":36,"team":"b","m":"SPAWN OK role=pointstart unit=snipers2(ukr)"}
+{"type":"event","v":"2.0.4","t":36,"team":"b","m":"ARRIVED squad=30 role=pointstart reason=opening point"}
+{"type":"event","v":"2.0.4","t":36,"team":"b","m":"ORDER squad=30 role=pointstart flag=f2"}
+{"type":"event","v":"2.0.4","t":36,"team":"b","m":"POINTSTART ORDER squad=30 flag=f2"}
+{"type":"event","v":"2.0.4","t":36,"team":"b","m":"OPENING COVERED flag=f2 via=capture_order progress=11/11"}
+{"type":"event","v":"2.0.4","t":36,"team":"b","m":"OPENING COVERAGE COMPLETE assigned=11/11 -> RELEASE MAIN BTG"}
+{"type":"event","v":"2.0.4","t":36,"team":"b","m":"SPAWN REJECTED role=infantry unit=bazooker2(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":38,"team":"b","m":"SPAWN REJECTED role=infantry unit=pilot(ukr) -> retry"}
+{"type":"event","v":"2.0.4","t":40,"team":"b","m":"SPAWN OK role=infantry unit=scout(ukr)"}
+{"type":"event","v":"2.0.4","t":40,"team":"b","m":"ARRIVED squad=31 role=infantry reason=opening"}
+{"type":"event","v":"2.0.4","t":40,"team":"b","m":"SPAWN REJECTED role=recon unit=kipri2 -> retry"}
+{"type":"event","v":"2.0.4","t":42,"team":"b","m":"SPAWN OK role=recon unit=novator"}
+{"type":"event","v":"2.0.4","t":42,"team":"b","m":"ARRIVED squad=33 role=recon reason=opening"}
+{"type":"event","v":"2.0.4","t":42,"team":"b","m":"SPAWN REJECTED role=tank unit=t80bv_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":44,"team":"b","m":"SPAWN REJECTED role=tank unit=challenger_2_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":46,"team":"b","m":"SPAWN REJECTED role=tank unit=pt-91_ukr -> retry"}
+{"type":"snapshot","v":"2.0.4","t":46,"state":"OPENING","bp":1870,"mine":0,"enemy":0,"neutral":11,"squads":[[10,"pointstart","f6"],[12,"pointstart","f7"],[23,"pointstart","f11"],[24,"pointstart","f8"],[25,"pointstart","f9"],[28,"pointstart","f1"],[29,"pointstart","f10"],[30,"pointstart","f2"],[31,"infantry",""],[33,"recon",""],[4,"pointstart","f3"],[6,"pointstart","f4"],[8,"pointstart","f5"]]}
+{"type":"event","v":"2.0.4","t":48,"team":"b","m":"SPAWN REJECTED role=tank unit=t-64bv_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":50,"team":"b","m":"SPAWN REJECTED role=tank unit=leopard_2a6i -> retry"}
+{"type":"event","v":"2.0.4","t":52,"team":"b","m":"SPAWN REJECTED role=tank unit=t-64bm1 -> retry"}
+{"type":"event","v":"2.0.4","t":54,"team":"b","m":"SPAWN REJECTED role=tank unit=bm_oplot -> retry"}
+{"type":"event","v":"2.0.4","t":56,"team":"b","m":"SPAWN REJECTED role=tank unit=t-64bv -> retry"}
+{"type":"event","v":"2.0.4","t":58,"team":"b","m":"SPAWN REJECTED role=tank unit=t80bv_ukri -> retry"}
+{"type":"event","v":"2.0.4","t":60,"team":"b","m":"SPAWN REJECTED role=tank unit=t80bvm_2_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":60,"team":"b","m":"STATE SNAP t=60 state=OPENING BP=2150 flags=0/0/11"}
+{"type":"snapshot","v":"2.0.4","t":61,"state":"OPENING","bp":2170,"mine":0,"enemy":0,"neutral":11,"squads":[[10,"pointstart","f6"],[12,"pointstart","f7"],[23,"pointstart","f11"],[24,"pointstart","f8"],[25,"pointstart","f9"],[28,"pointstart","f1"],[29,"pointstart","f10"],[30,"pointstart","f2"],[31,"infantry",""],[33,"recon",""],[4,"pointstart","f3"],[6,"pointstart","f4"],[8,"pointstart","f5"]]}
+{"type":"event","v":"2.0.4","t":64,"team":"b","m":"SPAWN REJECTED role=tank unit=t80bv_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":66,"team":"b","m":"SPAWN REJECTED role=tank unit=challenger_2_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":68,"team":"b","m":"SPAWN REJECTED role=tank unit=pt-91_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":70,"team":"b","m":"SPAWN REJECTED role=tank unit=t-64bv_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":72,"team":"b","m":"SPAWN REJECTED role=tank unit=leopard_2a6i -> retry"}
+{"type":"event","v":"2.0.4","t":74,"team":"b","m":"SPAWN REJECTED role=tank unit=t-64bm1 -> retry"}
+{"type":"event","v":"2.0.4","t":76,"team":"b","m":"SPAWN REJECTED role=tank unit=bm_oplot -> retry"}
+{"type":"snapshot","v":"2.0.4","t":76,"state":"OPENING","bp":2470,"mine":0,"enemy":0,"neutral":11,"squads":[[10,"pointstart","f6"],[12,"pointstart","f7"],[23,"pointstart","f11"],[24,"pointstart","f8"],[25,"pointstart","f9"],[28,"pointstart","f1"],[29,"pointstart","f10"],[30,"pointstart","f2"],[31,"infantry",""],[33,"recon",""],[4,"pointstart","f3"],[6,"pointstart","f4"],[8,"pointstart","f5"]]}
+{"type":"event","v":"2.0.4","t":78,"team":"b","m":"SPAWN REJECTED role=tank unit=t-64bv -> retry"}
+{"type":"event","v":"2.0.4","t":80,"team":"b","m":"SPAWN REJECTED role=tank unit=t80bv_ukri -> retry"}
+{"type":"event","v":"2.0.4","t":82,"team":"b","m":"SPAWN REJECTED role=tank unit=t80bvm_2_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":86,"team":"b","m":"SPAWN OK role=tank unit=t80bv_ukr"}
+{"type":"event","v":"2.0.4","t":86,"team":"b","m":"ARRIVED squad=35 role=tank reason=opening"}
+{"type":"event","v":"2.0.4","t":86,"team":"b","m":"SPAWN REJECTED role=mech_inf unit=m113a3_ukri -> retry"}
+{"type":"event","v":"2.0.4","t":88,"team":"b","m":"SPAWN REJECTED role=mech_inf unit=btr80_2_ukri -> retry"}
+{"type":"event","v":"2.0.4","t":90,"team":"b","m":"SPAWN REJECTED role=mech_inf unit=zil131i -> retry"}
+{"type":"event","v":"2.0.4","t":90,"team":"b","m":"STATE SNAP t=90 state=OPENING BP=2300 flags=0/0/11"}
+{"type":"snapshot","v":"2.0.4","t":91,"state":"OPENING","bp":2320,"mine":0,"enemy":0,"neutral":11,"squads":[[10,"pointstart","f6"],[12,"pointstart","f7"],[23,"pointstart","f11"],[24,"pointstart","f8"],[25,"pointstart","f9"],[28,"pointstart","f1"],[29,"pointstart","f10"],[30,"pointstart","f2"],[31,"infantry",""],[33,"recon",""],[35,"tank",""],[4,"pointstart","f3"],[6,"pointstart","f4"],[8,"pointstart","f5"]]}
+{"type":"event","v":"2.0.4","t":92,"team":"b","m":"SPAWN REJECTED role=mech_inf unit=m1126i_ukr -> retry"}
+{"type":"event","v":"2.0.4","t":94,"team":"b","m":"SPAWN REJECTED role=mech_inf unit=btr-4e1_sq -> retry"}
+{"type":"event","v":"2.0.4","t":96,"team":"b","m":"SPAWN REJECTED role=mech_inf unit=bmd2_ukri -> retry"}
+{"type":"event","v":"2.0.4","t":98,"team":"b","m":"SPAWN REJECTED role=mech_inf unit=marder_1a3_ukri -> retry"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"SPAWN OK role=mech_inf unit=novator_ptrk"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ARRIVED squad=37 role=mech_inf reason=opening"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"STATE -> EXPAND reason=opening complete"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=31 role=infantry flag=f1 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=31 role=infantry flag=f1"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=37 role=mech_inf flag=f11 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=37 role=mech_inf flag=f11"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=10 role=pointstart flag=f2 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=10 role=pointstart flag=f2"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=12 role=pointstart flag=f3 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=12 role=pointstart flag=f3"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=23 role=pointstart flag=f4 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=23 role=pointstart flag=f4"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=24 role=pointstart flag=f5 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=24 role=pointstart flag=f5"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=25 role=pointstart flag=f7 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=25 role=pointstart flag=f7"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=28 role=pointstart flag=f8 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=28 role=pointstart flag=f8"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=29 role=pointstart flag=f9 load=0 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=29 role=pointstart flag=f9"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=30 role=pointstart flag=f10 load=0 neutral=false"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=30 role=pointstart flag=f10"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=33 role=recon flag=f1 load=1 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=35 role=tank flag=f11 load=1 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=4 role=pointstart flag=f2 load=1 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=4 role=pointstart flag=f2"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=6 role=pointstart flag=f3 load=1 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=6 role=pointstart flag=f3"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"TARGET squad=8 role=pointstart flag=f4 load=1 neutral=true"}
+{"type":"event","v":"2.0.4","t":100,"team":"b","m":"ORDER squad=8 role=pointstart flag=f4"}
+{"type":"snapshot","v":"2.0.4","t":106,"state":"EXPAND","bp":2370,"mine":1,"enemy":2,"neutral":8,"squads":[[10,"pointstart","f2"],[12,"pointstart","f3"],[23,"pointstart","f4"],[24,"pointstart","f5"],[25,"pointstart","f7"],[28,"pointstart","f8"],[29,"pointstart","f9"],[30,"pointstart","f10"],[31,"infantry","f1"],[33,"recon","f1"],[35,"tank","f11"],[37,"mech_inf","f11"],[4,"pointstart","f2"],[6,"pointstart","f3"],[8,"pointstart","f4"]]}
+{"type":"event","v":"2.0.4","t":116,"team":"b","m":"ORDER squad=35 role=tank flag=f11"}
+{"type":"event","v":"2.0.4","t":116,"team":"b","m":"ORDER squad=33 role=recon flag=f1"}
+{"type":"event","v":"2.0.4","t":120,"team":"b","m":"STATE SNAP t=120 state=EXPAND BP=2650 flags=1/2/8"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=31 role=infantry flag=f1"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=37 role=mech_inf flag=f11"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=10 role=pointstart flag=f2"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=12 role=pointstart flag=f3"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=23 role=pointstart flag=f4"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=24 role=pointstart flag=f5"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=25 role=pointstart flag=f7"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=28 role=pointstart flag=f8"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=29 role=pointstart flag=f9"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=30 role=pointstart flag=f10"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=4 role=pointstart flag=f2"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=6 role=pointstart flag=f3"}
+{"type":"event","v":"2.0.4","t":121,"team":"b","m":"ORDER squad=8 role=pointstart flag=f4"}
+{"type":"snapshot","v":"2.0.4","t":121,"state":"EXPAND","bp":2670,"mine":1,"enemy":2,"neutral":8,"squads":[[10,"pointstart","f2"],[12,"pointstart","f3"],[23,"pointstart","f4"],[24,"pointstart","f5"],[25,"pointstart","f7"],[28,"pointstart","f8"],[29,"pointstart","f9"],[30,"pointstart","f10"],[31,"infantry","f1"],[33,"recon","f1"],[35,"tank","f11"],[37,"mech_inf","f11"],[4,"pointstart","f2"],[6,"pointstart","f3"],[8,"pointstart","f4"]]}
+{"type":"event","v":"2.0.4","t":131,"team":"b","m":"ORDER squad=35 role=tank flag=f11"}
+{"type":"event","v":"2.0.4","t":131,"team":"b","m":"ORDER squad=33 role=recon flag=f1"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"LOST squad=30 role=pointstart"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=31 role=infantry flag=f1"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=37 role=mech_inf flag=f11"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=10 role=pointstart flag=f2"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=12 role=pointstart flag=f3"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=23 role=pointstart flag=f4"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=24 role=pointstart flag=f5"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=25 role=pointstart flag=f7"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=28 role=pointstart flag=f8"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=29 role=pointstart flag=f9"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=4 role=pointstart flag=f2"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=6 role=pointstart flag=f3"}
+{"type":"event","v":"2.0.4","t":136,"team":"b","m":"ORDER squad=8 role=pointstart flag=f4"}
+{"type":"snapshot","v":"2.0.4","t":136,"state":"EXPAND","bp":2970,"mine":1,"enemy":2,"neutral":8,"squads":[[10,"pointstart","f2"],[12,"pointstart","f3"],[23,"pointstart","f4"],[24,"pointstart","f5"],[25,"pointstart","f7"],[28,"pointstart","f8"],[29,"pointstart","f9"],[31,"infantry","f1"],[33,"recon","f1"],[35,"tank","f11"],[37,"mech_inf","f11"],[4,"pointstart","f2"],[6,"pointstart","f3"],[8,"pointstart","f4"]]}
+{"type":"event","v":"2.0.4","t":139,"team":"b","m":"LOST squad=12 role=pointstart"}
+{"type":"event","v":"2.0.4","t":146,"team":"b","m":"ORDER squad=35 role=tank flag=f11"}
+{"type":"event","v":"2.0.4","t":146,"team":"b","m":"ORDER squad=33 role=recon flag=f1"}
