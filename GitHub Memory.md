@@ -55,3 +55,16 @@
 - текущий лог не содержит координатного трека squad, фактической дистанции, точки остановки или точного route. Для следующего теста нужна трассировка `squadId + unit + position + target + passengers + order state`.
 
 Эти факты считать контрольной моделью поведения v1.0.0 при разработке следующих версий.
+
+## 2026-09-17 — поиск прямого приказа движения
+
+В `MocKBu41/Men-of-War-Assault-Squad-2` выполнены targeted Ghidra + независимый PE pointer-table pass для `ENGINE_BINARIES/mowas_2.exe`.
+
+Подтверждено:
+- строка `Move` существует в нескольких местах, но не подтверждена как Lua `BotApi.Commands:Move`; не использовать такой вызов без runtime-доказательства;
+- реальные таблицы обработчиков найдены для `drop_orders`, `move_forward`, `move_backward`, `user_squad`, `eLeave`; tuple рядом со строкой указывает handler addresses/RVA: `drop_orders -> 0x3C2850`, `move_forward -> 0x3D1900`, `move_backward -> 0x3D1920`, `user_squad -> 0x3D1F10`, `eLeave -> 0x4D7660`; `attackhere` имеет соседний handler candidate `0x386874`;
+- НЕ ставить INT3 hooks на эти RVA пока не проверены runtime-байты: on-disk `.text` защищён/обфусцирован. Ghidra по этим адресам показывает bad instruction data/невозможный control flow, поэтому статическая декомпиляция не подтверждает function entry/signature;
+- в строках движка присутствует `eOrderMovement.cpp`, поэтому внутренний Order::Movement слой существует и является главным кандидатом для восстановления координатного приказа;
+- создан `RUNTIME_IMAGE_DUMP` в репозитории оригинальной игры: Win32 DLL + injector перестраивают только основной runtime-образ `mowas_2.exe` (~13 МБ) в `%TEMP%/MOWAS2_RUNTIME_REBUILT_<PID>.exe`, без полного process dump на 3.5 ГБ. GitHub Actions build `MOWAS2-Runtime-Image-Dump-Win32` успешно проходит.
+
+Следующий шаг: запустить runtime dumper на оригинальной игре в главном меню/локальном матче, получить `MOWAS2_RUNTIME_REBUILT_<PID>.exe` + `.txt`, затем повторить Ghidra/XREF по уже runtime-коду для `eOrderMovement`, handler RVA и восстановления сигнатуры/аргументов координатного движения.
