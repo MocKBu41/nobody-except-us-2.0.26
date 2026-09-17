@@ -63,8 +63,29 @@
 Подтверждено:
 - строка `Move` существует в нескольких местах, но не подтверждена как Lua `BotApi.Commands:Move`; не использовать такой вызов без runtime-доказательства;
 - реальные таблицы обработчиков найдены для `drop_orders`, `move_forward`, `move_backward`, `user_squad`, `eLeave`; tuple рядом со строкой указывает handler addresses/RVA: `drop_orders -> 0x3C2850`, `move_forward -> 0x3D1900`, `move_backward -> 0x3D1920`, `user_squad -> 0x3D1F10`, `eLeave -> 0x4D7660`; `attackhere` имеет соседний handler candidate `0x386874`;
-- НЕ ставить INT3 hooks на эти RVA пока не проверены runtime-байты: on-disk `.text` защищён/обфусцирован. Ghidra по этим адресам показывает bad instruction data/невозможный control flow, поэтому статическая декомпиляция не подтверждает function entry/signature;
-- в строках движка присутствует `eOrderMovement.cpp`, поэтому внутренний Order::Movement слой существует и является главным кандидатом для восстановления координатного приказа;
-- создан `RUNTIME_IMAGE_DUMP` в репозитории оригинальной игры: Win32 DLL + injector перестраивают только основной runtime-образ `mowas_2.exe` (~13 МБ) в `%TEMP%/MOWAS2_RUNTIME_REBUILT_<PID>.exe`, без полного process dump на 3.5 ГБ. GitHub Actions build `MOWAS2-Runtime-Image-Dump-Win32` успешно проходит.
+- on-disk `.text` защищён/обфусцирован, поэтому исходные Ghidra function-entry результаты по этим адресам были ненадёжны;
+- создан `RUNTIME_IMAGE_DUMP`, который перестраивает только основной runtime-образ `mowas_2.exe` (~13 МБ), без полного process dump.
 
-Следующий шаг: запустить runtime dumper на оригинальной игре в главном меню/локальном матче, получить `MOWAS2_RUNTIME_REBUILT_<PID>.exe` + `.txt`, затем повторить Ghidra/XREF по уже runtime-коду для `eOrderMovement`, handler RVA и восстановления сигнатуры/аргументов координатного движения.
+## 2026-09-17 — runtime dump подтвердил нативный MoveTo
+
+Пользователь снял `MOWAS2_RUNTIME_REBUILT_16132.exe`: image base `0x00400000`, SizeOfImage `13615104`, timestamp `0x5DA02775`, SHA-256 `8c9c195dc16ac5b31ec26adbc39aa64d397082b959d37cca2f15da3b40f3736b`. Runtime `.text` распакован и нормально дизассемблируется.
+
+Подтверждена нативная цепочка координатного движения:
+
+- `FindSquadById`: RVA `0x508E40`; сравнивает ID с `[squad+0x54]`;
+- members squad: диапазон `[squad+0x58, squad+0x5C)`;
+- `CreateMove(Vec2*)`: RVA `0x4E0070`; создаёт `Order::eMove`, копирует две float-координаты; vtable eMove `0x00DFA260`;
+- `ActorSetOrder`: RVA `0x4317C0`; принимает Actor + новый Order + command context;
+- command context для штатного движения: `{mode=1, source=*(base+0xBBAFD4)}`;
+- для каждого Actor нужен отдельный `eMove`; один Order pointer на нескольких Actor не переиспользовать;
+- штатный код пропускает Actor при установленном bit 28 поля `[actor+0x66C]`.
+
+Полная схема: `squadId -> FindSquadById -> actors -> CreateMove({x,y}) -> ActorSetOrder`.
+
+Lua `BotCommands` текущего оригинального движка регистрирует `CaptureFlag`, `Spawn`, `SayChat`, `Income`, `EnemyHasTanks`; отдельный `Move` не подтверждён. Не писать `BotApi.Commands:Move(...)` как будто он существует.
+
+Подробный отчёт в оригинальном репозитории: `REVERSE_ENGINE/RUNTIME_MOVE_FINDINGS_2026-09-17.md`.
+
+Создан отдельный `BOT_MOVE_BRIDGE_TEST` (baseline бота не меняет): F9 логирует squadId; F10 читает `move_test.ini` и ставит pending MoveTo. Сам нативный приказ выполняется на игровом/Lua thread при следующем штатном входе в CaptureFlag wrapper, чтобы не менять Actor state из DLL worker-thread. Bridge имеет exact-build guard по timestamp, SizeOfImage и entry bytes. GitHub Actions package: `MOWAS2-MoveTo-Bridge-Test-Win32`.
+
+Следующий обязательный шаг: локальный тест bridge на одном squad и близкой валидной координате; по `%TEMP%\MOWAS2_MOVE_BRIDGE_<PID>.log` проверить `MOVE begin`, `actor ... sent`, `MOVE done` и фактическое движение. Только после этого переносить интерфейс MoveTo в новую версию BOT_GPT, не изменяя v1_0_0.
