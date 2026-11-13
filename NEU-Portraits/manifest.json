@@ -474,6 +474,6 @@
   ],
   "last_update": "2026-11-14",
   "last_updated_unit": "12147",
-  "last_update_description": "Published reinforced DShV portrait #12147 (draft pending user verification).",
-  "revision": "2026-11-14-12147-dshv-v1"
+  "last_update_description": "Fixed portrait rendering: image URLs load without embedded preview; #12146/#12147 have offline fallbacks and live manifest refresh.",
+  "revision": "2026-11-14-portraits-loading-fix-v2"
 }
