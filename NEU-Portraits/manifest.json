@@ -74,7 +74,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12176_Розвідка_ДШВ_засадное.png",
-      "imageVersion": "01341c0018911f50648cfb7bb17b4a5357c60181",
+      "imageVersion": "e800751323e40d88dcf9f730f8ae1d6362463e30",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -481,7 +481,7 @@
     }
   ],
   "last_update": "2026-11-14",
-  "last_updated_unit": "12008",
-  "last_update_description": "Updated draft portrait #12008 Морпіхи ПТ: coastal ruins, revised soldier poses, MM-14 equipment; correct roster preserved. Offline preview embedded. Pending user review.",
-  "revision": "2026-11-14-12008-marines-pt-e636999a"
+  "last_updated_unit": "12176",
+  "last_update_description": "Updated draft portrait #12176: two soldiers aiming realistic-scale NLAW at distant tank from woodland cover. 816x548 RGB PNG. Pending user review.",
+  "revision": "2026-11-14-12176-dshv-ambush-two-nlaw-e800751"
 }
