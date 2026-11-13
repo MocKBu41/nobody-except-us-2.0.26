@@ -6,6 +6,17 @@
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 8% 0%,#1b2c35 0,transparent 35%),var(--bg);color:var(--text);font:14px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:#b9dbfb}button,input,select,textarea{font:inherit}button,select,input[type=search],.btn{border:1px solid #40525e;background:#202d37;color:var(--text);border-radius:8px;padding:9px 12px}button{cursor:pointer}button:hover,.btn:hover{border-color:#a7c4ce}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #8fbfe8;outline-offset:2px}[hidden]{display:none!important}button:disabled{opacity:.45;cursor:not-allowed}.wrap{max-width:1500px;margin:auto;padding:24px 22px 70px}
 .top{display:flex;align-items:stretch;justify-content:space-between;flex-wrap:wrap;gap:20px;border-bottom:1px solid var(--line);padding-bottom:20px}.heading{max-width:700px}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);font-weight:800}.heading h1{font-size:clamp(25px,3vw,38px);line-height:1.15;margin:8px 0 12px}.heading p{color:var(--muted);margin:0}.source{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.source a{display:inline-flex;gap:8px;align-items:center;background:#1e2c34;padding:10px 13px;border:1px solid var(--line);border-radius:9px;text-decoration:none}.stats{display:flex;flex-wrap:wrap;gap:12px;margin:23px 0}.metric{min-width:155px;flex:1 1 150px;padding:15px 18px;border:1px solid var(--line);background:#17222b;border-radius:11px}.metric strong{display:block;font-size:29px;line-height:1.1;font-variant-numeric:tabular-nums}.metric span{color:var(--muted);font-size:12px}.meter{height:7px;border-radius:20px;overflow:hidden;background:#293943;margin:7px 0 24px}.fill{height:100%;width:0;background:linear-gradient(90deg,#6b9c8a,#bdcba6);transition:width .2s}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:15px;background:#14212b;border:1px solid var(--line);border-radius:11px;margin-bottom:22px}.toolbar input[type=search]{flex:3 1 260px;min-width:180px}.toolbar select{flex:1 1 180px}.toolbar .spacer{flex:1}.sub{color:var(--muted);font-size:12px}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(315px,1fr));gap:15px}.card{border:1px solid var(--line);border-radius:13px;background:var(--panel);overflow:hidden;display:flex;flex-direction:column;min-width:0}.card[data-state=approved]{border-color:#4a856d}.card[data-state=changes]{border-color:#b2794a}.thumb{aspect-ratio:816/548;background:linear-gradient(135deg,#17252c,#28333b);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:zoom-in}.thumb:not(.available){cursor:default}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.thumb .placeholder{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;color:#83939d;font-weight:700}.tag{position:absolute;top:12px;left:12px;background:#15202be6;border:1px solid #516370;padding:5px 10px;border-radius:6px;font-size:11px;color:#e0e7eb;pointer-events:none}.body{padding:15px 15px 0}.titleline{display:flex;justify-content:space-between;align-items:start;gap:6px}.id{font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums}.unit{font-weight:800;font-size:17px;line-height:1.25;margin:4px 0 8px}.meta{font-size:12px;color:var(--muted);margin-bottom:10px}.weapons{border-top:1px solid #2c3b45;padding-top:9px;margin:10px 0;font-size:12px;color:#dce5e9;min-height:48px}.links{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}.links a{font-size:12px;text-decoration:none;border:1px solid #45606b;border-radius:7px;padding:7px 10px}.links .disabled{font-size:12px;color:#81939f;padding:7px 0}.review{padding:12px 15px 15px;margin-top:auto;background:#111a22;border-top:1px solid var(--line)}.choice{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.choice button{padding:7px 10px;font-size:12px}.choice .active.approved{border-color:#6ba78c;background:#285040}.choice .active.changes{border-color:#db9964;background:#523722}.review label{display:block;color:#aebbc5;font-size:12px;margin-bottom:5px}.review textarea{resize:vertical;width:100%;min-height:58px;padding:9px;background:#1a2832;border:1px solid #394c58;border-radius:7px;color:#e9f0f5;font-size:12px}.empty{border:1px dashed #51606b;border-radius:10px;padding:28px;text-align:center;color:var(--muted)}.footer{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.footnote{color:#bec9ce;margin:0 0 10px}dialog{padding:0;border:1px solid #4a5a64;border-radius:12px;max-width:min(95vw,1200px);background:#151e26;color:white;box-shadow:0 20px 100px #000a}dialog::backdrop{background:#050a0dd9}.modal-top{display:flex;justify-content:space-between;align-items:center;padding:11px 16px}.modal-top h2{font-size:15px;margin:0}dialog img{width:100%;max-height:82vh;object-fit:contain;display:block}.online{color:#a6cdb7}.offline{color:#e1ad8a}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 @media(max-width:600px){.wrap{padding:16px 12px 60px}.cards{grid-template-columns:1fr}.toolbar{align-items:stretch}.toolbar>*{width:100%}.source{width:100%}.source a{flex:1;justify-content:center}}
+
+/* Prompt correction workflow */
+.prompt-tool{margin-top:11px;padding:11px;border:1px solid #405563;border-radius:10px;background:#14232c}
+.prompt-tool[hidden]{display:none}
+.prompt-title{font-size:13px;font-weight:750;color:#e7d5b6;margin:0 0 7px}
+.prompt-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:8px}
+.prompt-row button{font-size:12px;padding:7px 9px}
+.prompt-row button.primary{background:#29485b;border-color:#7394a6;color:#fff}
+.prompt-output{width:100%;min-height:190px;resize:vertical;white-space:pre-wrap;line-height:1.5;color:#e9f1f5;background:#0e1a21;border:1px solid #526774;border-radius:7px;padding:9px;font-size:12px}
+.prompt-hint{font-size:11px;color:#b4c4ce;margin:6px 0 0}
+.prompt-info{font-size:12px;color:#d9c4a3;margin-top:5px}
 </style></head>
 <body><main class="wrap">
 <header class="top"><div class="heading"><div class="eyebrow">Nobody Except Us · Broken Arrow</div><h1>Портреты пехотных отрядов</h1><p>Чек-лист всех 46 комплектаций. Оригинальные PNG хранятся на GitHub. Для гарантированного просмотра встроены резервные JPEG-превью; при доступности GitHub показываются PNG. По два новых портрета за партию, после проверки.</p></div><div class="source"><a href="https://github.com/MocKBu41/nobody-except-us-2.0.26/tree/main/NEU-Portraits" target="_blank" rel="noopener noreferrer">Каталог на GitHub ↗</a><a href="https://github.com/MocKBu41/nobody-except-us-2.0.26/tree/main/NEU-Portraits/images" target="_blank" rel="noopener noreferrer">Все PNG ↗</a></div></header>
@@ -56,12 +67,95 @@ const safe=(s)=>String(s??'');
 function btn(label,cls,cb){const b=document.createElement('button');b.textContent=label;b.className=cls;b.type='button';b.addEventListener('click',cb);return b}
 function store(){try{localStorage.setItem(STORAGE,JSON.stringify(saved))}catch(e){}updateMetrics()}
 function download(text,filename,type='application/json'){const blob=new Blob([text],{type});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+
+function roleScene(u){
+ const n=(u.name+" "+u.group).toLocaleLowerCase("ru");
+ if(/мином[её]т/.test(n)) return "Миномётная огневая позиция, расчёт из 2–3 бойцов работает с указанным в комплектации миномётом, рядом штатное оружие.";
+ if(/пзрк/.test(n)) return "Расчёт противовоздушной обороны, переносной комплекс виден крупно на фоне открытого неба; второй боец прикрывает оператора.";
+ if(/птрк|tow|9к113|milan|javelin|конкурс|стугна|разведка пт/.test(n)) return "Противотанковый расчёт в укрытии, главный акцент на достоверном силуэте назначенного ПТРК и действиях оператора.";
+ if(/снайп/.test(n)) return "Скрытая наблюдательная позиция, снайпер с указанной винтовкой работает через оптику, напарник наблюдает и прикрывает.";
+ if(/розвід|развед|наводчик/.test(n)) return "Скрытное продвижение вдоль лесной опушки и наблюдение из укрытия; один боец наблюдает, второй прикрывает.";
+ if(/мор|піх/.test(n)) return "Прибрежные разрушения и продвижение морской пехоты по береговой линии; видны действия бойцов и назначенное оружие.";
+ if(/закреплен|оборон|поддержк/.test(n)) return "Оборонительная позиция с мешками с песком и оборудованием, соответствующим штатной комплектации; бойцы прикрывают сектор.";
+ if(/гур|кракен|волки|тройка|спецназ/.test(n)) return "Малая группа специального назначения действует согласованно в сложном укрытии, оружие и экипировка соответствуют комплектации.";
+ return "Штурмовое продвижение по городской улице среди разрушенных стен и пыли; ведущий прикрывает сектор, второй обеспечивает поддержку.";
+}
+function buildCorrectionPrompt(unit,remarks){
+ const base=units.find(x=>x.group===unit.group&&x.is_base==='True');
+ const variant=unit.is_base==='True'?"Базовый отряд":"Модификация";
+ const image=unit.image?BASE+encodeURIComponent(unit.image):"Портрет пока не опубликован; нужно создать изображение по описанию";
+ const note=(remarks||"").trim();
+ return [
+  "ИСПРАВЛЕНИЕ ПОРТРЕТА NEU / BROKEN ARROW",
+  "",
+  "Отряд: #"+unit.id+" — "+unit.name,
+  "Тип: "+variant+"; группа: "+unit.group+"; бойцов в игровом отряде: "+unit.fighters+".",
+  "Точное вооружение по NEU-0.11.13 — отряды и вооружение(2).md:",
+  unit.weapons+".",
+  base&&base.id!==unit.id?"Базовый вариант этой группы: #"+base.id+" — "+base.name+" ("+base.weapons+"). Внешность и состав модификации должны отличаться по указанной комплектации; не переносить оружие базового варианта, если оно отсутствует здесь.":"Не добавляй другое оружие и не меняй штатную комплектацию.",
+  "",
+  "КОНКРЕТНЫЕ НЕДОЧЁТЫ, ОТМЕЧЕННЫЕ ПОЛЬЗОВАТЕЛЕМ (исправить в первую очередь):",
+  note||"Пользователь отметил «Требует правок», но ещё не вписал конкретные замечания. Сначала уточни ошибки, не предполагай их.",
+  "",
+  "Исходная версия портрета: "+image,
+  "Используй исходный портрет как композиционный ориентир, сохраняя удачные элементы; если по ссылке изображение недоступно, попроси прикрепить его в чат.",
+  "",
+  "ХУДОЖЕСТВЕННЫЕ И ТЕХНИЧЕСКИЕ ТРЕБОВАНИЯ:",
+  "1. Один новый/исправленный игровой портрет 816×548 px, полноцветный PNG, горизонтальный, без текста, рамок, логотипов и водяных знаков.",
+  "2. Все бойцы — украинская экипировка и камуфляж ММ-14 «Пиксель», матовые бронежилеты, тактические шлемы и реалистичная разгрузка.",
+  "3. Покажи 2–3 бойцов, даже если штатная численность больше: ведущий немного не по центру, ракурс в три четверти по пояс/по колено, остальные на разной глубине и с разными действиями.",
+  "4. Момент и локация для этого отряда: "+roleScene(unit),
+  "5. Оружие показывай строго из приведённого выше списка: узнаваемые реальные модели, правильные ствольная коробка, приклад, магазин, оптика, дульная часть, естественный хват рук. Не дублировать лишнее вооружение.",
+  "6. В кадре НЕ должно быть бронетехники, вымышленных боевых машин и лишнего оснащения.",
+  "7. Стиль Broken Arrow: фотореалистичная кинематографичная военная иллюстрация, мягкое размытие изображения, ещё сильнее размытый дальний план; лица, кисти и главное оружие читаются на уменьшенной карточке.",
+  "8. Приглушённые оливковые, серо-зелёные, песочные оттенки; дымка и пыль без чрезмерных эффектов, естественные пропорции и анатомия.",
+  "9. Не меняй название, ID, специализацию и вооружение отряда; не добавляй других бойцов или оружие только ради композиции.",
+  "",
+  "РЕЗУЛЬТАТ:",
+  "Создай исправленный вариант с именем файла "+unit.id+"_"+unit.name.replace(/[^\\p{L}\\p{N}]+/gu,"_")+".png. Дай изображение для сравнения и коротко перечисли, какие именно замечания исправлены. До подтверждения пользователя считай его черновиком."
+ ].join("\n");
+}
+
 function createCard(u){const id=u.id, current=saved[id]||{}, state=current.status||'draft';const card=document.createElement('article');card.className='card';card.dataset.state=state;
  const thumb=document.createElement('div');thumb.className='thumb'+(u.image?' available':'');const tag=document.createElement('span');tag.className='tag';tag.textContent=u.image?'ЧЕРНОВИК · PNG':'НЕТ ИЗОБРАЖЕНИЯ';thumb.append(tag);
  if(u.image){const img=new Image();setupPortrait(img,u);thumb.prepend(img);thumb.addEventListener('click',()=>{el('viewerTitle').textContent=id+' · '+u.name;el('viewerImg').src=img.src;el('viewerImg').alt=img.alt;el('viewer').showModal()})}
  else{const p=document.createElement('div');p.className='placeholder';p.textContent='Портрет ещё не создан';thumb.append(p)}
  card.append(thumb);const body=document.createElement('div');body.className='body';const name=document.createElement('div');name.className='unit';name.textContent=u.name;const idLine=document.createElement('div');idLine.className='id';idLine.textContent='#'+id;const meta=document.createElement('div');meta.className='meta';meta.textContent=u.fighters+' бойцов · '+(u.is_base==='True'?'базовый отряд':'модификация')+' · '+u.group;const weapons=document.createElement('div');weapons.className='weapons';weapons.textContent=u.weapons;const links=document.createElement('div');links.className='links';if(u.image){const a=document.createElement('a');a.href=urlOf(u);a.target='_blank';a.rel='noopener noreferrer';a.textContent='PNG на GitHub ↗';links.append(a);const g=document.createElement('a');g.href='https://github.com/MocKBu41/nobody-except-us-2.0.26/blob/main/NEU-Portraits/images/'+encodeURIComponent(u.image);g.target='_blank';g.rel='noopener noreferrer';g.textContent='Файл в репозитории ↗';links.append(g)}else{const t=document.createElement('span');t.className='disabled';t.textContent='Ссылка появится после публикации';links.append(t)}body.append(idLine,name,meta,weapons,links);card.append(body);
- const review=document.createElement('div');review.className='review';const choice=document.createElement('div');choice.className='choice';const setState=(s)=>{saved[id]={...saved[id],status:s};card.dataset.state=s;accepted.classList.toggle('active',s==='approved');changes.classList.toggle('active',s==='changes');store();apply()};const accepted=btn('✓ Принято','approved',()=>setState((saved[id]?.status==='approved')?'draft':'approved'));const changes=btn('! Требует правок','changes',()=>setState((saved[id]?.status==='changes')?'draft':'changes'));accepted.classList.toggle('active',state==='approved');changes.classList.toggle('active',state==='changes');choice.append(accepted,changes);const label=document.createElement('label');label.textContent='Ваши замечания';const area=document.createElement('textarea');area.placeholder='Например: неверная форма РПГ, поправить ММ-14...';area.value=current.note||'';area.addEventListener('input',()=>{saved[id]={...saved[id],note:area.value};store()});review.append(choice,label,area);card.append(review);el('cards').append(card);cards.push({u,card});}
+ const review=document.createElement('div');review.className='review';const choice=document.createElement('div');choice.className='choice';const setState=(s)=>{saved[id]={...saved[id],status:s};card.dataset.state=s;accepted.classList.toggle('active',s==='approved');changes.classList.toggle('active',s==='changes');store();apply()};const accepted=btn('✓ Принято','approved',()=>setState((saved[id]?.status==='approved')?'draft':'approved'));const changes=btn('! Требует правок','changes',()=>setState((saved[id]?.status==='changes')?'draft':'changes'));accepted.classList.toggle('active',state==='approved');changes.classList.toggle('active',state==='changes');choice.append(accepted,changes);const label=document.createElement('label');label.textContent='Ваши замечания';const area=document.createElement('textarea');area.placeholder='Например: неверная форма РПГ, поправить ММ-14...';area.value=current.note||'';area.addEventListener('input',()=>{saved[id]={...saved[id],note:area.value};store()});
+ const promptBox=document.createElement('section');promptBox.className='prompt-tool';
+ promptBox.hidden=state!=='changes';
+ const promptTitle=document.createElement('div');promptTitle.className='prompt-title';promptTitle.textContent='Промпт для исправления · #'+id;
+ const promptButtons=document.createElement('div');promptButtons.className='prompt-row';
+ const generateBtn=btn('Создать промпт исправления','primary',()=>{
+   promptArea.value=buildCorrectionPrompt(u,area.value);
+   saved[id]={...saved[id],prompt:promptArea.value};store();
+   promptInfo.textContent='Промпт составлен по комплектации отряда и вашим замечаниям. Его можно отредактировать.';
+ });
+ const promptArea=document.createElement('textarea');promptArea.className='prompt-output';promptArea.placeholder='Здесь появится подробный промпт для исправления изображения...';
+ promptArea.value=current.prompt||'';promptArea.setAttribute('aria-label','Промпт исправления для #'+id);
+ promptArea.addEventListener('input',()=>{saved[id]={...saved[id],prompt:promptArea.value};store()});
+ const promptInfo=document.createElement('div');promptInfo.className='prompt-info';promptInfo.setAttribute('role','status');
+ const copyBtn=btn('Копировать промпт','',async()=>{
+   if(!promptArea.value.trim()){promptInfo.textContent='Сначала нажмите «Создать промпт исправления».';return}
+   try {await navigator.clipboard.writeText(promptArea.value);promptInfo.textContent='Промпт скопирован. В текущем чате вставьте его через Ctrl+V и отправьте.'}
+   catch(e){promptArea.focus();promptArea.select();promptInfo.textContent='Автокопирование недоступно: выделен текст промпта. Нажмите Ctrl+C.'}
+ });
+ const sendBtn=btn('Отправить в ChatGPT ↗','primary',()=>{
+   const p=promptArea.value.trim();
+   if(!p){promptInfo.textContent='Сначала создайте промпт исправления.';return}
+   const url='https://chatgpt.com/?q='+encodeURIComponent(p);
+   const opened=window.open(url,'_blank','noopener,noreferrer');
+   if(!opened){ /* The noopener feature returns null in some browsers despite success. */ }
+   promptInfo.textContent='Открыт ChatGPT с подготовленным текстом. Проверьте его и нажмите «Отправить» в ChatGPT. Для текущего чата используйте «Копировать».';
+ });
+ promptButtons.append(generateBtn,copyBtn,sendBtn);
+ const hint=document.createElement('p');hint.className='prompt-hint';hint.textContent='Только при статусе «Требует правок». ChatGPT открывается с подготовленным сообщением; автоматическая отправка в существующий чат не поддерживается.';
+ promptBox.append(promptTitle,promptButtons,promptArea,hint,promptInfo);
+ const origSetState=setState;
+ const syncPromptVisibility=()=>{promptBox.hidden=(saved[id]?.status!=='changes')};
+ changes.addEventListener('click',syncPromptVisibility);
+ accepted.addEventListener('click',syncPromptVisibility);
+ review.append(choice,label,area,promptBox);card.append(review);el('cards').append(card);cards.push({u,card});}
 units.forEach(createCard);
 function updateMetrics(){el('countTotal').textContent=units.length;let has=units.filter(u=>u.image).length,app=Object.values(saved).filter(x=>x.status==='approved').length,fix=Object.values(saved).filter(x=>x.status==='changes').length;el('countImages').textContent=has;el('countApproved').textContent=app;el('countChanges').textContent=fix;el('countMissing').textContent=units.length-has;el('bar').style.width=(has/units.length*100)+'%'}
 function apply(){const q=el('search').value.trim().toLocaleLowerCase('ru'),f=el('filter').value;let n=0;for(const {u,card} of cards){const status=saved[u.id]?.status||'draft';const hay=[u.id,u.name,u.weapons,u.group].join(' ').toLocaleLowerCase('ru');const good=!q||hay.includes(q);const valid=f==='all'||(f==='has'&&u.image)||(f==='missing'&&!u.image)||(f==='approved'&&status==='approved')||(f==='changes'&&status==='changes')||(f==='unchecked'&&status==='draft');const visible=good&&valid;card.hidden=!visible;if(visible)n++}el('shown').textContent=n;el('empty').hidden=n!==0}
