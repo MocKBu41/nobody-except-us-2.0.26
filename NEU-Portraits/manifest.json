@@ -50,7 +50,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12001_Розвідка_ДШВ.png",
-      "imageVersion": "cd5e9efd8ac520c606b68219abc984febaa8eba3",
+      "imageVersion": "6fa309e735abfd35f392b3889328aa1f0fd50025",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -483,7 +483,7 @@
     }
   ],
   "last_update": "2026-11-14",
-  "last_updated_unit": "12302",
-  "last_update_description": "Updated #12302 Морпіхи Штурм coastal assault draft: varied poses, port and shore, no visible GP-25 on lead soldier, changed headset; unit roster and weapons unchanged. Pending user review.",
-  "revision": "2026-11-14-12302-marines-assault-3be43b46"
+  "last_updated_unit": "12001",
+  "last_update_description": "Исправлена длина планки Пикатинни под прицелом на переднем плане #12001",
+  "revision": "2026-11-14-12001-short-rail-6fa309e7"
 }
