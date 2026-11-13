@@ -2,7 +2,7 @@
   "project": "NEU / Broken Arrow infantry portraits",
   "repository": "MocKBu41/nobody-except-us-2.0.26",
   "branch": "main",
-  "published_count": 15,
+  "published_count": 26,
   "total_count": 46,
   "warning": "All published images are drafts; the model-specific weapon accuracy has not been approved by the user.",
   "images_base": "https://raw.githubusercontent.com/MocKBu41/nobody-except-us-2.0.26/main/NEU-Portraits/images/",
@@ -120,8 +120,10 @@
       "weapons": "AK-74 ×4, PKM ×1, GP-25 ×2, Carl Gustaf M3 ×1, SVD ×1",
       "group": "Бусифицированые",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12185_Регулярная_пехота.png",
+      "imageVersion": "b0b5ffd0dab8a9f81794d30b04a73564a665acb44a45aca865b0a86385e6cdbd",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12186",
@@ -130,8 +132,10 @@
       "weapons": "M4A1 ×4, PKM ×1, M203 ×2, RPG-7V ×2, Benelli M4 ×3",
       "group": "Бусифицированые",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12186_Штурмовики.png",
+      "imageVersion": "ad7885109922bf7417d5920c1641ec83b5c79d3c20797a5bc896bcf5f4cffe50",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12019",
@@ -164,8 +168,10 @@
       "weapons": "AK-74 ×2, M4A1 ×1, Milan ER ×1",
       "group": "ПТРК Milan-ER",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12111_ПТРК_Milan_ER.png",
+      "imageVersion": "d1d632bd6ed003ecacc99e4c48f30e018100b314ce24e0e0a7e335fff8c9b83b",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12300",
@@ -174,8 +180,10 @@
       "weapons": "AK-74 ×2, M4A1 ×1, Javelin LWCLU ×1",
       "group": "ПТРК Milan-ER",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12300_ПТРК_Javelin.png",
+      "imageVersion": "7532f7e0b2089ee54b21bf435f34faca5b4d34656aee860de0d44eb7be944965",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12112",
@@ -184,8 +192,10 @@
       "weapons": "AK-74 ×3, FIM-92F Stinger ×1",
       "group": "Розрахунок ПЗРК",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12112_Розрахунок_ПЗРК.png",
+      "imageVersion": "e93bd5b8b1172fbf91e1db3902eedaf6718d4a0df10ab73ada6dbf0b101e04d8",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12301",
@@ -194,8 +204,10 @@
       "weapons": "AK-74 ×5, FIM-92F Stinger ×2",
       "group": "Розрахунок ПЗРК",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12301_Розрахунок_ПЗРК_2.png",
+      "imageVersion": "7e443ac31412c6d1c26f57e98f6e26dff6d06b68a89ae1d2ddb4128d7fa70747",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12121",
@@ -204,8 +216,10 @@
       "weapons": "AK-74 ×4, Konkurs ×1, GP-25 ×1, PKP ×1, SVD ×1",
       "group": "Отделение с 9К113",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12121_Отделение_с_9К113.png",
+      "imageVersion": "3893818a778cefa1c509395fa16cd1858e9ad20ddcac02ae4fd2968b82daa854",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12187",
@@ -214,8 +228,10 @@
       "weapons": "AK-74 ×4, TOW-2B ×1, GP-25 ×1, PKP ×1, M110 ×1",
       "group": "Отделение с 9К113",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12187_Отделение_с_TOW.png",
+      "imageVersion": "50d2e6aadb3d1af20098336554636aaae5794b2c090185e734054e9d67450635",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12131",
@@ -234,8 +250,10 @@
       "weapons": "AK-74 ×3, Стугна-П ×1",
       "group": "Розрахунок ПТРК Конкурс",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12143_Розрахунок_ПТРК_Стугна.png",
+      "imageVersion": "557662efbcdfd25d74ee11fdda1bc29b7d821f045386b024e0fdc160ee2132ed",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12132",
@@ -254,8 +272,10 @@
       "weapons": "AK-74 ×3, FIM-92F Stinger ×1",
       "group": "Розрахунок ПЗРК Игла",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12144_Розрахунок_ПЗРК_Stinger.png",
+      "imageVersion": "446a0fd043c414441d5af9094331b784f602f978abf65b71604eb0c4546e5e8b",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12145",
@@ -264,8 +284,10 @@
       "weapons": "AK-74 ×3, Piorun ×1",
       "group": "Розрахунок ПЗРК Игла",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12145_Розрахунок_ПЗРК_Piorun.png",
+      "imageVersion": "c851d26ada48f55001617df44c7c561721d3b1a8d207777d86d06d24aa6f19bb",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12140",
@@ -488,8 +510,8 @@
       "image": null
     }
   ],
-  "last_update": "2026-11-13T23:39:42.069Z",
-  "last_updated_unit": "12178",
-  "last_update_description": "Первый портрет: наблюдение и прикрытие на лесной опушке",
-  "revision": "2026-11-14-12178-575ad9c4"
+  "last_update": "2026-11-13T23:49:36.986Z",
+  "last_updated_unit": "12301",
+  "last_update_description": "Новые портреты отрядов",
+  "revision": "2026-11-14-portraits-4a6734f9bc"
 }
