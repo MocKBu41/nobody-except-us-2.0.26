@@ -112,7 +112,7 @@ function buildCorrectionPrompt(unit,remarks){
   "9. Не меняй название, ID, специализацию и вооружение отряда; не добавляй других бойцов или оружие только ради композиции.",
   "",
   "РЕЗУЛЬТАТ:",
-  "Создай исправленный вариант с именем файла "+unit.id+"_"+unit.name.replace(/[^\\p{L}\\p{N}]+/gu,"_")+".png. Дай изображение для сравнения и коротко перечисли, какие именно замечания исправлены. До подтверждения пользователя считай его черновиком."
+  "Создай исправленный вариант с именем файла "+unit.id+"_"+unit.name.replace(/[^a-zA-Z0-9а-яА-ЯёЁіІїЇєЄґҐ]+/g,"_")+".png. Дай изображение для сравнения и коротко перечисли, какие именно замечания исправлены. До подтверждения пользователя считай его черновиком."
  ].join("\n");
 }
 
@@ -140,7 +140,7 @@ function createCard(u){const id=u.id, current=saved[id]||{}, state=current.statu
    try {await navigator.clipboard.writeText(promptArea.value);promptInfo.textContent='Промпт скопирован. В текущем чате вставьте его через Ctrl+V и отправьте.'}
    catch(e){promptArea.focus();promptArea.select();promptInfo.textContent='Автокопирование недоступно: выделен текст промпта. Нажмите Ctrl+C.'}
  });
- const sendBtn=btn('Отправить в ChatGPT ↗','primary',()=>{
+ const sendBtn=btn('Открыть в ChatGPT ↗','primary',()=>{
    const p=promptArea.value.trim();
    if(!p){promptInfo.textContent='Сначала создайте промпт исправления.';return}
    const url='https://chatgpt.com/?q='+encodeURIComponent(p);
@@ -151,8 +151,15 @@ function createCard(u){const id=u.id, current=saved[id]||{}, state=current.statu
  promptButtons.append(generateBtn,copyBtn,sendBtn);
  const hint=document.createElement('p');hint.className='prompt-hint';hint.textContent='Только при статусе «Требует правок». ChatGPT открывается с подготовленным сообщением; автоматическая отправка в существующий чат не поддерживается.';
  promptBox.append(promptTitle,promptButtons,promptArea,hint,promptInfo);
- const origSetState=setState;
- const syncPromptVisibility=()=>{promptBox.hidden=(saved[id]?.status!=='changes')};
+ const syncPromptVisibility=()=>{
+   const needsFix=saved[id]?.status==='changes';
+   promptBox.hidden=!needsFix;
+   if(needsFix&&!promptArea.value.trim()){
+     promptArea.value=buildCorrectionPrompt(u,area.value);
+     saved[id]={...saved[id],prompt:promptArea.value};store();
+     promptInfo.textContent='Промпт подготовлен. Добавьте замечания и при необходимости нажмите «Создать промпт исправления» ещё раз.';
+   }
+ };
  changes.addEventListener('click',syncPromptVisibility);
  accepted.addEventListener('click',syncPromptVisibility);
  review.append(choice,label,area,promptBox);card.append(review);el('cards').append(card);cards.push({u,card});}
