@@ -158,7 +158,7 @@
     tokenHelp.target = '_blank';
     tokenHelp.rel = 'noopener noreferrer';
     const help = node('p', 'upload-hint',
-      'Токен не отправляется на этот сайт и не сохраняется в localStorage. Он используется только при запросах к api.github.com и остаётся в памяти вкладки.');
+      'Токен не отправляется на сервер сайта и не сохраняется в localStorage. Он используется только при запросах к api.github.com и остаётся в памяти вкладки.');
     const buttons = node('div', 'upload-buttons');
     const publish = node('button', 'upload-publish', 'Опубликовать на GitHub');
     publish.type = 'button';
@@ -194,6 +194,7 @@
     picker.addEventListener('change', () => {
       const file = picker.files && picker.files[0];
       if (!file) return;
+      status.classList.remove('upload-success');
       if (!/^image\/(png|jpeg|webp)$/i.test(file.type) || !file.size || file.size > MAX_FILE_BYTES) {
         details.hidden = false;
         status.textContent = 'Допускается PNG, JPG или WebP размером до 12 МБ.';
@@ -277,6 +278,8 @@
         if (typeof saved !== 'undefined' && saved[unit.id]) {
           saved[unit.id] = {...saved[unit.id], status: 'draft'};
           if (typeof store === 'function') store();
+          card.dataset.state = 'draft';
+          card.querySelectorAll('.choice button').forEach(button => button.classList.remove('active'));
         }
         if (typeof updateMetrics === 'function') updateMetrics();
 
@@ -322,6 +325,10 @@
         tokenLabel.hidden = tokenInput.hidden = tokenHelp.hidden = help.hidden = true;
       } catch (error) {
         status.classList.remove('upload-success');
+        if (error.status === 401 || error.status === 403) {
+          sessionToken = '';
+          tokenLabel.hidden = tokenInput.hidden = tokenHelp.hidden = help.hidden = false;
+        }
         status.textContent = (imageCommitted
           ? 'PNG уже загружен в GitHub, но каталог не обновился. Повторите публикацию. '
           : 'Публикация не выполнена. ') + error.message;
