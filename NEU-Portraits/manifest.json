@@ -2,7 +2,7 @@
   "project": "NEU / Broken Arrow infantry portraits",
   "repository": "MocKBu41/nobody-except-us-2.0.26",
   "branch": "main",
-  "published_count": 13,
+  "published_count": 14,
   "total_count": 46,
   "warning": "All published images are drafts; the model-specific weapon accuracy has not been approved by the user.",
   "images_base": "https://raw.githubusercontent.com/MocKBu41/nobody-except-us-2.0.26/main/NEU-Portraits/images/",
@@ -72,8 +72,10 @@
       "weapons": "AKM PBS ×4, NLAW ×4",
       "group": "Розвідка ДШВ",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12176_Розвідка_ДШВ_засадное.png",
+      "imageVersion": "01341c0018911f50648cfb7bb17b4a5357c60181",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12008",
@@ -477,7 +479,7 @@
     }
   ],
   "last_update": "2026-11-14",
-  "last_updated_unit": "12001",
-  "last_update_description": "Исправлен портрет #12001: лесная опушка, маскировка, без шевронов и без ГП-25 у переднего бойца. Черновик — требует проверки.",
-  "revision": "2026-11-14-12001-dshv-recon-cd5e9ef"
+  "last_updated_unit": "12176",
+  "last_update_description": "Added draft forest ambush reconnaissance portrait for #12176 (AKM PBS x4, NLAW x4); embedded offline preview and cache-busted PNG. Pending user review.",
+  "revision": "2026-11-14-12176-dshv-ambush-01341c0"
 }
