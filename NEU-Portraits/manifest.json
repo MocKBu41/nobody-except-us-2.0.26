@@ -2,7 +2,7 @@
   "project": "NEU / Broken Arrow infantry portraits",
   "repository": "MocKBu41/nobody-except-us-2.0.26",
   "branch": "main",
-  "published_count": 14,
+  "published_count": 15,
   "total_count": 46,
   "warning": "All published images are drafts; the model-specific weapon accuracy has not been approved by the user.",
   "images_base": "https://raw.githubusercontent.com/MocKBu41/nobody-except-us-2.0.26/main/NEU-Portraits/images/",
@@ -152,8 +152,10 @@
       "weapons": "M4A1 Mod. II ×2, AT4CS HP ×2, Mk.48 ×1, M110 ×1",
       "group": "Розвідка",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12178_Розвідка_ударная.png",
+      "imageVersion": "575ad9c4e2b7c66528d8c065f31ae15081021e3903dd3c8db28ba70b8728a10f",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12111",
@@ -486,8 +488,8 @@
       "image": null
     }
   ],
-  "last_update": "2026-11-14",
-  "last_updated_unit": "12017",
-  "last_update_description": "Бойцы старшего возраста на фоне микроавтобуса в разрушенной городской застройке; четыре бойца в разных позах",
-  "revision": "2026-11-14-12019-ghillie-964f116f0c4f"
+  "last_update": "2026-11-13T23:39:42.069Z",
+  "last_updated_unit": "12178",
+  "last_update_description": "Первый портрет: наблюдение и прикрытие на лесной опушке",
+  "revision": "2026-11-14-12178-575ad9c4"
 }
