@@ -49,7 +49,9 @@
       "group": "Розвідка ДШВ",
       "is_base": "True",
       "hasImage": true,
-      "image": "12001_Розвідка_ДШВ_ЧЕРНОВИК.png"
+      "image": "12001_Розвідка_ДШВ.png",
+      "imageVersion": "cd5e9efd8ac520c606b68219abc984febaa8eba3",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12175",
@@ -475,7 +477,7 @@
     }
   ],
   "last_update": "2026-11-14",
-  "last_updated_unit": "12175",
-  "last_update_description": "Added draft portrait for #12175 assault reconnaissance; original PNG, embedded offline preview, cache-busted display. Pending user review.",
-  "revision": "2026-11-14-12175-dshv-assault-f96919c"
+  "last_updated_unit": "12001",
+  "last_update_description": "Исправлен портрет #12001: лесная опушка, маскировка, без шевронов и без ГП-25 у переднего бойца. Черновик — требует проверки.",
+  "revision": "2026-11-14-12001-dshv-recon-cd5e9ef"
 }
