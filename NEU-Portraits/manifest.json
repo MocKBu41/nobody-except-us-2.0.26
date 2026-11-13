@@ -2,7 +2,7 @@
   "project": "NEU / Broken Arrow infantry portraits",
   "repository": "MocKBu41/nobody-except-us-2.0.26",
   "branch": "main",
-  "published_count": 11,
+  "published_count": 12,
   "total_count": 46,
   "warning": "All published images are drafts; the model-specific weapon accuracy has not been approved by the user.",
   "images_base": "https://raw.githubusercontent.com/MocKBu41/nobody-except-us-2.0.26/main/NEU-Portraits/images/",
@@ -36,8 +36,10 @@
       "weapons": "AK-74 ×6, RPK-74 ×2, RPG-7V ×2, GP-25 ×3",
       "group": "ДШВ",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12147_ДШВ_усиленные.png",
+      "imageVersion": "e8ca33eae7a657ce1f0d27b3eff6ed11fcfab93a",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12001",
@@ -471,7 +473,7 @@
     }
   ],
   "last_update": "2026-11-14",
-  "last_updated_unit": "12146",
-  "last_update_description": "Changed 12146 DShV NATO portrait to the latest user-selected NLAW composition. Pending user approval.",
-  "revision": "2026-11-14-12146-nlaw-v3"
+  "last_updated_unit": "12147",
+  "last_update_description": "Published reinforced DShV portrait #12147 (draft pending user verification).",
+  "revision": "2026-11-14-12147-dshv-v1"
 }
