@@ -15,7 +15,7 @@
       "group": "ДШВ",
       "is_base": "True",
       "hasImage": true,
-      "image": "12000_ДШВ_ЧЕРНОВИК.png"
+      "image": "12000_ДШВ.png"
     },
     {
       "id": "12146",
@@ -467,5 +467,8 @@
       "hasImage": false,
       "image": null
     }
-  ]
+  ],
+  "last_update": "2026-11-13",
+  "last_updated_unit": "12000",
+  "last_update_description": "Removed unwanted chevrons, corrected MM-14 infantry portrait; still user review draft."
 }
