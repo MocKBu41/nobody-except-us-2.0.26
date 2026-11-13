@@ -2,7 +2,7 @@
   "project": "NEU / Broken Arrow infantry portraits",
   "repository": "MocKBu41/nobody-except-us-2.0.26",
   "branch": "main",
-  "published_count": 10,
+  "published_count": 11,
   "total_count": 46,
   "warning": "All published images are drafts; the model-specific weapon accuracy has not been approved by the user.",
   "images_base": "https://raw.githubusercontent.com/MocKBu41/nobody-except-us-2.0.26/main/NEU-Portraits/images/",
@@ -24,8 +24,8 @@
       "weapons": "M4A1 ×4, M249E3 ×1, NLAW ×2, M203 ×1",
       "group": "ДШВ",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12146_ДШВ_НАТО_NLAW_ЧЕРНОВИК.png"
     },
     {
       "id": "12147",
