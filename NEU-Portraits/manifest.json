@@ -85,7 +85,9 @@
       "group": "Морпіхи ПТ",
       "is_base": "True",
       "hasImage": true,
-      "image": "12008_Морпіхи_ПТ_ЧЕРНОВИК.png"
+      "image": "12008_Морпіхи_ПТ.png",
+      "imageVersion": "e636999a6f925963ba338a6a4dc6efb9e1fb3c39",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12302",
@@ -479,7 +481,7 @@
     }
   ],
   "last_update": "2026-11-14",
-  "last_updated_unit": "12176",
-  "last_update_description": "Added draft forest ambush reconnaissance portrait for #12176 (AKM PBS x4, NLAW x4); embedded offline preview and cache-busted PNG. Pending user review.",
-  "revision": "2026-11-14-12176-dshv-ambush-01341c0"
+  "last_updated_unit": "12008",
+  "last_update_description": "Updated draft portrait #12008 Морпіхи ПТ: coastal ruins, revised soldier poses, MM-14 equipment; correct roster preserved. Offline preview embedded. Pending user review.",
+  "revision": "2026-11-14-12008-marines-pt-e636999a"
 }
