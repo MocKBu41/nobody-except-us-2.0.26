@@ -15,7 +15,8 @@
       "group": "ДШВ",
       "is_base": "True",
       "hasImage": true,
-      "image": "12000_ДШВ.png"
+      "image": "12000_ДШВ.png",
+      "imageVersion": "b7d03989f023bfc43e58270157281a34d122db40"
     },
     {
       "id": "12146",
@@ -470,5 +471,6 @@
   ],
   "last_update": "2026-11-13",
   "last_updated_unit": "12000",
-  "last_update_description": "Removed unwanted chevrons, corrected MM-14 infantry portrait; still user review draft."
+  "last_update_description": "Removed unwanted chevrons, corrected MM-14 infantry portrait; still user review draft.",
+  "revision": "2026-11-13-12000-fixed-v2"
 }
