@@ -2,7 +2,7 @@
   "project": "NEU / Broken Arrow infantry portraits",
   "repository": "MocKBu41/nobody-except-us-2.0.26",
   "branch": "main",
-  "published_count": 12,
+  "published_count": 13,
   "total_count": 46,
   "warning": "All published images are drafts; the model-specific weapon accuracy has not been approved by the user.",
   "images_base": "https://raw.githubusercontent.com/MocKBu41/nobody-except-us-2.0.26/main/NEU-Portraits/images/",
@@ -58,8 +58,10 @@
       "weapons": "AK-74 ×2, GP-25 ×1, M590A1 ×2, MRO-Z ×2",
       "group": "Розвідка ДШВ",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12175_Розвідка_ДШВ_штурмовая.png",
+      "imageVersion": "f96919c114c2031f3454c357094d72bbd88aef7f",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12176",
@@ -473,7 +475,7 @@
     }
   ],
   "last_update": "2026-11-14",
-  "last_updated_unit": "12147",
-  "last_update_description": "Fixed portrait rendering: image URLs load without embedded preview; #12146/#12147 have offline fallbacks and live manifest refresh.",
-  "revision": "2026-11-14-portraits-loading-fix-v2"
+  "last_updated_unit": "12175",
+  "last_update_description": "Added draft portrait for #12175 assault reconnaissance; original PNG, embedded offline preview, cache-busted display. Pending user review.",
+  "revision": "2026-11-14-12175-dshv-assault-f96919c"
 }
