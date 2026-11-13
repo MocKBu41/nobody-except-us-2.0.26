@@ -26,7 +26,8 @@
       "group": "ДШВ",
       "is_base": "False",
       "hasImage": true,
-      "image": "12146_ДШВ_НАТО_NLAW_ЧЕРНОВИК.png"
+      "image": "12146_ДШВ_НАТО_NLAW_ЧЕРНОВИК.png",
+      "imageVersion": "dfb0184422106649b3044714cd83f3ba33ec90df"
     },
     {
       "id": "12147",
@@ -469,8 +470,8 @@
       "image": null
     }
   ],
-  "last_update": "2026-11-13",
-  "last_updated_unit": "12000",
-  "last_update_description": "Removed unwanted chevrons, corrected MM-14 infantry portrait; still user review draft.",
-  "revision": "2026-11-13-12000-fixed-v2"
+  "last_update": "2026-11-14",
+  "last_updated_unit": "12146",
+  "last_update_description": "Changed 12146 DShV NATO portrait to the latest user-selected NLAW composition. Pending user approval.",
+  "revision": "2026-11-14-12146-nlaw-v3"
 }
