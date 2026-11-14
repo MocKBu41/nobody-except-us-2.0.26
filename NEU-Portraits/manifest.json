@@ -274,7 +274,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12144_Розрахунок_ПЗРК_Stinger.png",
-      "imageVersion": "446a0fd043c414441d5af9094331b784f602f978abf65b71604eb0c4546e5e8b",
+      "imageVersion": "b2a40bd9cb30bb94ca7a3b6b5144bc2882d82ed61765ba082161c5debaa6cb75",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T09:52:30.017Z",
-  "last_updated_unit": "12143",
-  "last_update_description": "Правки портретов по замечаниям",
-  "revision": "2026-11-14-review-570c8607ea"
+  "last_update": "2026-11-14T10:42:17.761Z",
+  "last_updated_unit": "12144",
+  "last_update_description": "Исправлен силуэт FIM-92F Stinger",
+  "revision": "2026-11-14-review-b2a40bd9cb"
 }
