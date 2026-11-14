@@ -292,9 +292,7 @@
           displayedImage.alt = 'Портрет ' + unit.name;
           thumb.prepend(displayedImage);
           thumb.addEventListener('click', () => {
-            document.getElementById('viewerTitle').textContent = unit.id + ' · ' + unit.name;
-            document.getElementById('viewerImg').src = displayedImage.src;
-            document.getElementById('viewer').showModal();
+            openPortrait(unit, displayedImage);
           });
         }
         // New object URL must survive the preview panel being closed.
