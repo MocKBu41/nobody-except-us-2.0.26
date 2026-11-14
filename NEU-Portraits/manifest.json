@@ -252,7 +252,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12143_Розрахунок_ПТРК_Стугна.png",
-      "imageVersion": "d8874595376903ff0fd2a58de969fd27f03cc1cf07e5c5e3251331d7acfb4bfc",
+      "imageVersion": "7602c7a1edcb1e38f5dc46aff9f16dc422fb03d57e378bd3e3906a4c712a29c7",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T13:18:53.739Z",
+  "last_update": "2026-11-14T13:26:00.762Z",
   "last_updated_unit": "12143",
-  "last_update_description": "Perspective correction for Stugna-P",
-  "revision": "2026-11-14-12187-tow-road-3467053ed97a"
+  "last_update_description": "Align helicopter with Stugna-P perspective",
+  "revision": "2026-11-14-review-7602c7a1ed"
 }
