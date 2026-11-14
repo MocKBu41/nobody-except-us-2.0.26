@@ -320,7 +320,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12148_ДШВ_Штурм.png",
-      "imageVersion": "bad05ef78fe7c65d670c06eceb1fb7cde01a13b8eef806ec102333fb9dc163f3",
+      "imageVersion": "e9ea3bef4f5c201d590c1dc13a5222fa4c3953f686c5718da0ffc7fc0852285c",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T10:53:14.685Z",
-  "last_updated_unit": "12145",
-  "last_update_description": "Исправлен силуэт Piorun",
-  "revision": "2026-11-14-review-ed240542ba"
+  "last_update": "2026-11-14T10:58:37.947Z",
+  "last_updated_unit": "12148",
+  "last_update_description": "Исправлены силуэт и переноска SMAW-D",
+  "revision": "2026-11-14-review-e9ea3bef4f"
 }
