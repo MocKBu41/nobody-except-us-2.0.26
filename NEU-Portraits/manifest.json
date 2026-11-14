@@ -230,7 +230,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12187_Отделение_с_TOW.png",
-      "imageVersion": "7ee046a44ebf065d51afa33d49b08d5136e3afd8d61b9df34ab5ba788494ecea",
+      "imageVersion": "56a057b3cf7ecbf567faa30d0bb2288217dfb33db99086c7a41b120d808e84e8",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -553,5 +553,5 @@
   "last_update": "2026-11-14T13:18:53.739Z",
   "last_updated_unit": "12143",
   "last_update_description": "Perspective correction for Stugna-P",
-  "revision": "2026-11-14-review-d887459537"
+  "revision": "2026-11-14-12187-tow-56a057b3cf7e"
 }
