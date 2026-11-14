@@ -170,7 +170,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12111_ПТРК_Milan_ER.png",
-      "imageVersion": "bba1cd4c792dbe26c7bacd5b9722d89d824fbf172d1496165f4859fedd02de85",
+      "imageVersion": "5f69114b0a859234ca591bb3a7a4aaac3437a62f87c86d4f65a72b001f5ee87d",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -553,5 +553,5 @@
   "last_update": "2026-11-14T14:03:10.694Z",
   "last_updated_unit": "12143",
   "last_update_description": "Restore the original supplied portrait for unit 12143",
-  "revision": "2026-11-14-milan-er-bba1cd4c792d"
+  "revision": "2026-11-15-milan-er-5f69114b0a85"
 }
