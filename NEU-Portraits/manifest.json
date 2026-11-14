@@ -428,7 +428,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12191_ГУР.png",
-      "imageVersion": "8c44b3d2aeff03d8a6df076071490989127b16f70acc7ea3115753f5b0fa0f70",
+      "imageVersion": "8407f6b4ec978d60ae31d90f57788545ab5af806b33c9f6d54de9b68daf226f3",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T11:05:33.836Z",
-  "last_updated_unit": "12188",
-  "last_update_description": "КПВ установлен на наземной треноге",
-  "revision": "2026-11-14-review-b877e76734"
+  "last_update": "2026-11-14T11:09:58.657Z",
+  "last_updated_unit": "12191",
+  "last_update_description": "Исправлен силуэт Малюка 7,62×39",
+  "revision": "2026-11-14-review-8407f6b4ec"
 }
