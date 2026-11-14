@@ -230,7 +230,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12187_Отделение_с_TOW.png",
-      "imageVersion": "a33bbd4f4db5d694171c55b6e749013a10fe4632f18865a1c8ef4ab885d56224",
+      "imageVersion": "7ee046a44ebf065d51afa33d49b08d5136e3afd8d61b9df34ab5ba788494ecea",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -252,7 +252,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12143_Розрахунок_ПТРК_Стугна.png",
-      "imageVersion": "4108db1389f78047822848071905cb641f0e338110919f1e8f89c9b62c9a76bf",
+      "imageVersion": "570c8607ea1ce1b0a60a4608453b66a84487236bc4e4f3a528567f2a83111156",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T09:46:19.390Z",
+  "last_update": "2026-11-14T09:51:37.618Z",
   "last_updated_unit": "12187",
   "last_update_description": "Правки портретов по замечаниям",
-  "revision": "2026-11-14-review-e6b2f1d402"
+  "revision": "2026-11-14-review-e02d821194"
 }
