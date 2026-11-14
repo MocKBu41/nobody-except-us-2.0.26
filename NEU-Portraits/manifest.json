@@ -534,7 +534,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12403_Разведка_ПТ_M3E1.png",
-      "imageVersion": "4fc90199004bdea3a6f15fa6c54733ba17a59623679edcbc4f98c8f0997174cf",
+      "imageVersion": "aa078c7c3c16c94bdca12ee28c727fc2f2154f64de130822ed2446935a028560",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T11:09:58.657Z",
-  "last_updated_unit": "12191",
-  "last_update_description": "Исправлен силуэт Малюка 7,62×39",
-  "revision": "2026-11-14-review-8407f6b4ec"
+  "last_update": "2026-11-14T11:43:39.565Z",
+  "last_updated_unit": "12403",
+  "last_update_description": "Уточнён силуэт M3E1 MAAWS и добавлен отдельный выстрел",
+  "revision": "2026-11-14-review-aa078c7c3c"
 }
