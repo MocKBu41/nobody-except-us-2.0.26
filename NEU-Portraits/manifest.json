@@ -440,7 +440,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12192_Тройка.png",
-      "imageVersion": "27d5401dfdcc2e1c4106d3f1e8c77b936bdb5fcd82d640cd5a8765c46d105b41",
+      "imageVersion": "e73b27437af3cdc5ee5ed6240989a06fce9190d014986c290ca556c1ceb6f42f",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -553,5 +553,5 @@
   "last_update": "2026-11-14T14:03:10.694Z",
   "last_updated_unit": "12143",
   "last_update_description": "Restore the original supplied portrait for unit 12143",
-  "revision": "2026-11-15-12188-loadout-76eaff4a0ee1"
+  "revision": "2026-11-15-12192-village-e73b27437af3"
 }
