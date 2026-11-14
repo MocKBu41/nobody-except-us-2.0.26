@@ -230,7 +230,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12187_Отделение_с_TOW.png",
-      "imageVersion": "50d2e6aadb3d1af20098336554636aaae5794b2c090185e734054e9d67450635",
+      "imageVersion": "a33bbd4f4db5d694171c55b6e749013a10fe4632f18865a1c8ef4ab885d56224",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T09:39:37.059Z",
-  "last_updated_unit": "12111",
+  "last_update": "2026-11-14T09:46:19.390Z",
+  "last_updated_unit": "12187",
   "last_update_description": "Правки портретов по замечаниям",
-  "revision": "2026-11-14-review-dba433a3d4"
+  "revision": "2026-11-14-review-e6b2f1d402"
 }
