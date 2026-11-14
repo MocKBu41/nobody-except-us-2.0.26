@@ -534,7 +534,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12403_Разведка_ПТ_M3E1.png",
-      "imageVersion": "aa078c7c3c16c94bdca12ee28c727fc2f2154f64de130822ed2446935a028560",
+      "imageVersion": "59c689a2c94dc4750d0e2e7e10bc046227c0ece2c098e05c26142b6218c239c8",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T11:43:39.565Z",
+  "last_update": "2026-11-14T11:56:05.178Z",
   "last_updated_unit": "12403",
-  "last_update_description": "Уточнён силуэт M3E1 MAAWS и добавлен отдельный выстрел",
-  "revision": "2026-11-14-review-aa078c7c3c"
+  "last_update_description": "Убран выстрел из руки бойца",
+  "revision": "2026-11-14-review-59c689a2c9"
 }
