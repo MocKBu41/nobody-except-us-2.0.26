@@ -2,7 +2,7 @@
   "project": "NEU / Broken Arrow infantry portraits",
   "repository": "MocKBu41/nobody-except-us-2.0.26",
   "branch": "main",
-  "published_count": 26,
+  "published_count": 46,
   "total_count": 46,
   "warning": "All published images are drafts; the model-specific weapon accuracy has not been approved by the user.",
   "images_base": "https://raw.githubusercontent.com/MocKBu41/nobody-except-us-2.0.26/main/NEU-Portraits/images/",
@@ -306,8 +306,10 @@
       "weapons": "AKM PBS ×2, M40A5 ×1, M107 ×1",
       "group": "Снайперская пара",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12141_Тяжелые_снайперы.png",
+      "imageVersion": "8d85b26320d5a81f713839b5d5907e69753db9a43a3aa82058f669ee251b8e6e",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12148",
@@ -316,8 +318,10 @@
       "weapons": "AK-74 ×4, SMAW-D ×4, RPK-74 ×1, Benelli M4 ×3",
       "group": "ДШВ Штурм",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12148_ДШВ_Штурм.png",
+      "imageVersion": "bad05ef78fe7c65d670c06eceb1fb7cde01a13b8eef806ec102333fb9dc163f3",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12149",
@@ -326,8 +330,10 @@
       "weapons": "M4A1 ×4, M249 ×2, M40A5 ×2, M203 ×3",
       "group": "ДШВ Штурм",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12149_ДШВ_Поддержка.png",
+      "imageVersion": "ab736f0617b453b7fff70e57f715d2310a81df121b00db9bd8b5e7b867199495",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12150",
@@ -336,8 +342,10 @@
       "weapons": "AK-74 ×6, Benelli M4 ×2, M2 Browning ×1, AGS-17 ×1",
       "group": "Отделение закрепления",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12150_Отделение_закрепления.png",
+      "imageVersion": "29d0d5b482d22c956b6e3714bca3255274bf9a7bffadaf83175f62a4b270317c",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12151",
@@ -346,8 +354,10 @@
       "weapons": "AK-74 ×6, Benelli M4 ×2, M2 Browning ×1, AGS-17 ×1, Konkurs ×1",
       "group": "Отделение закрепления",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12151_Отделение_закрепления_ПТРК.png",
+      "imageVersion": "cb451c009b04ead5d5ac6ba7e4d796800ffa5083268c30083437cd7eea19df20",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12179",
@@ -356,8 +366,10 @@
       "weapons": "AKM PBS ×2, Mk12 DMR ×2",
       "group": "Наводчики",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12179_Наводчики.png",
+      "imageVersion": "79fb7f46ba98088151ea22163f7bcacc59d975f3770646278e080f3a264873ff",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12180",
@@ -366,8 +378,10 @@
       "weapons": "AKM PBS ×1, M40A5 ×2, Mk12 DMR ×1",
       "group": "Наводчики",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12180_Снайпера.png",
+      "imageVersion": "5b6d7a404b66205f13af8ae4b159fba87abbc8993f2ee8bb80d95ffb354762fa",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12188",
@@ -376,8 +390,10 @@
       "weapons": "AK-74 ×6, KPV ×1, AGS-17 ×1, GP-25 ×1, RPG-18 ×2",
       "group": "Отделение закрепления",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12188_Отделение_закрепления.png",
+      "imageVersion": "232b519309d9f27e3dc9c9cd8bc00e9d7891d5eb7910432193d8d7678c743811",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12189",
@@ -386,8 +402,10 @@
       "weapons": "AK-74 ×6, Igla-S ×2, GP-25 ×1, RPG-18 ×2",
       "group": "Отделение с ПЗРК",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12189_Отделение_с_ПЗРК.png",
+      "imageVersion": "0db2efd7bc9a700600e3d1035ceaaa5385620c8534c8381971f318718bf4535b",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12190",
@@ -396,8 +414,10 @@
       "weapons": "AK-74 ×6, RBS 70 ×2, GP-25 ×1, RPG-18 ×2",
       "group": "Отделение с ПЗРК",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12190_Отделение_ПЗРК_НАТО.png",
+      "imageVersion": "de79fb718a20af49a4d14d17540fdabe4d4ee64c093c27371c5631d47f8b1bdf",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12191",
@@ -406,8 +426,10 @@
       "weapons": "Малюк 7,62×39 ×6, M110 ×1, M32 MGL ×2, MG3 ×1",
       "group": "ГУР",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12191_ГУР.png",
+      "imageVersion": "8c44b3d2aeff03d8a6df076071490989127b16f70acc7ea3115753f5b0fa0f70",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12192",
@@ -416,8 +438,10 @@
       "weapons": "Малюк 7,62×39 ×4, RPO-A ×4, Flashbang ×1, Benelli M4 ×3, MG3 ×1",
       "group": "ГУР",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12192_Тройка.png",
+      "imageVersion": "27d5401dfdcc2e1c4106d3f1e8c77b936bdb5fcd82d640cd5a8765c46d105b41",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12218",
@@ -426,8 +450,10 @@
       "weapons": "Малюк 7,62×39 ×3, Panzerfaust 3 · PzF 3-IT ×2, PKM ×2, SCAR Mk.20 ×2, M32 MGL ×1",
       "group": "Кракен",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12218_Кракен.png",
+      "imageVersion": "0d54ee3231e2273953787798c188564f586a58d69dc85cd177a17ed00e153040",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12219",
@@ -436,8 +462,10 @@
       "weapons": "Малюк 7,62×39 ×6, МРО-А ×6, Mk.46 sup. ×2",
       "group": "Кракен",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12219_Волки.png",
+      "imageVersion": "bd94ffff1b7edde54d93d4eb198185aa4d76583165d277f9a64fc60306773f07",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12220",
@@ -456,8 +484,10 @@
       "weapons": "AK-74 ×2, 2Б11 «Сани» ×1",
       "group": "Миномётный расчёт · 2Б14 «Поднос»",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12406_Миномётный_расчёт_2Б11_Сани_.png",
+      "imageVersion": "33f1edc85878ead83d4ad084f799fe4a5f078eaed4601e52dddd0bddc766e8ab",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12400",
@@ -466,8 +496,10 @@
       "weapons": "АК-74 ПБС ×1, M2010 ×1, M110 ×1",
       "group": "Снайперская группа",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12400_Снайперская_группа.png",
+      "imageVersion": "22ac220fe4d13c5b012fa3a308878b78a788cc568b0c5527250511f63507de88",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12401",
@@ -476,8 +508,10 @@
       "weapons": "АК-74 ПБС ×1, M2010 ×1, M107 ×1",
       "group": "Снайперская группа",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12401_Снайперская_группа_M107.png",
+      "imageVersion": "cd93fc6ee0473f876ae5e8b1e3a3a040119e355c0d7a0bc5ea8fbe81ee772d00",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12402",
@@ -486,8 +520,10 @@
       "weapons": "Малюк 7,62×39 ×5, Panzerfaust 3 · PzF 3-IT ×1, PKM ×1",
       "group": "Разведка ПТ",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12402_Разведка_ПТ.png",
+      "imageVersion": "450ff71127712c4458bb301aa89f64cdb91a9e8bd1a5dfbac686c2b9b33b8710",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12403",
@@ -496,8 +532,10 @@
       "weapons": "Малюк 7,62×39 ×5, M3E1 MAAWS ×2, PKM ×1",
       "group": "Разведка ПТ",
       "is_base": "False",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12403_Разведка_ПТ_M3E1.png",
+      "imageVersion": "c08274c004b0df6c36e4bdb14bd8aa2eaac7ee9b33a4877a381f0b609e2c97d2",
+      "reviewStatus": "Черновик — требует проверки"
     },
     {
       "id": "12405",
@@ -506,12 +544,14 @@
       "weapons": "HK 416 D10RS ×4, Mk.46 sup. ×1, M110 ×1",
       "group": "Морской спецназ",
       "is_base": "True",
-      "hasImage": false,
-      "image": null
+      "hasImage": true,
+      "image": "12405_Морской_спецназ.png",
+      "imageVersion": "60110be4846475db93e705b669ca05d76f68c3dcc90c8fbbeb384f34673e1a4f",
+      "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-13T23:49:36.986Z",
-  "last_updated_unit": "12301",
+  "last_update": "2026-11-14T00:02:17.868Z",
+  "last_updated_unit": "12406",
   "last_update_description": "Новые портреты отрядов",
-  "revision": "2026-11-14-portraits-4a6734f9bc"
+  "revision": "2026-11-14-portraits-4f55e4d511"
 }
