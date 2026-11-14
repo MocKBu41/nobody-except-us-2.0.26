@@ -252,7 +252,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12143_Розрахунок_ПТРК_Стугна.png",
-      "imageVersion": "01ce7b6f0b305780e879be19ce7f72c7f663702fad59a7d3d34a56f45a86a700",
+      "imageVersion": "19053e9facc05368cc355bca6d6ef86fa89cf0c875fa502fbbfd309298855ef1",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T13:35:24.318Z",
+  "last_update": "2026-11-14T14:00:30.340Z",
   "last_updated_unit": "12143",
-  "last_update_description": "Restore helicopter and align it with the marked perspective",
-  "revision": "2026-11-14-review-01ce7b6f0b"
+  "last_update_description": "Restore previous portrait for unit 12143",
+  "revision": "2026-11-14-rollback-19053e9fac"
 }
