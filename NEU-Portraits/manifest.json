@@ -230,7 +230,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12187_Отделение_с_TOW.png",
-      "imageVersion": "3467053ed97ab8e52b4da7c1d90c0191fb54113d0bfe7383f36d366a95301bd2",
+      "imageVersion": "e8db7b329702c09888738ef1c88064c7521a2095b24ad35f5d16b8a35f85c464",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -553,5 +553,5 @@
   "last_update": "2026-11-14T13:26:00.762Z",
   "last_updated_unit": "12143",
   "last_update_description": "Align helicopter with Stugna-P perspective",
-  "revision": "2026-11-14-review-7602c7a1ed"
+  "revision": "2026-11-14-12187-tow-perspective-e8db7b329702"
 }
