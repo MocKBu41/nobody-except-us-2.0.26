@@ -286,7 +286,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12145_Розрахунок_ПЗРК_Piorun.png",
-      "imageVersion": "b5579c6a919cdf0f2d569f29ed30702cb0dbc2bc815156b1dffef1e6468aade2",
+      "imageVersion": "3b01af2a2ee1f1fa0be2a5083a247bf507fb371ae59e335c70d4b5c0542855f4",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T10:46:17.336Z",
-  "last_updated_unit": "12144",
-  "last_update_description": "Исправлен силуэт FIM-92F Stinger",
-  "revision": "2026-11-14-review-3c1ec01dd3"
+  "last_update": "2026-11-14T10:51:05.438Z",
+  "last_updated_unit": "12145",
+  "last_update_description": "Исправлен силуэт Piorun",
+  "revision": "2026-11-14-review-3b01af2a2e"
 }
