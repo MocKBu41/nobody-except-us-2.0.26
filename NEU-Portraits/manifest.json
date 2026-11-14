@@ -286,7 +286,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12145_Розрахунок_ПЗРК_Piorun.png",
-      "imageVersion": "3b01af2a2ee1f1fa0be2a5083a247bf507fb371ae59e335c70d4b5c0542855f4",
+      "imageVersion": "ed240542bafefd2ea49b39133572307f8110704fd25249e67afeaa61e333f789",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T10:51:05.438Z",
+  "last_update": "2026-11-14T10:53:14.685Z",
   "last_updated_unit": "12145",
   "last_update_description": "Исправлен силуэт Piorun",
-  "revision": "2026-11-14-review-3b01af2a2e"
+  "revision": "2026-11-14-review-ed240542ba"
 }
