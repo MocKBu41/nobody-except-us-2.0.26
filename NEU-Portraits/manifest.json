@@ -230,7 +230,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12187_Отделение_с_TOW.png",
-      "imageVersion": "e8db7b329702c09888738ef1c88064c7521a2095b24ad35f5d16b8a35f85c464",
+      "imageVersion": "7ee046a44ebf065d51afa33d49b08d5136e3afd8d61b9df34ab5ba788494ecea",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -553,5 +553,5 @@
   "last_update": "2026-11-14T14:00:30.340Z",
   "last_updated_unit": "12143",
   "last_update_description": "Restore previous portrait for unit 12143",
-  "revision": "2026-11-14-rollback-19053e9fac"
+  "revision": "2026-11-14-12187-restore-7ee046a44ebf"
 }
