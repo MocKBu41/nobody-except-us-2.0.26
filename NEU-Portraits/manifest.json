@@ -252,7 +252,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12143_Розрахунок_ПТРК_Стугна.png",
-      "imageVersion": "557662efbcdfd25d74ee11fdda1bc29b7d821f045386b024e0fdc160ee2132ed",
+      "imageVersion": "4108db1389f78047822848071905cb641f0e338110919f1e8f89c9b62c9a76bf",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -286,7 +286,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12145_Розрахунок_ПЗРК_Piorun.png",
-      "imageVersion": "c851d26ada48f55001617df44c7c561721d3b1a8d207777d86d06d24aa6f19bb",
+      "imageVersion": "b5579c6a919cdf0f2d569f29ed30702cb0dbc2bc815156b1dffef1e6468aade2",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -356,7 +356,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12151_Отделение_закрепления_ПТРК.png",
-      "imageVersion": "cb451c009b04ead5d5ac6ba7e4d796800ffa5083268c30083437cd7eea19df20",
+      "imageVersion": "7e22070180c45169882952a3912e0726434c1db2011f2b3a2a507dfdce92e64f",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -368,7 +368,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12179_Наводчики.png",
-      "imageVersion": "79fb7f46ba98088151ea22163f7bcacc59d975f3770646278e080f3a264873ff",
+      "imageVersion": "337a1f6a8e29448295c4922cf79133bd9acec0b0c6e0bb6f5f2afce2699f0202",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -392,7 +392,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12188_Отделение_закрепления.png",
-      "imageVersion": "232b519309d9f27e3dc9c9cd8bc00e9d7891d5eb7910432193d8d7678c743811",
+      "imageVersion": "06cbd87860983024ca6e6cee20091d0b4bf69e5cb367b8532b993efac27f6cea",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -522,7 +522,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12402_Разведка_ПТ.png",
-      "imageVersion": "450ff71127712c4458bb301aa89f64cdb91a9e8bd1a5dfbac686c2b9b33b8710",
+      "imageVersion": "076594204d78d6b218782e0c469b029466088660f0c1531b1afa369a9ffc4b79",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -534,7 +534,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12403_Разведка_ПТ_M3E1.png",
-      "imageVersion": "c08274c004b0df6c36e4bdb14bd8aa2eaac7ee9b33a4877a381f0b609e2c97d2",
+      "imageVersion": "4fc90199004bdea3a6f15fa6c54733ba17a59623679edcbc4f98c8f0997174cf",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T00:02:17.868Z",
-  "last_updated_unit": "12406",
-  "last_update_description": "Новые портреты отрядов",
-  "revision": "2026-11-14-portraits-4f55e4d511"
+  "last_update": "2026-11-14T09:27:01.292Z",
+  "last_updated_unit": "12403",
+  "last_update_description": "Правки портретов по замечаниям",
+  "revision": "2026-11-14-review-80472e47c6"
 }
