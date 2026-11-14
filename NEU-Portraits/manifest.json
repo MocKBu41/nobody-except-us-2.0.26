@@ -428,7 +428,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12191_ГУР.png",
-      "imageVersion": "8407f6b4ec978d60ae31d90f57788545ab5af806b33c9f6d54de9b68daf226f3",
+      "imageVersion": "0ad798f64bec49eb85d7c67b51db3d07d7812b6ee52e9812300ea7feb0c6e870",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -553,5 +553,5 @@
   "last_update": "2026-11-14T14:03:10.694Z",
   "last_updated_unit": "12143",
   "last_update_description": "Restore the original supplied portrait for unit 12143",
-  "revision": "2026-11-15-12192-village-e73b27437af3"
+  "revision": "2026-11-15-12191-gur-0ad798f64bec"
 }
