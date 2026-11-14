@@ -252,7 +252,7 @@
       "is_base": "False",
       "hasImage": true,
       "image": "12143_Розрахунок_ПТРК_Стугна.png",
-      "imageVersion": "570c8607ea1ce1b0a60a4608453b66a84487236bc4e4f3a528567f2a83111156",
+      "imageVersion": "d8874595376903ff0fd2a58de969fd27f03cc1cf07e5c5e3251331d7acfb4bfc",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T11:56:05.178Z",
-  "last_updated_unit": "12403",
-  "last_update_description": "Убран выстрел из руки бойца",
-  "revision": "2026-11-14-review-59c689a2c9"
+  "last_update": "2026-11-14T13:18:53.739Z",
+  "last_updated_unit": "12143",
+  "last_update_description": "Perspective correction for Stugna-P",
+  "revision": "2026-11-14-review-d887459537"
 }
