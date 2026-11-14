@@ -392,7 +392,7 @@
       "is_base": "True",
       "hasImage": true,
       "image": "12188_Отделение_закрепления.png",
-      "imageVersion": "06cbd87860983024ca6e6cee20091d0b4bf69e5cb367b8532b993efac27f6cea",
+      "imageVersion": "618adedc62fe6ec946a47dd806fe40d4b7c0ecef47a1918e6d5b55f1b669dcca",
       "reviewStatus": "Черновик — требует проверки"
     },
     {
@@ -550,8 +550,8 @@
       "reviewStatus": "Черновик — требует проверки"
     }
   ],
-  "last_update": "2026-11-14T10:58:37.947Z",
-  "last_updated_unit": "12148",
-  "last_update_description": "Исправлены силуэт и переноска SMAW-D",
-  "revision": "2026-11-14-review-e9ea3bef4f"
+  "last_update": "2026-11-14T11:02:01.630Z",
+  "last_updated_unit": "12188",
+  "last_update_description": "Уточнены КПВ, АГС-17 и позиция на опушке",
+  "revision": "2026-11-14-review-618adedc62"
 }
